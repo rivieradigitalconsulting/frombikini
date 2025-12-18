@@ -1,0 +1,587 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h1"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "separator_NtFirz": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": "size-chart"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#564747",
+            "atc_button_text_color": "#f9f4f0",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "conversion_bear_trust_badges_widget_6K67cd": {
+          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
+        "feature_with_icon_M8tNYn": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Fondata da donne e plasmata con carattere",
+            "link": "",
+            "icon": "picto-love",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_9G9Xwn": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Disegnato e realizzato a mano in Italia",
+            "link": "",
+            "icon": "picto-pin",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_i7jN7d": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Guidati dalla sostenibilità, con orgoglio",
+            "link": "",
+            "icon": "picto-leaf",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_yG6hqK": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Spedizione globale e resi semplificati",
+            "link": "",
+            "icon": "picto-earth",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
+          }
+        },
+        "accordion_L6ccQK": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Composizione & Dettagli",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_HYDbrd": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Cura & Packaging",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_qLfr34": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Spedizione & Resi",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "modal_hHNrHh": {
+          "type": "modal",
+          "settings": {
+            "button_title": "<strong>Serve aiuto?</strong>",
+            "button_style": "link",
+            "stretch_button": false,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "Serve aiuto?",
+            "modal_content": "<p>Write some content that will appear in a modal</p>"
+          }
+        },
+        "share_buttons_Ly47wy": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "pickup_availability_DXaDq8": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "separator_NtFirz",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "conversion_bear_trust_badges_widget_6K67cd",
+        "feature_with_icon_M8tNYn",
+        "feature_with_icon_9G9Xwn",
+        "feature_with_icon_i7jN7d",
+        "feature_with_icon_yG6hqK",
+        "description",
+        "accordion_L6ccQK",
+        "accordion_HYDbrd",
+        "accordion_qLfr34",
+        "modal_hHNrHh",
+        "share_buttons_Ly47wy",
+        "pickup_availability_DXaDq8"
+      ],
+      "custom_css": [
+        ".feature-badge p {font-size: 13px !important;}",
+        ".accordion__toggle span {font-size: 16px; font-weight: 700;}",
+        ".feature-badge-list {padding-bottom: 50px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "container_size": "lg",
+        "product_info_size": 45,
+        "show_sticky_add_to_cart": false,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid_2x_highlighted",
+        "desktop_media_grid_gap": 2,
+        "mobile_controls": "free_scroll",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "",
+        "title": "POTREBBE PIACERTI ANCHE",
+        "content": ""
+      }
+    },
+    "multi_column_hPeFAh": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_G8wMhM": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Progetto_senza_titolo_7.png",
+            "title": "<strong>Earth Power</strong>",
+            "heading_tag": "h4",
+            "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura che definiscono stile, emozione e riconoscibilità. Ogni palette è studiata per valorizzare le forme e trasmettere l’essenza autentica di From Bikini, trasformando il colore in una vera firma di brand.</p>",
+            "link_url": "shopify://products/bahia-onepiece-black",
+            "link_text": "Scopri di più"
+          }
+        },
+        "video_with_text_8Lewf9": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify://files/videos/Progetto senza titolo (1).mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "<strong>Hand-made in Italy</strong>",
+            "heading_tag": "h4",
+            "content": "<p>Promuoviamo una catena produttiva a Km 0 per ridurre emissioni, ottimizzare i consumi e supportare il tessuto economico locale. La vicinanza tra fornitori, produttori e distribuzione migliora la sostenibilità complessiva del prodotto, riduce i tempi di trasporto e rafforza la relazione diretta tra produzione e cliente finale.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_hTbQVA": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2_686d2fbb-da34-499a-bda1-b450c94fe135.jpg",
+            "title": "From where we come",
+            "heading_tag": "h4",
+            "content": "<p>Ogni pezzo è realizzato attraverso processi artigianali che richiedono tempo, precisione e competenze specializzate. La lavorazione manuale garantisce finitura superiore, esclusività del prodotto e controllo diretto su ogni fase produttiva, preservando un know-how distintivo.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_G8wMhM",
+        "video_with_text_8Lewf9",
+        "image_with_text_hTbQVA"
+      ],
+      "custom_css": [
+        "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}",
+        ".h4 {font-size: 16px; font-weight: bold;}",
+        "p {font-size: 13px;}",
+        "a {font-size: 13px; font-weight: 700;}"
+      ],
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "FROM BIKINI DETAILS",
+        "content": ""
+      }
+    },
+    "images_with_text_scroll_VUFB86": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "image_with_text_pgqQae": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "#1",
+            "content": "<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_PEQtUr": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "#2",
+            "content": "<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_xfGbmY": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "#3",
+            "content": "<p>Share information about your product with your customers. Describe a product, and share info about your production process...</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_pgqQae",
+        "image_with_text_PEQtUr",
+        "image_with_text_xfGbmY"
+      ],
+      "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
+      "settings": {
+        "color_scheme": "",
+        "background_image": "shopify://shop_images/2_686d2fbb-da34-499a-bda1-b450c94fe135.jpg",
+        "image_position": "start",
+        "text_alignment": "center",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "logo_list_CXzcbr": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_JiE3d4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 150,
+            "link": ""
+          }
+        },
+        "logo_VPkzrc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 150,
+            "link": ""
+          }
+        },
+        "logo_9BKXAy": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 150,
+            "link": ""
+          }
+        },
+        "logo_j3w3Kk": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 150,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_JiE3d4",
+        "logo_VPkzrc",
+        "logo_9BKXAy",
+        "logo_j3w3Kk"
+      ],
+      "custom_css": [
+        "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}"
+      ],
+      "name": "t:sections.logo_list.presets.logo_list.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "HANNO PARLATO DI NOI",
+        "stack_on_mobile": false,
+        "items_per_row": 5,
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "video_bkcdDw": {
+      "type": "video",
+      "disabled": true,
+      "custom_css": [
+        "video {padding-top: 40px;}"
+      ],
+      "name": "t:sections.video.presets.video.name",
+      "settings": {
+        "autoplay": true,
+        "show_controls": false,
+        "video_size": "lg",
+        "video": "shopify://files/videos/VESTITI.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff"
+      }
+    },
+    "images_with_text_scroll_YM4EPa": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "image_with_text_K4Vy7C": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "#1",
+            "content": "<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_UbThx6": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "#2",
+            "content": "<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_gHkh8A": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "#3",
+            "content": "<p>Share information about your product with your customers. Describe a product, and share info about your production process...</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_K4Vy7C",
+        "image_with_text_UbThx6",
+        "image_with_text_gHkh8A"
+      ],
+      "disabled": true,
+      "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
+      "settings": {
+        "color_scheme": "",
+        "background_image": "shopify://shop_images/SnapInsta.to_557449234_18486177082073064_7345705659093312803_n.jpg",
+        "image_position": "start",
+        "text_alignment": "center",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "text_with_icons_kwmECT": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_8CGKGU": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__3_-removebg-preview.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "Locally Made in Italy",
+            "content": "<p>Shopping locally made products allows for better product knowledge, supports local entrepreneurs and keeps skills local. Products made in Italy reflect unparalleled craftsmanship, attention to detail, and a rich heritage of quality and design. It also reduces your carbon footprint which impacts Global Warming.</p>"
+          }
+        },
+        "item_yBew9n": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__3_-removebg-preview.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "Locally Made in Italy",
+            "content": "<p>Shopping locally made products allows for better product knowledge, supports local entrepreneurs and keeps skills local. Products made in Italy reflect unparalleled craftsmanship, attention to detail, and a rich heritage of quality and design. It also reduces your carbon footprint which impacts Global Warming.</p>"
+          }
+        },
+        "item_TzK9zx": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__4_-removebg-preview.png",
+            "icon_width": 64,
+            "mobile_icon_width": 24,
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+          }
+        },
+        "item_6jRiTg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__5_-removebg-preview.png",
+            "icon_width": 64,
+            "mobile_icon_width": 24,
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_8CGKGU",
+        "item_yBew9n",
+        "item_TzK9zx",
+        "item_6jRiTg"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "contact_QARHbD": {
+      "type": "contact",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Contact",
+        "content": ""
+      }
+    },
+    "newsletter_teq4Cc": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0bb64c7d-0e76-44fd-bd4e-79f6f8d9cdc1",
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/1_a995a680-e6ea-41d9-973c-8c1a71545706.jpg",
+        "subheading": "",
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "multi_column_hPeFAh",
+    "images_with_text_scroll_VUFB86",
+    "logo_list_CXzcbr",
+    "video_bkcdDw",
+    "images_with_text_scroll_YM4EPa",
+    "text_with_icons_kwmECT",
+    "contact_QARHbD",
+    "newsletter_teq4Cc"
+  ]
+}

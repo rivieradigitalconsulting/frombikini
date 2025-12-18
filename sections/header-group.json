@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_YGpWWa": {
+          "type": "message",
+          "settings": {
+            "text": "10% DI SCONTO CON ISCRIZIONE ALLA NEWSLETTER"
+          }
+        },
+        "message_pUyJer": {
+          "type": "message",
+          "settings": {
+            "text": "SPEDIZIONE EXPRESS GRATUITA SU TUTTI GLI ORDINI"
+          }
+        }
+      },
+      "block_order": [
+        "message_YGpWWa",
+        "message_pUyJer"
+      ],
+      "custom_css": [
+        ".announcement-bar__carousel {font-family: \"Instrument Sans\", sans-serif !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-ed946704-f3b4-4b7f-ac55-6b15ba4a5bf6",
+        "enable_sticky": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "desktop_font_size": 12,
+        "mobile_font_size": 11
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_jby4mw": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "BIKINIS",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_YVVHbE": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "ONEPIECES",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_PFG96K": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "OUT OF WATER",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_jby4mw",
+        "mega_menu_YVVHbE",
+        "mega_menu_PFG96K"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "enable_sticky": true,
+        "hide_on_scroll": true,
+        "show_separation_border": true,
+        "reduce_padding": false,
+        "logo": "shopify://shop_images/from_bikini_brown.svg",
+        "logo_max_width": 200,
+        "logo_mobile_max_width": 135,
+        "menu": "main-menu",
+        "sidebar_menu": "main-menu",
+        "menu_open_trigger": "hover",
+        "menu_text_font": "body",
+        "enable_search": true,
+        "sidebar_color_scheme": "scheme-1",
+        "sidebar_text_font": "heading",
+        "sidebar_show_dividers": true,
+        "sidebar_open_second_level_menus": false,
+        "layout": "drawer",
+        "show_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": true,
+        "transparent_header_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

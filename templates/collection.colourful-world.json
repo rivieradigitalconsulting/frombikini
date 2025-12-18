@@ -1,0 +1,95 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_78XG34": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qmckax": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR COLORFUL WORLD",
+            "heading_tag": "h3"
+          }
+        },
+        "heading_RQ7g6A": {
+          "type": "heading",
+          "settings": {
+            "text": "We are convinced that different colors awaken different beats in you",
+            "heading_tag": "h4"
+          }
+        },
+        "richtext_TCxALV": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p> Every color has meaning and carries a specific energy with it : </p><p>Find  your energy</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qmckax",
+        "heading_RQ7g6A",
+        "richtext_TCxALV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "content_width": "md",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "image": "shopify://shop_images/NVKR-0528.jpg",
+        "image_size": "xs",
+        "allow_transparent_header": false,
+        "show_image": true,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": false,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "hide_product_information": false,
+        "products_per_page": 50,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": false,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_results_count": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_filters_by_default": false
+      }
+    }
+  },
+  "order": [
+    "rich_text_78XG34",
+    "collection-banner",
+    "main"
+  ]
+}

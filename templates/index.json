@@ -1,0 +1,679 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "video_4rDmWi": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/VESTITI.mp4",
+            "mobile_video": "shopify://files/videos/VESTITI.mp4",
+            "allow_sound": false,
+            "subheading": "Back to The Origins",
+            "title": "Timeless Pieces To Wear Your Soul",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "begin your journey",
+            "button_1_link": "shopify://pages/colour-new",
+            "button_1_style": "solid",
+            "button_1_background": "#564747",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "#000000",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(310deg, rgba(NaN, NaN, NaN, 0) 15%, rgba(0, 0, 0, 0.63) 27%, rgba(NaN, NaN, NaN, 0) 35%, rgba(NaN, NaN, NaN, 0) 35%, rgba(NaN, NaN, NaN, 0) 35%, rgba(NaN, NaN, NaN, 0) 35%, rgba(NaN, NaN, NaN, 0) 35%, rgba(NaN, NaN, NaN, 0) 35%, rgba(NaN, NaN, NaN, 0) 35%, rgba(33, 249, 150, 1) 85%)"
+          }
+        }
+      },
+      "block_order": [
+        "video_4rDmWi"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": false,
+        "media_size": "fill",
+        "show_initial_transition": false,
+        "autoplay": false,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "slideshow_kLxbmU": {
+      "type": "slideshow",
+      "blocks": {
+        "image_H8bkLh": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "title": "Slide 1",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_aPqbri": {
+          "type": "image",
+          "settings": {
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2) 0%, rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_9VgDTL": {
+          "type": "image",
+          "settings": {
+            "subheading": "Tell your story",
+            "title": "Image slide",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_H8bkLh",
+        "image_aPqbri",
+        "image_9VgDTL"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "rich_text_Hpibdm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4zJeqK": {
+          "type": "heading",
+          "settings": {
+            "text": "Be Unique",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_GH6ryL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2></h2><h3></h3><p>Every From bikini is a unique combination of color and braids and in each piece there is a Soul waiting to be awakened by the wearer.</p><p>Each of our bikinis is handmade making them truly one of a kind.<br/>As a result of the handmade process each piece is different in the same way each person is different.</p><p>The unique and authentic nature of the bikini is an opportunity for you to choose the one that reflect your essence: the swimwear as expression of your individuality.</p><p><em><strong>In a world where you can be anything, choose to be Yourself</strong></em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4zJeqK",
+        "richtext_GH6ryL"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_FC7gry": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_73Feg7": {
+          "type": "heading",
+          "settings": {
+            "text": "Swimwear with a Purpose",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_QpCyeb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>From Bikini was born not just as a brand but as a vessel for energy, creativity, and connection.<br/>We sell more than a  swimwear, we wanted to create something that could inspire, empower, and accompany you on your own journey.<br/>Handmade with care, every bikini is truly one of a kind, just like the person who wears it</p><p>The unique and authentic nature of the bikini is an opportunity for you to choose the one that reflect your essence. </p><p>The swimwear becomes the expression of your individuality.</p><p><em><strong>In a world where you can be anything choose to be authentically you.</strong></em></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_73Feg7",
+        "richtext_QpCyeb"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "collection_list_T7RbXQ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_zkPYhe": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "all",
+            "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.38.05.png",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "BIKINIS",
+            "button_text": "dive in",
+            "button_link": "",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_qKhmn6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "all-onepieces-1",
+            "image": "shopify://shop_images/F0AD994E-344D-47E5-A187-4B0C3A2620A9_1_105_c.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "ONEPIECES",
+            "button_text": "dive in",
+            "button_link": "",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_AdYP6Y": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "all-out-of-water",
+            "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.33.25.png",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "OUT OF WATER",
+            "button_text": "dive in",
+            "button_link": "",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_zkPYhe",
+        "collection_qKhmn6",
+        "collection_AdYP6Y"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "image_size": "md",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "1",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "featured_collections_Q4Kq3y": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_yQdEXL": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "products_count": 50,
+            "title": "Bali Braids Brazilian",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_yQdEXL"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "media_grid_3w9bEY": {
+      "type": "media-grid",
+      "blocks": {
+        "image_D7RAFV": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/304_-_5mb_-_240dpi-2.jpg",
+            "column_count": "8",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "DIVE IN",
+            "link_url": "shopify://collections/tribal",
+            "link_style": "outline",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_9UWBiR": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/Screenshot_2025-07-04_at_10.24.43.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/tribal",
+            "link_style": "outline",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_4Hiyga": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/Screenshot_2025-06-23_at_17.04.19_1.jpg",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/tribal",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_D7RAFV",
+        "image_9UWBiR",
+        "image_4Hiyga"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "desktop_row_height": 300,
+        "mobile_row_height": 210,
+        "section_width": "sm",
+        "spacing": "sm",
+        "subheading": "",
+        "title": "Tribal Collection",
+        "content": ""
+      }
+    },
+    "media_grid_APNATY": {
+      "type": "media-grid",
+      "blocks": {
+        "image_7J6y7X": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/DSC00109_a7ce4fdc-ace1-401a-af96-7a8b482cd283.jpg",
+            "column_count": "8",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "DIVE IN",
+            "link_url": "",
+            "link_style": "outline",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_TaKjJp": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/tribal",
+            "link_style": "outline",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_PYqjCD": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/tribal",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_7J6y7X",
+        "image_TaKjJp",
+        "image_PYqjCD"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "desktop_row_height": 300,
+        "mobile_row_height": 210,
+        "section_width": "sm",
+        "spacing": "sm",
+        "subheading": "",
+        "title": "Tribal Collection",
+        "content": ""
+      }
+    },
+    "image_with_text_mqJKbN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DrmQK3": {
+          "type": "heading",
+          "settings": {
+            "text": "SHOWROOM",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_BJ4HPx": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our showroom is located in the heart of Milan.</p><p>Via Filippo Turati 3, 20121 MI</p><p><a href=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\" title=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\">OPEN IN MAPS</a></p><p>Book your appointment!</p><p><strong>Email: </strong>frombikini@gmail.com<strong><br/>Tel: </strong>+39 3338019796</p><p></p>"
+          }
+        },
+        "button_KC3ARM": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Discover all our stores",
+            "url": "shopify://pages/from-wherewecome",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_DrmQK3",
+        "richtext_BJ4HPx",
+        "button_KC3ARM"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/IMG_4095.jpg",
+        "mobile_image": "shopify://shop_images/IMG_4095.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-0bb64c7d-0e76-44fd-bd4e-79f6f8d9cdc1",
+        "separate_section_with_border": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.36.27.png",
+        "subheading": "",
+        "title": "Join the FromBikinigirls Community",
+        "content": "<p>Be the first to know about our special treats, new arrivals and exclusive products!</p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#f7f0e1",
+        "overlay_opacity": 0
+      }
+    },
+    "timeline_JDiJH9": {
+      "type": "timeline",
+      "blocks": {
+        "item_QGUKix": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4095.jpg",
+            "mobile_image": "shopify://shop_images/IMG_4095.jpg",
+            "label": "MILAN SHOWROOM",
+            "subheading": "",
+            "title": "SHOWROOM",
+            "content": "<p>Our showroom is located in the heart of Milan:</p><p>Via Filippo Turati 3, 20121 MI (<a href=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\" title=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\">OPEN IN MAPS)</a></p><p>Book your appointment by:</p><p><strong>Email: </strong>frombikini@gmail.com<strong><br/>Phone: </strong>+39 3338019796</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>",
+            "link_text": "DISCOVER ALL OUR STORES",
+            "link_url": "shopify://pages/store-locator",
+            "link_style": "solid",
+            "mobile_text_color": "#ffffff"
+          }
+        },
+        "item_Vcztja": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_4095.jpg",
+            "mobile_image": "shopify://shop_images/IMG_4095.jpg",
+            "label": "POP UP STORE",
+            "subheading": "",
+            "title": "POP UP STORE",
+            "content": "<p>Our Pop Up is located in the heart of Milano:<br/>Via Palermo 21, (ang. Corso Garibaldi), Milano (<a href=\"https://www.google.it/maps/place/Via+Palermo,+21,+20121+Milano+MI/@45.4754263,9.1812266,16z/data=!3m1!4b1!4m6!3m5!1s0x4786c14a515c65db:0x5ab17e7021bef3d3!8m2!3d45.4754226!4d9.1838015!16s%2Fg%2F11c28tv2vq?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" title=\"https://www.google.it/maps/place/Via+Palermo,+21,+20121+Milano+MI/@45.4754263,9.1812266,16z/data=!3m1!4b1!4m6!3m5!1s0x4786c14a515c65db:0x5ab17e7021bef3d3!8m2!3d45.4754226!4d9.1838015!16s%2Fg%2F11c28tv2vq?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D\">OPEN IN MAPS</a>)<br/></p><p>Date:<br/><strong>May 27 - June 30</strong><br/>Time:<br/><strong>10 am - 8 pm</strong></p><p></p><p></p>",
+            "link_text": "DISCOVER ALL OUR STORES",
+            "link_url": "shopify://pages/store-locator",
+            "link_style": "solid",
+            "mobile_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "item_QGUKix",
+        "item_Vcztja"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "item_color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true
+      }
+    },
+    "multi_column_ndcXBR": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_wh8jMW": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-07_at_09.52.42.png",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://pages/colour-new",
+            "link_text": ""
+          }
+        },
+        "image_with_text_LV9JrM": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-07_at_09.51.25.png",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://pages/colour-new",
+            "link_text": ""
+          }
+        },
+        "image_with_text_8w8Gim": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-07_at_09.51.30.png",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://pages/colour-new",
+            "link_text": ""
+          }
+        },
+        "image_with_text_WwPkpB": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-07_at_09.51.37.png",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://pages/colour-new",
+            "link_text": ""
+          }
+        },
+        "image_with_text_VwEUht": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-07_at_09.51.48.png",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://pages/colour-new",
+            "link_text": ""
+          }
+        },
+        "image_with_text_YzWJ8R": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-07_at_09.52.14.png",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://pages/colour-new",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_wh8jMW",
+        "image_with_text_LV9JrM",
+        "image_with_text_8w8Gim",
+        "image_with_text_WwPkpB",
+        "image_with_text_VwEUht",
+        "image_with_text_YzWJ8R"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "Colors' energy",
+        "content": "<p>We believe that different colors awaken different beat within you.  <br/>Every color has its own meaning and and carries a special energy. <br/>It's not a coincidence what you’re drawn to. <br/></p><p><em><strong>Trust your instincts: the color you choose is a message, guiding you to your true energy.</strong></em></p>"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "slideshow_kLxbmU",
+    "rich_text_Hpibdm",
+    "rich_text_FC7gry",
+    "collection_list_T7RbXQ",
+    "featured_collections_Q4Kq3y",
+    "media_grid_3w9bEY",
+    "media_grid_APNATY",
+    "image_with_text_mqJKbN",
+    "newsletter",
+    "timeline_JDiJH9",
+    "multi_column_ndcXBR"
+  ]
+}

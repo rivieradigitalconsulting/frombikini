@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
+        "accordion_rJzwYb": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "FIT AND SIZE",
+            "content": "<p>{{ product.metafields.custom.accordion_fit_and_size | metafield_tag }}</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_mRjN6T": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "COMPOSITION AND CARE",
+            "content": "<p>{{ product.metafields.custom.accordion_composition_and_care | metafield_tag }}</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": "size-chart"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#564747",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_DXaDq8": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "payment_terms",
+        "description",
+        "accordion_rJzwYb",
+        "accordion_mRjN6T",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "pickup_availability_DXaDq8"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "container_size": "lg",
+        "product_info_size": 35,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "text_with_icons_kwmECT": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_8CGKGU": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__15_-removebg-preview_e888f6cc-86fa-401e-8059-5f69577cd2de.png",
+            "icon_width": 52,
+            "mobile_icon_width": 64,
+            "title": "<strong>Hand Made</strong>",
+            "content": "<p>Handmade embodies luxury, offering exclusivity and unmatched quality in a fast-fashion world, with each piece reflecting time, skill, and dedication.</p>"
+          }
+        },
+        "item_yBew9n": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__3_-removebg-preview.png",
+            "icon_width": 48,
+            "mobile_icon_width": 64,
+            "title": "<strong>Locally Made in Italy</strong>",
+            "content": "<p>Italian products showcase exceptional craftsmanship, meticulous detail, and a strong tradition of quality. Buying locally supports artisans, preserves skills, and promotes sustainability.</p>"
+          }
+        },
+        "item_TzK9zx": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__4_-removebg-preview.png",
+            "icon_width": 44,
+            "mobile_icon_width": 64,
+            "title": "<strong>100% Organic Cotton</strong>",
+            "content": "<p>Grown without synthetic chemicals, 100% organic cotton is gentle on the skin and supports a sustainable, ethical supply chain that protects the environment and communities.</p>"
+          }
+        },
+        "item_6jRiTg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Immagine_2025-01-28_114807-removebg-preview.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "<strong>Km0 Production</strong>",
+            "content": "<p>We prioritize local production to reduce environmental impact, support economies, preserve traditional skills, and lower carbon emissions, fostering a stronger producer-consumer connection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_8CGKGU",
+        "item_yBew9n",
+        "item_TzK9zx",
+        "item_6jRiTg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "contact_QARHbD": {
+      "type": "contact",
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Contact",
+        "content": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Related products",
+        "content": ""
+      }
+    },
+    "newsletter_teq4Cc": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0bb64c7d-0e76-44fd-bd4e-79f6f8d9cdc1",
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/1_a995a680-e6ea-41d9-973c-8c1a71545706.jpg",
+        "subheading": "",
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_with_icons_kwmECT",
+    "contact_QARHbD",
+    "related-products",
+    "newsletter_teq4Cc"
+  ]
+}
