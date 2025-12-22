@@ -93,7 +93,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": true,
         "show_separation_border": true,
         "reduce_padding": false,
