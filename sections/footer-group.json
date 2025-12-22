@@ -63,12 +63,20 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_nngV9j": {
+          "type": "text",
+          "settings": {
+            "title": "SIAMO QUI PER TE",
+            "content": "<p><strong>From Bikini</strong> è più di un brand di costumi: è un progetto che unisce energia, creatività e connessione.<br/>Ogni bikini, realizzato a mano, è unico e pensato per esprimere l’essenza e l’individualità di chi lo indossa.<br/>In un mondo che spinge all’omologazione, noi invitiamo a scegliere l’autenticità ed essere davvero se stesse.<br/></p><p>Dubbi? <a href=\"https://www.frombikini.com\" target=\"_blank\" title=\"https://www.frombikini.com\"><strong>Scrivici.</strong></a></p>",
+            "enable_follow_on_shop": true
+          }
+        },
         "links_zp9UqW": {
           "type": "links",
           "settings": {
             "menu": "menu-footer-2",
             "show_menu_title": true,
-            "menu_title": "Info"
+            "menu_title": "ASSISTENZA CLIENTI"
           }
         },
         "links_RNe79Y": {
@@ -76,7 +84,7 @@
           "settings": {
             "menu": "menu-footer-2",
             "show_menu_title": true,
-            "menu_title": "Info"
+            "menu_title": "BRAND"
           }
         },
         "links_eaxPFt": {
@@ -84,7 +92,7 @@
           "settings": {
             "menu": "footer",
             "show_menu_title": true,
-            "menu_title": "Customer care"
+            "menu_title": "AREA LEGALE"
           }
         },
         "links_VTHHPH": {
@@ -95,30 +103,22 @@
             "menu_title": "Legal"
           }
         },
-        "text_nngV9j": {
-          "type": "text",
-          "settings": {
-            "title": "About our store",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
-            "enable_follow_on_shop": true
-          }
-        },
         "newsletter_P73JaL": {
           "type": "newsletter",
           "settings": {
-            "title": "Join the FromBikinigirls Community",
-            "content": "<p>Be the first to know about our special treats, new arrivals and exclusive products!</p>",
+            "title": "CONNETTITI CON L'ENERGIA FROM BIKINI",
+            "content": "<p>Unisciti alla community <strong>Frombikinigirls</strong> e scopri in anteprima novità, arrivi speciali ed esclusive pensate per te.</p>",
             "button_background": "#f7f4f0",
             "button_text_color": "#564747"
           }
         }
       },
       "block_order": [
+        "text_nngV9j",
         "links_zp9UqW",
         "links_RNe79Y",
         "links_eaxPFt",
         "links_VTHHPH",
-        "text_nngV9j",
         "newsletter_P73JaL"
       ],
       "settings": {
