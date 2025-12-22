@@ -74,7 +74,7 @@
         "links_zp9UqW": {
           "type": "links",
           "settings": {
-            "menu": "menu-footer-2",
+            "menu": "footer-test-01-assistenza-clienti",
             "show_menu_title": true,
             "menu_title": "ASSISTENZA CLIENTI"
           }
@@ -82,7 +82,7 @@
         "links_RNe79Y": {
           "type": "links",
           "settings": {
-            "menu": "menu-footer-2",
+            "menu": "footer-test-02-brand",
             "show_menu_title": true,
             "menu_title": "BRAND"
           }
@@ -90,7 +90,7 @@
         "links_eaxPFt": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "footer-test-03-area-legale",
             "show_menu_title": true,
             "menu_title": "AREA LEGALE"
           }
