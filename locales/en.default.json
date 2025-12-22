@@ -587,5 +587,10 @@
       "be1427617666_html": "Added to cart successfully",
       "be719299147_html": "Choose options"
     }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": "Built by <a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\">riviera</a>"
+    }
   }
 }
