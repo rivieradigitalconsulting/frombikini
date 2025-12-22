@@ -122,7 +122,7 @@
         "newsletter_P73JaL"
       ],
       "custom_css": [
-        "p, span {font-size: 13px;}"
+        ".heading .text-subdued p {font-size: 15px;}"
       ],
       "settings": {
         "color_scheme": "scheme-ed946704-f3b4-4b7f-ac55-6b15ba4a5bf6",
