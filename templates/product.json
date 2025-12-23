@@ -241,7 +241,7 @@
           "type": "image_with_text",
           "settings": {
             "image": "shopify://shop_images/Progetto_senza_titolo_7.png",
-            "title": "<strong>Earth Power</strong>",
+            "title": "{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}",
             "heading_tag": "h4",
             "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura che definiscono stile, emozione e riconoscibilità. Ogni palette è studiata per valorizzare le forme e trasmettere l’essenza autentica di From Bikini, trasformando il colore in una vera firma di brand.</p>",
             "link_url": "shopify://products/bahia-onepiece-black",
