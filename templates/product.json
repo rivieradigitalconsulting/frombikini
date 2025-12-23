@@ -313,34 +313,10 @@
             "link_url": "",
             "link_style": "solid"
           }
-        },
-        "image_with_text_PEQtUr": {
-          "type": "image_with_text",
-          "settings": {
-            "subheading": "",
-            "title": "#2",
-            "content": "<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.</p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "solid"
-          }
-        },
-        "image_with_text_xfGbmY": {
-          "type": "image_with_text",
-          "settings": {
-            "subheading": "",
-            "title": "#3",
-            "content": "<p>Share information about your product with your customers. Describe a product, and share info about your production process...</p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "solid"
-          }
         }
       },
       "block_order": [
-        "image_with_text_pgqQae",
-        "image_with_text_PEQtUr",
-        "image_with_text_xfGbmY"
+        "image_with_text_pgqQae"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
