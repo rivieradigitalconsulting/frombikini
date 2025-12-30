@@ -214,7 +214,7 @@
         "enable_media_autoplay": true,
         "enable_video_looping": true,
         "enable_image_zoom": true,
-        "max_image_zoom_level": 3
+        "max_image_zoom_level": 4
       }
     },
     "related-products": {
