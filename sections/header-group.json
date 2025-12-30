@@ -87,7 +87,7 @@
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "enable_sticky": false,
-        "hide_on_scroll": true,
+        "hide_on_scroll": false,
         "show_separation_border": true,
         "reduce_padding": false,
         "logo": "shopify://shop_images/from_bikini_brown.svg",
