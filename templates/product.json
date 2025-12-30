@@ -29,6 +29,12 @@
             "show_taxes_notice": false
           }
         },
+        "text_3E8biP": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}</strong><strong>: </strong>{{ product.metafields.pdp.fb_color.value.fb_color_description.value }}</p>"
+          }
+        },
         "separator_NtFirz": {
           "type": "separator",
           "disabled": true,
@@ -177,6 +183,7 @@
         "vendor",
         "title",
         "price",
+        "text_3E8biP",
         "separator_NtFirz",
         "variant_picker",
         "quantity_selector",
