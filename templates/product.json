@@ -235,7 +235,7 @@
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "container_size": "lg",
         "product_info_size": 45,
-        "show_sticky_add_to_cart": false,
+        "show_sticky_add_to_cart": true,
         "center_basic_info": false,
         "desktop_media_layout": "grid_2x_highlighted",
         "desktop_media_grid_gap": 2,
