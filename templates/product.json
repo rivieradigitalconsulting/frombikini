@@ -197,7 +197,8 @@
       "custom_css": [
         ".feature-badge p {font-size: 12px !important;}",
         ".accordion__toggle span {font-size: 16px; font-weight: 700;}",
-        ".feature-badge-list {padding-bottom: 50px;}"
+        ".feature-badge-list {padding-bottom: 50px;}",
+        ".product-title {text-transform: uppercase;}"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
