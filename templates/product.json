@@ -317,7 +317,8 @@
         "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}",
         ".h4 {font-size: 16px; font-weight: bold;}",
         "p {font-size: 13px;}",
-        "a {font-size: 13px; font-weight: 700;}"
+        "a {font-size: 13px; font-weight: 700;}",
+        ".section-spacing {padding-top: 50px;}"
       ],
       "name": "t:sections.multi_column.presets.multi_column.name",
       "settings": {
