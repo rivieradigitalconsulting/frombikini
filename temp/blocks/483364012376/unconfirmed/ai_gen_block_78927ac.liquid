@@ -1,6 +1,1487 @@
+{% doc %}
+  @prompt
+    Ho bisogno di una sezione che mi faccia da social wall e contemporaneamente da shop the look. Questa sezione deve avere un titolo, e un sottotitolo, devo avere la possibilità di settare dimensione del titolo e del sottotiolo sia su desktop che su mobile. Poi, sia su desktop o mobile devo poter scegliere se le immagini si devono disporre a griglia, o a carosello di scorrimento, magari è possibile che a mobile sia un carosello e desktop una griglia. Quando griglia devo poter decidere quante righe e colonne, sempre divise per desktop e mobile. Come margini laterali prendiamo quelli del tema. Margini sopra e sotto della sezione devo poterli scegliere. Ogni blocco (max 10) deve avere la possibilità di un testo sotto o dentro immagine, devo scegliere, devo scegliere colore del testo e possibilità di un overlay sull'immagine per risaltare il testo, ovviamente colore overlay e trasparenza. Poi passiamo allo shop the look. Posizionare un punto, al max due per blocco in cui taggare per ogni punto, di cui devo scegliere colore un prodotto. Al click sul puntino si fa vedere immagine del prodotto, titolo di prodotto, prezzo e prezzo scontato se il compare at price è valorizzato.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-social-wall-{{ ai_gen_id }} {
+    width: 100%;
+    padding-top: {{ block.settings.margin_top }}px;
+    padding-bottom: {{ block.settings.margin_bottom }}px;
+  }
+
+  .ai-social-wall-container-{{ ai_gen_id }} {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding-left: var(--spacing-gutter);
+    padding-right: var(--spacing-gutter);
+  }
+
+  .ai-social-wall-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-social-wall-title-{{ ai_gen_id }} {
+    margin: 0 0 16px;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-social-wall-subtitle-{{ ai_gen_id }} {
+    margin: 0;
+    color: {{ block.settings.subtitle_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-social-wall-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_desktop }}px;
+    }
+
+    .ai-social-wall-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_desktop }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-social-wall-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile }}px;
+    }
+
+    .ai-social-wall-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_mobile }}px;
+    }
+  }
+
+  .ai-social-wall-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-social-wall-grid-{{ ai_gen_id }} {
+      {% if block.settings.layout_desktop == 'grid' %}
+        grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+      {% else %}
+        display: none;
+      {% endif %}
+    }
+
+    .ai-social-wall-carousel-{{ ai_gen_id }} {
+      {% if block.settings.layout_desktop == 'carousel' %}
+        display: block;
+      {% else %}
+        display: none;
+      {% endif %}
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-social-wall-grid-{{ ai_gen_id }} {
+      {% if block.settings.layout_mobile == 'grid' %}
+        grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+      {% else %}
+        display: none;
+      {% endif %}
+    }
+
+    .ai-social-wall-carousel-{{ ai_gen_id }} {
+      {% if block.settings.layout_mobile == 'carousel' %}
+        display: block;
+      {% else %}
+        display: none;
+      {% endif %}
+    }
+  }
+
+  .ai-social-wall-carousel-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-social-wall-carousel-track-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.grid_gap }}px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+  }
+
+  .ai-social-wall-carousel-track-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-social-wall-carousel-item-{{ ai_gen_id }} {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-social-wall-carousel-item-{{ ai_gen_id }} {
+      flex: 0 0 calc((100% - ({{ block.settings.grid_gap }}px * 2)) / 3);
+    }
+  }
+
+  .ai-social-wall-item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .ai-social-wall-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+  }
+
+  .ai-social-wall-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-social-wall-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ block.settings.overlay_color }};
+    opacity: {{ block.settings.overlay_opacity }};
+    pointer-events: none;
+  }
+
+  .ai-social-wall-text-{{ ai_gen_id }} {
+    position: absolute;
+    padding: 16px;
+    color: {{ block.settings.text_color }};
+    z-index: 2;
+  }
+
+  .ai-social-wall-text-inside-{{ ai_gen_id }} {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .ai-social-wall-text-outside-{{ ai_gen_id }} {
+    position: relative;
+    padding: 12px 0;
+  }
+
+  .ai-social-wall-hotspot-{{ ai_gen_id }} {
+    position: absolute;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+  }
+
+  .ai-social-wall-hotspot-button-{{ ai_gen_id }} {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: {{ block.settings.hotspot_color }};
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-social-wall-hotspot-button-{{ ai_gen_id }}:hover {
+    transform: scale(1.1);
+  }
+
+  .ai-social-wall-hotspot-button-{{ ai_gen_id }}::before {
+    content: '+';
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .ai-social-wall-popup-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+  }
+
+  .ai-social-wall-popup-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ai-social-wall-popup-content-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+  }
+
+  .ai-social-wall-popup-image-{{ ai_gen_id }} {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  .ai-social-wall-popup-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .ai-social-wall-popup-info-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-social-wall-popup-title-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: #1c1c1c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .ai-social-wall-popup-price-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: #564747;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .ai-social-wall-popup-compare-price-{{ ai_gen_id }} {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .ai-social-wall-popup-close-{{ ai_gen_id }} {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: #1c1c1c;
+    opacity: 0.6;
+    line-height: 1;
+  }
+
+  .ai-social-wall-popup-close-{{ ai_gen_id }}:hover {
+    opacity: 1;
+  }
+
+  .ai-social-wall-empty-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+  }
+{% endstyle %}
+
+<social-wall-{{ ai_gen_id }} class="ai-social-wall-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-social-wall-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.subtitle != blank %}
+      <div class="ai-social-wall-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-social-wall-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <div class="ai-social-wall-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% assign has_items = false %}
+    {% for i in (1..10) %}
+      {% assign image_key = 'image_' | append: i %}
+      {% if block.settings[image_key] != blank %}
+        {% assign has_items = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if has_items %}
+      <div class="ai-social-wall-grid-{{ ai_gen_id }}">
+        {% for i in (1..10) %}
+          {% assign image_key = 'image_' | append: i %}
+          {% assign text_key = 'text_' | append: i %}
+          {% assign product_1_key = 'product_1_' | append: i %}
+          {% assign product_2_key = 'product_2_' | append: i %}
+          {% assign hotspot_1_x_key = 'hotspot_1_x_' | append: i %}
+          {% assign hotspot_1_y_key = 'hotspot_1_y_' | append: i %}
+          {% assign hotspot_2_x_key = 'hotspot_2_x_' | append: i %}
+          {% assign hotspot_2_y_key = 'hotspot_2_y_' | append: i %}
+
+          {% if block.settings[image_key] != blank %}
+            <div class="ai-social-wall-item-{{ ai_gen_id }}" data-item="{{ i }}">
+              <div class="ai-social-wall-image-wrapper-{{ ai_gen_id }}">
+                <img
+                  src="{{ block.settings[image_key] | image_url: width: 800 }}"
+                  alt="{{ block.settings[image_key].alt | escape }}"
+                  class="ai-social-wall-image-{{ ai_gen_id }}"
+                  loading="lazy"
+                  width="800"
+                  height="800"
+                >
+                {% if block.settings.text_position == 'inside' %}
+                  <div class="ai-social-wall-overlay-{{ ai_gen_id }}"></div>
+                {% endif %}
+
+                {% if block.settings[product_1_key] != blank %}
+                  <div
+                    class="ai-social-wall-hotspot-{{ ai_gen_id }}"
+                    style="left: {{ block.settings[hotspot_1_x_key] }}%; top: {{ block.settings[hotspot_1_y_key] }}%;"
+                    data-hotspot="1"
+                    data-item="{{ i }}"
+                  >
+                    <button class="ai-social-wall-hotspot-button-{{ ai_gen_id }}" aria-label="Visualizza prodotto"></button>
+                    <div class="ai-social-wall-popup-{{ ai_gen_id }}">
+                      <button class="ai-social-wall-popup-close-{{ ai_gen_id }}" aria-label="Chiudi">×</button>
+                      <div class="ai-social-wall-popup-content-{{ ai_gen_id }}">
+                        <div class="ai-social-wall-popup-image-{{ ai_gen_id }}">
+                          {% if block.settings[product_1_key].featured_image %}
+                            <img
+                              src="{{ block.settings[product_1_key].featured_image | image_url: width: 120 }}"
+                              alt="{{ block.settings[product_1_key].featured_image.alt | escape }}"
+                              loading="lazy"
+                            >
+                          {% endif %}
+                        </div>
+                        <div class="ai-social-wall-popup-info-{{ ai_gen_id }}">
+                          <h3 class="ai-social-wall-popup-title-{{ ai_gen_id }}">
+                            {{ block.settings[product_1_key].title }}
+                          </h3>
+                          <div class="ai-social-wall-popup-price-{{ ai_gen_id }}">
+                            {% if block.settings[product_1_key].compare_at_price > block.settings[product_1_key].price %}
+                              <span class="ai-social-wall-popup-compare-price-{{ ai_gen_id }}">
+                                {{ block.settings[product_1_key].compare_at_price | money }}
+                              </span>
+                            {% endif %}
+                            <span>{{ block.settings[product_1_key].price | money }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+
+                {% if block.settings[product_2_key] != blank %}
+                  <div
+                    class="ai-social-wall-hotspot-{{ ai_gen_id }}"
+                    style="left: {{ block.settings[hotspot_2_x_key] }}%; top: {{ block.settings[hotspot_2_y_key] }}%;"
+                    data-hotspot="2"
+                    data-item="{{ i }}"
+                  >
+                    <button class="ai-social-wall-hotspot-button-{{ ai_gen_id }}" aria-label="Visualizza prodotto"></button>
+                    <div class="ai-social-wall-popup-{{ ai_gen_id }}">
+                      <button class="ai-social-wall-popup-close-{{ ai_gen_id }}" aria-label="Chiudi">×</button>
+                      <div class="ai-social-wall-popup-content-{{ ai_gen_id }}">
+                        <div class="ai-social-wall-popup-image-{{ ai_gen_id }}">
+                          {% if block.settings[product_2_key].featured_image %}
+                            <img
+                              src="{{ block.settings[product_2_key].featured_image | image_url: width: 120 }}"
+                              alt="{{ block.settings[product_2_key].featured_image.alt | escape }}"
+                              loading="lazy"
+                            >
+                          {% endif %}
+                        </div>
+                        <div class="ai-social-wall-popup-info-{{ ai_gen_id }}">
+                          <h3 class="ai-social-wall-popup-title-{{ ai_gen_id }}">
+                            {{ block.settings[product_2_key].title }}
+                          </h3>
+                          <div class="ai-social-wall-popup-price-{{ ai_gen_id }}">
+                            {% if block.settings[product_2_key].compare_at_price > block.settings[product_2_key].price %}
+                              <span class="ai-social-wall-popup-compare-price-{{ ai_gen_id }}">
+                                {{ block.settings[product_2_key].compare_at_price | money }}
+                              </span>
+                            {% endif %}
+                            <span>{{ block.settings[product_2_key].price | money }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+
+                {% if block.settings.text_position == 'inside' and block.settings[text_key] != blank %}
+                  <div class="ai-social-wall-text-{{ ai_gen_id }} ai-social-wall-text-inside-{{ ai_gen_id }}">
+                    {{ block.settings[text_key] }}
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if block.settings.text_position == 'outside' and block.settings[text_key] != blank %}
+                <div class="ai-social-wall-text-{{ ai_gen_id }} ai-social-wall-text-outside-{{ ai_gen_id }}">
+                  {{ block.settings[text_key] }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="ai-social-wall-carousel-{{ ai_gen_id }}">
+        <div class="ai-social-wall-carousel-track-{{ ai_gen_id }}">
+          {% for i in (1..10) %}
+            {% assign image_key = 'image_' | append: i %}
+            {% assign text_key = 'text_' | append: i %}
+            {% assign product_1_key = 'product_1_' | append: i %}
+            {% assign product_2_key = 'product_2_' | append: i %}
+            {% assign hotspot_1_x_key = 'hotspot_1_x_' | append: i %}
+            {% assign hotspot_1_y_key = 'hotspot_1_y_' | append: i %}
+            {% assign hotspot_2_x_key = 'hotspot_2_x_' | append: i %}
+            {% assign hotspot_2_y_key = 'hotspot_2_y_' | append: i %}
+
+            {% if block.settings[image_key] != blank %}
+              <div class="ai-social-wall-carousel-item-{{ ai_gen_id }}">
+                <div class="ai-social-wall-item-{{ ai_gen_id }}" data-item="{{ i }}">
+                  <div class="ai-social-wall-image-wrapper-{{ ai_gen_id }}">
+                    <img
+                      src="{{ block.settings[image_key] | image_url: width: 800 }}"
+                      alt="{{ block.settings[image_key].alt | escape }}"
+                      class="ai-social-wall-image-{{ ai_gen_id }}"
+                      loading="lazy"
+                      width="800"
+                      height="800"
+                    >
+                    {% if block.settings.text_position == 'inside' %}
+                      <div class="ai-social-wall-overlay-{{ ai_gen_id }}"></div>
+                    {% endif %}
+
+                    {% if block.settings[product_1_key] != blank %}
+                      <div
+                        class="ai-social-wall-hotspot-{{ ai_gen_id }}"
+                        style="left: {{ block.settings[hotspot_1_x_key] }}%; top: {{ block.settings[hotspot_1_y_key] }}%;"
+                        data-hotspot="1"
+                        data-item="{{ i }}"
+                      >
+                        <button class="ai-social-wall-hotspot-button-{{ ai_gen_id }}" aria-label="Visualizza prodotto"></button>
+                        <div class="ai-social-wall-popup-{{ ai_gen_id }}">
+                          <button class="ai-social-wall-popup-close-{{ ai_gen_id }}" aria-label="Chiudi">×</button>
+                          <div class="ai-social-wall-popup-content-{{ ai_gen_id }}">
+                            <div class="ai-social-wall-popup-image-{{ ai_gen_id }}">
+                              {% if block.settings[product_1_key].featured_image %}
+                                <img
+                                  src="{{ block.settings[product_1_key].featured_image | image_url: width: 120 }}"
+                                  alt="{{ block.settings[product_1_key].featured_image.alt | escape }}"
+                                  loading="lazy"
+                                >
+                              {% endif %}
+                            </div>
+                            <div class="ai-social-wall-popup-info-{{ ai_gen_id }}">
+                              <h3 class="ai-social-wall-popup-title-{{ ai_gen_id }}">
+                                {{ block.settings[product_1_key].title }}
+                              </h3>
+                              <div class="ai-social-wall-popup-price-{{ ai_gen_id }}">
+                                {% if block.settings[product_1_key].compare_at_price > block.settings[product_1_key].price %}
+                                  <span class="ai-social-wall-popup-compare-price-{{ ai_gen_id }}">
+                                    {{ block.settings[product_1_key].compare_at_price | money }}
+                                  </span>
+                                {% endif %}
+                                <span>{{ block.settings[product_1_key].price | money }}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+
+                    {% if block.settings[product_2_key] != blank %}
+                      <div
+                        class="ai-social-wall-hotspot-{{ ai_gen_id }}"
+                        style="left: {{ block.settings[hotspot_2_x_key] }}%; top: {{ block.settings[hotspot_2_y_key] }}%;"
+                        data-hotspot="2"
+                        data-item="{{ i }}"
+                      >
+                        <button class="ai-social-wall-hotspot-button-{{ ai_gen_id }}" aria-label="Visualizza prodotto"></button>
+                        <div class="ai-social-wall-popup-{{ ai_gen_id }}">
+                          <button class="ai-social-wall-popup-close-{{ ai_gen_id }}" aria-label="Chiudi">×</button>
+                          <div class="ai-social-wall-popup-content-{{ ai_gen_id }}">
+                            <div class="ai-social-wall-popup-image-{{ ai_gen_id }}">
+                              {% if block.settings[product_2_key].featured_image %}
+                                <img
+                                  src="{{ block.settings[product_2_key].featured_image | image_url: width: 120 }}"
+                                  alt="{{ block.settings[product_2_key].featured_image.alt | escape }}"
+                                  loading="lazy"
+                                >
+                              {% endif %}
+                            </div>
+                            <div class="ai-social-wall-popup-info-{{ ai_gen_id }}">
+                              <h3 class="ai-social-wall-popup-title-{{ ai_gen_id }}">
+                                {{ block.settings[product_2_key].title }}
+                              </h3>
+                              <div class="ai-social-wall-popup-price-{{ ai_gen_id }}">
+                                {% if block.settings[product_2_key].compare_at_price > block.settings[product_2_key].price %}
+                                  <span class="ai-social-wall-popup-compare-price-{{ ai_gen_id }}">
+                                    {{ block.settings[product_2_key].compare_at_price | money }}
+                                  </span>
+                                {% endif %}
+                                <span>{{ block.settings[product_2_key].price | money }}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+
+                    {% if block.settings.text_position == 'inside' and block.settings[text_key] != blank %}
+                      <div class="ai-social-wall-text-{{ ai_gen_id }} ai-social-wall-text-inside-{{ ai_gen_id }}">
+                        {{ block.settings[text_key] }}
+                      </div>
+                    {% endif %}
+                  </div>
+
+                  {% if block.settings.text_position == 'outside' and block.settings[text_key] != blank %}
+                    <div class="ai-social-wall-text-{{ ai_gen_id }} ai-social-wall-text-outside-{{ ai_gen_id }}">
+                      {{ block.settings[text_key] }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <div class="ai-social-wall-empty-{{ ai_gen_id }}">
+        <p>Aggiungi immagini per iniziare a creare la tua social wall</p>
+      </div>
+    {% endif %}
+  </div>
+</social-wall-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class SocialWall{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.activePopup = null;
+      }
+
+      connectedCallback() {
+        this.setupHotspots();
+        this.setupClickOutside();
+      }
+
+      setupHotspots() {
+        const hotspots = this.querySelectorAll('.ai-social-wall-hotspot-{{ ai_gen_id }}');
+        
+        hotspots.forEach((hotspot) => {
+          const button = hotspot.querySelector('.ai-social-wall-hotspot-button-{{ ai_gen_id }}');
+          const popup = hotspot.querySelector('.ai-social-wall-popup-{{ ai_gen_id }}');
+          const closeBtn = popup.querySelector('.ai-social-wall-popup-close-{{ ai_gen_id }}');
+
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            
+            if (this.activePopup && this.activePopup !== popup) {
+              this.activePopup.classList.remove('active');
+            }
+
+            const isActive = popup.classList.contains('active');
+            popup.classList.toggle('active');
+            this.activePopup = isActive ? null : popup;
+          });
+
+          closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            popup.classList.remove('active');
+            this.activePopup = null;
+          });
+        });
+      }
+
+      setupClickOutside() {
+        document.addEventListener('click', (e) => {
+          if (this.activePopup && !e.target.closest('.ai-social-wall-hotspot-{{ ai_gen_id }}')) {
+            this.activePopup.classList.remove('active');
+            this.activePopup = null;
+          }
+        });
+      }
+    }
+
+    customElements.define('social-wall-{{ ai_gen_id }}', SocialWall{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Social wall shop the look",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Intestazione"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "Shop the look"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sottotitolo",
+      "default": "Scopri i nostri prodotti preferiti"
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "min": 16,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione titolo desktop",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione titolo mobile",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione sottotitolo desktop",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione sottotitolo mobile",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Colore titolo",
+      "default": "#1c1c1c"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Colore sottotitolo",
+      "default": "#564747"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout_desktop",
+      "label": "Layout desktop",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Griglia"
+        },
+        {
+          "value": "carousel",
+          "label": "Carosello"
+        }
+      ],
+      "default": "grid"
+    },
+    {
+      "type": "select",
+      "id": "layout_mobile",
+      "label": "Layout mobile",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Griglia"
+        },
+        {
+          "value": "carousel",
+          "label": "Carosello"
+        }
+      ],
+      "default": "carousel"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "label": "Colonne desktop",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Colonne mobile",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 4,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Spazio tra elementi",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margine superiore",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margine inferiore",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Testo immagini"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Posizione testo",
+      "options": [
+        {
+          "value": "inside",
+          "label": "Dentro immagine"
+        },
+        {
+          "value": "outside",
+          "label": "Sotto immagine"
+        }
+      ],
+      "default": "inside"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Colore testo",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Colore overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "label": "Opacità overlay",
+      "default": 0.3
+    },
+    {
+      "type": "header",
+      "content": "Hotspot prodotti"
+    },
+    {
+      "type": "color",
+      "id": "hotspot_color",
+      "label": "Colore hotspot",
+      "default": "#d9c5ab"
+    },
+    {
+      "type": "header",
+      "content": "Immagine 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_1",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_1",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_1",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_1",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_1",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_1",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_2",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_2",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_2",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_2",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_2",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_2",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_3",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_3",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_3",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_3",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_3",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_3",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_4",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_4",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_4",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_4",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_4",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_4",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_4",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_5",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_5",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_5",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_5",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_5",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_5",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_5",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_6",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_6",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_6",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_6",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_6",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_6",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_6",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_7",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_7",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_7",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_7",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_7",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_7",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_7",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_8",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_8",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_8",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_8",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_8",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_8",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_8",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_9",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_9",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_9",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_9",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_9",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_9",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_9",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_9",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Immagine 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_10",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "text_10",
+      "label": "Testo"
+    },
+    {
+      "type": "product",
+      "id": "product_1_10",
+      "label": "Prodotto hotspot 1"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_x_10",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "hotspot_1_y_10",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 1",
+      "default": 30
+    },
+    {
+      "type": "product",
+      "id": "product_2_10",
+      "label": "Prodotto hotspot 2"
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_x_10",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione X hotspot 2",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "hotspot_2_y_10",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posizione Y hotspot 2",
+      "default": 70
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social wall shop the look"
+    }
+  ]
+}
 {% endschema %}
