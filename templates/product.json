@@ -409,8 +409,8 @@
         "tab_RU4Akz": {
           "type": "tab",
           "settings": {
-            "title": "Tab",
-            "content": "<p>Come posso tracciare il mio ordine?</p>",
+            "title": "Come posso tracciare il mio ordine?",
+            "content": "",
             "page": "",
             "open_on_mobile": false
           }
