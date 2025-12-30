@@ -171,7 +171,7 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Metodi di pagamento",
-            "content": "<p>CARTA DI CREDITO</p><p>PAYPAL</p><p>SCALAPAY</p><p>WALLET DIGITALI (Apple Pay, Google Pay)</p><p>Anna Virgili garantisce la massima sicurezza per tutti i tuoi acquisti.</p>",
+            "content": "<ul><li>Carta di credito</li><li><strong>Paypal</strong></li><li>SCALAPAY</li><li>WALLET DIGITALI (Apple Pay, Google Pay)</li></ul><p>Anna Virgili garantisce la massima sicurezza per tutti i tuoi acquisti.</p>",
             "liquid": "",
             "page": ""
           }
