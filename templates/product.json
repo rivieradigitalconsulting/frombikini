@@ -407,8 +407,8 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
-        "subheading": "Subheading",
-        "title": "Heading",
+        "subheading": "",
+        "title": "FAQ",
         "text_alignment": "center"
       }
     },
