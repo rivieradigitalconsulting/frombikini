@@ -396,12 +396,32 @@
             "page": "",
             "open_on_mobile": false
           }
+        },
+        "tab_Q66BX9": {
+          "type": "tab",
+          "settings": {
+            "title": "Ho bisogno di un account per effettuare un acquisto?",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_RU4Akz": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
         }
       },
       "block_order": [
         "tab_QPCQyd",
         "tab_ekQfjc",
-        "tab_y7RxBJ"
+        "tab_y7RxBJ",
+        "tab_Q66BX9",
+        "tab_RU4Akz"
       ],
       "custom_css": [
         "h2 {font-size: 16px; font-weight: bold;}",
