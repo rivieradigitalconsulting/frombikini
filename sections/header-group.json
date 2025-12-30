@@ -17,19 +17,12 @@
         "message_YGpWWa": {
           "type": "message",
           "settings": {
-            "text": "10% DI SCONTO CON ISCRIZIONE ALLA NEWSLETTER"
-          }
-        },
-        "message_pUyJer": {
-          "type": "message",
-          "settings": {
-            "text": "SPEDIZIONE EXPRESS GRATUITA SU TUTTI GLI ORDINI"
+            "text": "Spedizione Express Gratuita sopra € 100"
           }
         }
       },
       "block_order": [
-        "message_YGpWWa",
-        "message_pUyJer"
+        "message_YGpWWa"
       ],
       "custom_css": [
         ".prose {font-family: \"Montserrat\", sans-serif !important;}"
