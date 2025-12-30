@@ -32,7 +32,7 @@
         "message_pUyJer"
       ],
       "custom_css": [
-        ".announcement-bar__carousel {font-family: \"Montserrat\", sans-serif !important;}"
+        ".prose {font-family: \"Montserrat\", sans-serif !important;}"
       ],
       "settings": {
         "color_scheme": "scheme-ed946704-f3b4-4b7f-ac55-6b15ba4a5bf6",
