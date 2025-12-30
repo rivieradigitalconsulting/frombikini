@@ -507,6 +507,9 @@
       "block_order": [
         "ai_gen_block_89fb493_6McV7F"
       ],
+      "custom_css": [
+        ".ai-social-wall-subtitle-acu1mvfp4n0xpbedplaigenblock89fb4936mcv7f {font-size: 13px;}"
+      ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
