@@ -354,7 +354,7 @@
         "image_with_text_pgqQae"
       ],
       "custom_css": [
-        "images-with-text-scroll {padding-top: 60px; background-color: #F9F4F0;}"
+        "images-with-text-scroll {padding-top: 60px; background-color: #f9f4f0;}"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
@@ -365,6 +365,51 @@
         "heading_tag": "h3",
         "overlay_color": "#000000",
         "overlay_opacity": 0
+      }
+    },
+    "tabs_FBR3be": {
+      "type": "tabs",
+      "blocks": {
+        "tab_QPCQyd": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 1",
+            "content": "<p>Use this text to share information about your brand with your customers.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_ekQfjc": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_y7RxBJ": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_QPCQyd",
+        "tab_ekQfjc",
+        "tab_y7RxBJ"
+      ],
+      "name": "t:sections.tabs.presets.tab.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "Subheading",
+        "title": "Heading",
+        "text_alignment": "center"
       }
     },
     "logo_list_CXzcbr": {
@@ -591,6 +636,7 @@
     "related-products",
     "multi_column_hPeFAh",
     "images_with_text_scroll_VUFB86",
+    "tabs_FBR3be",
     "logo_list_CXzcbr",
     "video_bkcdDw",
     "images_with_text_scroll_YM4EPa",
