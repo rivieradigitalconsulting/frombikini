@@ -403,9 +403,14 @@
         "tab_ekQfjc",
         "tab_y7RxBJ"
       ],
+      "custom_css": [
+        "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}",
+        ".section-spacing {padding-top: 50px;}",
+        ".section-header {justify-self: left; margin-bottom: -100px;}"
+      ],
       "name": "t:sections.tabs.presets.tab.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "subheading": "",
         "title": "FAQ",
