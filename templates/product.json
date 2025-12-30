@@ -354,7 +354,7 @@
         "image_with_text_pgqQae"
       ],
       "custom_css": [
-        "images-with-text-scroll {padding-top: 60px; background-color: white}"
+        "images-with-text-scroll {padding-top: 60px; background-color: #F9F4F0;}"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
