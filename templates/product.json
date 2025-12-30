@@ -410,7 +410,7 @@
           "type": "tab",
           "settings": {
             "title": "Come posso tracciare il mio ordine?",
-            "content": "",
+            "content": "<p>Esempio di testo.</p>",
             "page": "",
             "open_on_mobile": false
           }
@@ -426,7 +426,7 @@
       "custom_css": [
         "h2 {font-size: 16px; font-weight: bold;}",
         ".section-header {justify-self: left; margin-bottom: -20px; padding-top: 50px;}",
-        "span {font-size: 16px; font-weight: bold;}"
+        "span,button {font-size: 16px; font-weight: bold;}"
       ],
       "name": "t:sections.tabs.presets.tab.name",
       "settings": {
@@ -435,6 +435,83 @@
         "subheading": "",
         "title": "FAQ",
         "text_alignment": "center"
+      }
+    },
+    "1767117147215cebba": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_89fb493_6McV7F": {
+          "type": "ai_gen_block_89fb493",
+          "settings": {
+            "title": "SOCIAL WALL",
+            "title_font": "cormorant_n7",
+            "subtitle": "Scopri i nostri contenuti",
+            "text_alignment": "left",
+            "title_size_desktop": 16,
+            "title_size_mobile": 16,
+            "subtitle_size_desktop": 14,
+            "subtitle_size_mobile": 14,
+            "title_subtitle_spacing": 4,
+            "header_spacing": 20,
+            "title_color": "#564747",
+            "subtitle_color": "#564747",
+            "background_color": "#f7f4f0",
+            "layout_desktop": "grid",
+            "layout_mobile": "carousel",
+            "columns_desktop": 3,
+            "columns_mobile": 2,
+            "grid_gap": 4,
+            "row_gap_desktop": 32,
+            "row_gap_mobile": 16,
+            "margin_top": 40,
+            "margin_bottom": 40,
+            "image_border_radius": 0,
+            "image_ratio_desktop": "1/1",
+            "image_ratio_mobile": "3/4",
+            "text_position": "outside",
+            "text_font_size": 13,
+            "text_spacing": 16,
+            "text_color": "#564747",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.3,
+            "image_1": "shopify://shop_images/SnapInsta.to_607250547_18557896645029498_1566483050812776286_n.jpg",
+            "text_1": "@influencer",
+            "link_1": "",
+            "image_2": "shopify://shop_images/SnapInsta.to_598240516_18437621956106140_6753183552065016133_n.jpg",
+            "text_2": "@influencer",
+            "link_2": "",
+            "image_3": "shopify://shop_images/SnapInsta.to_587290234_18549650281065374_4387418007218768395_n.jpg",
+            "text_3": "@influencer",
+            "link_3": "",
+            "image_4": "shopify://shop_images/SnapInsta.to_604546813_18439130344106140_7909380786788198998_n.jpg",
+            "text_4": "@influencer",
+            "link_4": "",
+            "image_5": "shopify://shop_images/SnapInsta.to_598240516_18437621956106140_6753183552065016133_n.jpg",
+            "text_5": "@influencer",
+            "link_5": "",
+            "image_6": "shopify://shop_images/SnapInsta.to_607250547_18557896645029498_1566483050812776286_n.jpg",
+            "text_6": "@influencer",
+            "link_6": "",
+            "text_7": "",
+            "link_7": "",
+            "text_8": "",
+            "link_8": "",
+            "text_9": "",
+            "link_9": "",
+            "text_10": "",
+            "link_10": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_89fb493_6McV7F"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
       }
     },
     "logo_list_CXzcbr": {
@@ -662,6 +739,7 @@
     "multi_column_hPeFAh",
     "images_with_text_scroll_VUFB86",
     "tabs_FBR3be",
+    "1767117147215cebba",
     "logo_list_CXzcbr",
     "video_bkcdDw",
     "images_with_text_scroll_YM4EPa",
