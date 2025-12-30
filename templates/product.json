@@ -251,7 +251,7 @@
       "custom_css": [
         "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}",
         ".section-spacing {padding-top: 50px;}",
-        ".section-header {justify-self: left; margin-bottom: -1000px;}"
+        ".section-header {justify-self: left; margin-bottom: -100px;}"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
