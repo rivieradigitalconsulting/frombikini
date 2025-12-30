@@ -376,7 +376,7 @@
             "title": "Tab 1",
             "content": "<p>Use this text to share information about your brand with your customers.</p>",
             "page": "",
-            "open_on_mobile": false
+            "open_on_mobile": true
           }
         },
         "tab_ekQfjc": {
