@@ -253,7 +253,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 100,
-            "height_mobile": 0,
+            "height_mobile": 20,
             "background_color": "#f9f4f0"
           },
           "blocks": {}
@@ -441,6 +441,7 @@
       "blocks": {
         "tab_QPCQyd": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Ho bisogno di un account per effettuare un acquisto?",
             "content": "<p>Use this text to share information about your brand with your customers.</p>",
@@ -450,6 +451,7 @@
         },
         "tab_ekQfjc": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Ho bisogno di un account per effettuare un acquisto?",
             "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
@@ -459,6 +461,7 @@
         },
         "tab_y7RxBJ": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Ho bisogno di un account per effettuare un acquisto?",
             "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
