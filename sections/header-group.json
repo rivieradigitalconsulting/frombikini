@@ -84,6 +84,9 @@
         "mega_menu_YVVHbE",
         "mega_menu_PFG96K"
       ],
+      "custom_css": [
+        "span {font-size: 15px;}"
+      ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "enable_sticky": true,
