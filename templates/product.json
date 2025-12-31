@@ -287,8 +287,8 @@
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
       }
     },
     "multi_column_hPeFAh": {
@@ -376,8 +376,8 @@
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
       }
     },
     "images_with_text_scroll_VUFB86": {
