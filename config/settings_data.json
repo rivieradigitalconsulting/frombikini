@@ -401,5 +401,11 @@
       "product_sold_out_badge_background": "#efefef",
       "product_custom_badge_background": "#1c1c1c"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "product-sticky-cart {background-color: #F9F4F0;}",
+      "product-sticky-cart .h6 {text-transform: uppercase; font-size: 17px;}"
+    ]
   }
 }
