@@ -404,7 +404,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "@media screen and (min-width: 768px) {product-sticky-bar {background-color: #ded4cb !important;}}",
+      "@media screen and (min-width: 768px) {product-sticky-bar {background-color: #F9F4F0 !important; }}",
       "product-sticky-bar .h6 {text-transform: uppercase; font-size: 17px; font-weight: bold;}"
     ]
   }
