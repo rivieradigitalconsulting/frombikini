@@ -297,7 +297,7 @@
         "ai_gen_block_e09345d_UnRMWy": {
           "type": "ai_gen_block_e09345d",
           "settings": {
-            "height_desktop": 50,
+            "height_desktop": 0,
             "height_mobile": 0,
             "background_color": "#f9f4f0"
           },
