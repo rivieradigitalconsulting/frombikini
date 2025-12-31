@@ -355,7 +355,7 @@
         "image_with_text_pgqQae"
       ],
       "custom_css": [
-        "h3 {font-size: 16px;}"
+        ".h3 {font-size: 16px;}"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
