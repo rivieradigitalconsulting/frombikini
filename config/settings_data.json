@@ -404,7 +404,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "product-sticky-bar {background-color: #f9f4f0!important;}",
+      "product-sticky-bar {background-color: #DED4CB !important;}",
       "product-sticky-bar .h6 {text-transform: uppercase; font-size: 17px; font-weight: bold;}"
     ]
   }
