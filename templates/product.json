@@ -355,7 +355,7 @@
         "image_with_text_pgqQae"
       ],
       "custom_css": [
-        "images-with-text-scroll {padding-top: 60px; background-color: #f9f4f0;}"
+        "h3 {font-size: 16px;}"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
@@ -365,7 +365,7 @@
         "text_alignment": "center",
         "heading_tag": "h3",
         "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_opacity": 15
       }
     },
     "tabs_FBR3be": {
