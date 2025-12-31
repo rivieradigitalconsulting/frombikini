@@ -341,9 +341,10 @@
         "image_with_text_pgqQae": {
           "type": "image_with_text",
           "settings": {
+            "image": "shopify://shop_images/1C74D3B9-6354-4FB0-8118-4EBBA6E7E688_1_105_c.jpg",
             "subheading": "",
-            "title": "#1",
-            "content": "<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.</p>",
+            "title": "Titolo di sezione",
+            "content": "<p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. </p>",
             "link_text": "",
             "link_url": "",
             "link_style": "solid"
@@ -358,8 +359,8 @@
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
-        "color_scheme": "",
-        "background_image": "shopify://shop_images/2_686d2fbb-da34-499a-bda1-b450c94fe135.jpg",
+        "color_scheme": "scheme-89d87716-8848-44d3-84b1-195cc9cb55a1",
+        "background_image": "shopify://shop_images/612_-_5mb_-_240dpi-2.jpg",
         "image_position": "start",
         "text_alignment": "center",
         "heading_tag": "h3",
