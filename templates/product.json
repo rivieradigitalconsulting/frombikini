@@ -622,165 +622,27 @@
         "logo_item_border": ""
       }
     },
-    "video_bkcdDw": {
-      "type": "video",
-      "disabled": true,
-      "custom_css": [
-        "video {padding-top: 40px;}"
-      ],
-      "name": "t:sections.video.presets.video.name",
-      "settings": {
-        "autoplay": true,
-        "show_controls": false,
-        "video_size": "lg",
-        "video": "shopify://files/videos/VESTITI.mp4",
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff"
-      }
-    },
-    "images_with_text_scroll_YM4EPa": {
-      "type": "images-with-text-scroll",
+    "blocks_HeE48i": {
+      "type": "_blocks",
       "blocks": {
-        "image_with_text_K4Vy7C": {
-          "type": "image_with_text",
+        "ai_gen_block_e09345d_D98kV4": {
+          "type": "ai_gen_block_e09345d",
           "settings": {
-            "subheading": "",
-            "title": "#1",
-            "content": "<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.</p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "solid"
-          }
-        },
-        "image_with_text_UbThx6": {
-          "type": "image_with_text",
-          "settings": {
-            "subheading": "",
-            "title": "#2",
-            "content": "<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.</p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "solid"
-          }
-        },
-        "image_with_text_gHkh8A": {
-          "type": "image_with_text",
-          "settings": {
-            "subheading": "",
-            "title": "#3",
-            "content": "<p>Share information about your product with your customers. Describe a product, and share info about your production process...</p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "solid"
-          }
+            "height_desktop": 100,
+            "height_mobile": 30,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "image_with_text_K4Vy7C",
-        "image_with_text_UbThx6",
-        "image_with_text_gHkh8A"
+        "ai_gen_block_e09345d_D98kV4"
       ],
-      "disabled": true,
-      "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
-        "color_scheme": "",
-        "background_image": "shopify://shop_images/SnapInsta.to_557449234_18486177082073064_7345705659093312803_n.jpg",
-        "image_position": "start",
-        "text_alignment": "center",
-        "heading_tag": "h3",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "text_with_icons_kwmECT": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item_8CGKGU": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__3_-removebg-preview.png",
-            "icon_width": 64,
-            "mobile_icon_width": 64,
-            "title": "Locally Made in Italy",
-            "content": "<p>Shopping locally made products allows for better product knowledge, supports local entrepreneurs and keeps skills local. Products made in Italy reflect unparalleled craftsmanship, attention to detail, and a rich heritage of quality and design. It also reduces your carbon footprint which impacts Global Warming.</p>"
-          }
-        },
-        "item_yBew9n": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__3_-removebg-preview.png",
-            "icon_width": 64,
-            "mobile_icon_width": 64,
-            "title": "Locally Made in Italy",
-            "content": "<p>Shopping locally made products allows for better product knowledge, supports local entrepreneurs and keeps skills local. Products made in Italy reflect unparalleled craftsmanship, attention to detail, and a rich heritage of quality and design. It also reduces your carbon footprint which impacts Global Warming.</p>"
-          }
-        },
-        "item_TzK9zx": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__4_-removebg-preview.png",
-            "icon_width": 64,
-            "mobile_icon_width": 24,
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
-          }
-        },
-        "item_6jRiTg": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-customer-support",
-            "custom_icon": "shopify://shop_images/Progetto_senza_titolo__5_-removebg-preview.png",
-            "icon_width": 64,
-            "mobile_icon_width": 24,
-            "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_8CGKGU",
-        "item_yBew9n",
-        "item_TzK9zx",
-        "item_6jRiTg"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": true,
-        "stack_on_mobile": false,
-        "icon_color": "",
-        "text_color": "",
-        "text_alignment": "center"
-      }
-    },
-    "contact_QARHbD": {
-      "type": "contact",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": true,
-        "subheading": "",
-        "title": "Contact",
-        "content": ""
-      }
-    },
-    "newsletter_teq4Cc": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-0bb64c7d-0e76-44fd-bd4e-79f6f8d9cdc1",
-        "separate_section_with_border": true,
-        "image_size": "sm",
-        "image": "shopify://shop_images/1_a995a680-e6ea-41d9-973c-8c1a71545706.jpg",
-        "subheading": "",
-        "title": "Newsletter",
-        "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
-        "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
       }
     }
   },
@@ -794,10 +656,6 @@
     "tabs_FBR3be",
     "1767117147215cebba",
     "logo_list_CXzcbr",
-    "video_bkcdDw",
-    "images_with_text_scroll_YM4EPa",
-    "text_with_icons_kwmECT",
-    "contact_QARHbD",
-    "newsletter_teq4Cc"
+    "blocks_HeE48i"
   ]
 }
