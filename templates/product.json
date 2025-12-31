@@ -314,8 +314,8 @@
         "image_with_text_hTbQVA"
       ],
       "custom_css": [
-        "h2 {font-size: 16px; font-weight: bold; text-align: left !important;}",
-        ".h4 {font-size: 16px; font-weight: bold;}",
+        "h2 {font-size: 18px; font-weight: bold; text-align: left !important;}",
+        ".h4 {font-size: 18px; font-weight: bold;}",
         "p {font-size: 13px;}",
         "a {font-size: 13px; font-weight: 700;}",
         ".section-spacing {padding-top: 60px;}"
