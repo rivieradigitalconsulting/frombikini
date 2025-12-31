@@ -343,7 +343,7 @@
           "settings": {
             "height_desktop": 100,
             "height_mobile": 50,
-            "background_color": "#efefef"
+            "background_color": "#f9f4f0"
           },
           "blocks": {}
         }
