@@ -403,6 +403,29 @@
         "remove_horizontal_spacing": true
       }
     },
+    "blocks_4ykUhe": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_rkcbjq": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_rkcbjq"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
     "images_with_text_scroll_VUFB86": {
       "type": "images-with-text-scroll",
       "blocks": {
@@ -681,6 +704,7 @@
     "1767168929c607f5b6",
     "images_with_text_scroll_VUFB86",
     "tabs_FBR3be",
+    "blocks_4ykUhe",
     "1767117147215cebba",
     "logo_list_CXzcbr",
     "blocks_HeE48i"
