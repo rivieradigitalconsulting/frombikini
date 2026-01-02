@@ -677,7 +677,7 @@
       "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
       "settings": {
         "separate_section_with_border": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "hide_product_information": false,
         "stack_products": false,
         "products_count": 9,
