@@ -273,7 +273,6 @@
       "type": "related-products",
       "custom_css": [
         "h2 {font-size: 18px; font-weight: bold;}",
-        ".section-spacing {padding-top: 50px;}",
         ".section-header {justify-self: left;}"
       ],
       "settings": {
@@ -674,6 +673,10 @@
     },
     "recently_viewed_products_LyB7KA": {
       "type": "recently-viewed-products",
+      "custom_css": [
+        "h2 {font-size: 18px; font-weight: bold;}",
+        ".section-header {justify-self: left;}"
+      ],
       "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
       "settings": {
         "separate_section_with_border": false,
@@ -686,7 +689,7 @@
         "horizontal_spacing_factor": 0.2,
         "vertical_spacing_factor": 0.2,
         "subheading": "",
-        "title": "Recently viewed products",
+        "title": "VISUALIZZATI DI RECENTE",
         "content": ""
       }
     },
