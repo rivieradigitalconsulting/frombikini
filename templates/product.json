@@ -55,7 +55,7 @@
             "selector_style": "block",
             "swatch_selector_style": "swatch",
             "variant_image_options": "",
-            "size_chart_page": "size-chart"
+            "size_chart_page": ""
           }
         },
         "quantity_selector": {
