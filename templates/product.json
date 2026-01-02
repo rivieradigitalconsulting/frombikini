@@ -460,9 +460,8 @@
         },
         "tab_y7RxBJ": {
           "type": "tab",
-          "disabled": true,
           "settings": {
-            "title": "Ho bisogno di un account per effettuare un acquisto?",
+            "title": "Come posso tracciare il mio ordine?",
             "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
             "page": "",
             "open_on_mobile": false
