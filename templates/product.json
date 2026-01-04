@@ -495,7 +495,7 @@
       "custom_css": [
         "h2 {font-size: 18px; font-weight: bold;}",
         ".section-header {justify-self: left; margin-bottom: -20px;}",
-        "span,button {font-size: 18px; font-weight: bold;}"
+        "span,button {font-size: 17px; font-weight: bold;}"
       ],
       "name": "t:sections.tabs.presets.tab.name",
       "settings": {
