@@ -360,7 +360,7 @@
       ],
       "custom_css": [
         "h2 {font-size: 18px; font-weight: bold; text-align: left !important;}",
-        ".h4 {font-size: 18px; font-weight: bold;}",
+        ".h4 {font-size: 17px; font-weight: bold;}",
         "p {font-size: 13px;}",
         "a {font-size: 13px; font-weight: 700;}"
       ],
@@ -450,9 +450,8 @@
         },
         "tab_ekQfjc": {
           "type": "tab",
-          "disabled": true,
           "settings": {
-            "title": "Ho bisogno di un account per effettuare un acquisto?",
+            "title": "Come posso tracciare il mio ordine?",
             "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
             "page": "",
             "open_on_mobile": false
