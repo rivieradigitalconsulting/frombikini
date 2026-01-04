@@ -123,7 +123,8 @@
       ],
       "custom_css": [
         ".heading {font-size: 15px; font-weight: 700;}",
-        ".h6 {font-size: 15px; font-weight: 700;}"
+        ".h6 {font-size: 15px; font-weight: 700;}",
+        ".button {font-weight: 700;}"
       ],
       "settings": {
         "color_scheme": "scheme-ed946704-f3b4-4b7f-ac55-6b15ba4a5bf6",
