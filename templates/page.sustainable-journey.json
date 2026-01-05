@@ -206,6 +206,62 @@
         "remove_horizontal_spacing": false
       }
     },
+    "video_NUKJKd": {
+      "type": "video",
+      "blocks": {
+        "play_bRCxrP": {
+          "type": "play",
+          "settings": {
+            "icon_color": "#ffffff"
+          }
+        },
+        "heading_37BzUi": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "play_bRCxrP",
+        "heading_37BzUi"
+      ],
+      "name": "t:sections.video.presets.video.name",
+      "settings": {
+        "autoplay": true,
+        "show_controls": false,
+        "video_size": "lg",
+        "video": "shopify://files/videos/New Summer Collection- Awaken your senses, dress your soul 🤍.mp4",
+        "external_video_url": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "blocks_ziddj8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_rCpaQJ": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 0,
+            "height_mobile": 0,
+            "background_color": "#efefef"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_rCpaQJ"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
     "text_with_icons_CWRXy6": {
       "type": "text-with-icons",
       "blocks": {
@@ -256,6 +312,7 @@
         "item_bnAwX9",
         "item_hGFMzm"
       ],
+      "custom_css": [],
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "color_scheme": "",
@@ -298,6 +355,8 @@
     "image_with_text_WVXE48",
     "image_with_text_rrbdrG",
     "blocks_egLDrz",
+    "video_NUKJKd",
+    "blocks_ziddj8",
     "text_with_icons_CWRXy6",
     "blocks_MMxxT3"
   ]
