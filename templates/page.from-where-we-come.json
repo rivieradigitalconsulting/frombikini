@@ -24,14 +24,14 @@
         "heading_qDfpRR": {
           "type": "heading",
           "settings": {
-            "text": "Sustainable Journey",
+            "text": "From Where We Come",
             "heading_tag": "h1"
           }
         },
         "richtext_Hh9fgV": {
           "type": "richtext",
           "settings": {
-            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.<br/><br/><br/></p>"
+            "content": "<p>Pensiamo in modo globale, traendo ispirazione dai colori e dalle vibrazioni di culture diverse, come suggerisce il nostro nome From Whispers, ma agiamo a livello locale: tutti i nostri bikini sono Made in Italy.</p>"
           }
         }
       },
@@ -44,7 +44,7 @@
       "settings": {
         "color_scheme": "",
         "image_size": "lg",
-        "image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
+        "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.36.27.png",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
