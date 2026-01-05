@@ -23,6 +23,7 @@
       "blocks": {
         "heading_qDfpRR": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "From Bikini Value",
             "heading_tag": "h4"
@@ -67,14 +68,14 @@
         "heading_B8mpBg": {
           "type": "heading",
           "settings": {
-            "text": "From bikini Cares",
+            "text": "Sustainable Journey",
             "heading_tag": "h1"
           }
         },
         "richtext_UJP9Eb": {
           "type": "richtext",
           "settings": {
-            "content": "<p>From bikini is taking steps forward every year more.<br/>This year we are proud to offer to our community an <strong>Eco-Friendly Collection</strong> and an <strong>Organic Capsule.</strong></p>"
+            "content": "<p>Lo spirito di From Bikini è in armonia con l’essenza di Madre Natura, con i suoi ritmi e flussi, i suoi misteri e la sua magnificenza.<br/><br/>Fonte della nostra ispirazione, vogliamo proteggerla e preservarla: stiamo compiendo passi per ridurre la nostra impronta attraverso l’uso di tessuti sostenibili per i nostri prodotti così come per il nostro packaging.</p>"
           }
         }
       },
@@ -88,7 +89,7 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "content_width": "sm",
-        "text_position": "center",
+        "text_position": "start",
         "remove_vertical_spacing": false
       }
     },
@@ -97,6 +98,7 @@
       "blocks": {
         "subheading_nJ4QdU": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Subheading"
           }
@@ -104,14 +106,14 @@
         "heading_TFwdWd": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "From Bikini Cares",
             "heading_tag": "h1"
           }
         },
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p>"
           }
         }
       },
@@ -124,8 +126,9 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
+        "image": "shopify://shop_images/SnapInsta.to_604546813_18439130344106140_7909380786788198998_n.jpg",
         "reveal_on_scroll": false,
-        "image_position": "start",
+        "image_position": "end",
         "content_width": "sm",
         "remove_vertical_spacing": true
       }
