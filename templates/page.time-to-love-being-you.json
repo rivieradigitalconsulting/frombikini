@@ -1,0 +1,218 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_y9TJa3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_qDfpRR": {
+          "type": "heading",
+          "settings": {
+            "text": "Sustainable Journey",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_Hh9fgV": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDfpRR",
+        "richtext_Hh9fgV"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_qcJ3hj": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_WcEHT8": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_B8mpBg": {
+          "type": "heading",
+          "settings": {
+            "text": "From Bikini Cares",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_UJP9Eb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Lo spirito di From Bikini è in armonia con l’essenza di Madre Natura, con i suoi ritmi e flussi, i suoi misteri e la sua magnificenza.<br/><br/>Fonte della nostra ispirazione, vogliamo proteggerla e preservarla: stiamo compiendo passi per ridurre la nostra impronta attraverso l’uso di tessuti sostenibili per i nostri prodotti così come per il nostro packaging.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WcEHT8",
+        "heading_B8mpBg",
+        "richtext_UJP9Eb"
+      ],
+      "custom_css": [
+        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_WVXE48": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_nJ4QdU": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_TFwdWd": {
+          "type": "heading",
+          "settings": {
+            "text": "From Bikini Value",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_hVqRHP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/><br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/><br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile!</p><p>Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nJ4QdU",
+        "heading_TFwdWd",
+        "richtext_hVqRHP"
+      ],
+      "custom_css": [
+        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/6ACCFAC3-9F28-4E22-8D5F-5BA58F948BC8_1_105_c.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_rrbdrG": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_g9N4c4": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_jnKM4x": {
+          "type": "heading",
+          "settings": {
+            "text": "Sustainability at the Heart",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_FXjDqM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Siamo consapevoli in ogni fase del processo: dalla selezione dei fornitori, all’utilizzo dei materiali, fino all’informare i nostri clienti su come prendersi cura dei loro prodotti per prolungarne la durata.<br/><br/>Il nostro intento è che i From Bikini vengano amati, vissuti e custoditi per sempre.</p><p>Tagliamo e confezioniamo tutto su ordinazione, riducendo così gli sprechi di materiali e le eccedenze di magazzino.<br/><br/>I nostri prodotti sono realizzati con consapevolezza, amore e cura dei dettagli che solo un’etichetta indipendente può offrire.</p><p>Siamo impegnati a formarci costantemente sui modi migliori per minimizzare gli impatti negativi della nostra industria sul mondo: il nostro obiettivo è trasformare il modo in cui la moda viene prodotta, consumata, indossata e valorizzata.<br/><br/>Crediamo fortemente nella SLOW FASHION.</p><p>Creare responsabilità è l’unica via possibile.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_g9N4c4",
+        "heading_jnKM4x",
+        "richtext_FXjDqM"
+      ],
+      "custom_css": [
+        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/4EE38C86-AC8C-4F1F-BB73-4D0FE4185B57_1_105_c.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "blocks_egLDrz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_xhyEif": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 0,
+            "height_mobile": 0,
+            "background_color": "#efefef"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_xhyEif"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_y9TJa3",
+    "rich_text_qcJ3hj",
+    "image_with_text_WVXE48",
+    "image_with_text_rrbdrG",
+    "blocks_egLDrz"
+  ]
+}
