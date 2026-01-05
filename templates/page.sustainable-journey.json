@@ -46,7 +46,7 @@
         "image_size": "lg",
         "image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
         "allow_transparent_header": false,
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "remove_vertical_spacing": true,
         "content_width": "sm",
         "mobile_text_position": "place-self-end-start text-start",
