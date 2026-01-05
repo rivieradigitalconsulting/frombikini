@@ -23,10 +23,9 @@
       "blocks": {
         "heading_qDfpRR": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "From Bikini Value",
-            "heading_tag": "h4"
+            "text": "Sustainable Journey",
+            "heading_tag": "h1"
           }
         },
         "richtext_Hh9fgV": {
@@ -49,8 +48,8 @@
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
         "content_width": "lg",
-        "mobile_text_position": "place-self-end-start text-start",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
         "overlay_color": "#000000",
         "overlay_opacity": 30
       }
@@ -68,7 +67,7 @@
         "heading_B8mpBg": {
           "type": "heading",
           "settings": {
-            "text": "Sustainable Journey",
+            "text": "From Bikini Cares",
             "heading_tag": "h1"
           }
         },
@@ -89,7 +88,7 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "content_width": "sm",
-        "text_position": "start",
+        "text_position": "center",
         "remove_vertical_spacing": false
       }
     },
@@ -106,7 +105,7 @@
         "heading_TFwdWd": {
           "type": "heading",
           "settings": {
-            "text": "From Bikini Cares",
+            "text": "From Bikini Value",
             "heading_tag": "h1"
           }
         },
@@ -122,6 +121,7 @@
         "heading_TFwdWd",
         "richtext_hVqRHP"
       ],
+      "custom_css": [],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
@@ -166,7 +166,7 @@
         "color_scheme": "",
         "separate_section_with_border": false,
         "reveal_on_scroll": false,
-        "image_position": "end",
+        "image_position": "start",
         "content_width": "sm",
         "remove_vertical_spacing": true
       }
