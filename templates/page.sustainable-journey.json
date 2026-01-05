@@ -116,7 +116,7 @@
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/><br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/><br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile!</p><p>Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
+            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/><br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/><br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile!</p><p>Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
           }
         }
       },
@@ -132,11 +132,11 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/SnapInsta.to_604546813_18439130344106140_7909380786788198998_n.jpg",
+        "image": "shopify://shop_images/6ACCFAC3-9F28-4E22-8D5F-5BA58F948BC8_1_105_c.jpg",
         "reveal_on_scroll": false,
         "image_position": "end",
         "content_width": "sm",
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": false
       }
     },
     "image_with_text_rrbdrG": {
@@ -144,6 +144,7 @@
       "blocks": {
         "subheading_g9N4c4": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Subheading"
           }
@@ -151,14 +152,14 @@
         "heading_jnKM4x": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "Sustainability at the heart",
             "heading_tag": "h1"
           }
         },
         "richtext_FXjDqM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Siamo consapevoli in ogni fase del processo: dalla selezione dei fornitori, all’utilizzo dei materiali, fino all’informare i nostri clienti su come prendersi cura dei loro prodotti per prolungarne la durata.<br/><br/>Il nostro intento è che i From Bikini vengano amati, vissuti e custoditi per sempre.</p><p>Tagliamo e confezioniamo tutto su ordinazione, riducendo così gli sprechi di materiali e le eccedenze di magazzino.<br/><br/>I nostri prodotti sono realizzati con consapevolezza, amore e cura dei dettagli che solo un’etichetta indipendente può offrire.</p><p>Siamo impegnati a formarci costantemente sui modi migliori per minimizzare gli impatti negativi della nostra industria sul mondo: il nostro obiettivo è trasformare il modo in cui la moda viene prodotta, consumata, indossata e valorizzata.<br/><br/>Crediamo fortemente nella SLOW FASHION.</p><p>Creare responsabilità è l’unica via possibile.</p>"
           }
         }
       },
@@ -171,10 +172,35 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
+        "image": "shopify://shop_images/4EE38C86-AC8C-4F1F-BB73-4D0FE4185B57_1_105_c.jpg",
         "reveal_on_scroll": false,
         "image_position": "start",
         "content_width": "sm",
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": false
+      }
+    },
+    "blocks_egLDrz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_xhyEif": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 50,
+            "height_mobile": 0,
+            "background_color": "#efefef"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_xhyEif"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
       }
     }
   },
@@ -183,6 +209,7 @@
     "image_with_text_overlay_y9TJa3",
     "rich_text_qcJ3hj",
     "image_with_text_WVXE48",
-    "image_with_text_rrbdrG"
+    "image_with_text_rrbdrG",
+    "blocks_egLDrz"
   ]
 }
