@@ -31,7 +31,7 @@
         "richtext_Hh9fgV": {
           "type": "richtext",
           "settings": {
-            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.<br/><br/><br/></p>"
+            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.</p>"
           }
         }
       },
@@ -50,7 +50,7 @@
         "remove_vertical_spacing": true,
         "content_width": "lg",
         "mobile_text_position": "place-self-end-start text-start",
-        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
         "overlay_opacity": 30
       }
