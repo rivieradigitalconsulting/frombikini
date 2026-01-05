@@ -136,7 +136,7 @@
         "reveal_on_scroll": false,
         "image_position": "end",
         "content_width": "sm",
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": true
       }
     },
     "image_with_text_rrbdrG": {
@@ -179,7 +179,7 @@
         "reveal_on_scroll": false,
         "image_position": "start",
         "content_width": "sm",
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": true
       }
     },
     "blocks_egLDrz": {
@@ -188,7 +188,7 @@
         "ai_gen_block_e09345d_xhyEif": {
           "type": "ai_gen_block_e09345d",
           "settings": {
-            "height_desktop": 50,
+            "height_desktop": 10,
             "height_mobile": 0,
             "background_color": "#efefef"
           },
