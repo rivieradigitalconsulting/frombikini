@@ -168,6 +168,9 @@
         "heading_jnKM4x",
         "richtext_FXjDqM"
       ],
+      "custom_css": [
+        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+      ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
