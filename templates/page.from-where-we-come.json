@@ -48,7 +48,7 @@
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
-        "content_width": "lg",
+        "content_width": "xs",
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-end-center sm:text-center",
         "overlay_color": "#000000",

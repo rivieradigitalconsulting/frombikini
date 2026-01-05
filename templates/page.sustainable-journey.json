@@ -48,7 +48,7 @@
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
-        "content_width": "lg",
+        "content_width": "sm",
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
@@ -152,7 +152,7 @@
         "heading_jnKM4x": {
           "type": "heading",
           "settings": {
-            "text": "Sustainability at the heart",
+            "text": "Sustainability at the Heart",
             "heading_tag": "h1"
           }
         },
