@@ -24,14 +24,14 @@
         "heading_qDfpRR": {
           "type": "heading",
           "settings": {
-            "text": "Sustainable Journey",
+            "text": "Time to Love Being You",
             "heading_tag": "h1"
           }
         },
         "richtext_Hh9fgV": {
           "type": "richtext",
           "settings": {
-            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.</p>"
+            "content": "<p><br/>Il viaggio è iniziato a Bali, dove la cultura locale ha influenzato la visione della femminilità: l’attenzione delle donne balinesi per estetica e cura del corpo ha fatto comprendere quanto l’amore per sé stesse sia legato alla femminilità.<br/><br/></p>"
           }
         }
       },
@@ -44,11 +44,11 @@
       "settings": {
         "color_scheme": "",
         "image_size": "lg",
-        "image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
+        "image": "shopify://shop_images/Screenshot_2025-10-07_at_11.20.34_am.webp",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
-        "content_width": "sm",
+        "content_width": "xs",
         "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
@@ -68,14 +68,14 @@
         "heading_B8mpBg": {
           "type": "heading",
           "settings": {
-            "text": "From Bikini Cares",
+            "text": "Be the Goddess You Are",
             "heading_tag": "h1"
           }
         },
         "richtext_UJP9Eb": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Lo spirito di From Bikini è in armonia con l’essenza di Madre Natura, con i suoi ritmi e flussi, i suoi misteri e la sua magnificenza.<br/><br/>Fonte della nostra ispirazione, vogliamo proteggerla e preservarla: stiamo compiendo passi per ridurre la nostra impronta attraverso l’uso di tessuti sostenibili per i nostri prodotti così come per il nostro packaging.</p>"
+            "content": "<p>È il momento di riconquistare la tua bellezza pura e femminile.<br/><br/>Noi, come donne, possiamo esprimere la nostra femminilità solo se viviamo in armonia con il nostro corpo. Vivere in armonia con il nostro corpo, libere di esprimere la nostra vera natura, significa amarci per ciò che siamo. La libertà da ogni stereotipo porta pace. La pace interiore ti permette di fluire con il ritmo della vita. E tutto questo inizia prendendoci cura del nostro corpo, sia a livello fisico che spirituale.<br/><br/>Prendersi cura di sé è il modo per riprendersi il proprio potere.</p><p>Tutte le donne sono dee, è solo questione di lasciare risplendere quel potere divino.</p>"
           }
         }
       },
@@ -109,14 +109,14 @@
         "heading_TFwdWd": {
           "type": "heading",
           "settings": {
-            "text": "From Bikini Value",
+            "text": "Feminine Energy",
             "heading_tag": "h1"
           }
         },
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/><br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/><br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile!</p><p>Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
+            "content": "<p>From Bikini nasce per celebrare la Dea che è dentro di noi, offrendo un prodotto che valorizza naturalmente l’energia femminile.</p><p>Per noi il costume da bagno è un potente mezzo per esprimere la propria femminilità: è un modo per una donna di raccontare la propria storia.</p><p>Crediamo che il corpo sia lo specchio dell’anima e che, di conseguenza, il bikini diventi il suo linguaggio di espressione.</p>"
           }
         }
       },
@@ -134,9 +134,47 @@
         "separate_section_with_border": false,
         "image": "shopify://shop_images/6ACCFAC3-9F28-4E22-8D5F-5BA58F948BC8_1_105_c.jpg",
         "reveal_on_scroll": false,
-        "image_position": "end",
+        "image_position": "start",
         "content_width": "sm",
         "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_DA7Qw3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jcEzfC": {
+          "type": "heading",
+          "settings": {
+            "text": "From bikini is a lifestyle brand with the purpose to inspire women to embrace their femininity with a holistic approach.",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_EMQBNr": {
+          "type": "subheading",
+          "settings": {
+            "text": "Our body is our temple, the only place where we can live. Take care of it."
+          }
+        },
+        "richtext_a3ndEz": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Our body is our temple, the only place where we can live. Take care of it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jcEzfC",
+        "subheading_EMQBNr",
+        "richtext_a3ndEz"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
       }
     },
     "image_with_text_rrbdrG": {
@@ -152,14 +190,14 @@
         "heading_jnKM4x": {
           "type": "heading",
           "settings": {
-            "text": "Sustainability at the Heart",
+            "text": "21 Days to Self-Love",
             "heading_tag": "h1"
           }
         },
         "richtext_FXjDqM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Siamo consapevoli in ogni fase del processo: dalla selezione dei fornitori, all’utilizzo dei materiali, fino all’informare i nostri clienti su come prendersi cura dei loro prodotti per prolungarne la durata.<br/><br/>Il nostro intento è che i From Bikini vengano amati, vissuti e custoditi per sempre.</p><p>Tagliamo e confezioniamo tutto su ordinazione, riducendo così gli sprechi di materiali e le eccedenze di magazzino.<br/><br/>I nostri prodotti sono realizzati con consapevolezza, amore e cura dei dettagli che solo un’etichetta indipendente può offrire.</p><p>Siamo impegnati a formarci costantemente sui modi migliori per minimizzare gli impatti negativi della nostra industria sul mondo: il nostro obiettivo è trasformare il modo in cui la moda viene prodotta, consumata, indossata e valorizzata.<br/><br/>Crediamo fortemente nella SLOW FASHION.</p><p>Creare responsabilità è l’unica via possibile.</p>"
+            "content": "<p>Per l’importanza che per noi ha vivere in connessione con il nostro vero sé — e rendendoci conto di come molte di noi, prese dalla frenesia della vita e dalle lunghe giornate passate alla scrivania, finiscano per dimenticarsi del proprio corpo — abbiamo deciso di dare vita a TIME TO LOVE BEING YOU, un percorso di 21 giorni in cui impariamo ad aumentare la consapevolezza del corpo attraverso diverse tecniche come yoga, meditazione, allenamento e sound healing, per innamorarci di noi stesse così come siamo.<br/><br/>I nostri prodotti sono realizzati con consapevolezza, amore e cura dei dettagli che solo un’etichetta indipendente può offrire.</p><p>Siamo impegnati a formarci costantemente sui modi migliori per minimizzare gli impatti negativi della nostra industria sul mondo: il nostro obiettivo è trasformare il modo in cui la moda viene prodotta, consumata, indossata e valorizzata.<br/><br/>Crediamo fortemente nella SLOW FASHION.</p><p>Creare responsabilità è l’unica via possibile.</p>"
           }
         }
       },
@@ -167,9 +205,6 @@
         "subheading_g9N4c4",
         "heading_jnKM4x",
         "richtext_FXjDqM"
-      ],
-      "custom_css": [
-        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
@@ -212,6 +247,7 @@
     "image_with_text_overlay_y9TJa3",
     "rich_text_qcJ3hj",
     "image_with_text_WVXE48",
+    "rich_text_DA7Qw3",
     "image_with_text_rrbdrG",
     "blocks_egLDrz"
   ]
