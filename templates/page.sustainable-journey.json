@@ -188,7 +188,7 @@
         "ai_gen_block_e09345d_xhyEif": {
           "type": "ai_gen_block_e09345d",
           "settings": {
-            "height_desktop": 10,
+            "height_desktop": 0,
             "height_mobile": 0,
             "background_color": "#efefef"
           },
@@ -205,6 +205,79 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
       }
+    },
+    "text_with_icons_CWRXy6": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_zkwMD7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+          }
+        },
+        "item_gGy4zV": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        },
+        "item_bnAwX9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_zkwMD7",
+        "item_gGy4zV",
+        "item_bnAwX9"
+      ],
+      "name": "t:sections.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "blocks_MMxxT3": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_6kUxa6": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 50,
+            "height_mobile": 0,
+            "background_color": "#efefef"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_6kUxa6"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
     }
   },
   "order": [
@@ -213,6 +286,8 @@
     "rich_text_qcJ3hj",
     "image_with_text_WVXE48",
     "image_with_text_rrbdrG",
-    "blocks_egLDrz"
+    "blocks_egLDrz",
+    "text_with_icons_CWRXy6",
+    "blocks_MMxxT3"
   ]
 }
