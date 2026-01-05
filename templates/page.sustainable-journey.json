@@ -39,6 +39,7 @@
         "heading_qDfpRR",
         "richtext_Hh9fgV"
       ],
+      "custom_css": [],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
@@ -48,7 +49,7 @@
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
         "content_width": "lg",
-        "mobile_text_position": "place-self-end-center text-center",
+        "mobile_text_position": "place-self-end-start text-start",
         "desktop_text_position": "sm:place-self-end-center sm:text-center",
         "overlay_color": "#000000",
         "overlay_opacity": 30
@@ -83,6 +84,9 @@
         "heading_B8mpBg",
         "richtext_UJP9Eb"
       ],
+      "custom_css": [
+        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+      ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "",
@@ -112,7 +116,7 @@
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p>"
+            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/><br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/><br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile!</p><p>Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
           }
         }
       },
@@ -121,7 +125,9 @@
         "heading_TFwdWd",
         "richtext_hVqRHP"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+      ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
