@@ -262,7 +262,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 50,
-            "height_mobile": 0,
+            "height_mobile": 50,
             "background_color": "#efefef"
           },
           "blocks": {}
