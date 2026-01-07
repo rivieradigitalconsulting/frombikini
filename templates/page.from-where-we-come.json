@@ -92,7 +92,7 @@
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "content_width": "sm",
         "text_position": "center",
@@ -140,7 +140,7 @@
             "icon": "picto-info",
             "icon_width": 40,
             "mobile_icon_width": 32,
-            "title": "Hand Made",
+            "title": "<strong>Hand Made</strong>",
             "content": "<p>L’artigianalità rappresenta il vero lusso, offrendo esclusività e una qualità impareggiabile nel mondo del fast fashion.<br/><br/>Ogni pezzo riflette tempo, abilità e dedizione.</p>"
           }
         },
@@ -150,7 +150,7 @@
             "icon": "picto-pin",
             "icon_width": 40,
             "mobile_icon_width": 32,
-            "title": "Locally Made in Italy",
+            "title": "<strong>Locally Made in Italy</strong>",
             "content": "<p>I prodotti italiani esprimono un’artigianalità eccezionale, una cura meticolosa dei dettagli e una forte tradizione di qualità.<br/><br/>Acquistare locale sostiene gli artigiani, preserva le competenze e promuove la sostenibilità.</p>"
           }
         },
@@ -160,7 +160,7 @@
             "icon": "picto-recycle",
             "icon_width": 40,
             "mobile_icon_width": 32,
-            "title": "100% Italian Fabric",
+            "title": "<strong>100% Italian Fabric</strong>",
             "content": "<p>I tessuti italiani sono riconosciuti a livello mondiale per la loro qualità, eleganza, innovazione e artigianalità.<br/><br/>Scegliere tessuti 100% italiani significa abbracciare una tradizione di eccellenza.</p>"
           }
         },
@@ -170,7 +170,7 @@
             "icon": "picto-leaf",
             "icon_width": 40,
             "mobile_icon_width": 32,
-            "title": "Km 0 Production",
+            "title": "<strong>Km 0 Production</strong>",
             "content": "<p>Diamo priorità alla produzione locale per ridurre l’impatto ambientale, sostenere l’economia, preservare le competenze tradizionali e ridurre le emissioni di carbonio, favorendo un legame più forte tra produttore e consumatore.</p>"
           }
         }
@@ -184,7 +184,7 @@
       "custom_css": [],
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
         "stack_on_mobile": false,
         "icon_color": "",
@@ -210,7 +210,7 @@
       ],
       "name": "Spazio bianco",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
