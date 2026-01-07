@@ -87,7 +87,8 @@
         "richtext_UJP9Eb"
       ],
       "custom_css": [
-        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
+        ".h1 {text-transform: uppercase; font-size: 18px; font-weight: 700; text-align: left;}",
+        "p {text-align: left;}"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
