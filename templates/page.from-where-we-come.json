@@ -39,7 +39,9 @@
         "heading_qDfpRR",
         "richtext_Hh9fgV"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".h1 {text-transform: uppercase; font-size: 18px; font-weight: 700;}"
+      ],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
