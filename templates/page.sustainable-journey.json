@@ -128,7 +128,8 @@
         "richtext_hVqRHP"
       ],
       "custom_css": [
-        ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase; text-align: left}"
+        ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase; text-align: left;}",
+        "p {text-align: left;}"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
