@@ -56,91 +56,44 @@
         "controls_color": "#ffffff"
       }
     },
-    "slideshow_kLxbmU": {
-      "type": "slideshow",
+    "image_with_text_overlay_MpLEDL": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "image_H8bkLh": {
-          "type": "image",
+        "heading_yrXXmN": {
+          "type": "heading",
           "settings": {
-            "subheading": "",
-            "title": "Slide 1",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+            "text": "Swimwear with a Purpose",
+            "heading_tag": "h2"
           }
         },
-        "image_aPqbri": {
-          "type": "image",
+        "richtext_m7HDzP": {
+          "type": "richtext",
           "settings": {
-            "subheading": "Tell your story",
-            "title": "Slide 2",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2) 0%, rgba(4, 4, 4, 0.65) 100%)"
-          }
-        },
-        "image_9VgDTL": {
-          "type": "image",
-          "settings": {
-            "subheading": "Tell your story",
-            "title": "Image slide",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+            "content": "<p>From Bikini was born not just as a brand but as a vessel for energy, creativity, and connection.<br/>We sell more than a  swimwear, we wanted to create something that could inspire, empower, and accompany you on your own journey.<br/>Handmade with care, every bikini is truly one of a kind, just like the person who wears it</p><p>The unique and authentic nature of the bikini is an opportunity for you to choose the one that reflect your essence. </p><p>The swimwear becomes the expression of your individuality.</p><p><em><strong>In a world where you can be anything choose to be authentically you.</strong></em></p><p></p>"
           }
         }
       },
       "block_order": [
-        "image_H8bkLh",
-        "image_aPqbri",
-        "image_9VgDTL"
+        "heading_yrXXmN",
+        "richtext_m7HDzP"
       ],
-      "disabled": true,
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "fill",
+        "image": "shopify://shop_images/Screenshot_2025-10-07_at_11.20.34_am.webp",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "slideshow_kLxbmU": {
+      "type": "slideshow",
       "settings": {
         "allow_transparent_header": true,
         "show_next_section_button": true,
@@ -151,65 +104,6 @@
         "cycle_speed": 5,
         "background": "#000000",
         "controls_color": "#ffffff"
-      }
-    },
-    "rich_text_Hpibdm": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_4zJeqK": {
-          "type": "heading",
-          "settings": {
-            "text": "Be Unique",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_GH6ryL": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h2></h2><h3></h3><p>Every From bikini is a unique combination of color and braids and in each piece there is a Soul waiting to be awakened by the wearer.</p><p>Each of our bikinis is handmade making them truly one of a kind.<br/>As a result of the handmade process each piece is different in the same way each person is different.</p><p>The unique and authentic nature of the bikini is an opportunity for you to choose the one that reflect your essence: the swimwear as expression of your individuality.</p><p><em><strong>In a world where you can be anything, choose to be Yourself</strong></em></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_4zJeqK",
-        "richtext_GH6ryL"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
-    "rich_text_FC7gry": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_73Feg7": {
-          "type": "heading",
-          "settings": {
-            "text": "Swimwear with a Purpose",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_QpCyeb": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>From Bikini was born not just as a brand but as a vessel for energy, creativity, and connection.<br/>We sell more than a  swimwear, we wanted to create something that could inspire, empower, and accompany you on your own journey.<br/>Handmade with care, every bikini is truly one of a kind, just like the person who wears it</p><p>The unique and authentic nature of the bikini is an opportunity for you to choose the one that reflect your essence. </p><p>The swimwear becomes the expression of your individuality.</p><p><em><strong>In a world where you can be anything choose to be authentically you.</strong></em></p><p></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_73Feg7",
-        "richtext_QpCyeb"
-      ],
-      "settings": {
-        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
       }
     },
     "collection_list_T7RbXQ": {
@@ -275,10 +169,10 @@
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": false,
-        "image_size": "md",
+        "image_size": "auto",
         "show_text_outside": false,
-        "space_items": true,
-        "stack_collections": true,
+        "space_items": false,
+        "stack_collections": false,
         "collections_per_row_desktop": 3,
         "stack_collections_mobile": true,
         "collections_per_row_mobile": "1",
@@ -307,12 +201,12 @@
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": false,
-        "hide_product_information": false,
+        "hide_product_information": true,
         "stack_products": false,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
         "subheading": ""
       }
     },
@@ -380,193 +274,15 @@
         "image_4Hiyga"
       ],
       "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "desktop_row_height": 300,
+        "desktop_row_height": 400,
         "mobile_row_height": 210,
-        "section_width": "sm",
-        "spacing": "sm",
+        "section_width": "full",
+        "spacing": "xs",
         "subheading": "",
         "title": "Tribal Collection",
         "content": ""
-      }
-    },
-    "media_grid_APNATY": {
-      "type": "media-grid",
-      "blocks": {
-        "image_7J6y7X": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "",
-            "image": "shopify://shop_images/DSC00109_a7ce4fdc-ace1-401a-af96-7a8b482cd283.jpg",
-            "column_count": "8",
-            "row_count": 2,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "DIVE IN",
-            "link_url": "",
-            "link_style": "outline",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_TaKjJp": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "scheme-4",
-            "column_count": "4",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "shopify://collections/tribal",
-            "link_style": "outline",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_PYqjCD": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "",
-            "column_count": "4",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "shopify://collections/tribal",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_7J6y7X",
-        "image_TaKjJp",
-        "image_PYqjCD"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": false,
-        "desktop_row_height": 300,
-        "mobile_row_height": 210,
-        "section_width": "sm",
-        "spacing": "sm",
-        "subheading": "",
-        "title": "Tribal Collection",
-        "content": ""
-      }
-    },
-    "image_with_text_mqJKbN": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_DrmQK3": {
-          "type": "heading",
-          "settings": {
-            "text": "SHOWROOM",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_BJ4HPx": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Our showroom is located in the heart of Milan.</p><p>Via Filippo Turati 3, 20121 MI</p><p><a href=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\" title=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\">OPEN IN MAPS</a></p><p>Book your appointment!</p><p><strong>Email: </strong>frombikini@gmail.com<strong><br/>Tel: </strong>+39 3338019796</p><p></p>"
-          }
-        },
-        "button_KC3ARM": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "Discover all our stores",
-            "url": "shopify://pages/from-wherewecome",
-            "background": "",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_DrmQK3",
-        "richtext_BJ4HPx",
-        "button_KC3ARM"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": true,
-        "image": "shopify://shop_images/IMG_4095.jpg",
-        "mobile_image": "shopify://shop_images/IMG_4095.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "lg",
-        "remove_vertical_spacing": false
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "color_scheme": "scheme-0bb64c7d-0e76-44fd-bd4e-79f6f8d9cdc1",
-        "separate_section_with_border": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.36.27.png",
-        "subheading": "",
-        "title": "Join the FromBikinigirls Community",
-        "content": "<p>Be the first to know about our special treats, new arrivals and exclusive products!</p>",
-        "button_text": "Iscriviti",
-        "overlay_color": "#f7f0e1",
-        "overlay_opacity": 0
-      }
-    },
-    "timeline_JDiJH9": {
-      "type": "timeline",
-      "blocks": {
-        "item_QGUKix": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_4095.jpg",
-            "mobile_image": "shopify://shop_images/IMG_4095.jpg",
-            "label": "MILAN SHOWROOM",
-            "subheading": "",
-            "title": "SHOWROOM",
-            "content": "<p>Our showroom is located in the heart of Milan:</p><p>Via Filippo Turati 3, 20121 MI (<a href=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\" title=\"https://www.google.com/maps/place/V.+Filippo+Turati,+3,+20121+Milano+MI/@45.4733338,9.194772,461m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4786c6b6eff85b39:0x64d4b6a74bf72d64!8m2!3d45.4733338!4d9.194772!16s%2Fg%2F11c1xty45s?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D\">OPEN IN MAPS)</a></p><p>Book your appointment by:</p><p><strong>Email: </strong>frombikini@gmail.com<strong><br/>Phone: </strong>+39 3338019796</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>",
-            "link_text": "DISCOVER ALL OUR STORES",
-            "link_url": "shopify://pages/store-locator",
-            "link_style": "solid",
-            "mobile_text_color": "#ffffff"
-          }
-        },
-        "item_Vcztja": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/IMG_4095.jpg",
-            "mobile_image": "shopify://shop_images/IMG_4095.jpg",
-            "label": "POP UP STORE",
-            "subheading": "",
-            "title": "POP UP STORE",
-            "content": "<p>Our Pop Up is located in the heart of Milano:<br/>Via Palermo 21, (ang. Corso Garibaldi), Milano (<a href=\"https://www.google.it/maps/place/Via+Palermo,+21,+20121+Milano+MI/@45.4754263,9.1812266,16z/data=!3m1!4b1!4m6!3m5!1s0x4786c14a515c65db:0x5ab17e7021bef3d3!8m2!3d45.4754226!4d9.1838015!16s%2Fg%2F11c28tv2vq?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" title=\"https://www.google.it/maps/place/Via+Palermo,+21,+20121+Milano+MI/@45.4754263,9.1812266,16z/data=!3m1!4b1!4m6!3m5!1s0x4786c14a515c65db:0x5ab17e7021bef3d3!8m2!3d45.4754226!4d9.1838015!16s%2Fg%2F11c28tv2vq?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D\">OPEN IN MAPS</a>)<br/></p><p>Date:<br/><strong>May 27 - June 30</strong><br/>Time:<br/><strong>10 am - 8 pm</strong></p><p></p><p></p>",
-            "link_text": "DISCOVER ALL OUR STORES",
-            "link_url": "shopify://pages/store-locator",
-            "link_style": "solid",
-            "mobile_text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "item_QGUKix",
-        "item_Vcztja"
-      ],
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "item_color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": true
       }
     },
     "multi_column_ndcXBR": {
@@ -664,16 +380,11 @@
   },
   "order": [
     "slideshow",
+    "image_with_text_overlay_MpLEDL",
     "slideshow_kLxbmU",
-    "rich_text_Hpibdm",
-    "rich_text_FC7gry",
     "collection_list_T7RbXQ",
     "featured_collections_Q4Kq3y",
     "media_grid_3w9bEY",
-    "media_grid_APNATY",
-    "image_with_text_mqJKbN",
-    "newsletter",
-    "timeline_JDiJH9",
     "multi_column_ndcXBR"
   ]
 }
