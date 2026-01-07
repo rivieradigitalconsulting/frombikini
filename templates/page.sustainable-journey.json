@@ -84,15 +84,13 @@
         "heading_B8mpBg",
         "richtext_UJP9Eb"
       ],
-      "custom_css": [
-        "body,p,h1,h2,h3,h4,h5,h6 {text-align: left !important;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
         "content_width": "sm",
-        "text_position": "center",
+        "text_position": "start",
         "remove_vertical_spacing": false
       }
     },
