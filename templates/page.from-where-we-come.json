@@ -181,7 +181,9 @@
         "item_bnAwX9",
         "item_hGFMzm"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "strong {font-size: 17px;}"
+      ],
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
