@@ -250,8 +250,8 @@
             "image": "shopify://shop_images/304_-_5mb_-_240dpi-2.jpg",
             "column_count": "8",
             "row_count": 2,
-            "title": "",
-            "heading_tag": "h4",
+            "title": "Triangle Bikini",
+            "heading_tag": "h2",
             "content": "",
             "link_text": "DIVE IN",
             "link_url": "shopify://collections/tribal",
@@ -269,7 +269,7 @@
             "column_count": "4",
             "row_count": 1,
             "title": "",
-            "heading_tag": "h4",
+            "heading_tag": "h2",
             "content": "",
             "link_text": "",
             "link_url": "shopify://collections/tribal",
@@ -303,16 +303,46 @@
         "image_9UWBiR",
         "image_4Hiyga"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
         "desktop_row_height": 400,
-        "mobile_row_height": 210,
+        "mobile_row_height": 400,
         "section_width": "full",
         "spacing": "xs",
         "subheading": "",
-        "title": "Tribal Collection",
+        "title": "Collections",
         "content": ""
+      }
+    },
+    "featured_collections_bwTKRC": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_BUVTQU": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "products_count": 50,
+            "title": "Best Sellers",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_BUVTQU"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "hide_product_information": true,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
       }
     },
     "multi_column_ndcXBR": {
@@ -396,15 +426,88 @@
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": true,
-        "columns_per_row": 3,
+        "columns_per_row": 6,
         "stack_on_mobile": false,
         "overlap_image": false,
-        "content_alignment": "center",
+        "content_alignment": "start",
         "text_alignment": "center",
         "spacing": "xs",
         "subheading": "",
-        "title": "Colors' energy",
-        "content": "<p>We believe that different colors awaken different beat within you.  <br/>Every color has its own meaning and and carries a special energy. <br/>It's not a coincidence what you’re drawn to. <br/></p><p><em><strong>Trust your instincts: the color you choose is a message, guiding you to your true energy.</strong></em></p>"
+        "title": "Colors' Energy",
+        "content": ""
+      }
+    },
+    "multi_column_7VKr3p": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_Ya6Xiq": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2025-06-03_at_3.28.32_pm_f27326e1-4803-4512-a904-239d2ee5d785.webp",
+            "title": "From Where We Come",
+            "heading_tag": "h3",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "Learn More"
+          }
+        },
+        "image_with_text_w8rXHg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2025-06-04_at_1.12.05_pm_6eb2f6e7-671a-4cd2-b015-92d9613032e8.webp",
+            "title": "Sustainable Journay",
+            "heading_tag": "h3",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "Learn More"
+          }
+        },
+        "image_with_text_xL34p9": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2025-06-03_at_3.28.22_pm_fd0ef135-5d6f-47e3-8b1b-02ba41fb85e8.webp",
+            "title": "Time To Love Being You",
+            "heading_tag": "h3",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_Ya6Xiq",
+        "image_with_text_w8rXHg",
+        "image_with_text_xL34p9"
+      ],
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "More From Bikini",
+        "content": ""
+      }
+    },
+    "newsletter_z7hPgG": {
+      "type": "newsletter",
+      "name": "t:sections.newsletter.presets.newsletter.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "lg",
+        "image": "shopify://shop_images/Screenshot_2025-10-07_at_11.29.11_am.webp",
+        "subheading": "Keep me updated",
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
       }
     },
     "blocks_LRRT8g": {
@@ -473,7 +576,7 @@
       ],
       "name": "Social wall",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
@@ -487,7 +590,10 @@
     "featured_collections_Q4Kq3y",
     "image_with_text_overlay_MpLEDL",
     "media_grid_3w9bEY",
+    "featured_collections_bwTKRC",
     "multi_column_ndcXBR",
+    "multi_column_7VKr3p",
+    "newsletter_z7hPgG",
     "blocks_LRRT8g"
   ]
 }
