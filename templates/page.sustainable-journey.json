@@ -86,7 +86,9 @@
         "heading_B8mpBg",
         "richtext_UJP9Eb"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase;}"
+      ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
