@@ -131,6 +131,35 @@
         "content": ""
       }
     },
+    "featured_collections_Q4Kq3y": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_yQdEXL": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "products_count": 50,
+            "title": "New Arrivals",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_yQdEXL"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "hide_product_information": true,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
     "image_with_text_overlay_MpLEDL": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -165,35 +194,6 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
         "overlay_opacity": 30
-      }
-    },
-    "featured_collections_Q4Kq3y": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_yQdEXL": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "products_count": 50,
-            "title": "New Arrivals",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_yQdEXL"
-      ],
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": false,
-        "hide_product_information": true,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 0.2,
-        "vertical_spacing_factor": 0.2,
-        "subheading": ""
       }
     },
     "media_grid_3w9bEY": {
@@ -362,14 +362,125 @@
         "title": "Colors' energy",
         "content": "<p>We believe that different colors awaken different beat within you.  <br/>Every color has its own meaning and and carries a special energy. <br/>It's not a coincidence what you’re drawn to. <br/></p><p><em><strong>Trust your instincts: the color you choose is a message, guiding you to your true energy.</strong></em></p>"
       }
+    },
+    "blocks_LRRT8g": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_89fb493_CwTD7c": {
+          "type": "ai_gen_block_89fb493",
+          "settings": {
+            "title": "Social wall",
+            "title_font": "sans_serif_n4",
+            "subtitle": "Scopri i nostri contenuti",
+            "text_alignment": "center",
+            "title_size_desktop": 36,
+            "title_size_mobile": 28,
+            "subtitle_size_desktop": 16,
+            "subtitle_size_mobile": 14,
+            "title_subtitle_spacing": 16,
+            "header_spacing": 40,
+            "title_color": "#1c1c1c",
+            "subtitle_color": "#564747",
+            "background_color": "#ffffff",
+            "layout_desktop": "grid",
+            "layout_mobile": "carousel",
+            "columns_desktop": 3,
+            "columns_mobile": 2,
+            "grid_gap": 16,
+            "row_gap_desktop": 16,
+            "row_gap_mobile": 16,
+            "margin_top": 40,
+            "margin_bottom": 40,
+            "image_border_radius": 0,
+            "image_ratio_desktop": "1/1",
+            "image_ratio_mobile": "3/4",
+            "text_position": "inside",
+            "text_font_size": 14,
+            "text_spacing": 16,
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.3,
+            "text_1": "",
+            "link_1": "",
+            "text_2": "",
+            "link_2": "",
+            "text_3": "",
+            "link_3": "",
+            "text_4": "",
+            "link_4": "",
+            "text_5": "",
+            "link_5": "",
+            "text_6": "",
+            "link_6": "",
+            "text_7": "",
+            "link_7": "",
+            "text_8": "",
+            "link_8": "",
+            "text_9": "",
+            "link_9": "",
+            "text_10": "",
+            "link_10": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_89fb493_CwTD7c"
+      ],
+      "name": "Social wall",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "scrolling_content_dejpjB": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_UAwWde": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our shop"
+          }
+        },
+        "text_UXqn3X": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our products"
+          }
+        }
+      },
+      "block_order": [
+        "text_UAwWde",
+        "text_UXqn3X"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.1,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 30,
+        "text_font_size_desktop": 10,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "slideshow",
     "collection_list_T7RbXQ",
-    "image_with_text_overlay_MpLEDL",
     "featured_collections_Q4Kq3y",
+    "image_with_text_overlay_MpLEDL",
     "media_grid_3w9bEY",
-    "multi_column_ndcXBR"
+    "multi_column_ndcXBR",
+    "blocks_LRRT8g",
+    "scrolling_content_dejpjB"
   ]
 }
