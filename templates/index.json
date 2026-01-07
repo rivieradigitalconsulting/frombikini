@@ -56,6 +56,81 @@
         "controls_color": "#ffffff"
       }
     },
+    "collection_list_T7RbXQ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_zkPYhe": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "all",
+            "image": "shopify://shop_images/Screenshot_2025-10-07_at_11.41.55_am.webp",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "BIKINIS",
+            "button_text": "dive in",
+            "button_link": "",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_qKhmn6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "all-onepieces-1",
+            "image": "shopify://shop_images/Screenshot_2025-10-07_at_11.48.43_am.webp",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "ONEPIECES",
+            "button_text": "dive in",
+            "button_link": "",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_AdYP6Y": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "all-out-of-water",
+            "image": "shopify://shop_images/Screenshot_2025-10-16_at_1.19.54_pm.webp",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "OUT OF WATER",
+            "button_text": "dive in",
+            "button_link": "",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_zkPYhe",
+        "collection_qKhmn6",
+        "collection_AdYP6Y"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_desktop": 3,
+        "stack_collections_mobile": false,
+        "collections_per_row_mobile": "1",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "image_with_text_overlay_MpLEDL": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -92,95 +167,6 @@
         "overlay_opacity": 30
       }
     },
-    "slideshow_kLxbmU": {
-      "type": "slideshow",
-      "settings": {
-        "allow_transparent_header": true,
-        "show_next_section_button": true,
-        "media_size": "auto",
-        "show_initial_transition": false,
-        "autoplay": true,
-        "autoplay_pause_on_video": true,
-        "cycle_speed": 5,
-        "background": "#000000",
-        "controls_color": "#ffffff"
-      }
-    },
-    "collection_list_T7RbXQ": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_zkPYhe": {
-          "type": "collection",
-          "settings": {
-            "color_scheme": "scheme-4",
-            "collection": "all",
-            "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.38.05.png",
-            "expand_collection": false,
-            "content_position": "place-self-center text-center",
-            "subheading": "",
-            "title": "BIKINIS",
-            "button_text": "dive in",
-            "button_link": "",
-            "button_style": "outline",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_qKhmn6": {
-          "type": "collection",
-          "settings": {
-            "color_scheme": "scheme-4",
-            "collection": "all-onepieces-1",
-            "image": "shopify://shop_images/F0AD994E-344D-47E5-A187-4B0C3A2620A9_1_105_c.jpg",
-            "expand_collection": false,
-            "content_position": "place-self-center text-center",
-            "subheading": "",
-            "title": "ONEPIECES",
-            "button_text": "dive in",
-            "button_link": "",
-            "button_style": "outline",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_AdYP6Y": {
-          "type": "collection",
-          "settings": {
-            "color_scheme": "scheme-4",
-            "collection": "all-out-of-water",
-            "image": "shopify://shop_images/Screenshot_2025-07-03_at_17.33.25.png",
-            "expand_collection": false,
-            "content_position": "place-self-center text-center",
-            "subheading": "",
-            "title": "OUT OF WATER",
-            "button_text": "dive in",
-            "button_link": "",
-            "button_style": "outline",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_zkPYhe",
-        "collection_qKhmn6",
-        "collection_AdYP6Y"
-      ],
-      "settings": {
-        "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": false,
-        "image_size": "auto",
-        "show_text_outside": false,
-        "space_items": false,
-        "stack_collections": false,
-        "collections_per_row_desktop": 3,
-        "stack_collections_mobile": true,
-        "collections_per_row_mobile": "1",
-        "subheading": "",
-        "title": "",
-        "content": ""
-      }
-    },
     "featured_collections_Q4Kq3y": {
       "type": "featured-collections",
       "blocks": {
@@ -189,9 +175,9 @@
           "settings": {
             "collection": "frontpage",
             "products_count": 50,
-            "title": "Bali Braids Brazilian",
+            "title": "New Arrivals",
             "link_url": "",
-            "link_text": "View all"
+            "link_text": ""
           }
         }
       },
@@ -380,9 +366,8 @@
   },
   "order": [
     "slideshow",
-    "image_with_text_overlay_MpLEDL",
-    "slideshow_kLxbmU",
     "collection_list_T7RbXQ",
+    "image_with_text_overlay_MpLEDL",
     "featured_collections_Q4Kq3y",
     "media_grid_3w9bEY",
     "multi_column_ndcXBR"
