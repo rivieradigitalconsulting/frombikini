@@ -127,7 +127,9 @@
         "heading_TFwdWd",
         "richtext_hVqRHP"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase; text-align: left}"
+      ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
