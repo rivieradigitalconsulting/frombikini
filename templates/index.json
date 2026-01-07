@@ -56,6 +56,50 @@
         "controls_color": "#ffffff"
       }
     },
+    "scrolling_content_dejpjB": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_UXqn3X": {
+          "type": "text",
+          "settings": {
+            "text": "Fondata da donne e splasmata con carattere"
+          }
+        },
+        "text_UAwWde": {
+          "type": "text",
+          "settings": {
+            "text": "Disegnata e realizzata a mano in Italia"
+          }
+        },
+        "text_EwHn39": {
+          "type": "text",
+          "settings": {
+            "text": "Guidati dalla sostenibilità, con orgoglio"
+          }
+        }
+      },
+      "block_order": [
+        "text_UXqn3X",
+        "text_UAwWde",
+        "text_EwHn39"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.1,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 20,
+        "text_font_size_desktop": 10,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "",
+        "text_color": ""
+      }
+    },
     "collection_list_T7RbXQ": {
       "type": "collection-list",
       "blocks": {
@@ -434,53 +478,16 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
       }
-    },
-    "scrolling_content_dejpjB": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text_UAwWde": {
-          "type": "text",
-          "settings": {
-            "text": "Welcome to our shop"
-          }
-        },
-        "text_UXqn3X": {
-          "type": "text",
-          "settings": {
-            "text": "Discover our products"
-          }
-        }
-      },
-      "block_order": [
-        "text_UAwWde",
-        "text_UXqn3X"
-      ],
-      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
-      "settings": {
-        "separate_section_with_border": true,
-        "scrolling_speed": 0.1,
-        "scroll_direction": "left",
-        "pause_on_hover": false,
-        "text_font": "heading",
-        "text_font_size_mobile": 30,
-        "text_font_size_desktop": 10,
-        "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 10,
-        "item_horizontal_spacing_mobile": 80,
-        "item_horizontal_spacing_desktop": 120,
-        "background": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
     "slideshow",
+    "scrolling_content_dejpjB",
     "collection_list_T7RbXQ",
     "featured_collections_Q4Kq3y",
     "image_with_text_overlay_MpLEDL",
     "media_grid_3w9bEY",
     "multi_column_ndcXBR",
-    "blocks_LRRT8g",
-    "scrolling_content_dejpjB"
+    "blocks_LRRT8g"
   ]
 }
