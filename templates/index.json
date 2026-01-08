@@ -113,10 +113,10 @@
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "BIKINIS",
+            "title": "Bikini",
             "button_text": "dive in",
             "button_link": "",
-            "button_style": "solid",
+            "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
