@@ -116,7 +116,7 @@
             "title": "BIKINIS",
             "button_text": "dive in",
             "button_link": "",
-            "button_style": "outline",
+            "button_style": "solid",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
