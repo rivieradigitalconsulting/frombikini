@@ -83,6 +83,7 @@
         "text_UAwWde",
         "text_EwHn39"
       ],
+      "disabled": true,
       "name": "t:sections.scrolling_content.presets.scrolling_content.name",
       "settings": {
         "separate_section_with_border": true,
@@ -163,12 +164,12 @@
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": false,
-        "image_size": "auto",
+        "image_size": "lg",
         "show_text_outside": false,
         "space_items": false,
         "stack_collections": false,
         "collections_per_row_desktop": 3,
-        "stack_collections_mobile": false,
+        "stack_collections_mobile": true,
         "collections_per_row_mobile": "1",
         "subheading": "",
         "title": "",
