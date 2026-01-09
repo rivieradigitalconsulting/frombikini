@@ -333,7 +333,7 @@
             "autoplay": true,
             "loop": true,
             "play_button_background": "#ffffff",
-            "title": "<strong>Hand-made in Italy</strong>",
+            "title": "Hand-made in Italy",
             "heading_tag": "h4",
             "content": "<p>Promuoviamo una catena produttiva a Km 0 per ridurre emissioni, ottimizzare i consumi e supportare il tessuto economico locale. La vicinanza tra fornitori, produttori e distribuzione migliora la sostenibilità complessiva del prodotto, riduce i tempi di trasporto e rafforza la relazione diretta tra produzione e cliente finale.</p>",
             "link_url": "",
