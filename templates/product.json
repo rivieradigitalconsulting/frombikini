@@ -271,7 +271,7 @@
     "related-products": {
       "type": "related-products",
       "custom_css": [
-        "h2 {font-size: 21px;}",
+        "h2 {font-size: 24px;}",
         ".section-header {justify-self: left;}"
       ],
       "settings": {
@@ -285,7 +285,7 @@
         "horizontal_spacing_factor": 0.2,
         "vertical_spacing_factor": 0.2,
         "subheading": "",
-        "title": "Consigliati per Te",
+        "title": "Consigliati per te",
         "content": ""
       }
     },
