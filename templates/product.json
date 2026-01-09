@@ -535,12 +535,12 @@
         "ai_gen_block_89fb493_6McV7F": {
           "type": "ai_gen_block_89fb493",
           "settings": {
-            "title": "SOCIAL WALL",
+            "title": "Social Wall",
             "title_font": "cormorant_n7",
             "subtitle": "Scopri i nostri contenuti. Lorem Ipsum Dolor Sit Amet.",
             "text_alignment": "left",
-            "title_size_desktop": 18,
-            "title_size_mobile": 18,
+            "title_size_desktop": 24,
+            "title_size_mobile": 24,
             "subtitle_size_desktop": 14,
             "subtitle_size_mobile": 14,
             "title_subtitle_spacing": 4,
