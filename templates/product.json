@@ -358,7 +358,7 @@
         "image_with_text_hTbQVA"
       ],
       "custom_css": [
-        "h2 {font-size: 18px; font-weight: bold; text-align: left !important;}",
+        "h2 {font-size: 24px; text-align: left !important;}",
         ".h4 {font-size: 21px; font-weight: bold;}",
         "p {font-size: 13px;}",
         "a {font-size: 13px; font-weight: 700;}"
@@ -374,7 +374,7 @@
         "text_alignment": "start",
         "spacing": "xs",
         "subheading": "",
-        "title": "FROM BIKINI DETAILS",
+        "title": "From Bikini details",
         "content": ""
       }
     },
