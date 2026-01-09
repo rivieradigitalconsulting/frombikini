@@ -492,7 +492,7 @@
         "tab_RU4Akz"
       ],
       "custom_css": [
-        "h2 {font-size: 18px; font-weight: bold;}",
+        "h2 {font-size: 24px;}",
         ".section-header {justify-self: left; margin-bottom: -20px;}",
         "span,button {font-size: 17px; font-weight: bold;}"
       ],
@@ -501,7 +501,7 @@
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "subheading": "",
-        "title": "FAQ",
+        "title": "Faq",
         "text_alignment": "start"
       }
     },
