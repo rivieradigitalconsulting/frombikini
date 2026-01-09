@@ -66,7 +66,7 @@
         "text_nngV9j": {
           "type": "text",
           "settings": {
-            "title": "SIAMO QUI PER TE",
+            "title": "Siamo qui per te",
             "content": "<p>In un mondo che offre infinite possibilità e spesso spinge all’omologazione, <strong>From Bikini</strong> incoraggia a riconoscere e amare la propria unicità: essere sé stessi è la forma più potente di bellezza e libertà.<br/><br/>Hai domande? <a href=\"https://www.frombikini.com\" target=\"_blank\" title=\"https://www.frombikini.com\"><strong>Scrivici.</strong></a></p>",
             "enable_follow_on_shop": true
           }
@@ -76,7 +76,7 @@
           "settings": {
             "menu": "footer-test-01-assistenza-clienti",
             "show_menu_title": true,
-            "menu_title": "ASSISTENZA CLIENTI"
+            "menu_title": "Assistenza clienti"
           }
         },
         "links_RNe79Y": {
@@ -84,7 +84,7 @@
           "settings": {
             "menu": "footer-test-02-brand",
             "show_menu_title": true,
-            "menu_title": "BRAND"
+            "menu_title": "Brand"
           }
         },
         "links_eaxPFt": {
@@ -92,7 +92,7 @@
           "settings": {
             "menu": "footer-test-03-area-legale",
             "show_menu_title": true,
-            "menu_title": "AREA LEGALE"
+            "menu_title": "Area legale"
           }
         },
         "links_VTHHPH": {
@@ -106,7 +106,7 @@
         "newsletter_P73JaL": {
           "type": "newsletter",
           "settings": {
-            "title": "CONNETTITI CON L'ENERGIA FROM BIKINI",
+            "title": "Connettiti con l'energia From Bikini",
             "content": "<p>Unisciti alla community <strong>Frombikinigirls</strong> e scopri in anteprima novità, arrivi speciali ed esclusive pensate per te.</p>",
             "button_background": "#f7f4f0",
             "button_text_color": "#564747"
