@@ -409,7 +409,7 @@
           "settings": {
             "image": "shopify://shop_images/1C74D3B9-6354-4FB0-8118-4EBBA6E7E688_1_105_c.jpg",
             "subheading": "",
-            "title": "TITOLO DI SEZIONE",
+            "title": "Titolo di sezione",
             "content": "<p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. </p>",
             "link_text": "",
             "link_url": "",
@@ -421,7 +421,7 @@
         "image_with_text_pgqQae"
       ],
       "custom_css": [
-        ".h3 {font-size: 18px; font-weight: bold;}"
+        ".h3 {font-size: 21px;}"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
