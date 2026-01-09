@@ -359,7 +359,7 @@
       ],
       "custom_css": [
         "h2 {font-size: 24px; text-align: left !important;}",
-        ".h4 {font-size: 21px; font-weight: bold;}",
+        ".h4 {font-size: 21px;}",
         "p {font-size: 13px;}",
         "a {font-size: 13px; font-weight: 700;}"
       ],
