@@ -123,7 +123,7 @@
       ],
       "custom_css": [
         ".heading {font-size: 15px; font-weight: 700;}",
-        ".h6 {font-size: 15px; font-weight: 700;}",
+        ".h6 {font-size: 21px;}",
         ".button {font-weight: 700;}"
       ],
       "settings": {
