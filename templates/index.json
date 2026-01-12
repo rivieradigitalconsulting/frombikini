@@ -270,6 +270,30 @@
         "overlay_opacity": 30
       }
     },
+    "blocks_HBNHRd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_nrWzXy": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f7f4ed"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_nrWzXy"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
     "media_grid_3w9bEY": {
       "type": "media-grid",
       "blocks": {
@@ -333,16 +357,15 @@
         "image_9UWBiR",
         "image_4Hiyga"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
         "desktop_row_height": 400,
-        "mobile_row_height": 400,
+        "mobile_row_height": 200,
         "section_width": "full",
         "spacing": "xs",
         "subheading": "",
-        "title": "Collections",
+        "title": "",
         "content": ""
       }
     },
@@ -591,6 +614,7 @@
     "collection_list_T7RbXQ",
     "featured_collections_bwTKRC",
     "image_with_text_overlay_MpLEDL",
+    "blocks_HBNHRd",
     "media_grid_3w9bEY",
     "multi_column_ndcXBR",
     "multi_column_7VKr3p",
