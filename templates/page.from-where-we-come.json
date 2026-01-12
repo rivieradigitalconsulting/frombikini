@@ -62,7 +62,6 @@
       "blocks": {
         "subheading_WcEHT8": {
           "type": "subheading",
-          "disabled": true,
           "settings": {
             "text": "Subheading"
           }
@@ -110,7 +109,6 @@
         },
         "heading_37BzUi": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "text": "Video",
             "heading_tag": "h2"
