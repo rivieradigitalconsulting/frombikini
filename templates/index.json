@@ -449,7 +449,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "columns_per_row": 6,
         "stack_on_mobile": false,
         "overlap_image": false,
