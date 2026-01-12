@@ -306,7 +306,7 @@
             "row_count": 2,
             "title": "Tribal Collection",
             "heading_tag": "h2",
-            "content": "<p>Lorem ipsum dolor sit amet.</p>",
+            "content": "",
             "link_text": "DIVE IN",
             "link_url": "shopify://collections/tribal",
             "link_style": "outline",
