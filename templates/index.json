@@ -304,15 +304,15 @@
             "image": "shopify://shop_images/304_-_5mb_-_240dpi-2.jpg",
             "column_count": "8",
             "row_count": 2,
-            "title": "Triangle Bikini",
+            "title": "Tribal Collection",
             "heading_tag": "h2",
-            "content": "",
+            "content": "<p>Lorem ipsum dolor sit amet.</p>",
             "link_text": "DIVE IN",
             "link_url": "shopify://collections/tribal",
             "link_style": "outline",
             "text_position": "place-self-center text-center",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 20
           }
         },
         "image_9UWBiR": {
@@ -330,7 +330,7 @@
             "link_style": "outline",
             "text_position": "place-self-center text-center",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 20
           }
         },
         "image_4Hiyga": {
@@ -341,14 +341,14 @@
             "column_count": "4",
             "row_count": 1,
             "title": "",
-            "heading_tag": "h4",
+            "heading_tag": "h2",
             "content": "",
             "link_text": "",
             "link_url": "shopify://collections/tribal",
             "link_style": "link",
             "text_position": "place-self-center text-center",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 20
           }
         }
       },
