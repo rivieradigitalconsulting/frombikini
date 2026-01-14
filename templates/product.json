@@ -655,7 +655,7 @@
         "logo_j3w3Kk"
       ],
       "custom_css": [
-        "h2 {font-size: 24px; text-align: left !important;}"
+        "h2 {font-size: 24px;}"
       ],
       "name": "t:sections.logo_list.presets.logo_list.name",
       "settings": {
