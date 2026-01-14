@@ -18,7 +18,7 @@
             "video": "shopify://files/videos/VESTITI.mp4",
             "mobile_video": "shopify://files/videos/VESTITI.mp4",
             "allow_sound": false,
-            "subheading": "Back to The Origins",
+            "subheading": "NEW SEASON COMING",
             "title": "Timeless Pieces To Wear Your Soul",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -43,6 +43,9 @@
       },
       "block_order": [
         "video_4rDmWi"
+      ],
+      "custom_css": [
+        ".h6 {font-size: 18px; text-transform: uppercase;}"
       ],
       "settings": {
         "allow_transparent_header": true,
