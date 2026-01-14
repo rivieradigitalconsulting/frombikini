@@ -236,7 +236,7 @@
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": false,
-        "hide_product_information": true,
+        "hide_product_information": false,
         "stack_products": false,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
