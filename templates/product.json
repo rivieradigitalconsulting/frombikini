@@ -224,7 +224,7 @@
       ],
       "custom_css": [
         ".feature-badge p {font-size: 13px !important;}",
-        ".accordion__toggle span {font-size: 17px; font-weight: 400;}",
+        ".accordion__toggle span {font-size: 17px;}",
         ".feature-badge-list {padding-bottom: 50px;}",
         "sale-price,compare-at-price {font-family: \"Montserrat\", sans-serif !important; font-size: 16px; font-weight: 500; padding-top: 10px; color: #564747;}",
         "compare-at-price {color: #a08989a6;}",
