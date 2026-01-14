@@ -609,7 +609,7 @@
         "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
         "button_text": "Subscribe",
         "overlay_color": "#000000",
-        "overlay_opacity": 20
+        "overlay_opacity": 50
       }
     },
     "blocks_LRRT8g": {
