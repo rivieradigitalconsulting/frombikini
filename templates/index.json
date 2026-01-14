@@ -572,6 +572,10 @@
         "image_with_text_w8rXHg",
         "image_with_text_xL34p9"
       ],
+      "custom_css": [
+        ".h2 {font-size: 24px;}",
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}"
+      ],
       "name": "t:sections.multi_column.presets.multi_column.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
