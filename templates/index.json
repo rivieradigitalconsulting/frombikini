@@ -342,7 +342,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 100,
-            "height_mobile": 50,
+            "height_mobile": 100,
             "background_color": "#f7f4ed"
           },
           "blocks": {}
