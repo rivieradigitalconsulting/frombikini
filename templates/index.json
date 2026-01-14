@@ -66,7 +66,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 30,
-            "height_mobile": 40,
+            "height_mobile": 30,
             "background_color": "#f7f4ed"
           },
           "blocks": {}
@@ -223,7 +223,7 @@
         "ai_gen_block_e09345d_YxVY6i": {
           "type": "ai_gen_block_e09345d",
           "settings": {
-            "height_desktop": 40,
+            "height_desktop": 30,
             "height_mobile": 40,
             "background_color": "#f7f4ed"
           },
