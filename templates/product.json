@@ -125,6 +125,10 @@
             "border_color": ""
           }
         },
+        "separator_nr8Cnz": {
+          "type": "separator",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -213,6 +217,7 @@
         "feature_with_icon_9G9Xwn",
         "feature_with_icon_i7jN7d",
         "feature_with_icon_yG6hqK",
+        "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
         "accordion_HYDbrd",
