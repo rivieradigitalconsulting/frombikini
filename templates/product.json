@@ -619,7 +619,7 @@
           "type": "logo",
           "settings": {
             "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
-            "logo_width": 200,
+            "logo_width": 250,
             "link": ""
           }
         },
@@ -627,35 +627,18 @@
           "type": "logo",
           "settings": {
             "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
-            "logo_width": 200,
-            "link": ""
-          }
-        },
-        "logo_9BKXAy": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo_j3w3Kk": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
-            "logo_width": 150,
+            "logo_width": 250,
             "link": ""
           }
         }
       },
       "block_order": [
         "logo_JiE3d4",
-        "logo_VPkzrc",
-        "logo_9BKXAy",
-        "logo_j3w3Kk"
+        "logo_VPkzrc"
       ],
       "custom_css": [
-        "h2 {font-size: 24px;}"
+        "h2 {font-size: 24px;}",
+        ".section-header {justify-self: left;}"
       ],
       "name": "t:sections.logo_list.presets.logo_list.name",
       "settings": {
@@ -695,7 +678,7 @@
     "recently_viewed_products_LyB7KA": {
       "type": "recently-viewed-products",
       "custom_css": [
-        "h2 {font-size: 18px; font-weight: bold;}",
+        "h2 {font-size: 24px;}",
         ".section-header {justify-self: left;}"
       ],
       "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
@@ -710,7 +693,7 @@
         "horizontal_spacing_factor": 0.2,
         "vertical_spacing_factor": 0.2,
         "subheading": "",
-        "title": "VISUALIZZATI DI RECENTE",
+        "title": "Visualizzati di recente",
         "content": ""
       }
     },
