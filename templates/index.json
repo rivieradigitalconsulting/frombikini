@@ -60,51 +60,6 @@
         "controls_color": "#ffffff"
       }
     },
-    "scrolling_content_dejpjB": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text_UXqn3X": {
-          "type": "text",
-          "settings": {
-            "text": "Fondata da donne e splasmata con carattere"
-          }
-        },
-        "text_UAwWde": {
-          "type": "text",
-          "settings": {
-            "text": "Disegnata e realizzata a mano in Italia"
-          }
-        },
-        "text_EwHn39": {
-          "type": "text",
-          "settings": {
-            "text": "Guidati dalla sostenibilità, con orgoglio"
-          }
-        }
-      },
-      "block_order": [
-        "text_UXqn3X",
-        "text_UAwWde",
-        "text_EwHn39"
-      ],
-      "disabled": true,
-      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
-      "settings": {
-        "separate_section_with_border": true,
-        "scrolling_speed": 0.1,
-        "scroll_direction": "left",
-        "pause_on_hover": false,
-        "text_font": "heading",
-        "text_font_size_mobile": 20,
-        "text_font_size_desktop": 20,
-        "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 10,
-        "item_horizontal_spacing_mobile": 80,
-        "item_horizontal_spacing_desktop": 120,
-        "background": "",
-        "text_color": ""
-      }
-    },
     "featured_collections_Q4Kq3y": {
       "type": "featured-collections",
       "blocks": {
@@ -113,7 +68,7 @@
           "settings": {
             "collection": "frontpage",
             "products_count": 50,
-            "title": "New Arrivals",
+            "title": "Bali Trecce Brasiliane",
             "link_url": "",
             "link_text": ""
           }
@@ -129,7 +84,7 @@
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": false,
-        "hide_product_information": true,
+        "hide_product_information": false,
         "stack_products": false,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
@@ -617,7 +572,6 @@
   },
   "order": [
     "slideshow",
-    "scrolling_content_dejpjB",
     "featured_collections_Q4Kq3y",
     "collection_list_T7RbXQ",
     "featured_collections_bwTKRC",
