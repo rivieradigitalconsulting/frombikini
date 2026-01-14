@@ -45,7 +45,8 @@
         "video_4rDmWi"
       ],
       "custom_css": [
-        ".h6 {font-size: 16px; text-transform: uppercase;}"
+        ".h6 {font-size: 16px; text-transform: uppercase;}",
+        ".button {font-weight: 700;}"
       ],
       "settings": {
         "allow_transparent_header": true,
