@@ -102,7 +102,7 @@
       ],
       "custom_css": [
         ".h2 {font-size: 24px;}",
-        "@media (min-width: 768px) {.h2 {font-size: 27px; }}",
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
         ".v-stack {justify-self: left;}"
       ],
       "settings": {
