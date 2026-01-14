@@ -441,7 +441,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 40,
-            "height_mobile": 100,
+            "height_mobile": 70,
             "background_color": "#f7f4ed"
           },
           "blocks": {}
@@ -615,6 +615,30 @@
         "content": ""
       }
     },
+    "blocks_cVN7EB": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_xLFdK4": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 40,
+            "height_mobile": 70,
+            "background_color": "#f7f4ed"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_xLFdK4"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
     "newsletter_z7hPgG": {
       "type": "newsletter",
       "custom_css": [
@@ -747,6 +771,7 @@
     "blocks_jTyad8",
     "multi_column_ndcXBR",
     "multi_column_7VKr3p",
+    "blocks_cVN7EB",
     "newsletter_z7hPgG",
     "blocks_LRRT8g",
     "recently_viewed_products_tJJFC8"
