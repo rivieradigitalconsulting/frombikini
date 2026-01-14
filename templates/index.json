@@ -103,7 +103,7 @@
       "custom_css": [
         ".h2 {font-size: 24px;}",
         "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
-        ".section-header {justify-self: left;}"
+        ".v-stack {justify-self: left;}"
       ],
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
@@ -132,30 +132,6 @@
       },
       "block_order": [
         "ai_gen_block_e09345d_QzrnUp"
-      ],
-      "name": "Spazio bianco",
-      "settings": {
-        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true
-      }
-    },
-    "blocks_JfJEjq": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_e09345d_XzJXmc": {
-          "type": "ai_gen_block_e09345d",
-          "settings": {
-            "height_desktop": 30,
-            "height_mobile": 30,
-            "background_color": "#f7f4ed"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_e09345d_XzJXmc"
       ],
       "name": "Spazio bianco",
       "settings": {
@@ -292,6 +268,30 @@
         "horizontal_spacing_factor": 0.2,
         "vertical_spacing_factor": 0.2,
         "subheading": ""
+      }
+    },
+    "blocks_JfJEjq": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_XzJXmc": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 30,
+            "height_mobile": 30,
+            "background_color": "#f7f4ed"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_XzJXmc"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
       }
     },
     "image_with_text_overlay_MpLEDL": {
