@@ -688,7 +688,8 @@
       "type": "recently-viewed-products",
       "custom_css": [
         ".h2 {font-size: 24px;}",
-        "@media (min-width: 768px) {.h2 {font-size: 30px; }}"
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
+        ".section-header {justify-self: left;}"
       ],
       "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
       "settings": {
