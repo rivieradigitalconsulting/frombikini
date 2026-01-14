@@ -354,7 +354,7 @@
       "name": "Spazio bianco",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false
       }
@@ -453,7 +453,7 @@
       "name": "Spazio bianco",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false
       }
