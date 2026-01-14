@@ -258,6 +258,11 @@
       "block_order": [
         "collection_BUVTQU"
       ],
+      "custom_css": [
+        ".h2 {font-size: 24px;}",
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
+        ".v-stack {justify-self: left;}"
+      ],
       "settings": {
         "color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
         "separate_section_with_border": false,
