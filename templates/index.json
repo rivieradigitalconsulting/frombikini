@@ -434,6 +434,30 @@
         "content": ""
       }
     },
+    "blocks_jTyad8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_qqFLCc": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 40,
+            "height_mobile": 100,
+            "background_color": "#f7f4ed"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_qqFLCc"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
     "multi_column_ndcXBR": {
       "type": "multi-column",
       "blocks": {
@@ -579,7 +603,7 @@
       "name": "t:sections.multi_column.presets.multi_column.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "columns_per_row": 3,
         "stack_on_mobile": false,
         "overlap_image": false,
@@ -720,6 +744,7 @@
     "image_with_text_overlay_MpLEDL",
     "blocks_HBNHRd",
     "media_grid_3w9bEY",
+    "blocks_jTyad8",
     "multi_column_ndcXBR",
     "multi_column_7VKr3p",
     "newsletter_z7hPgG",
