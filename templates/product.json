@@ -643,7 +643,7 @@
       ],
       "custom_css": [
         "h2 {font-size: 24px;}",
-        ".section-header {justify-self: left;}"
+        "@media (max-width: 767px) {.section-header {justify-self: left; }}"
       ],
       "name": "t:sections.logo_list.presets.logo_list.name",
       "settings": {
