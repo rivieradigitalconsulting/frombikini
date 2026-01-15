@@ -1,0 +1,22 @@
+.color-variants__swatch-list {
+  --swatch-background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.color-variants__swatch {
+  display: block;
+  border-radius: 100%;
+  outline: 1px solid transparent;
+  outline-offset: 1px;
+  background: var(--swatch-background);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.color-variants__swatch.selected {
+  outline-color: black;
+}

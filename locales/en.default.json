@@ -8,6 +8,13 @@
  * ------------------------------------------------------------
  */
 {
+  "riviera": {
+    "snippets": {
+      "product-variants": {
+        "color_prefix": "Color"
+      }
+    }
+  },
   "general": {
     "page": "Page {{ page }}",
     "home": "Home",
