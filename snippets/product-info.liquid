@@ -536,6 +536,22 @@ Supported variables
                 {%- render 'icon' with 'chevron-right' -%}
               </a>
             {%- endif -%}
+
+          {%- when 'color_variants' -%}
+            {%- liquid
+              assign current_product = block.settings.current_product
+              assign color_variants = block.settings.color_variants
+              assign padding_top_mobile = block.settings.padding_top_mobile
+              assign padding_bottom_mobile = block.settings.padding_bottom_mobile
+              assign padding_top_desktop = block.settings.padding_top_desktop
+              assign padding_bottom_desktop = block.settings.padding_bottom_desktop
+              assign swatch_size = block.settings.swatch_size
+              assign swatch_spacing = block.settings.swatch_spacing
+              assign title_spacing = block.settings.title_spacing
+              assign title_size_mobile = block.settings.title_size_mobile
+              assign title_size_desktop = block.settings.title_size_desktop
+              render 'product-variants', block_id: block.id, title_size_mobile: title_size_mobile, title_size_desktop: title_size_desktop, title_spacing: title_spacing, current_product: current_product, color_variants: color_variants, padding_top_mobile: padding_top_mobile, padding_bottom_mobile: padding_bottom_mobile, padding_top_desktop: padding_top_desktop, padding_bottom_desktop: padding_bottom_desktop, swatch_size: swatch_size, swatch_spacing: swatch_spacing
+            -%}
         {%- endcase -%}
       {%- endcapture -%}
       

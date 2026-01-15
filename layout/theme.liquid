@@ -63,6 +63,7 @@
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    {{- 'riviera-customs.css' | asset_url | stylesheet_tag: preload: true -}}
   <!--VEDA_HEADER_SCRIPTS_POSITION-->
 {%- render 'veda-header-scripts' -%}
 {% capture the_snippet_beae-global-theme-setting %}{% include 'beae-global-theme-setting' %}{% endcapture %}
