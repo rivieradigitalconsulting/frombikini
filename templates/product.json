@@ -23,6 +23,22 @@
             "heading_tag": "h3"
           }
         },
+        "color_variants_zF7YYB": {
+          "type": "color_variants",
+          "settings": {
+            "current_product": "{{ product }}",
+            "color_variants": "{{ product.metafields.pdp.varianti_colore.value }}",
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "title_spacing": 8,
+            "title_size_mobile": 13,
+            "title_size_desktop": 13,
+            "swatch_size": 20,
+            "swatch_spacing": 4
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -205,6 +221,7 @@
       "block_order": [
         "vendor",
         "title",
+        "color_variants_zF7YYB",
         "price",
         "text_3E8biP",
         "separator_NtFirz",
