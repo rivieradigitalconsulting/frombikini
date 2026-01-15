@@ -23,6 +23,18 @@
             "heading_tag": "h3"
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "text_3E8biP": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}</strong><strong>: </strong>{{ product.metafields.pdp.fb_color.value.fb_color_description.value }}</p>"
+          }
+        },
         "color_variants_zF7YYB": {
           "type": "color_variants",
           "settings": {
@@ -37,18 +49,6 @@
             "title_size_desktop": 13,
             "swatch_size": 20,
             "swatch_spacing": 4
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "text_3E8biP": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}</strong><strong>: </strong>{{ product.metafields.pdp.fb_color.value.fb_color_description.value }}</p>"
           }
         },
         "separator_NtFirz": {
@@ -221,9 +221,9 @@
       "block_order": [
         "vendor",
         "title",
-        "color_variants_zF7YYB",
         "price",
         "text_3E8biP",
+        "color_variants_zF7YYB",
         "separator_NtFirz",
         "kiwi_size_chart_recommender_kiwi_sizing_BUgjER",
         "variant_picker",
