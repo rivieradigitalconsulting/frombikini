@@ -40,8 +40,8 @@
           "settings": {
             "current_product": "{{ product }}",
             "color_variants": "{{ product.metafields.pdp.varianti_colore.value }}",
-            "padding_top_mobile": 0,
-            "padding_bottom_mobile": 0,
+            "padding_top_mobile": 10,
+            "padding_bottom_mobile": 10,
             "padding_top_desktop": 0,
             "padding_bottom_desktop": 0,
             "title_spacing": 8,
