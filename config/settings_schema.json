@@ -8,6 +8,35 @@
     "theme_support_url": "https://support.maestrooo.com/article/203-contact-us"
   },
   {
+    "name": "Riviera",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cusotm_riviera_tile",
+        "label": "Custom tile styles",
+        "default": false
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_price_size",
+        "label": "Custom tile styles",
+        "default": 14
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_title_size",
+        "label": "Custom title styles",
+        "default": 14
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_swatch_size",
+        "label": "Color variant swatch size",
+        "default": 10
+      }
+    ]
+  },
+  {
     "name": "t:theme_settings.appearance.name",
     "settings": [
       {
