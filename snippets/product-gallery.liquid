@@ -19,11 +19,19 @@ Supported variables
 * max_image_zoom_level: the maximum zoom level allowed (if enabled)
 {%- endcomment -%}
 
+{%- liquid
+  assign mobile_height_style = 'min(28rem, 75vw)'
+  assign mobile_fixed_height = mobile_fixed_height | default: 0
+  if mobile_fixed_height > 0 and mobile_fixed_height <= 100
+    assign mobile_height_style = mobile_fixed_height | append: 'vh'
+  endif
+-%}
+
 <style>
   {%- if mobile_controls == 'free_scroll' -%}
     @media screen and (max-width: 999px) {
       #shopify-section-{{ section.id }} {
-        --product-gallery-carousel-grid: auto / auto-flow min(28rem, 75vw);
+        --product-gallery-carousel-grid: auto / auto-flow {{ mobile_height_style }};
         --product-gallery-carousel-gap: 0.125rem;
         --product-gallery-carousel-scroll-snap-type: none;
       }

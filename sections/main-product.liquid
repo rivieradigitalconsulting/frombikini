@@ -53,7 +53,8 @@
               enable_media_autoplay: section.settings.enable_media_autoplay,
               enable_video_looping: section.settings.enable_video_looping,
               enable_image_zoom: section.settings.enable_image_zoom,
-              max_image_zoom_level: section.settings.max_image_zoom_level -%}
+              max_image_zoom_level: section.settings.max_image_zoom_level,
+              mobile_fixed_height: section.settings.mobile_fixed_height -%}
         {%- endif -%}
 
         {%- render 'product-info', 
@@ -182,6 +183,13 @@ quick buy information in a template, that will be extracted in JS, which ensures
   "class": "shopify-section--main-product",
   "tag": "section",
   "settings": [
+   {
+      "type": "number",
+      "id": "mobile_fixed_height",
+      "label": "Gallery mobile fixed height",
+      "info": "Set to 0 to use default theme styles. The height is a percentage of the screen, should be between 1 and 100.",
+      "default": 0
+   },
    {
       "type": "color_scheme",
       "id": "color_scheme",
