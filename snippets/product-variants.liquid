@@ -44,12 +44,14 @@
 
 {% if show_block %}
   <div class="color-variants--{{ block_id }}">
-    <span class="color-variants__heading">
-      {% if current_color != blank and current_color.value.filter_color_title != blank %}
-        {{ 'riviera.snippets.product-variants.color_prefix' | t }}:
-        <strong>{{ current_color.value.filter_color_title }}</strong>
-      {% endif %}
-    </span>
+    {% if show_title != false %}
+      <span class="color-variants__heading">
+        {% if current_color != blank and current_color.value.filter_color_title != blank %}
+          {{ 'riviera.snippets.product-variants.color_prefix' | t }}:
+          <strong>{{ current_color.value.filter_color_title }}</strong>
+        {% endif %}
+      </span>
+    {% endif %}
     <div class="color-variants__swatch-list">
       {% for color_variant in color_variants %}
         {% liquid

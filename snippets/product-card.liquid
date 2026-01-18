@@ -46,6 +46,20 @@ Supported variables
 -%}
 
 <product-card class="product-card" {% if reveal %}reveal-on-scroll="true"{% endif %} handle="{{ product.handle | escape }}">
+  {% if settings.cusotm_riviera_tile %}
+    <style>
+      .price-list.custom-styles sale-price,
+      .price-list.custom-styles compare-at-price {
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: {{ settings.cusotm_riviera_tile_price_size | default: 14 }}px;
+      }
+
+      .product-title.custom-styles {
+        font-size: {{ settings.cusotm_riviera_tile_title_size | default: 14 }}px;
+      }
+    </style>
+  {% endif %}
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT MEDIA
@@ -131,22 +145,29 @@ Supported variables
     {%- endif -%}
 
     {%- if show_title or show_prices or show_vendor and product.vendor != blank -%}
-      <div class="v-stack justify-items-center gap-2">
+      <div class="v-stack gap-2{% if settings.cusotm_riviera_tile %} justify-items-start w-full{% else %} justify-items-center{% endif %}">
         {%- if show_vendor and product.vendor != blank -%}
           {%- capture vendor_class -%}smallcaps {% if settings.product_card_text_font == 'heading' %}heading{% endif %}{% endcapture %}
           {%- render 'vendor' with product.vendor, class: vendor_class -%}
         {%- endif -%}
 
         {%- if show_title or show_prices -%}
-          <div class="v-stack justify-items-center gap-1">
+          <div class="v-stack gap-1{% if settings.cusotm_riviera_tile %} justify-items-start w-full text-start{% else %} justify-items-center{% endif %}">
             {%- if show_title -%}
-              <a href="{{ product.url }}" class="product-title {% if text_class != blank %}{{ text_class }}{% endif %} {% if settings.product_title_max_lines > 0 %}line-clamp{% endif %}" {% if settings.product_title_max_lines > 0 %}style="--line-clamp-count: {{ settings.product_title_max_lines }}"{% endif %} data-instant>
+              <a href="{{ product.url }}" class="product-title {% if text_class != blank %}{{ text_class }}{% endif %} {% if settings.product_title_max_lines > 0 %}line-clamp{% endif %}{% if settings.cusotm_riviera_tile %} custom-styles{% endif %}" {% if settings.product_title_max_lines > 0 %}style="--line-clamp-count: {{ settings.product_title_max_lines }}"{% endif %} data-instant>
                 {{- product.title -}}
               </a>
             {%- endif -%}
-
+            {%- liquid
+              assign current_product = product
+              assign color_variants = product.metafields.pdp.varianti_colore.value
+              assign swatch_size = settings.cusotm_riviera_tile_swatch_size
+              assign swatch_spacing = 4
+              assign block_id = 'product-tile__' | append: product.handle
+              render 'product-variants', block_id: block_id, show_title: false, current_product: current_product, color_variants: color_variants, swatch_size: swatch_size, swatch_spacing: swatch_spacing
+            -%}
             {%- if show_prices -%}
-              {%- render 'price-list', product: product, context: 'card' -%}
+              {%- render 'price-list', product: product, context: 'card', custom_font: settings.cusotm_riviera_tile -%}
             {%- endif -%}
           </div>
         {%- endif -%}
