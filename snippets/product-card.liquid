@@ -163,8 +163,12 @@ Supported variables
               assign color_variants = product.metafields.pdp.varianti_colore.value
               assign swatch_size = settings.cusotm_riviera_tile_swatch_size
               assign swatch_spacing = 4
+              assign padding_top_mobile = settings.cusotm_riviera_tile_swatch_top
+              assign padding_bottom_mobile = settings.cusotm_riviera_tile_swatch_bottom
+              assign padding_top_desktop = padding_top_mobile
+              assign padding_bottom_desktop = padding_bottom_mobile
               assign block_id = 'product-tile__' | append: product.handle
-              render 'product-variants', block_id: block_id, show_title: false, current_product: current_product, color_variants: color_variants, swatch_size: swatch_size, swatch_spacing: swatch_spacing
+              render 'product-variants', block_id: block_id, show_title: false, current_product: current_product, color_variants: color_variants, swatch_size: swatch_size, swatch_spacing: swatch_spacing, padding_top_mobile: padding_top_mobile, padding_bottom_mobile: padding_bottom_mobile, padding_top_desktop: padding_top_desktop, padding_bottom_desktop: padding_bottom_desktop
             -%}
             {%- if show_prices -%}
               {%- render 'price-list', product: product, context: 'card', custom_font: settings.cusotm_riviera_tile -%}

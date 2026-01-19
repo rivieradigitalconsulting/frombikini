@@ -17,6 +17,11 @@ Supported variables
 {%- endcomment -%}
 
 {%- liquid
+  assign regular_price_color_class = 'text-subdued'
+  if custom_font == true
+    assign regular_price_color_class = 'text-on-sale'
+  endif
+
   case context
     when 'card' or 'line_item'
       assign base_text_class = ''
@@ -25,13 +30,13 @@ Supported variables
         assign base_text_class = 'h6 '
       endif
 
-      assign regular_price_classes = base_text_class | append: 'text-subdued'
+      assign regular_price_classes = base_text_class | append: regular_price_color_class
       assign on_sale_price_classes = base_text_class | append: 'text-on-sale'
       assign compare_at_price_classes = base_text_class | append: 'text-subdued line-through'
       assign unit_price_classes = base_text_class | append: 'text-subdued'
 
     when 'product'
-      assign regular_price_classes = base_text_class | append: 'h4 text-subdued'
+      assign regular_price_classes = base_text_class | append: 'h4 ' | append: regular_price_color_class
       assign on_sale_price_classes = base_text_class | append: 'h4 text-on-sale'
       assign compare_at_price_classes = base_text_class | append: 'h5 text-subdued line-through'
       assign unit_price_classes = base_text_class | append: 'h6 text-subdued'

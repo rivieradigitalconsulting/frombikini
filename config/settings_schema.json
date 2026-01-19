@@ -33,6 +33,20 @@
         "id": "cusotm_riviera_tile_swatch_size",
         "label": "Color variant swatch size",
         "default": 10
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_swatch_top",
+        "label": "Color variant swatch top spacing",
+        "info": "There is a default spacing of a few pixel that cannot be removed",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_swatch_bottom",
+        "label": "Color variant swatch bottom spacing",
+        "info": "There is a default spacing of a few pixel that cannot be removed",
+        "default": 0
       }
     ]
   },
