@@ -1,6 +1,8 @@
 {% liquid
   assign show_block = false
-  if current_product != blank
+  if current_product != blank and show_title != false
+    assign show_block = true
+  elsif color_variants != blank
     assign show_block = true
   endif
 
