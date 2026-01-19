@@ -99,7 +99,8 @@
             "text": "Trecce fatte a mano che rendono ogni pezzo unico",
             "link": "",
             "icon": "picto-love",
-            "icon_width": 20,
+            "custom_icon": "{{ metaobjects.fb_product_features[\"trecce-fatte-a-mano\"].fb_product_features.value }}",
+            "icon_width": 32,
             "background": "#f9f4f0",
             "text_color": "#564747",
             "border_color": ""
