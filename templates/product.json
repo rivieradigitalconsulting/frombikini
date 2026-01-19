@@ -105,6 +105,42 @@
             "border_color": ""
           }
         },
+        "feature_with_icon_RP8kHb": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Trecce fatte a mano che rendono ogni pezzo unico",
+            "link": "",
+            "icon": "picto-love",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_8gHBVy": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Trecce fatte a mano che rendono ogni pezzo unico",
+            "link": "",
+            "icon": "picto-love",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_YYKLbL": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Trecce fatte a mano che rendono ogni pezzo unico",
+            "link": "",
+            "icon": "picto-love",
+            "icon_width": 20,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
         "feature_with_icon_9G9Xwn": {
           "type": "feature_with_icon",
           "settings": {
@@ -231,6 +267,9 @@
         "buy_buttons",
         "conversion_bear_trust_badges_widget_6K67cd",
         "feature_with_icon_M8tNYn",
+        "feature_with_icon_RP8kHb",
+        "feature_with_icon_8gHBVy",
+        "feature_with_icon_YYKLbL",
         "feature_with_icon_9G9Xwn",
         "feature_with_icon_i7jN7d",
         "feature_with_icon_yG6hqK",
