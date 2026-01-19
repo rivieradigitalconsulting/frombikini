@@ -253,7 +253,7 @@
         "button {font-weight: bold;}"
       ],
       "settings": {
-        "mobile_fixed_height": 0,
+        "mobile_fixed_height": 50,
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "container_size": "lg",
         "product_info_size": 40,
