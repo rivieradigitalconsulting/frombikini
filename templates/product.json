@@ -396,7 +396,7 @@
             "image": "{{ product.metafields.pdp.fb_color.value.fb_color_image.value }}",
             "title": "{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}",
             "heading_tag": "h4",
-            "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura che definiscono stile, emozione e riconoscibilità. Ogni palette è studiata per valorizzare le forme e trasmettere l’essenza autentica di From Bikini, trasformando il colore in una vera firma di brand.</p>",
+            "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura nate per definire il tuo stile e valorizzare le tue forme / tonalità ispirate alla natura che infondono un’energia specifica ai nostri costumi. <br/>Ogni nostra palette è studiata per trasmettere l'essenza autentica di From Bikini.<br/>In From Bikini infatti, crediamo che ogni colore risvegli una vibrazione diversa in ognuno di noi e sprigioni un’energia unica e speciale. Non è mai un caso ciò da cui sei attratta: il tuo istinto ti guida verso il colore che parla alla tua anima.<br/>Ascolta la tua anima e indossa il colore che ti fa sentire più te stessa.</p>",
             "link_url": "shopify://products/bahia-onepiece-black",
             "link_text": "Scopri di più"
           }
