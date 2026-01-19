@@ -13,6 +13,8 @@
     "cusotm_riviera_tile_price_size": 14,
     "cusotm_riviera_tile_title_size": 17,
     "cusotm_riviera_tile_swatch_size": 13,
+    "cusotm_riviera_tile_swatch_top": 3,
+    "cusotm_riviera_tile_swatch_bottom": 8,
     "icon_stroke_width": 2,
     "section_vertical_spacing": "lg",
     "default_color_scheme": "scheme-0405f17c-d9ab-44d9-8cd8-490d860bd751",
