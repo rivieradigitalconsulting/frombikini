@@ -148,10 +148,11 @@
         "feature_with_icon_GAnTqh": {
           "type": "feature_with_icon",
           "settings": {
-            "text": "Produzione a Km 0",
+            "text": "{{ metaobjects.fb_product_features[\"produzione-a-km-0\"].fb_product_title.value }}",
             "link": "",
             "icon": "picto-love",
-            "icon_width": 20,
+            "custom_icon": "{{ metaobjects.fb_product_features[\"produzione-a-km-0\"].fb_product_features.value }}",
+            "icon_width": 32,
             "background": "#f9f4f0",
             "text_color": "#564747",
             "border_color": ""
