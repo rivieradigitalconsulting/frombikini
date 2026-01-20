@@ -314,7 +314,14 @@
         "heading_x9Anzr": {
           "type": "heading",
           "settings": {
-            "text": "We have two homes: Mother Earth and our body. Please take care of them.",
+            "text": "We have two homes: Mother Earth and our body.",
+            "heading_tag": "h1"
+          }
+        },
+        "heading_4nzxbB": {
+          "type": "heading",
+          "settings": {
+            "text": "Please take care of them.",
             "heading_tag": "h1"
           }
         },
@@ -328,6 +335,7 @@
       },
       "block_order": [
         "heading_x9Anzr",
+        "heading_4nzxbB",
         "richtext_AT4yAp"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
