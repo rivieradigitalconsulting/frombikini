@@ -180,7 +180,7 @@
       "name": "t:sections.media_grid.presets.media_grid.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "desktop_row_height": 290,
         "mobile_row_height": 180,
         "section_width": "full",
@@ -190,17 +190,33 @@
         "content": ""
       }
     },
+    "blocks_RJRxDW": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_FtWQzt": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 10,
+            "height_mobile": 10,
+            "background_color": "#f7f4ed"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_FtWQzt"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
     "rich_text_VGbUab": {
       "type": "rich-text",
       "blocks": {
-        "heading_7N6UCB": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "From Bikini Cares",
-            "heading_tag": "h1"
-          }
-        },
         "richtext_tqaddF": {
           "type": "richtext",
           "settings": {
@@ -209,7 +225,6 @@
         }
       },
       "block_order": [
-        "heading_7N6UCB",
         "richtext_tqaddF"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
@@ -330,6 +345,7 @@
     "rich_text_qcJ3hj",
     "image_with_text_WVXE48",
     "media_grid_njpkgT",
+    "blocks_RJRxDW",
     "rich_text_VGbUab",
     "image_with_text_overlay_MiNADN",
     "image_with_text_gj9CV3",

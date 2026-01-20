@@ -39,9 +39,7 @@
         "heading_qDfpRR",
         "richtext_Hh9fgV"
       ],
-      "custom_css": [
-        ".h1 {text-transform: uppercase; font-size: 18px; font-weight: 700;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
@@ -62,6 +60,7 @@
       "blocks": {
         "subheading_WcEHT8": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Subheading"
           }
@@ -85,10 +84,7 @@
         "heading_B8mpBg",
         "richtext_UJP9Eb"
       ],
-      "custom_css": [
-        ".h1 {text-transform: uppercase; font-size: 18px; font-weight: 700; text-align: left;}",
-        "p {text-align: left;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
