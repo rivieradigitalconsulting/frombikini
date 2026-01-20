@@ -135,7 +135,7 @@
         "feature_with_icon_YYKLbL": {
           "type": "feature_with_icon",
           "settings": {
-            "text": "",
+            "text": "{{ product.metafields.pdp.fb_feature_4.value.fb_product_title.value }}",
             "link": "",
             "icon": "picto-love",
             "custom_icon": "{{ product.metafields.pdp.fb_feature_4.value.fb_product_features.value }}",
