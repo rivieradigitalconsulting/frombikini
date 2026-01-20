@@ -192,20 +192,6 @@
     },
     "blocks_RJRxDW": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_e09345d_FtWQzt": {
-          "type": "ai_gen_block_e09345d",
-          "settings": {
-            "height_desktop": 10,
-            "height_mobile": 10,
-            "background_color": "#f7f4ed"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_e09345d_FtWQzt"
-      ],
       "name": "Spazio bianco",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
@@ -220,7 +206,7 @@
         "richtext_tqaddF": {
           "type": "richtext",
           "settings": {
-            "content": "<p></p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
+            "content": "<p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
           }
         }
       },
