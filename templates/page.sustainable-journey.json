@@ -204,7 +204,7 @@
         "richtext_tqaddF": {
           "type": "richtext",
           "settings": {
-            "content": "<p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
+            "content": "<p></p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
           }
         }
       },
@@ -214,40 +214,9 @@
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
-    "rich_text_qp6gtt": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_x9Anzr": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "From Bikini Cares",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_AT4yAp": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p><em>We have two homes: Mother Earth and our body.</em></p><p><em>Please take care of them.</em></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_x9Anzr",
-        "richtext_AT4yAp"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "content_width": "sm",
+        "content_width": "md",
         "text_position": "center",
         "remove_vertical_spacing": false
       }
@@ -322,6 +291,37 @@
         "content_width": "md",
         "remove_vertical_spacing": false
       }
+    },
+    "rich_text_qp6gtt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x9Anzr": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "From Bikini Cares",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_AT4yAp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><em>We have two homes: Mother Earth and our body.</em></p><p><em>Please take care of them.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9Anzr",
+        "richtext_AT4yAp"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
     }
   },
   "order": [
@@ -331,8 +331,8 @@
     "image_with_text_WVXE48",
     "media_grid_njpkgT",
     "rich_text_VGbUab",
-    "rich_text_qp6gtt",
     "image_with_text_overlay_MiNADN",
-    "image_with_text_gj9CV3"
+    "image_with_text_gj9CV3",
+    "rich_text_qp6gtt"
   ]
 }
