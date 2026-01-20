@@ -145,6 +145,32 @@
             "border_color": ""
           }
         },
+        "feature_with_icon_erhChN": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Produzione a KM 0",
+            "link": "",
+            "icon": "picto-love",
+            "custom_icon": "shopify://shop_images/km0.png",
+            "icon_width": 32,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_6EhPet": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Certificazione OEKO-TEX®",
+            "link": "",
+            "icon": "picto-love",
+            "custom_icon": "shopify://shop_images/8_ea8a5665-e527-410c-beee-66ee1fb66002.png",
+            "icon_width": 32,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
         "separator_nr8Cnz": {
           "type": "separator",
           "settings": {}
@@ -238,6 +264,8 @@
         "feature_with_icon_RP8kHb",
         "feature_with_icon_8gHBVy",
         "feature_with_icon_YYKLbL",
+        "feature_with_icon_erhChN",
+        "feature_with_icon_6EhPet",
         "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
