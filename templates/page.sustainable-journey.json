@@ -24,7 +24,7 @@
         "heading_qDfpRR": {
           "type": "heading",
           "settings": {
-            "text": "SUSTAINABLE JOURNEY",
+            "text": "Sustainable Journey",
             "heading_tag": "h1"
           }
         },
@@ -39,14 +39,12 @@
         "heading_qDfpRR",
         "richtext_Hh9fgV"
       ],
-      "custom_css": [
-        ".h1 {font-size: 18px; font-weight: 700;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
         "image_size": "lg",
-        "image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
+        "image": "shopify://shop_images/erol-ahmed-jIZmcB5UIrQ-unsplash.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": false,
         "remove_vertical_spacing": true,
@@ -66,25 +64,10 @@
           "settings": {
             "text": "Subheading"
           }
-        },
-        "heading_B8mpBg": {
-          "type": "heading",
-          "settings": {
-            "text": "From Bikini Cares",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_UJP9Eb": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Lo spirito di From Bikini è in armonia con l’essenza di Madre Natura, con i suoi ritmi e flussi, i suoi misteri e la sua magnificenza.<br/><br/>Fonte della nostra ispirazione, vogliamo proteggerla e preservarla: stiamo compiendo passi per ridurre la nostra impronta attraverso l’uso di tessuti sostenibili per i nostri prodotti così come per il nostro packaging.</p>"
-          }
         }
       },
       "block_order": [
-        "subheading_WcEHT8",
-        "heading_B8mpBg",
-        "richtext_UJP9Eb"
+        "subheading_WcEHT8"
       ],
       "custom_css": [
         ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase;}"
@@ -101,13 +84,6 @@
     "image_with_text_WVXE48": {
       "type": "image-with-text",
       "blocks": {
-        "subheading_nJ4QdU": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_TFwdWd": {
           "type": "heading",
           "settings": {
@@ -118,96 +94,233 @@
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/><br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/><br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile!</p><p>Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
+            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
           }
         }
       },
       "block_order": [
-        "subheading_nJ4QdU",
         "heading_TFwdWd",
         "richtext_hVqRHP"
       ],
-      "custom_css": [
-        ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase; text-align: left;}",
-        "p {text-align: left;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/6ACCFAC3-9F28-4E22-8D5F-5BA58F948BC8_1_105_c.jpg",
+        "image": "shopify://shop_images/nvkr-3396_1.webp",
         "reveal_on_scroll": false,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
+        "image_position": "start",
+        "content_width": "md",
+        "remove_vertical_spacing": false
       }
     },
-    "image_with_text_rrbdrG": {
-      "type": "image-with-text",
+    "media_grid_njpkgT": {
+      "type": "media-grid",
       "blocks": {
-        "subheading_g9N4c4": {
-          "type": "subheading",
-          "disabled": true,
+        "image_XJcAJR": {
+          "type": "image",
           "settings": {
-            "text": "Subheading"
+            "color_scheme": "",
+            "image": "shopify://shop_images/Schermata_2021-02-26_alle_16.51.12_5168c7aa-54c9-4af6-8215-a2cb896a0662.webp",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
           }
         },
-        "heading_jnKM4x": {
-          "type": "heading",
+        "image_mCGTFy": {
+          "type": "image",
           "settings": {
-            "text": "Sustainability at the Heart",
+            "color_scheme": "",
+            "image": "shopify://shop_images/photoholgic-jnjak-byy6k-unsplash.webp",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ekd7Wq": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/robin-canfield-hyrmarqlw94-unsplash.webp",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_XJcAJR",
+        "image_mCGTFy",
+        "image_ekd7Wq"
+      ],
+      "name": "t:sections.media_grid.presets.media_grid.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "desktop_row_height": 290,
+        "mobile_row_height": 180,
+        "section_width": "full",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "rich_text_VGbUab": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7N6UCB": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "From Bikini Cares",
             "heading_tag": "h1"
           }
         },
-        "richtext_FXjDqM": {
+        "richtext_tqaddF": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Siamo consapevoli in ogni fase del processo: dalla selezione dei fornitori, all’utilizzo dei materiali, fino all’informare i nostri clienti su come prendersi cura dei loro prodotti per prolungarne la durata.<br/><br/>Il nostro intento è che i From Bikini vengano amati, vissuti e custoditi per sempre.</p><p>Tagliamo e confezioniamo tutto su ordinazione, riducendo così gli sprechi di materiali e le eccedenze di magazzino.<br/><br/>I nostri prodotti sono realizzati con consapevolezza, amore e cura dei dettagli che solo un’etichetta indipendente può offrire.</p><p>Siamo impegnati a formarci costantemente sui modi migliori per minimizzare gli impatti negativi della nostra industria sul mondo: il nostro obiettivo è trasformare il modo in cui la moda viene prodotta, consumata, indossata e valorizzata.<br/><br/>Crediamo fortemente nella SLOW FASHION.</p><p>Creare responsabilità è l’unica via possibile.</p>"
+            "content": "<p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
           }
         }
       },
       "block_order": [
-        "subheading_g9N4c4",
-        "heading_jnKM4x",
-        "richtext_FXjDqM"
+        "heading_7N6UCB",
+        "richtext_tqaddF"
       ],
-      "custom_css": [
-        ".h1 {font-size: 18px; font-weight: 700; text-transform: uppercase; text-align: left;}",
-        "p {text-align: left;}"
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_qp6gtt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x9Anzr": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "From Bikini Cares",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_AT4yAp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><em>We have two homes: Mother Earth and our body.</em></p><p><em>Please take care of them.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9Anzr",
+        "richtext_AT4yAp"
       ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_MiNADN": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_NAdMp8": {
+          "type": "heading",
+          "settings": {
+            "text": "Sustainable at heart",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_JjTRAj": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NAdMp8",
+        "richtext_JjTRAj"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_size": "xs",
+        "image": "shopify://shop_images/360_F_352997231_S2Ha1VuGaV6IpkTNCqbRIyNYIYIIS4jl.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 5
+      }
+    },
+    "image_with_text_gj9CV3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dh77NJ": {
+          "type": "heading",
+          "settings": {
+            "text": "From Bikini Value",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_ktjbyw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dh77NJ",
+        "richtext_ktjbyw"
+      ],
+      "custom_css": [],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/4EE38C86-AC8C-4F1F-BB73-4D0FE4185B57_1_105_c.jpg",
+        "image": "shopify://shop_images/2bf09113-9c09-41a9-aec0-38f906b87515_d0fa0139-dbd9-40cd-9a12-0845dd636c3b.webp",
         "reveal_on_scroll": false,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
-    "blocks_egLDrz": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_e09345d_xhyEif": {
-          "type": "ai_gen_block_e09345d",
-          "settings": {
-            "height_desktop": 0,
-            "height_mobile": 0,
-            "background_color": "#efefef"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_e09345d_xhyEif"
-      ],
-      "name": "Spazio bianco",
-      "settings": {
-        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": false
       }
     }
   },
@@ -216,7 +329,10 @@
     "image_with_text_overlay_y9TJa3",
     "rich_text_qcJ3hj",
     "image_with_text_WVXE48",
-    "image_with_text_rrbdrG",
-    "blocks_egLDrz"
+    "media_grid_njpkgT",
+    "rich_text_VGbUab",
+    "rich_text_qp6gtt",
+    "image_with_text_overlay_MiNADN",
+    "image_with_text_gj9CV3"
   ]
 }
