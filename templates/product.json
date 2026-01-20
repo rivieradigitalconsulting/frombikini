@@ -99,7 +99,7 @@
             "text": "{{ product.metafields.pdp.fb_feature_1.value.fb_product_title.value }}",
             "link": "",
             "icon": "picto-love",
-            "custom_icon": "{{ metaobjects.fb_product_features[\"trecce-fatte-a-mano\"].fb_product_features.value }}",
+            "custom_icon": "{{ product.metafields.pdp.fb_feature_1.value.fb_product_features.value }}",
             "icon_width": 32,
             "background": "#f9f4f0",
             "text_color": "#564747",
@@ -140,55 +140,6 @@
             "icon": "picto-love",
             "custom_icon": "{{ metaobjects.fb_product_features[\"100-tessuti-italiani-pregiati\"].fb_product_features.value }}",
             "icon_width": 32,
-            "background": "#f9f4f0",
-            "text_color": "#564747",
-            "border_color": ""
-          }
-        },
-        "feature_with_icon_GAnTqh": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "{{ metaobjects.fb_product_features[\"produzione-a-km-0\"].fb_product_title.value }}",
-            "link": "",
-            "icon": "picto-love",
-            "custom_icon": "{{ metaobjects.fb_product_features[\"produzione-a-km-0\"].fb_product_features.value }}",
-            "icon_width": 32,
-            "background": "#f9f4f0",
-            "text_color": "#564747",
-            "border_color": ""
-          }
-        },
-        "feature_with_icon_9G9Xwn": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "Disegnato e realizzato a mano in Italia",
-            "link": "",
-            "icon": "picto-pin",
-            "icon_width": 20,
-            "background": "#f9f4f0",
-            "text_color": "#564747",
-            "border_color": ""
-          }
-        },
-        "feature_with_icon_i7jN7d": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "Guidati dalla sostenibilità, con orgoglio",
-            "link": "",
-            "icon": "picto-leaf",
-            "icon_width": 20,
-            "background": "#f9f4f0",
-            "text_color": "#564747",
-            "border_color": ""
-          }
-        },
-        "feature_with_icon_yG6hqK": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "Capo certificato OEKO-TEX: senza sostanze nocive",
-            "link": "",
-            "icon": "picto-earth",
-            "icon_width": 20,
             "background": "#f9f4f0",
             "text_color": "#564747",
             "border_color": ""
@@ -287,10 +238,6 @@
         "feature_with_icon_RP8kHb",
         "feature_with_icon_8gHBVy",
         "feature_with_icon_YYKLbL",
-        "feature_with_icon_GAnTqh",
-        "feature_with_icon_9G9Xwn",
-        "feature_with_icon_i7jN7d",
-        "feature_with_icon_yG6hqK",
         "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
