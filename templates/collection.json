@@ -95,7 +95,7 @@
         "richtext_bzMRkY": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Descrizione di collezione.</strong> Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "{{ collection.description }}"
           }
         }
       },
