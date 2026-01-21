@@ -107,7 +107,7 @@
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
+        "image": "{{ collection.image }}",
         "mobile_image": "shopify://shop_images/2000X1000_SHOPIFY_HOMEPAGE_1600_x_1600_px_2000_x_1000_px_1.jpg",
         "reveal_on_scroll": false,
         "image_position": "start",
