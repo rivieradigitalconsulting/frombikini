@@ -413,7 +413,7 @@
     "custom_css": [
       "@media screen and (min-width: 768px) {product-sticky-bar {background-color: #f9f4f0 !important; }}",
       "product-sticky-bar .h6 {text-transform: uppercase; font-size: 15px; font-weight: bold;}",
-      ".#tab-b7629688-2f7a-406a-aa84-4a2067c91d8b-0 {font-size: var(--text-h5);}"
+      "#tab-b7629688-2f7a-406a-aa84-4a2067c91d8b-0 {font-size: var(--text-h5);}"
     ]
   }
 }
