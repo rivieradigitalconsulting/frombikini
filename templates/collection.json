@@ -60,6 +60,9 @@
     },
     "main": {
       "type": "main-collection",
+      "custom_css": [
+        ".collection-toolbar__button {font-size: 17px !important;}"
+      ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "hide_product_information": false,
