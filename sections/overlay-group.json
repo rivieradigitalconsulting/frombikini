@@ -13,6 +13,9 @@
   "sections": {
     "cart-drawer": {
       "type": "cart-drawer",
+      "custom_css": [
+        ".button {font-weight: 700;}"
+      ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "show_cart_note": true,
