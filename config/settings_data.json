@@ -43,7 +43,7 @@
     "stagger_blog_posts_apparition": false,
     "stagger_menu_apparition": false,
     "product_image_aspect_ratio": "tall_crop",
-    "product_card_text_font": "body",
+    "product_card_text_font": "heading",
     "show_product_rating": false,
     "show_quick_buy": false,
     "show_discount": false,
@@ -412,9 +412,7 @@
   "platform_customizations": {
     "custom_css": [
       "@media screen and (min-width: 768px) {product-sticky-bar {background-color: #f9f4f0 !important; }}",
-      "product-sticky-bar .h6 {text-transform: uppercase; font-size: 15px; font-weight: bold;}",
-      ".predictive-search__results .h6 {font-size: var(--text-h5) !important;}",
-      ".predictive-search__results .button {font-weight: bold;}"
+      "product-sticky-bar .h6 {text-transform: uppercase; font-size: 15px; font-weight: bold;}"
     ]
   }
 }
