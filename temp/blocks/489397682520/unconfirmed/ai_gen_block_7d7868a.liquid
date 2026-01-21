@@ -1,6 +1,1167 @@
+{% doc %}
+  @prompt
+    sezione a griglia in cui posso decidere distanza tra elementi della griglia, quadrati o circolari, Portiamo questi elementi a 50. Di questi elementi toglimi il contorno, si deve vedere solo immagine che deve entrare nel contenitore coprendolo tutto. Dammi anche a mobile la possibilità di visualizzare fino a 5 colonne. Poi colore di background generale. Possibilità di inserire un testo al centro del blocco, decidere font desktop e mobil e font. Poi possibilità di inserire titolo e sottotitolo sotto il blocco, decidere dimensioni per ogni device e spaziatur tra i due
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-grid-container-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding_top }}px 20px {{ block.settings.section_padding_bottom }}px;
+  }
+
+  .ai-grid-wrapper-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .ai-grid-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-grid-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_subtitle_spacing }}px;
+  }
+
+  .ai-grid-subtitle-{{ ai_gen_id }} {
+    font-family: {{ block.settings.subtitle_font.family }}, {{ block.settings.subtitle_font.fallback_families }};
+    font-weight: {{ block.settings.subtitle_font.weight }};
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+  }
+
+  .ai-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.grid_gap }}px;
+    position: relative;
+  }
+
+  .ai-grid-center-text-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    pointer-events: none;
+    color: {{ block.settings.center_text_color }};
+    font-family: {{ block.settings.center_text_font.family }}, {{ block.settings.center_text_font.fallback_families }};
+    font-weight: {{ block.settings.center_text_font.weight }};
+    max-width: 90%;
+  }
+
+  .ai-grid-item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    {% if block.settings.item_shape == 'circle' %}
+      border-radius: 50%;
+    {% else %}
+      border-radius: {{ block.settings.item_border_radius }}px;
+    {% endif %}
+  }
+
+  .ai-grid-item-content-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .ai-grid-item-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-grid-item-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-grid-item-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    }
+
+    .ai-grid-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_desktop }}px;
+    }
+
+    .ai-grid-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_desktop }}px;
+    }
+
+    .ai-grid-center-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.center_text_size_desktop }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+    }
+
+    .ai-grid-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile }}px;
+    }
+
+    .ai-grid-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_mobile }}px;
+    }
+
+    .ai-grid-center-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.center_text_size_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<grid-section-{{ ai_gen_id }}
+  class="ai-grid-container-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-grid-wrapper-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.subtitle != blank %}
+      <div class="ai-grid-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-grid-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <div class="ai-grid-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-grid-{{ ai_gen_id }}" style="position: relative;">
+      {% if block.settings.center_text != blank %}
+        <div class="ai-grid-center-text-{{ ai_gen_id }}">
+          {{ block.settings.center_text }}
+        </div>
+      {% endif %}
+
+      {% for i in (1..50) %}
+        {% liquid
+          assign image_key = 'item_' | append: i | append: '_image'
+          assign link_key = 'item_' | append: i | append: '_link'
+          
+          assign item_image = block.settings[image_key]
+          assign item_link = block.settings[link_key]
+        %}
+
+        {% if item_image != blank %}
+          <div class="ai-grid-item-{{ ai_gen_id }}">
+            {% if item_link != blank %}
+              <a href="{{ item_link }}" class="ai-grid-item-content-{{ ai_gen_id }}">
+            {% else %}
+              <div class="ai-grid-item-content-{{ ai_gen_id }}">
+            {% endif %}
+              
+              <img
+                src="{{ item_image | image_url: width: 600 }}"
+                alt="{{ item_image.alt | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+                class="ai-grid-item-image-{{ ai_gen_id }}"
+              >
+
+            {% if item_link != blank %}
+              </a>
+            {% else %}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</grid-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GridSection{{ai_gen_id}} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupGrid();
+      }
+
+      setupGrid() {
+        const items = this.querySelectorAll('.ai-grid-item-{{ ai_gen_id }}');
+        items.forEach((item, index) => {
+          item.style.animationDelay = `${index * 0.02}s`;
+        });
+      }
+    }
+
+    customElements.define('grid-section-{{ ai_gen_id }}', GridSection{{ai_gen_id}});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Griglia personalizzabile",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Sfondo sezione"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Colore sfondo",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding superiore",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding inferiore",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Titolo e sottotitolo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font",
+      "label": "Font titolo",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Colore titolo",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "min": 16,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione titolo desktop",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "min": 14,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione titolo mobile",
+      "default": 24
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font",
+      "label": "Font sottotitolo",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Colore sottotitolo",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione sottotitolo desktop",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "min": 10,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione sottotitolo mobile",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "title_subtitle_spacing",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Spaziatura tra titolo e sottotitolo",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Spaziatura sotto intestazione",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Testo centrale"
+    },
+    {
+      "type": "textarea",
+      "id": "center_text",
+      "label": "Testo al centro della griglia"
+    },
+    {
+      "type": "font_picker",
+      "id": "center_text_font",
+      "label": "Font testo centrale",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "color",
+      "id": "center_text_color",
+      "label": "Colore testo centrale",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "center_text_size_desktop",
+      "min": 16,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione testo centrale desktop",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "center_text_size_mobile",
+      "min": 14,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Dimensione testo centrale mobile",
+      "default": 28
+    },
+    {
+      "type": "header",
+      "content": "Layout griglia"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "label": "Colonne su desktop",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Colonne su mobile",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Distanza tra elementi",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Forma elementi"
+    },
+    {
+      "type": "select",
+      "id": "item_shape",
+      "label": "Forma",
+      "options": [
+        {
+          "value": "square",
+          "label": "Quadrato"
+        },
+        {
+          "value": "circle",
+          "label": "Circolare"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Arrotondamento angoli",
+      "info": "Applicato solo se la forma è quadrata",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Elemento 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_1_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_2_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_3_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_4_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_5_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_6_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_6_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_7_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_7_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_8_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_8_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_9_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_9_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_10_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_10_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 11"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_11_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_11_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 12"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_12_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_12_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 13"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_13_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_13_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 14"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_14_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_14_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 15"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_15_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_15_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 16"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_16_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_16_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 17"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_17_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_17_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 18"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_18_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_18_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 19"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_19_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_19_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 20"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_20_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_20_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 21"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_21_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_21_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 22"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_22_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_22_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 23"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_23_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_23_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 24"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_24_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_24_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 25"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_25_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_25_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 26"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_26_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_26_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 27"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_27_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_27_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 28"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_28_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_28_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 29"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_29_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_29_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 30"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_30_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_30_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 31"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_31_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_31_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 32"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_32_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_32_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 33"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_33_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_33_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 34"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_34_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_34_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 35"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_35_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_35_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 36"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_36_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_36_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 37"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_37_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_37_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 38"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_38_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_38_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 39"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_39_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_39_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 40"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_40_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_40_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 41"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_41_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_41_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 42"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_42_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_42_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 43"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_43_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_43_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 44"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_44_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_44_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 45"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_45_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_45_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 46"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_46_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_46_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 47"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_47_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_47_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 48"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_48_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_48_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 49"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_49_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_49_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 50"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_50_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "item_50_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Griglia personalizzabile"
+    }
+  ]
+}
 {% endschema %}
