@@ -27,7 +27,7 @@
           "bahia-onepiece-embossed"
         ],
         "cross_sell_title": "Complete with",
-        "cross_sell_stack_products": false
+        "cross_sell_stack_products": true
       }
     },
     "newsletter-popup": {
