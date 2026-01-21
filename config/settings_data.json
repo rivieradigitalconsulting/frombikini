@@ -217,7 +217,7 @@
           "background": "#f9f4f0",
           "background_gradient": "",
           "text_color": "#564747",
-          "primary_button_background": "#d9c5ab",
+          "primary_button_background": "#564747",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ffffff",
           "circle_button_icon": "#1c1c1c"
