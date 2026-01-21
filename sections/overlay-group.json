@@ -14,7 +14,7 @@
     "cart-drawer": {
       "type": "cart-drawer",
       "custom_css": [
-        ".button {font-weight: bold;}"
+        ".h6 {font-size: var(--text-h6);}"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
