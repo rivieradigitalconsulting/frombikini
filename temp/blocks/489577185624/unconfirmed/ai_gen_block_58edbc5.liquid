@@ -1,6 +1,876 @@
+{% doc %}
+  @prompt
+    ciao, ho bisogno di una sezione che si compili di 12 elementi, che possono essere quadrati o circolari. Posso decidere la distanza del modulo ai lati e sopra e sotto come Margine. Posso decidere distanza tra gli elementi. Posso decidere disposizione a desktop e mobile (desktop da 2 fino a 4 per riga, mobile da 2 fino a 3 per riga) Passiamo alle caratteristiche degli elementi. Testo centrale, posso decidere per ogni dispositivo font e dimensioni del testo. Poi sotto all'elemento un titolo e un sottotitolo di cui posso scegliere per ognuno font e dimensioni, giustifica e spaziatura tra i due elementi. L'elemento deve essere compilato con un immagine., quando è selezionato 2 su mobile sta a 3, Per ogni elemento aggiungimi la possibilità di inserire un link - e non mi funziona giustifica / allineamento titolo e sottotilo, prova a controllare
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-grid-container-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding-top: {{ block.settings.margin_top }}px;
+    padding-bottom: {{ block.settings.margin_bottom }}px;
+    padding-left: {{ block.settings.margin_left }}px;
+    padding-right: {{ block.settings.margin_right }}px;
+  }
+
+  .ai-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.gap }}px;
+    {% if block.settings.columns_mobile == '2' %}
+      grid-template-columns: repeat(2, 1fr);
+    {% else %}
+      grid-template-columns: repeat(3, 1fr);
+    {% endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-{{ ai_gen_id }} {
+      {% if block.settings.columns_desktop == '2' %}
+        grid-template-columns: repeat(2, 1fr);
+      {% elsif block.settings.columns_desktop == '3' %}
+        grid-template-columns: repeat(3, 1fr);
+      {% else %}
+        grid-template-columns: repeat(4, 1fr);
+      {% endif %}
+    }
+  }
+
+  .ai-grid-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: {{ block.settings.text_align }};
+    gap: {{ block.settings.title_subtitle_gap }}px;
+    text-decoration: none;
+  }
+
+  .ai-grid-item-link-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: {{ block.settings.text_align }};
+    gap: {{ block.settings.title_subtitle_gap }}px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ai-grid-item-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    {% if block.settings.shape == 'circle' %}
+      border-radius: 50%;
+    {% else %}
+      border-radius: 0;
+    {% endif %}
+  }
+
+  .ai-grid-item-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-grid-item-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-grid-item-image-placeholder-{{ ai_gen_id }} svg {
+    width: 50%;
+    height: 50%;
+    opacity: 0.3;
+  }
+
+  .ai-grid-item-overlay-text-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: {{ block.settings.overlay_text_color }};
+    font-family: {{ block.settings.overlay_font.family }}, {{ block.settings.overlay_font.fallback_families }};
+    font-weight: {{ block.settings.overlay_font.weight }};
+    font-style: {{ block.settings.overlay_font.style }};
+    font-size: {{ block.settings.overlay_text_size_mobile }}px;
+    text-align: center;
+    width: 90%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-item-overlay-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.overlay_text_size_desktop }}px;
+    }
+  }
+
+  .ai-grid-item-text-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.title_subtitle_gap }}px;
+    width: 100%;
+    {% if block.settings.text_align == 'flex-start' %}
+      align-items: flex-start;
+      text-align: left;
+    {% elsif block.settings.text_align == 'center' %}
+      align-items: center;
+      text-align: center;
+    {% else %}
+      align-items: flex-end;
+      text-align: right;
+    {% endif %}
+  }
+
+  .ai-grid-item-title-{{ ai_gen_id }} {
+    color: {{ block.settings.title_color }};
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+    font-style: {{ block.settings.title_font.style }};
+    font-size: {{ block.settings.title_size_mobile }}px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-item-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_desktop }}px;
+    }
+  }
+
+  .ai-grid-item-subtitle-{{ ai_gen_id }} {
+    color: {{ block.settings.subtitle_color }};
+    font-family: {{ block.settings.subtitle_font.family }}, {{ block.settings.subtitle_font.fallback_families }};
+    font-weight: {{ block.settings.subtitle_font.weight }};
+    font-style: {{ block.settings.subtitle_font.style }};
+    font-size: {{ block.settings.subtitle_size_mobile }}px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-item-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_desktop }}px;
+    }
+  }
+{% endstyle %}
+
+<grid-elements-{{ ai_gen_id }} class="ai-grid-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-grid-{{ ai_gen_id }}">
+    {% for i in (1..12) %}
+      {% liquid
+        assign image_key = 'image_' | append: i
+        assign overlay_text_key = 'overlay_text_' | append: i
+        assign title_key = 'title_' | append: i
+        assign subtitle_key = 'subtitle_' | append: i
+        assign link_key = 'link_' | append: i
+
+        assign image = block.settings[image_key]
+        assign overlay_text = block.settings[overlay_text_key]
+        assign title = block.settings[title_key]
+        assign subtitle = block.settings[subtitle_key]
+        assign link = block.settings[link_key]
+      %}
+
+      {% if link != blank %}
+        <a href="{{ link }}" class="ai-grid-item-link-{{ ai_gen_id }}">
+          <div class="ai-grid-item-image-wrapper-{{ ai_gen_id }}">
+            {% if image %}
+              <img
+                src="{{ image | image_url: width: 800 }}"
+                alt="{{ image.alt | escape }}"
+                loading="lazy"
+                width="800"
+                height="800"
+                class="ai-grid-item-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-grid-item-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+
+            {% if overlay_text != blank %}
+              <div class="ai-grid-item-overlay-text-{{ ai_gen_id }}">
+                {{ overlay_text }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-grid-item-text-wrapper-{{ ai_gen_id }}">
+            {% if title != blank %}
+              <h3 class="ai-grid-item-title-{{ ai_gen_id }}">{{ title }}</h3>
+            {% endif %}
+
+            {% if subtitle != blank %}
+              <p class="ai-grid-item-subtitle-{{ ai_gen_id }}">{{ subtitle }}</p>
+            {% endif %}
+          </div>
+        </a>
+      {% else %}
+        <div class="ai-grid-item-{{ ai_gen_id }}">
+          <div class="ai-grid-item-image-wrapper-{{ ai_gen_id }}">
+            {% if image %}
+              <img
+                src="{{ image | image_url: width: 800 }}"
+                alt="{{ image.alt | escape }}"
+                loading="lazy"
+                width="800"
+                height="800"
+                class="ai-grid-item-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-grid-item-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+
+            {% if overlay_text != blank %}
+              <div class="ai-grid-item-overlay-text-{{ ai_gen_id }}">
+                {{ overlay_text }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-grid-item-text-wrapper-{{ ai_gen_id }}">
+            {% if title != blank %}
+              <h3 class="ai-grid-item-title-{{ ai_gen_id }}">{{ title }}</h3>
+            {% endif %}
+
+            {% if subtitle != blank %}
+              <p class="ai-grid-item-subtitle-{{ ai_gen_id }}">{{ subtitle }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</grid-elements-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GridElements{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('grid-elements-{{ ai_gen_id }}', GridElements{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Griglia elementi",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Colonne desktop",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Colonne mobile",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Distanza tra elementi",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "shape",
+      "label": "Forma elementi",
+      "options": [
+        {
+          "value": "square",
+          "label": "Quadrato"
+        },
+        {
+          "value": "circle",
+          "label": "Cerchio"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "header",
+      "content": "Margini"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Margine superiore",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Margine inferiore",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_left",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Margine sinistro",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_right",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Margine destro",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Testo centrale"
+    },
+    {
+      "type": "font_picker",
+      "id": "overlay_font",
+      "label": "Font testo centrale",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "overlay_text_size_mobile",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Dimensione mobile",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "overlay_text_size_desktop",
+      "min": 10,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Dimensione desktop",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "overlay_text_color",
+      "label": "Colore testo centrale",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Titolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font",
+      "label": "Font titolo",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Dimensione mobile",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "min": 10,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Dimensione desktop",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Colore titolo",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Sottotitolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font",
+      "label": "Font sottotitolo",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Dimensione mobile",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "min": 10,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Dimensione desktop",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Colore sottotitolo",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Allineamento e spaziatura"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Allineamento testo",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "flex-end",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "title_subtitle_gap",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Spaziatura titolo-sottotitolo",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Elemento 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_1",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_1",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_2",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_2",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_3",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_3",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_3",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_4",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_4",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_4",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_4",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_5",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_5",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_5",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_5",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_6",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_6",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_6",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_6",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_7",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_7",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_7",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_7",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_8",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_8",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_8",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_8",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_9",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_9",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_9",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_9",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_9",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_10",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_10",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_10",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_10",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_10",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 11"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_11",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_11",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_11",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_11",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_11",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 12"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_12",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "overlay_text_12",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "title_12",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_12",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "link_12",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Griglia elementi"
+    }
+  ]
+}
 {% endschema %}
