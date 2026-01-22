@@ -16,9 +16,101 @@
         "show_title": true,
         "page_width": "xs"
       }
+    },
+    "1769078297e11e9185": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_58edbc5_pBBnjd": {
+          "type": "ai_gen_block_58edbc5",
+          "settings": {
+            "columns_desktop": "4",
+            "columns_mobile": "2",
+            "gap": 0,
+            "shape": "circle",
+            "margin_top": 40,
+            "margin_bottom": 40,
+            "margin_left": 20,
+            "margin_right": 20,
+            "overlay_font": "sans_serif_n4",
+            "overlay_text_size_mobile": 14,
+            "overlay_text_size_desktop": 18,
+            "overlay_text_color": "#ffffff",
+            "title_font": "sans_serif_n4",
+            "title_size_mobile": 16,
+            "title_size_desktop": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_mobile": 14,
+            "subtitle_size_desktop": 16,
+            "subtitle_color": "#666666",
+            "text_align": "center",
+            "title_subtitle_gap": 8,
+            "image_1": "{{ metaobjects.fb_color[\"love-power\"].fb_color_image.value }}",
+            "overlay_text_1": "{{ metaobjects.fb_color[\"love-power\"].fb_color_title.value }}",
+            "title_1": "",
+            "subtitle_1": "{{ metaobjects.fb_color[\"love-power\"].fb_color_description.value }}",
+            "link_1": "",
+            "overlay_text_2": "",
+            "title_2": "",
+            "subtitle_2": "",
+            "link_2": "",
+            "overlay_text_3": "",
+            "title_3": "",
+            "subtitle_3": "",
+            "link_3": "",
+            "overlay_text_4": "",
+            "title_4": "",
+            "subtitle_4": "",
+            "link_4": "",
+            "overlay_text_5": "",
+            "title_5": "",
+            "subtitle_5": "",
+            "link_5": "",
+            "overlay_text_6": "",
+            "title_6": "",
+            "subtitle_6": "",
+            "link_6": "",
+            "overlay_text_7": "",
+            "title_7": "",
+            "subtitle_7": "",
+            "link_7": "",
+            "overlay_text_8": "",
+            "title_8": "",
+            "subtitle_8": "",
+            "link_8": "",
+            "overlay_text_9": "",
+            "title_9": "",
+            "subtitle_9": "",
+            "link_9": "",
+            "overlay_text_10": "",
+            "title_10": "",
+            "subtitle_10": "",
+            "link_10": "",
+            "overlay_text_11": "",
+            "title_11": "",
+            "subtitle_11": "",
+            "link_11": "",
+            "overlay_text_12": "",
+            "title_12": "",
+            "subtitle_12": "",
+            "link_12": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_58edbc5_pBBnjd"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1769078297e11e9185"
   ]
 }
