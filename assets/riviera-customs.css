@@ -20,3 +20,10 @@
 .color-variants__swatch.selected {
   outline-color: black;
 }
+
+@media screen and (min-width: 1000px) {
+  scroll-carousel.product-list.product-list--carousel.scroll-area.md\:unbleed {
+    padding-left: 2px;
+    scroll-padding-inline: 2px;
+  }
+}
