@@ -281,7 +281,7 @@
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "scheme-4",
-        "image_size": "xs",
+        "image_size": "sm",
         "image": "shopify://shop_images/360_F_352997231_S2Ha1VuGaV6IpkTNCqbRIyNYIYIIS4jl.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": false,
