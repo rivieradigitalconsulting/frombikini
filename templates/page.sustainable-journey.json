@@ -31,7 +31,7 @@
         "richtext_Hh9fgV": {
           "type": "richtext",
           "settings": {
-            "content": "<p>From Bikini compie ogni anno nuovi passi avanti.<br/>Quest’anno siamo orgogliosi di offrire alla nostra community una <strong>Collezione Eco-Friendly</strong> e una <strong>Capsule Organica</strong>.</p>"
+            "content": "<p><strong>From Bikini nasce da un profondo rispetto per Madre Natura: <br/></strong>ogni nostra azione è pensata per proteggerla e preservarla, riducendo al minimo il nostro impatto ambientale.</p>"
           }
         }
       },
@@ -84,21 +84,29 @@
     "image_with_text_WVXE48": {
       "type": "image-with-text",
       "blocks": {
+        "subheading_xVBTQA": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<em>Crediamo in una moda consapevole</em>"
+          }
+        },
         "heading_TFwdWd": {
           "type": "heading",
           "settings": {
-            "text": "From Bikini Value",
+            "text": "Un impegno verso la sostenibilità",
             "heading_tag": "h1"
           }
         },
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
+            "content": "<p>Crediamo in una moda consapevole, in cui ogni gesto ha un significato.</p><p>Il nostro impegno per la sostenibilità guida ogni fase della filiera: dalla selezione attenta dei fornitori, all’utilizzo di materiali di alta qualità, fino all’informazione dei nostri clienti sulla cura dei capi per prolungarne la vita nel tempo.</p><p>Desideriamo che i tuoi <strong>From Bikini</strong> siano amati, vissuti e custoditi a lungo, perché ciò che dura è, per sua natura, sostenibile.</p>"
           }
         }
       },
       "block_order": [
+        "subheading_xVBTQA",
         "heading_TFwdWd",
         "richtext_hVqRHP"
       ],
@@ -218,22 +226,30 @@
     "rich_text_VGbUab": {
       "type": "rich-text",
       "blocks": {
+        "heading_te7eBB": {
+          "type": "heading",
+          "settings": {
+            "text": "Il nostro contributo",
+            "heading_tag": "h1"
+          }
+        },
         "richtext_tqaddF": {
           "type": "richtext",
           "settings": {
-            "content": "<p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p>"
+            "content": "<p>Produciamo interamente in Italia, a km 0<strong>,</strong> riducendo i trasporti e di conseguenza l’impatto ambientale e le emissioni di carbonio.  <br/>Al contempo, adottiamo un approccio Slow Fashion che ci porta a produrre quantità limitate di capi e ad utilizzare materiali di alta qualità, selezionati per la loro resistenza e durata nel tempo, riducendo cosi’ gli sprechi. <br/>Gli scarti di lavorazione vengono trasformati in dettagli artigianali, come trecce fatte a mano, affinché nessun materiale vada sprecato.</p>"
           }
         }
       },
       "block_order": [
+        "heading_te7eBB",
         "richtext_tqaddF"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "content_width": "md",
-        "text_position": "center",
+        "content_width": "sm",
+        "text_position": "start",
         "remove_vertical_spacing": false
       }
     },
@@ -243,7 +259,7 @@
         "heading_NAdMp8": {
           "type": "heading",
           "settings": {
-            "text": "Sustainable at heart",
+            "text": "Ci impegniamo a evolverci costantemente per trovare soluzioni che riducano l’impatto della nostra industria sul pianeta. ",
             "heading_tag": "h1"
           }
         },
@@ -272,7 +288,7 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
-        "overlay_opacity": 5
+        "overlay_opacity": 15
       }
     },
     "image_with_text_gj9CV3": {
@@ -281,14 +297,14 @@
         "heading_dh77NJ": {
           "type": "heading",
           "settings": {
-            "text": "From Bikini Value",
+            "text": "Sostenibilità sulla pelle",
             "heading_tag": "h1"
           }
         },
         "richtext_ktjbyw": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La nostra Capsule Sostenibile è il risultato del percorso che From Bikini sta intraprendendo per integrare tessuti ecosostenibili privi di metalli pesanti e sostanze chimiche nocive.<br/><br/>Il ciclo di vita del prodotto sostenibile contribuisce a ridurre lo spreco di acqua ed energia, diminuendo così l’impatto ambientale.</p><p>La nostra Cotton Capsule nasce da un approccio condiviso di puro amore per Madre Natura e dal profondo rispetto per Lei insieme a Martina, fondatrice di Femme de Zabi, un’azienda artigianale completamente eco-responsabile.<br/><br/>Con questa visione che ci unisce abbiamo creato un bikini artigianale in cotone al 100%.</p><p>È interamente realizzato in Pima Cotton, uno dei cotoni più morbidi al mondo.<br/>È noto per dare vita a un tessuto liscio, morbido al tatto, resistente alle pieghe e ultra-durevole.<br/>I produttori affermano che il Pima Cotton abbia una durata del 50% superiore rispetto ad altri tipi di cotone.<br/><br/>È perfetto anche per chi ha la pelle sensibile! Abbiamo voluto fare del nostro meglio per ridurre l’impatto su Madre Natura, offrendo diverse opzioni Eco Friendly.</p><p></p>"
+            "content": "<p>La scelta dei tessuti: dove tutto ha inizio.</p><p>Ogni anno From Bikini compie nuovi passi per ridurre la propria impronta ambientale attraverso l’utilizzo di tessuti sostenibili e responsabili nelle collezioni.</p><p>Collaboriamo esclusivamente con fornitori italiani che condividono i nostri valori, privilegiando tessuti di alta qualità come lycre delicate e confortevoli studiate per adattarsi al corpo come una seconda pelle, accompagnando i movimenti con estrema leggerezza.</p><p>In ogni collezione introduciamo materiali naturali e certificati, come il cotone biologico o filati con certificazione OEKO-TEX®, per offrire capi che rispettino profondamente sia il corpo che l’ambiente.</p><p>I nostri tessuti in 100% cotone biologico sono coltivati senza pesticidi o fertilizzanti sintetici: più gentili sulla pelle, sono ideali anche per chi ha pelle sensibile o soffre di allergie.</p><p>Inoltre, selezionando tessuti certificati OEKO-TEX, che garantiscono l’assenza di sostanze nocive, assicuriamo una scelta d’’acquisto orientata al benessere della pelle rendendo ogni capo puro piacere da indossare.</p>"
           }
         }
       },
@@ -314,14 +330,14 @@
         "heading_x9Anzr": {
           "type": "heading",
           "settings": {
-            "text": "We have two homes: Mother Earth and our body.",
+            "text": "Abbiamo due case: Madre Terra e il nostro corpo.",
             "heading_tag": "h1"
           }
         },
         "heading_4nzxbB": {
           "type": "heading",
           "settings": {
-            "text": "Please take care of them.",
+            "text": "Prendiamocene cura.",
             "heading_tag": "h1"
           }
         },
