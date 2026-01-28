@@ -298,6 +298,7 @@
       "blocks": {
         "subheading_Qn7tb9": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "La scelta dei tessuti: dove tutto ha inizio"
           }
@@ -309,16 +310,24 @@
             "heading_tag": "h1"
           }
         },
+        "heading_drffaR": {
+          "type": "heading",
+          "settings": {
+            "text": "La scelta dei tessuti: dove tutto ha inizio",
+            "heading_tag": "h4"
+          }
+        },
         "richtext_ktjbyw": {
           "type": "richtext",
           "settings": {
-            "content": "<p>La scelta dei tessuti: dove tutto ha inizio.</p><p>Ogni anno From Bikini compie nuovi passi per ridurre la propria impronta ambientale attraverso l’utilizzo di tessuti sostenibili e responsabili nelle collezioni.</p><p>Collaboriamo esclusivamente con fornitori italiani che condividono i nostri valori, privilegiando tessuti di alta qualità come lycre delicate e confortevoli studiate per adattarsi al corpo come una seconda pelle, accompagnando i movimenti con estrema leggerezza.</p><p>In ogni collezione introduciamo materiali naturali e certificati, come il cotone biologico o filati con certificazione OEKO-TEX®, per offrire capi che rispettino profondamente sia il corpo che l’ambiente.</p><p>I nostri tessuti in 100% cotone biologico sono coltivati senza pesticidi o fertilizzanti sintetici: più gentili sulla pelle, sono ideali anche per chi ha pelle sensibile o soffre di allergie.</p><p>Inoltre, selezionando tessuti certificati OEKO-TEX, che garantiscono l’assenza di sostanze nocive, assicuriamo una scelta d’’acquisto orientata al benessere della pelle rendendo ogni capo puro piacere da indossare.</p>"
+            "content": "<p>Ogni anno From Bikini compie nuovi passi per ridurre la propria impronta ambientale attraverso l’utilizzo di tessuti sostenibili e responsabili nelle collezioni.</p><p>Collaboriamo esclusivamente con fornitori italiani che condividono i nostri valori, privilegiando tessuti di alta qualità come lycre delicate e confortevoli studiate per adattarsi al corpo come una seconda pelle, accompagnando i movimenti con estrema leggerezza.</p><p>In ogni collezione introduciamo materiali naturali e certificati, come il cotone biologico o filati con certificazione OEKO-TEX®, per offrire capi che rispettino profondamente sia il corpo che l’ambiente.</p><p>I nostri tessuti in 100% cotone biologico sono coltivati senza pesticidi o fertilizzanti sintetici: più gentili sulla pelle, sono ideali anche per chi ha pelle sensibile o soffre di allergie.</p><p>Inoltre, selezionando tessuti certificati OEKO-TEX, che garantiscono l’assenza di sostanze nocive, assicuriamo una scelta d’’acquisto orientata al benessere della pelle rendendo ogni capo puro piacere da indossare.</p>"
           }
         }
       },
       "block_order": [
         "subheading_Qn7tb9",
         "heading_dh77NJ",
+        "heading_drffaR",
         "richtext_ktjbyw"
       ],
       "custom_css": [
