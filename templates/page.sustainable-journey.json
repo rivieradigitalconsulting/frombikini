@@ -296,6 +296,12 @@
     "image_with_text_gj9CV3": {
       "type": "image-with-text",
       "blocks": {
+        "subheading_Qn7tb9": {
+          "type": "subheading",
+          "settings": {
+            "text": "La scelta dei tessuti: dove tutto ha inizio"
+          }
+        },
         "heading_dh77NJ": {
           "type": "heading",
           "settings": {
@@ -311,6 +317,7 @@
         }
       },
       "block_order": [
+        "subheading_Qn7tb9",
         "heading_dh77NJ",
         "richtext_ktjbyw"
       ],
