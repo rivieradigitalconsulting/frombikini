@@ -23,6 +23,7 @@
       "blocks": {
         "heading_qDfpRR": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Sustainable Journey",
             "heading_tag": "h1"
