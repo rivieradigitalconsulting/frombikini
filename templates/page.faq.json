@@ -77,6 +77,14 @@
             "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo hello@frombikini.com e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
           }
         },
+        "category_iptVRT": {
+          "type": "category",
+          "settings": {
+            "title": "Account",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
         "question_etwfWb": {
           "type": "question",
           "settings": {
@@ -95,6 +103,7 @@
         "question_PCVhKA",
         "question_8DjXnq",
         "question_4Hb9dd",
+        "category_iptVRT",
         "question_etwfWb"
       ],
       "settings": {
