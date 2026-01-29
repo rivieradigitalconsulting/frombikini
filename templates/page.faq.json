@@ -125,7 +125,7 @@
           "type": "question",
           "settings": {
             "question": "Quali sono i costi relativi al reso?",
-            "answer": "<p>RESO SHOWROOM<br/>La procedura di reso presso la reception del nostro showroom in Via Turati 3, 20121 Milano, è gratuita. L'importo dell'ordine verrà rimborsato al netto delle eventuali spese di spedizione sostenute al momento dell'acquisto.\"  <br/></p><p>RESO ONLINE<br/>Per i resi in Italia la procedura ha un costo fisso di € 8, che verrà dedotto dall’importo rimborsato.<br/>Per i resi al di fuori dell'Italia il costo della spedizione di reso è a carico del cliente e varia in base al paese, clicca qui per maggiori informazioni. In alternativa, il cliente può contattarci e organizzare autonomamente la spedizione di ritorno.</p>"
+            "answer": "<p>RESO SHOWROOM<br/>La procedura di reso presso la reception del nostro showroom in Via Turati 3, 20121 Milano, è gratuita. L'importo dell'ordine verrà rimborsato al netto delle eventuali spese di spedizione sostenute al momento dell'acquisto.\"  <br/></p><p>RESO ONLINE<br/>Per i resi in Italia la procedura ha un costo fisso di € 8, che verrà dedotto dall’importo rimborsato.<br/>Per i resi al di fuori dell'Italia il costo della spedizione di reso è a carico del cliente e varia in base al paese, e verrà dedotto dall'importo rimborsato. In alternativa, il cliente può contattarci e organizzare autonomamente la spedizione di ritorno.</p>"
           }
         }
       },
