@@ -15,7 +15,9 @@
         "category": {
           "type": "category",
           "settings": {
-            "title": "Order"
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
           }
         },
         "question-1": {
@@ -46,7 +48,14 @@
         "question-2",
         "question-3"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
     }
   },
   "order": [
