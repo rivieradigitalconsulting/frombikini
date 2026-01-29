@@ -91,6 +91,21 @@
             "question": "Ho bisogno di un account per acquistare sul sito?",
             "answer": "<p>No, non è necessario creare un account manualmente. Al momento dell'acquisto, un account viene generato automaticamente e associato alla tua email. Qui vengono memorizzati i tuoi ordini, dati anagrafici e indirizzi di spedizione. Per accedere, visita la sezione Accedi e inserisci la tua email. Riceverai un codice temporaneo via email da inserire per accedere alla tua area personale.</p>"
           }
+        },
+        "category_LFbRcx": {
+          "type": "category",
+          "settings": {
+            "title": "Resi e Rimborsi",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_kf9jYF": {
+          "type": "question",
+          "settings": {
+            "question": "Come posso effettuare un reso online?",
+            "answer": "<p>Se per qualsiasi motivo non sei soddisfatto del tuo acquisto, accetteremo il reso degli articoli entro 14 giorni dalla data di consegna. Ecco come funziona la procedura:</p><ul><li>Accedi al tuo account personale.</li><li>Trova il tuo ordine: nella sezione Ordini, individua l’ordine per il quale desideri richiedere un reso. È possibile effettuare anche un reso parziale, selezionando solo alcuni dei prodotti contenuti nell’ordine.</li><li>Richiedi un reso: seleziona l’opzione per avviare la procedura e segui le istruzioni guidate.</li><li>Ricevi l’etichetta di spedizione per il reso via e-mail.</li><li>Prepara il pacco e applica l’etichetta all’esterno.</li><li>Restituisci il pacco: puoi portarlo in un Punto di ritiro, oppure prenotare il ritiro a domicilio tramite la piattaforma ufficiale del corriere.<br/><br/>Gli articoli devono essere restituiti nelle stesse condizioni originali. Per maggiori informazioni, consulta la pagina Resi & Rimborsi. (mettere la parte del BF qui).</li></ul>"
+          }
         }
       },
       "block_order": [
@@ -104,7 +119,9 @@
         "question_8DjXnq",
         "question_4Hb9dd",
         "category_iptVRT",
-        "question_etwfWb"
+        "question_etwfWb",
+        "category_LFbRcx",
+        "question_kf9jYF"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
