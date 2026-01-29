@@ -76,6 +76,13 @@
             "question": "Cosa accade in caso di perdita del pacco?",
             "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo hello@frombikini.com e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
           }
+        },
+        "question_etwfWb": {
+          "type": "question",
+          "settings": {
+            "question": "Ho bisogno di un account per acquistare sul sito?",
+            "answer": "<p>No, non è necessario creare un account manualmente. Al momento dell'acquisto, un account viene generato automaticamente e associato alla tua email. Qui vengono memorizzati i tuoi ordini, dati anagrafici e indirizzi di spedizione. Per accedere, visita la sezione Accedi e inserisci la tua email. Riceverai un codice temporaneo via email da inserire per accedere alla tua area personale.</p>"
+          }
         }
       },
       "block_order": [
@@ -87,7 +94,8 @@
         "category_zdMbQJ",
         "question_PCVhKA",
         "question_8DjXnq",
-        "question_4Hb9dd"
+        "question_4Hb9dd",
+        "question_etwfWb"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
