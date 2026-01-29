@@ -106,6 +106,20 @@
             "question": "Come posso effettuare un reso online?",
             "answer": "<p>Se per qualsiasi motivo non sei soddisfatto del tuo acquisto, accetteremo il reso degli articoli entro 14 giorni dalla data di consegna. Ecco come funziona la procedura:</p><ul><li>Accedi al tuo account personale.</li><li>Trova il tuo ordine: nella sezione Ordini, individua l’ordine per il quale desideri richiedere un reso. È possibile effettuare anche un reso parziale, selezionando solo alcuni dei prodotti contenuti nell’ordine.</li><li>Richiedi un reso: seleziona l’opzione per avviare la procedura e segui le istruzioni guidate.</li><li>Ricevi l’etichetta di spedizione per il reso via e-mail.</li><li>Prepara il pacco e applica l’etichetta all’esterno.</li><li>Restituisci il pacco: puoi portarlo in un Punto di ritiro, oppure prenotare il ritiro a domicilio tramite la piattaforma ufficiale del corriere.<br/><br/>Gli articoli devono essere restituiti nelle stesse condizioni originali. Per maggiori informazioni, consulta la pagina Resi & Rimborsi. (mettere la parte del BF qui).</li></ul>"
           }
+        },
+        "question_xT6rnK": {
+          "type": "question",
+          "settings": {
+            "question": "Posso effettuare un reso nel vostro Showroom?",
+            "answer": "<p>Puoi restituire gli articoli direttamente presso la reception del nostro Showroom in Via Turati 3, 20121, Milano. Per effettuare la restituzione ti basterà riconsegnare i capi entro 14 giorni dalla ricezione dell’ordine. Una volta riconsegnati, verificheremo le condizioni generali dei prodotti affinchè siano conformi alle politiche di reso. Il rimborso sarà accreditato sullo stesso metodo di pagamento utilizzato in fase di acquisto, entro 5-7 giorni lavorativi.<br/><br/>Per maggiori informazioni, consulta la pagina Resi & Rimborsi.</p>"
+          }
+        },
+        "question_bBqPBg": {
+          "type": "question",
+          "settings": {
+            "question": "Quali sono le condizioni per effettuare un reso?",
+            "answer": "<p>La richiesta per effettuare il reso deve essere inviata entro 14 giorni dalla data di ricezione dell’ordine.<br/>Gli articoli devono essere restituiti integri, inutilizzati e nella confezione originale. </p>"
+          }
         }
       },
       "block_order": [
@@ -121,7 +135,9 @@
         "category_iptVRT",
         "question_etwfWb",
         "category_LFbRcx",
-        "question_kf9jYF"
+        "question_kf9jYF",
+        "question_xT6rnK",
+        "question_bBqPBg"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
