@@ -47,6 +47,13 @@
             "question": "Posso cambiare un prodotto acquistato con un’altra taglia o colore?",
             "answer": "<p>Siamo lieti di effettuare cambi di taglia, a condizione che le condizioni del bikini siano le stesse. Per qualsiasi dubbio o necessità, il nostro Servizio Clienti è sempre a tua disposizione, puoi contattarci direttamente a hello@frombikini.com.</p>"
           }
+        },
+        "question_PCVhKA": {
+          "type": "question",
+          "settings": {
+            "question": "Modifica dell'indirizzo di consegna?",
+            "answer": "<p>Una volta confermato l'ordine per modificare l'indirizzo di consegna puoi contattarci direttamente a hello@frombikini.com.<br/>Se il suo ordine è stato spedito, ti invitiamo a contattare direttamente il corriere per confermare la possibilità di modificare l'indirizzo di consegna.</p>"
+          }
         }
       },
       "block_order": [
@@ -54,7 +61,8 @@
         "question-1",
         "question-3",
         "question-2",
-        "question_WzraHU"
+        "question_WzraHU",
+        "question_PCVhKA"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
