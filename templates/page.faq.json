@@ -30,8 +30,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "question": "How long will it take to get my orders?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "question": "Posso modificare o annullare un ordine?",
+            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione Contatti del sito o alla mail hello@frombikini.com.</p>"
           }
         },
         "question-3": {
