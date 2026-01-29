@@ -27,26 +27,26 @@
             "answer": "<p>Al momento della spedizione, riceverai un'e-mail con il numero di tracking per monitorare l'avanzamento della spedizione tramite il sito del corriere.<br/>In alternativa, puoi sempre monitorare lo stato della spedizione dalla tua <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\">area personale</a>. <br/>Non hai ricevuto il riepilogo entro un'ora? Ti consigliamo di controllare la cartella dello spam: a volte l'email può finire lì. Se l’email di conferma si trovava nello spam, ti invitiamo ad aggiungere l’indirizzo hello@frombikini.com alla tua rubrica.</p>"
           }
         },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "question": "Quali sono i metodi di pagamento accettati?",
-            "answer": "<p>Proponiamo diversi metodi di pagamento per gli ordini online. Troverai qui di seguito la lista dei metodi di pagamento disponibili: carta di credito, PayPal (anche in tre rate), e wallet digitali come Apple Pay e Google Pay.</p>"
-          }
-        },
         "question-3": {
           "type": "question",
           "settings": {
             "question": "Any question?",
             "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
           }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "question": "Posso modificare o annullare un ordine?",
+            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione Contatti del sito o alla mail hello@frombikini.com.</p>"
+          }
         }
       },
       "block_order": [
         "category",
         "question-1",
-        "question-2",
-        "question-3"
+        "question-3",
+        "question-2"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
