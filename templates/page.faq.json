@@ -30,8 +30,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "question": "Posso modificare o annullare un ordine?",
-            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione Contatti del sito o alla mail hello@frombikini.com.</p>"
+            "question": "Quali sono i metodi di pagamento accettati?",
+            "answer": "<p>Proponiamo diversi metodi di pagamento per gli ordini online. Troverai qui di seguito la lista dei metodi di pagamento disponibili: carta di credito, PayPal (anche in tre rate), e wallet digitali come Apple Pay e Google Pay.</p>"
           }
         },
         "question-3": {
