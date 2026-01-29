@@ -48,6 +48,14 @@
             "answer": "<p>Siamo lieti di effettuare cambi di taglia, a condizione che le condizioni del bikini siano le stesse. Per qualsiasi dubbio o necessità, il nostro Servizio Clienti è sempre a tua disposizione, puoi contattarci direttamente a hello@frombikini.com.</p>"
           }
         },
+        "category_zdMbQJ": {
+          "type": "category",
+          "settings": {
+            "title": "Spedizioni e Consegna",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
         "question_PCVhKA": {
           "type": "question",
           "settings": {
@@ -76,6 +84,7 @@
         "question-3",
         "question-2",
         "question_WzraHU",
+        "category_zdMbQJ",
         "question_PCVhKA",
         "question_8DjXnq",
         "question_4Hb9dd"
