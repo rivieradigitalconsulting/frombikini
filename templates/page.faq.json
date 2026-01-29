@@ -120,6 +120,13 @@
             "question": "Quali sono le condizioni per effettuare un reso?",
             "answer": "<p>La richiesta per effettuare il reso deve essere inviata entro 14 giorni dalla data di ricezione dell’ordine.<br/>Gli articoli devono essere restituiti integri, inutilizzati e nella confezione originale. </p>"
           }
+        },
+        "question_AX6yUT": {
+          "type": "question",
+          "settings": {
+            "question": "Quali sono i costi relativi al reso?",
+            "answer": "<p>RESO SHOWROOM<br/>La procedura di reso presso la reception del nostro showroom in Via Turati 3, 20121 Milano, è gratuita. L'importo dell'ordine verrà rimborsato al netto delle eventuali spese di spedizione sostenute al momento dell'acquisto.\"  <br/></p><p>RESO ONLINE<br/>Per i resi in Italia la procedura ha un costo fisso di € 8, che verrà dedotto dall’importo rimborsato.<br/>Per i resi al di fuori dell'Italia il costo della spedizione di reso è a carico del cliente e varia in base al paese, clicca qui per maggiori informazioni. In alternativa, il cliente può contattarci e organizzare autonomamente la spedizione di ritorno.</p>"
+          }
         }
       },
       "block_order": [
@@ -137,7 +144,8 @@
         "category_LFbRcx",
         "question_kf9jYF",
         "question_xT6rnK",
-        "question_bBqPBg"
+        "question_bBqPBg",
+        "question_AX6yUT"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
