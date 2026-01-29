@@ -40,13 +40,21 @@
             "question": "Posso modificare o annullare un ordine?",
             "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione Contatti del sito o alla mail hello@frombikini.com.</p>"
           }
+        },
+        "question_WzraHU": {
+          "type": "question",
+          "settings": {
+            "question": "Posso cambiare un prodotto acquistato con un’altra taglia o colore?",
+            "answer": "<p>Siamo lieti di effettuare cambi di taglia, a condizione che le condizioni del bikini siano le stesse. Per qualsiasi dubbio o necessità, il nostro Servizio Clienti è sempre a tua disposizione, puoi contattarci direttamente a hello@frombikini.com.</p>"
+          }
         }
       },
       "block_order": [
         "category",
         "question-1",
         "question-3",
-        "question-2"
+        "question-2",
+        "question_WzraHU"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
