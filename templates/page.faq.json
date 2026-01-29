@@ -127,6 +127,13 @@
             "question": "Quali sono i costi relativi al reso?",
             "answer": "<p>RESO SHOWROOM<br/>La procedura di reso presso la reception del nostro showroom in Via Turati 3, 20121 Milano, è gratuita. L'importo dell'ordine verrà rimborsato al netto delle eventuali spese di spedizione sostenute al momento dell'acquisto.\"  <br/></p><p>RESO ONLINE<br/>Per i resi in Italia la procedura ha un costo fisso di € 8, che verrà dedotto dall’importo rimborsato.<br/>Per i resi al di fuori dell'Italia il costo della spedizione di reso è a carico del cliente e varia in base al paese, e verrà dedotto dall'importo rimborsato. In alternativa, il cliente può contattarci e organizzare autonomamente la spedizione di ritorno.</p>"
           }
+        },
+        "question_JzbGej": {
+          "type": "question",
+          "settings": {
+            "question": "Quanto tempo è necessario per ricevere il mio rimborso dopo aver effettuato un reso?",
+            "answer": "<p>Una volta ricevuto il prodotto il rimborso verrà effettuato entro un massimo di 7 giorni lavorativi. Riceverai una mail che conferma l'avvio del rimborso.<br/>Il rimborso sarà effettuato secondo la modalità di pagamento utilizzata al momento dell'ordine. <br/>- Pagamento con carta di credito: il rimborso sarà effettuato sulla carta utilizzata per l'acquisto, occorreranno circa 5-7 giorni lavorativi supplementari affinché il rimborso sia visibile sul suo conto.<br/>- Pagamento sotto forma carta regalo: il rimborso sarà effettuato sotto forma di e-gift, che sarà immediatamente disponibile sul suo conto cliente.</p>"
+          }
         }
       },
       "block_order": [
@@ -145,7 +152,8 @@
         "question_kf9jYF",
         "question_xT6rnK",
         "question_bBqPBg",
-        "question_AX6yUT"
+        "question_AX6yUT",
+        "question_JzbGej"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
