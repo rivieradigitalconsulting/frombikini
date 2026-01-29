@@ -15,7 +15,7 @@
         "category": {
           "type": "category",
           "settings": {
-            "title": "Order",
+            "title": "Ordini e Pagamenti",
             "icon": "none",
             "icon_width": 16
           }
@@ -23,8 +23,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "question": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "question": "Come posso tracciare un ordine?",
+            "answer": "<p>Al momento della spedizione, riceverai un'e-mail con il numero di tracking per monitorare l'avanzamento della spedizione tramite il sito del corriere.<br/>In alternativa, puoi sempre monitorare lo stato della spedizione dalla tua <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\">area personale</a>. <br/>Non hai ricevuto il riepilogo entro un'ora? Ti consigliamo di controllare la cartella dello spam: a volte l'email può finire lì. Se l’email di conferma si trovava nello spam, ti invitiamo ad aggiungere l’indirizzo hello@frombikini.com alla tua rubrica.</p>"
           }
         },
         "question-2": {
