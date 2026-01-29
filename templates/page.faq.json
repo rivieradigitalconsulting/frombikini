@@ -54,6 +54,13 @@
             "question": "Modifica dell'indirizzo di consegna?",
             "answer": "<p>Una volta confermato l'ordine per modificare l'indirizzo di consegna puoi contattarci direttamente a hello@frombikini.com.<br/>Se il suo ordine è stato spedito, ti invitiamo a contattare direttamente il corriere per confermare la possibilità di modificare l'indirizzo di consegna.</p>"
           }
+        },
+        "question_8DjXnq": {
+          "type": "question",
+          "settings": {
+            "question": "I prezzi includono i dazi doganali?",
+            "answer": "<p>Gli ordini vengono spediti dalla nostra sede centrale di Milano, in Italia, quindi qualsiasi ordine inviato in Europa è esente da spese doganali. In caso di spedizione in un paese EXTRA UE, i dazi doganali e le tasse relative saranno a tuo carico.<br/>Ricorda che i costi di spedizione, l'IVA e gli oneri doganali variano in base alla nazione. Per consultare l’elenco completo dei paesi in cui spediamo e i relativi costi clicca qui.</p>"
+          }
         }
       },
       "block_order": [
@@ -62,7 +69,8 @@
         "question-3",
         "question-2",
         "question_WzraHU",
-        "question_PCVhKA"
+        "question_PCVhKA",
+        "question_8DjXnq"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
