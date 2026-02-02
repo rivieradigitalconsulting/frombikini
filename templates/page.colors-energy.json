@@ -17,6 +17,15 @@
         "page_width": "xs"
       }
     },
+    "17700430232382eec2": {
+      "type": "_blocks",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
     "1769078297e11e9185": {
       "type": "_blocks",
       "blocks": {
@@ -111,6 +120,7 @@
   },
   "order": [
     "main",
+    "17700430232382eec2",
     "1769078297e11e9185"
   ]
 }
