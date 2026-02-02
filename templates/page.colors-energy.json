@@ -63,7 +63,7 @@
             "item_2_center_text": "{{ metaobjects.fb_color[\"fire-power\"].fb_color_title.value }}",
             "item_2_title": "",
             "item_2_subtitle": "{{ metaobjects.fb_color[\"fire-power\"].fb_color_description.value }}",
-            "item_2_link": "shopify://collections/all-bikinis",
+            "item_2_link": "",
             "item_3_position": 3,
             "item_3_image": "{{ metaobjects.fb_color[\"coral-power\"].fb_color_image.value }}",
             "item_3_center_text": "{{ metaobjects.fb_color[\"coral-power\"].fb_color_title.value }}",
