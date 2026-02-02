@@ -208,7 +208,7 @@
             "element_8_link": "{{ metaobjects.fb_color[\"hearth-chakra-power\"].fb_color_link.value }}",
             "element_9_position": 9,
             "element_9_image": "{{ metaobjects.fb_color[\"wisdom-power\"].fb_color_image.value }}",
-            "element_9_text": "",
+            "element_9_text": "{{ metaobjects.fb_color[\"wisdom-power\"].fb_color_title.value }}",
             "element_9_title": "",
             "element_9_subtitle": "",
             "element_9_link": "",
