@@ -149,6 +149,20 @@
             "question": "Come faccio a sapere quale taglia dovrei ordinare?",
             "answer": "<p>Puoi utilizzare la nostra guida alle taglie per avere un'idea migliore sul fit dei nostri capi. Le nostre taglie seguono gli standard di vestibilità italiani, ma se hai dubbi, non esitare a contattarci all’indirizzo hello@frombikini.com per ricevere consigli personalizzati prima di effettuare l’ordine. </p>"
           }
+        },
+        "question_6kzp8t": {
+          "type": "question",
+          "settings": {
+            "question": "Posso far modificare un articolo?",
+            "answer": "<p>Sì, offriamo un servizio di sartoria dedicato per la modifica degli articoli acquistati. È possibile consegnare il capo di persona o farlo recapitare presso la reception del nostro showroom in Via Turati 3, 20121 Milano. Grazie al savoir-faire dei nostri artigiani e alla nostra produzione a KM0, le modifiche verranno effettuate entro 5–7 giorni lavorativi dalla ricezione dell’articolo.<br/><br/>I prezzi delle modifiche variano in base alla complessità dell’intervento (semplice/complesso).<br/></p><p>Orlo pantaloni, gonne, abiti: 10€ / 15€<br/>Modifica bikini (top o bottom): 10€ / 15€<br/>Spalline: 5€ / 10€ <br/>Allungamento trecce: 10€<br/>Aggiunta bottone: 5€</p>"
+          }
+        },
+        "question_QVLy3P": {
+          "type": "question",
+          "settings": {
+            "question": "Posso effettuare un pre ordine?",
+            "answer": "<p>E' possibile effettuare il pre-ordine di un prodotto esaurito nella taglia desiderata. I nostri artigiani si metteranno subito al lavoro per te, come se il capo venisse realizzato tailor-made. Non ci saranno costi aggiuntivi, solo le tempistiche di consegna potrebbero subire delle variazioni. Contattaci a hello@frombikini.com per pre-ordinare il tuo From Bikini.</p>"
+          }
         }
       },
       "block_order": [
@@ -170,7 +184,9 @@
         "question_AX6yUT",
         "question_JzbGej",
         "category_BbRPpL",
-        "question_aYJdm8"
+        "question_aYJdm8",
+        "question_6kzp8t",
+        "question_QVLy3P"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
