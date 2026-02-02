@@ -30,10 +30,10 @@
             "element_shape": "circle",
             "columns_desktop": 4,
             "columns_mobile": 2,
-            "gap_desktop": 15,
-            "gap_mobile": 55,
-            "row_gap_desktop": 10,
-            "row_gap_mobile": 60,
+            "gap_desktop": 30,
+            "gap_mobile": 20,
+            "row_gap_desktop": 65,
+            "row_gap_mobile": 40,
             "link_target": "same_window",
             "element_text_font": "sans_serif_n4",
             "element_text_size_desktop": 16,
@@ -237,6 +237,7 @@
       "block_order": [
         "ai_gen_block_020c22d_jgbmCf"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
