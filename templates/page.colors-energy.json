@@ -126,11 +126,21 @@
           },
           "blocks": {}
         },
+        "ai_gen_block_e09345d_AGVXPt": {
+          "type": "ai_gen_block_e09345d",
+          "name": "Spazio bianco",
+          "settings": {
+            "height_desktop": 50,
+            "height_mobile": 0,
+            "background_color": "#f7f4ed"
+          },
+          "blocks": {}
+        },
         "ai_gen_block_d618bf2_AHJ6fb": {
           "type": "ai_gen_block_d618bf2",
           "name": "Modulo griglia elementi",
           "settings": {
-            "margin_top": 60,
+            "margin_top": 25,
             "margin_bottom": 0,
             "margin_left": 0,
             "margin_right": 0,
@@ -236,12 +246,13 @@
       },
       "block_order": [
         "ai_gen_block_d618bf2_kgXTKg",
+        "ai_gen_block_e09345d_AGVXPt",
         "ai_gen_block_d618bf2_AHJ6fb"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false
       }
     }
