@@ -116,12 +116,13 @@
             "element_11_text": "{{ metaobjects.fb_color[\"alchemy-power\"].fb_color_title.value }}",
             "element_11_title": "",
             "element_11_subtitle": "{{ metaobjects.fb_color[\"alchemy-power\"].fb_color_description.value }}",
-            "element_11_link": "",
+            "element_11_link": "{{ metaobjects.fb_color[\"alchemy-power\"].fb_color_link.value }}",
             "element_12_position": 12,
-            "element_12_text": "",
+            "element_12_image": "{{ metaobjects.fb_color[\"dawn-power\"].fb_color_image.value }}",
+            "element_12_text": "{{ metaobjects.fb_color[\"dawn-power\"].fb_color_title.value }}",
             "element_12_title": "",
-            "element_12_subtitle": "",
-            "element_12_link": ""
+            "element_12_subtitle": "{{ metaobjects.fb_color[\"dawn-power\"].fb_color_description.value }}",
+            "element_12_link": "{{ metaobjects.fb_color[\"alchemy-power\"].fb_color_link.value }}"
           },
           "blocks": {}
         }
