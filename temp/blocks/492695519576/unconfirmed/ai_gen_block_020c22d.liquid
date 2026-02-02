@@ -1,6 +1,1030 @@
+{% doc %}
+  @prompt
+    ciao, ho bisogno di una sezione che si compili di 12 elementi, che possono essere quadrati o circolari. Posso decidere la distanza del modulo ai lati e sopra e sotto come Margine. Posso decidere distanza tra gli elementi. Posso decidere disposizione a desktop e mobile (desktop da 2 fino a 4 per riga, mobile da 2 fino a 3 per riga) Passiamo alle caratteristiche degli elementi. Testo centrale, posso decidere per ogni dispositivo font e dimensioni del testo. Poi sotto all'elemento un titolo e un sottotitolo di cui posso scegliere per ognuno font e dimensioni, giustifica e spaziatura tra i due elementi. L'elemento deve essere compilato con un immagine., quando è selezionato 2 su mobile sta a 3, Per ogni elemento aggiungimi la possibilità di inserire un link - e non mi funziona giustifica / allineamento titolo e sottotilo, prova a controllare. Ogni elemento inoltre deve avere un setting di tipo slider che decide da 1 a 12 la posizione all'interno del modulo. Importantissimo sottolineare che se un elemento non è valorizzato, quindi vuoto in tutti i campi non deve apparire, ho provato ad allestirne uno, ma non funziona. La regola è che basta almeno un campo dell'elemento allestito per far sì che appaia in viauslizzazione, altrimenti deve essere nascosto, provo a compilare gli elementi, ma non vedo nulla. Fixa, ok, quando le colonne su mobile sono selezionate a 2, in realtà è su 3. Sistema questa cosa, se setto 2 nella riga ce ne devono essere 2
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-grid-module-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    margin-top: {{ block.settings.margin_top }}px;
+    margin-bottom: {{ block.settings.margin_bottom }}px;
+    margin-left: {{ block.settings.margin_left }}px;
+    margin-right: {{ block.settings.margin_right }}px;
+  }
+
+  .ai-grid-module__container-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.gap }}px;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+  }
+
+  .ai-grid-module__item-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ai-grid-module__shape-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-grid-module__shape-{{ ai_gen_id }}--square {
+    border-radius: 0;
+  }
+
+  .ai-grid-module__shape-{{ ai_gen_id }}--circle {
+    border-radius: 50%;
+  }
+
+  .ai-grid-module__image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-grid-module__center-text-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: {{ block.settings.center_text_color }};
+    text-align: center;
+    z-index: 1;
+    width: 90%;
+  }
+
+  .ai-grid-module__title-{{ ai_gen_id }} {
+    margin-top: {{ block.settings.title_spacing }}px;
+    margin-bottom: 0;
+    color: {{ block.settings.title_color }};
+    width: 100%;
+  }
+
+  .ai-grid-module__subtitle-{{ ai_gen_id }} {
+    margin-top: {{ block.settings.subtitle_spacing }}px;
+    margin-bottom: 0;
+    color: {{ block.settings.subtitle_color }};
+    width: 100%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-module__center-text-{{ ai_gen_id }} {
+      font-family: {{ block.settings.center_text_font_desktop.family }}, {{ block.settings.center_text_font_desktop.fallback_families }};
+      font-weight: {{ block.settings.center_text_font_desktop.weight }};
+      font-size: {{ block.settings.center_text_size_desktop }}px;
+    }
+
+    .ai-grid-module__title-{{ ai_gen_id }} {
+      font-family: {{ block.settings.title_font_desktop.family }}, {{ block.settings.title_font_desktop.fallback_families }};
+      font-weight: {{ block.settings.title_font_desktop.weight }};
+      font-size: {{ block.settings.title_size_desktop }}px;
+      text-align: {{ block.settings.title_align_desktop }};
+    }
+
+    .ai-grid-module__subtitle-{{ ai_gen_id }} {
+      font-family: {{ block.settings.subtitle_font_desktop.family }}, {{ block.settings.subtitle_font_desktop.fallback_families }};
+      font-weight: {{ block.settings.subtitle_font_desktop.weight }};
+      font-size: {{ block.settings.subtitle_size_desktop }}px;
+      text-align: {{ block.settings.subtitle_align_desktop }};
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-grid-module__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+    }
+
+    .ai-grid-module__center-text-{{ ai_gen_id }} {
+      font-family: {{ block.settings.center_text_font_mobile.family }}, {{ block.settings.center_text_font_mobile.fallback_families }};
+      font-weight: {{ block.settings.center_text_font_mobile.weight }};
+      font-size: {{ block.settings.center_text_size_mobile }}px;
+    }
+
+    .ai-grid-module__title-{{ ai_gen_id }} {
+      font-family: {{ block.settings.title_font_mobile.family }}, {{ block.settings.title_font_mobile.fallback_families }};
+      font-weight: {{ block.settings.title_font_mobile.weight }};
+      font-size: {{ block.settings.title_size_mobile }}px;
+      text-align: {{ block.settings.title_align_mobile }};
+    }
+
+    .ai-grid-module__subtitle-{{ ai_gen_id }} {
+      font-family: {{ block.settings.subtitle_font_mobile.family }}, {{ block.settings.subtitle_font_mobile.fallback_families }};
+      font-weight: {{ block.settings.subtitle_font_mobile.weight }};
+      font-size: {{ block.settings.subtitle_size_mobile }}px;
+      text-align: {{ block.settings.subtitle_align_mobile }};
+    }
+  }
+{% endstyle %}
+
+<grid-module-{{ ai_gen_id }} class="ai-grid-module-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-grid-module__container-{{ ai_gen_id }}">
+    {% assign items_string = '' %}
+    
+    {% for i in (1..12) %}
+      {% assign item_image_key = 'item_' | append: i | append: '_image' %}
+      {% assign item_center_text_key = 'item_' | append: i | append: '_center_text' %}
+      {% assign item_title_key = 'item_' | append: i | append: '_title' %}
+      {% assign item_subtitle_key = 'item_' | append: i | append: '_subtitle' %}
+      {% assign item_position_key = 'item_' | append: i | append: '_position' %}
+      
+      {% assign item_image = block.settings[item_image_key] %}
+      {% assign item_center_text = block.settings[item_center_text_key] %}
+      {% assign item_title = block.settings[item_title_key] %}
+      {% assign item_subtitle = block.settings[item_subtitle_key] %}
+      {% assign item_position = block.settings[item_position_key] %}
+      
+      {% if item_image != blank or item_center_text != blank or item_title != blank or item_subtitle != blank %}
+        {% if item_position < 10 %}
+          {% assign position_padded = '0' | append: item_position %}
+        {% else %}
+          {% assign position_padded = item_position | append: '' %}
+        {% endif %}
+        
+        {% if items_string == '' %}
+          {% assign items_string = position_padded | append: '|' | append: i %}
+        {% else %}
+          {% assign items_string = items_string | append: ',' | append: position_padded | append: '|' | append: i %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    
+    {% assign all_items = items_string | split: ',' %}
+    {% assign sorted_items = all_items | sort %}
+    
+    {% for item_data in sorted_items %}
+      {% assign item_parts = item_data | split: '|' %}
+      {% assign i = item_parts[1] %}
+      
+      {% assign item_image_key = 'item_' | append: i | append: '_image' %}
+      {% assign item_center_text_key = 'item_' | append: i | append: '_center_text' %}
+      {% assign item_title_key = 'item_' | append: i | append: '_title' %}
+      {% assign item_subtitle_key = 'item_' | append: i | append: '_subtitle' %}
+      {% assign item_link_key = 'item_' | append: i | append: '_link' %}
+      
+      {% assign item_image = block.settings[item_image_key] %}
+      {% assign item_center_text = block.settings[item_center_text_key] %}
+      {% assign item_title = block.settings[item_title_key] %}
+      {% assign item_subtitle = block.settings[item_subtitle_key] %}
+      {% assign item_link = block.settings[item_link_key] %}
+      
+      {% if item_link != blank %}
+        <a href="{{ item_link }}" class="ai-grid-module__item-{{ ai_gen_id }}">
+      {% else %}
+        <div class="ai-grid-module__item-{{ ai_gen_id }}">
+      {% endif %}
+        
+        <div class="ai-grid-module__shape-{{ ai_gen_id }} ai-grid-module__shape-{{ ai_gen_id }}--{{ block.settings.shape }}">
+          {% if item_image != blank %}
+            <img
+              src="{{ item_image | image_url: width: 800 }}"
+              alt="{{ item_image.alt | escape }}"
+              class="ai-grid-module__image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="800"
+              height="800"
+            >
+          {% endif %}
+          
+          {% if item_center_text != blank %}
+            <div class="ai-grid-module__center-text-{{ ai_gen_id }}">
+              {{ item_center_text }}
+            </div>
+          {% endif %}
+        </div>
+        
+        {% if item_title != blank %}
+          <h3 class="ai-grid-module__title-{{ ai_gen_id }}">{{ item_title }}</h3>
+        {% endif %}
+        
+        {% if item_subtitle != blank %}
+          <p class="ai-grid-module__subtitle-{{ ai_gen_id }}">{{ item_subtitle }}</p>
+        {% endif %}
+      
+      {% if item_link != blank %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</grid-module-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GridModule{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('grid-module-{{ ai_gen_id }}', GridModule{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Modulo griglia elementi",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "shape",
+      "label": "Forma elementi",
+      "options": [
+        {
+          "value": "square",
+          "label": "Quadrato"
+        },
+        {
+          "value": "circle",
+          "label": "Circolare"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Colonne desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Colonne mobile",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Distanza tra elementi",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Margini"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margine superiore",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margine inferiore",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_left",
+      "label": "Margine sinistro",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_right",
+      "label": "Margine destro",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Testo centrale"
+    },
+    {
+      "type": "font_picker",
+      "id": "center_text_font_desktop",
+      "label": "Font desktop",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "center_text_size_desktop",
+      "label": "Dimensione desktop",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "font_picker",
+      "id": "center_text_font_mobile",
+      "label": "Font mobile",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "center_text_size_mobile",
+      "label": "Dimensione mobile",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "center_text_color",
+      "label": "Colore testo centrale",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Titolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font_desktop",
+      "label": "Font desktop",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "label": "Dimensione desktop",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "select",
+      "id": "title_align_desktop",
+      "label": "Allineamento desktop",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font_mobile",
+      "label": "Font mobile",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Dimensione mobile",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "title_align_mobile",
+      "label": "Allineamento mobile",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Colore titolo",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "label": "Spaziatura sopra titolo",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Sottotitolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font_desktop",
+      "label": "Font desktop",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "label": "Dimensione desktop",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "subtitle_align_desktop",
+      "label": "Allineamento desktop",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font_mobile",
+      "label": "Font mobile",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Dimensione mobile",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "subtitle_align_mobile",
+      "label": "Allineamento mobile",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Colore sottotitolo",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_spacing",
+      "label": "Spaziatura tra titolo e sottotitolo",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Elemento 1"
+    },
+    {
+      "type": "range",
+      "id": "item_1_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "image_picker",
+      "id": "item_1_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_1_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_1_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_1_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 2"
+    },
+    {
+      "type": "range",
+      "id": "item_2_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "image_picker",
+      "id": "item_2_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_2_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_2_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_2_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 3"
+    },
+    {
+      "type": "range",
+      "id": "item_3_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "image_picker",
+      "id": "item_3_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_3_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_3_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_3_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 4"
+    },
+    {
+      "type": "range",
+      "id": "item_4_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "image_picker",
+      "id": "item_4_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_4_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_4_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_4_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 5"
+    },
+    {
+      "type": "range",
+      "id": "item_5_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "image_picker",
+      "id": "item_5_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_5_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_5_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_5_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 6"
+    },
+    {
+      "type": "range",
+      "id": "item_6_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "image_picker",
+      "id": "item_6_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_6_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_6_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_6_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_6_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 7"
+    },
+    {
+      "type": "range",
+      "id": "item_7_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 7
+    },
+    {
+      "type": "image_picker",
+      "id": "item_7_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_7_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_7_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_7_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_7_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 8"
+    },
+    {
+      "type": "range",
+      "id": "item_8_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "image_picker",
+      "id": "item_8_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_8_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_8_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_8_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_8_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 9"
+    },
+    {
+      "type": "range",
+      "id": "item_9_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 9
+    },
+    {
+      "type": "image_picker",
+      "id": "item_9_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_9_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_9_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_9_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_9_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 10"
+    },
+    {
+      "type": "range",
+      "id": "item_10_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "image_picker",
+      "id": "item_10_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_10_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_10_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_10_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_10_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 11"
+    },
+    {
+      "type": "range",
+      "id": "item_11_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 11
+    },
+    {
+      "type": "image_picker",
+      "id": "item_11_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_11_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_11_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_11_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_11_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 12"
+    },
+    {
+      "type": "range",
+      "id": "item_12_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "image_picker",
+      "id": "item_12_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "item_12_center_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "item_12_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "item_12_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "item_12_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Modulo griglia elementi"
+    }
+  ]
+}
 {% endschema %}
