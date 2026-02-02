@@ -233,13 +233,13 @@
             "element_11_text": "Hawaiian Vibes",
             "element_11_title": "",
             "element_11_subtitle": "\"La porta giusta si aprirà da sola, senza bisogno di bussare.\"",
-            "element_11_link": "",
+            "element_11_link": "{{ metaobjects.fb_color[\"hawaiian-vibes\"].fb_color_link.value }}",
             "element_12_position": 12,
             "element_12_image": "shopify://shop_images/Mermaid_Power.png",
             "element_12_text": "Mermaid Power",
             "element_12_title": "",
             "element_12_subtitle": "\"La tua voce è il tuo superpotere: incanta chiunque.\"",
-            "element_12_link": ""
+            "element_12_link": "{{ metaobjects.fb_color[\"mermaid-power\"].fb_color_link.value }}"
           },
           "blocks": {}
         },
