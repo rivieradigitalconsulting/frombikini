@@ -1,6 +1,986 @@
+{% doc %}
+  @prompt
+    ciao, ho bisogno di una sezione che si compili di 12 elementi, che possono essere quadrati o circolari. Posso decidere la distanza del modulo ai lati e sopra e sotto come Margine. Posso decidere distanza tra gli elementi. Posso decidere la spaziature tra le righe sia desktop che mobile. Posso decidere disposizione a desktop e mobile (desktop da 2 fino a 4 per riga, mobile da 2 fino a 3 per riga) Passiamo alle caratteristiche degli elementi. Testo centrale, posso decidere per ogni dispositivo font e dimensioni del testo. Poi sotto all'elemento un titolo e un sottotitolo di cui posso scegliere per ognuno font e dimensioni, giustifica e spaziatura tra i due elementi. L'elemento deve essere compilato con un immagine., quando è selezionato 2 su mobile sta a 3, Per ogni elemento aggiungimi la possibilità di inserire un link - e non mi funziona giustifica / allineamento titolo e sottotilo, prova a controllare. Ogni elemento inoltre deve avere un setting di tipo slider che decide da 1 a 12 la posizione all'interno del modulo. Importantissimo sottolineare che se un elemento non è valorizzato, quindi vuoto in tutti i campi non deve apparire, ho provato ad allestirne uno, ma non funziona. La regola è che basta almeno un campo dell'elemento allestito per far sì che appaia in viauslizzazione, altrimenti deve essere nascosto, provo a compilare gli elementi, ma non vedo nulla. Fixa, ok, quando le colonne su mobile sono selezionate a 2, in realtà è su 3. Sistema questa cosa, se setto 2 nella riga ce ne devono essere 2, dammi anche il setting generale che i link si devono aprire nella stessa pagina o in una pagina nuova, per controllare questa cosa
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-grid-module-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    margin-top: {{ block.settings.margin_top }}px;
+    margin-bottom: {{ block.settings.margin_bottom }}px;
+    margin-left: {{ block.settings.margin_left }}px;
+    margin-right: {{ block.settings.margin_right }}px;
+  }
+
+  .ai-grid-module__container-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.gap_mobile }}px;
+    row-gap: {{ block.settings.row_gap_mobile }}px;
+    grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-module__container-{{ ai_gen_id }} {
+      gap: {{ block.settings.gap_desktop }}px;
+      row-gap: {{ block.settings.row_gap_desktop }}px;
+      grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    }
+  }
+
+  .ai-grid-module__item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ai-grid-module__element-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: {{ block.settings.element_spacing }}px;
+  }
+
+  .ai-grid-module__element-{{ ai_gen_id }}.ai-grid-module__element--square-{{ ai_gen_id }} {
+    border-radius: 0;
+  }
+
+  .ai-grid-module__element-{{ ai_gen_id }}.ai-grid-module__element--circle-{{ ai_gen_id }} {
+    border-radius: 50%;
+  }
+
+  .ai-grid-module__element-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ai-grid-module__element-text-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 1;
+    font-family: {{ block.settings.element_text_font.family }}, {{ block.settings.element_text_font.fallback_families }};
+    font-weight: {{ block.settings.element_text_font.weight }};
+    font-size: {{ block.settings.element_text_size_mobile }}px;
+    color: {{ block.settings.element_text_color }};
+    text-align: center;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-module__element-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.element_text_size_desktop }}px;
+    }
+  }
+
+  .ai-grid-module__title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+    font-size: {{ block.settings.title_size_mobile }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_subtitle_spacing }}px 0;
+    text-align: {{ block.settings.title_alignment }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-module__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_desktop }}px;
+    }
+  }
+
+  .ai-grid-module__subtitle-{{ ai_gen_id }} {
+    font-family: {{ block.settings.subtitle_font.family }}, {{ block.settings.subtitle_font.fallback_families }};
+    font-weight: {{ block.settings.subtitle_font.weight }};
+    font-size: {{ block.settings.subtitle_size_mobile }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    text-align: {{ block.settings.subtitle_alignment }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-grid-module__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_desktop }}px;
+    }
+  }
+
+  .ai-grid-module__item-{{ ai_gen_id }}[data-position] {
+    order: var(--item-order);
+  }
+{% endstyle %}
+
+<grid-module-{{ ai_gen_id }} class="ai-grid-module-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-grid-module__container-{{ ai_gen_id }}">
+    {% for i in (1..12) %}
+      {% liquid
+        assign element_image_key = 'element_' | append: i | append: '_image'
+        assign element_text_key = 'element_' | append: i | append: '_text'
+        assign element_title_key = 'element_' | append: i | append: '_title'
+        assign element_subtitle_key = 'element_' | append: i | append: '_subtitle'
+        assign element_link_key = 'element_' | append: i | append: '_link'
+        assign element_position_key = 'element_' | append: i | append: '_position'
+
+        assign element_image = block.settings[element_image_key]
+        assign element_text = block.settings[element_text_key]
+        assign element_title = block.settings[element_title_key]
+        assign element_subtitle = block.settings[element_subtitle_key]
+        assign element_link = block.settings[element_link_key]
+        assign element_position = block.settings[element_position_key]
+
+        assign has_content = false
+        if element_image != blank or element_text != blank or element_title != blank or element_subtitle != blank
+          assign has_content = true
+        endif
+      %}
+
+      {% if has_content %}
+        {% if element_link != blank %}
+          <a
+            href="{{ element_link }}"
+            class="ai-grid-module__item-{{ ai_gen_id }}"
+            data-position="{{ element_position }}"
+            style="--item-order: {{ element_position }};"
+            {% if block.settings.link_target == 'new_window' %}target="_blank" rel="noopener noreferrer"{% endif %}
+          >
+        {% else %}
+          <div
+            class="ai-grid-module__item-{{ ai_gen_id }}"
+            data-position="{{ element_position }}"
+            style="--item-order: {{ element_position }};"
+          >
+        {% endif %}
+
+          <div class="ai-grid-module__element-{{ ai_gen_id }} ai-grid-module__element--{{ block.settings.element_shape }}-{{ ai_gen_id }}">
+            {% if element_image != blank %}
+              <img
+                src="{{ element_image | image_url: width: 600 }}"
+                alt="{{ element_image.alt | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+                class="ai-grid-module__element-image-{{ ai_gen_id }}"
+              >
+            {% endif %}
+            {% if element_text != blank %}
+              <div class="ai-grid-module__element-text-{{ ai_gen_id }}">
+                {{ element_text }}
+              </div>
+            {% endif %}
+          </div>
+
+          {% if element_title != blank %}
+            <h3 class="ai-grid-module__title-{{ ai_gen_id }}">{{ element_title }}</h3>
+          {% endif %}
+
+          {% if element_subtitle != blank %}
+            <p class="ai-grid-module__subtitle-{{ ai_gen_id }}">{{ element_subtitle }}</p>
+          {% endif %}
+
+        {% if element_link != blank %}
+          </a>
+        {% else %}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</grid-module-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GridModule{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('grid-module-{{ ai_gen_id }}', GridModule{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Modulo griglia elementi",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Margini modulo"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margine superiore",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margine inferiore",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_left",
+      "label": "Margine sinistro",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_right",
+      "label": "Margine destro",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Layout griglia"
+    },
+    {
+      "type": "select",
+      "id": "element_shape",
+      "label": "Forma elementi",
+      "options": [
+        {
+          "value": "square",
+          "label": "Quadrato"
+        },
+        {
+          "value": "circle",
+          "label": "Cerchio"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Colonne desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "label": "Colonne mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "gap_desktop",
+      "label": "Distanza tra elementi desktop",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Distanza tra elementi mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "row_gap_desktop",
+      "label": "Spaziatura righe desktop",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "row_gap_mobile",
+      "label": "Spaziatura righe mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Impostazioni link"
+    },
+    {
+      "type": "select",
+      "id": "link_target",
+      "label": "Apertura link",
+      "options": [
+        {
+          "value": "same_window",
+          "label": "Stessa pagina"
+        },
+        {
+          "value": "new_window",
+          "label": "Nuova pagina"
+        }
+      ],
+      "default": "same_window"
+    },
+    {
+      "type": "header",
+      "content": "Stile elemento"
+    },
+    {
+      "type": "font_picker",
+      "id": "element_text_font",
+      "label": "Font testo elemento",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "element_text_size_desktop",
+      "label": "Dimensione testo desktop",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "element_text_size_mobile",
+      "label": "Dimensione testo mobile",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "element_text_color",
+      "label": "Colore testo elemento",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "element_spacing",
+      "label": "Spaziatura sotto elemento",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Stile titolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font",
+      "label": "Font titolo",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "label": "Dimensione titolo desktop",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Dimensione titolo mobile",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Colore titolo",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "Allineamento titolo",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Stile sottotitolo"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font",
+      "label": "Font sottotitolo",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "label": "Dimensione sottotitolo desktop",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Dimensione sottotitolo mobile",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Colore sottotitolo",
+      "default": "#666666"
+    },
+    {
+      "type": "select",
+      "id": "subtitle_alignment",
+      "label": "Allineamento sottotitolo",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "title_subtitle_spacing",
+      "label": "Spaziatura titolo-sottotitolo",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Elemento 1"
+    },
+    {
+      "type": "range",
+      "id": "element_1_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "image_picker",
+      "id": "element_1_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_1_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_1_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_1_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 2"
+    },
+    {
+      "type": "range",
+      "id": "element_2_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "image_picker",
+      "id": "element_2_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_2_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_2_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_2_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 3"
+    },
+    {
+      "type": "range",
+      "id": "element_3_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "image_picker",
+      "id": "element_3_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_3_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_3_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_3_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 4"
+    },
+    {
+      "type": "range",
+      "id": "element_4_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "image_picker",
+      "id": "element_4_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_4_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_4_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_4_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 5"
+    },
+    {
+      "type": "range",
+      "id": "element_5_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "image_picker",
+      "id": "element_5_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_5_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_5_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_5_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 6"
+    },
+    {
+      "type": "range",
+      "id": "element_6_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "image_picker",
+      "id": "element_6_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_6_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_6_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_6_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_6_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 7"
+    },
+    {
+      "type": "range",
+      "id": "element_7_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 7
+    },
+    {
+      "type": "image_picker",
+      "id": "element_7_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_7_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_7_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_7_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_7_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 8"
+    },
+    {
+      "type": "range",
+      "id": "element_8_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "image_picker",
+      "id": "element_8_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_8_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_8_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_8_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_8_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 9"
+    },
+    {
+      "type": "range",
+      "id": "element_9_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 9
+    },
+    {
+      "type": "image_picker",
+      "id": "element_9_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_9_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_9_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_9_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_9_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 10"
+    },
+    {
+      "type": "range",
+      "id": "element_10_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "image_picker",
+      "id": "element_10_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_10_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_10_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_10_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_10_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 11"
+    },
+    {
+      "type": "range",
+      "id": "element_11_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 11
+    },
+    {
+      "type": "image_picker",
+      "id": "element_11_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_11_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_11_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_11_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_11_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Elemento 12"
+    },
+    {
+      "type": "range",
+      "id": "element_12_position",
+      "label": "Posizione",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "image_picker",
+      "id": "element_12_image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "element_12_text",
+      "label": "Testo centrale"
+    },
+    {
+      "type": "text",
+      "id": "element_12_title",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "element_12_subtitle",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "url",
+      "id": "element_12_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Modulo griglia elementi"
+    }
+  ]
+}
 {% endschema %}
