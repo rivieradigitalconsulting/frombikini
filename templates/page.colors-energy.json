@@ -122,7 +122,7 @@
             "element_12_text": "{{ metaobjects.fb_color[\"dawn-power\"].fb_color_title.value }}",
             "element_12_title": "",
             "element_12_subtitle": "{{ metaobjects.fb_color[\"dawn-power\"].fb_color_description.value }}",
-            "element_12_link": "{{ metaobjects.fb_color[\"alchemy-power\"].fb_color_link.value }}"
+            "element_12_link": "{{ metaobjects.fb_color[\"dawn-power\"].fb_color_link.value }}"
           },
           "blocks": {}
         },
