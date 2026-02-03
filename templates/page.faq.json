@@ -264,6 +264,13 @@
             "icon": "none",
             "icon_width": 16
           }
+        },
+        "question_4xHm8B": {
+          "type": "question",
+          "settings": {
+            "question": "Come riceverò il mio From Bikini?",
+            "answer": "<p>Ogni ordine viene spedito in un sacchetto riutilizzabile in lino e cotone, pensato per un mondo a zero sprechi e perfetto per conservare al meglio il tuo From Bikini. Se desideri ricevere anche una shopper di carta, contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.</p>"
+          }
         }
       },
       "block_order": [
@@ -301,7 +308,8 @@
         "question_3tdTkR",
         "question_n9wXzk",
         "question_crKMtg",
-        "category_WEVGnG"
+        "category_WEVGnG",
+        "question_4xHm8B"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
