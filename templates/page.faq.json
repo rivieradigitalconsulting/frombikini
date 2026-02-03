@@ -103,7 +103,7 @@
           "type": "question",
           "settings": {
             "question": "Ho bisogno di un account per acquistare sul sito?",
-            "answer": "<p>No, non è necessario creare un account manualmente. Al momento dell'acquisto, un account viene generato automaticamente e associato alla tua email. Qui vengono memorizzati i tuoi ordini, dati anagrafici e indirizzi di spedizione. Per accedere, visita la sezione Accedi e inserisci la tua email. Riceverai un codice temporaneo via email da inserire per accedere alla tua area personale.</p>"
+            "answer": "<p>No, non è necessario creare un account manualmente. Al momento dell'acquisto, un account viene generato automaticamente e associato alla tua email. Qui vengono memorizzati i tuoi ordini, dati anagrafici e indirizzi di spedizione. Per accedere, visita la sezione <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\"><strong>Accedi</strong></a> e inserisci la tua email. Riceverai un codice temporaneo via email da inserire per accedere alla tua area personale.</p>"
           }
         },
         "category_LFbRcx": {
