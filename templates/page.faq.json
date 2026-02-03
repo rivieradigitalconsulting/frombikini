@@ -256,6 +256,14 @@
             "question": "Dove posso trovare i vostri rivenditori?",
             "answer": "<p>Collaboriamo con una selezione di boutique esclusive a livello internazionale.<br/>Puoi consultare qui la lista aggiornata dei nostri <a href=\"/pages/dove-trovarci\" target=\"_blank\" title=\"Dove trovarci\"><strong>punti vendita</strong></a> per scoprire dove vedere, toccare con mano e acquistare dal vivo i prodotti From Bikini.</p>"
           }
+        },
+        "category_WEVGnG": {
+          "type": "category",
+          "settings": {
+            "title": "Info & Packaging",
+            "icon": "none",
+            "icon_width": 16
+          }
         }
       },
       "block_order": [
@@ -292,7 +300,8 @@
         "category_bRzQMR",
         "question_3tdTkR",
         "question_n9wXzk",
-        "question_crKMtg"
+        "question_crKMtg",
+        "category_WEVGnG"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
