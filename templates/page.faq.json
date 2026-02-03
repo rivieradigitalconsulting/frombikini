@@ -74,7 +74,7 @@
           "type": "question",
           "settings": {
             "question": "I prezzi includono i dazi doganali?",
-            "answer": "<p>Gli ordini vengono spediti dalla nostra sede centrale di Milano, in Italia, quindi qualsiasi ordine inviato in Europa è esente da spese doganali. In caso di spedizione in un paese EXTRA UE, i dazi doganali e le tasse relative saranno a tuo carico.<br/>Ricorda che i costi di spedizione, l'IVA e gli oneri doganali variano in base alla nazione. Per consultare l’elenco completo dei paesi in cui spediamo e i relativi costi clicca qui.</p>"
+            "answer": "<p>Gli ordini vengono spediti dalla nostra sede centrale di Milano, in Italia, quindi qualsiasi ordine inviato in Europa è esente da spese doganali. In caso di spedizione in un paese EXTRA UE, i dazi doganali e le tasse relative saranno a carico del cliente.<br/>Ricorda che i costi di spedizione, l'IVA e gli oneri doganali variano in base alla nazione. Per consultare l’elenco completo dei paesi in cui spediamo e i relativi costi <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\"><strong>clicca qui</strong></a>. </p>"
           }
         },
         "question_4Hb9dd": {
