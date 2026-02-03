@@ -161,7 +161,7 @@
           "type": "question",
           "settings": {
             "question": "Come faccio a sapere quale taglia dovrei ordinare?",
-            "answer": "<p>Puoi utilizzare la nostra guida alle taglie per avere un'idea migliore sul fit dei nostri capi. Le nostre taglie seguono gli standard di vestibilità italiani, ma se hai dubbi, non esitare a contattarci all’indirizzo hello@frombikini.com per ricevere consigli personalizzati prima di effettuare l’ordine. </p>"
+            "answer": "<p>Puoi utilizzare la nostra <a href=\"/pages/guida-alle-taglie\" target=\"_blank\" title=\"Guida alle Taglie\"><strong>guida alle taglie</strong></a> per avere un'idea migliore sul fit dei nostri capi. Le nostre taglie seguono gli standard di vestibilità italiani, ma se hai dubbi, non esitare a contattarci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> per ricevere consigli personalizzati prima di effettuare l’ordine. </p>"
           }
         },
         "question_6kzp8t": {
