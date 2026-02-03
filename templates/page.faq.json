@@ -84,6 +84,13 @@
             "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
           }
         },
+        "question_pND3LF": {
+          "type": "question",
+          "settings": {
+            "question": "Posso effettuare un ordine e ritirarlo nel vostro Showroom?",
+            "answer": "<p>Certamente, è disponibile il ritiro presso il nostro Showroom in Via Turati 3, 20121 a Milano. <br/>Il servizio è GRATUITO e non prevede costi di spedizione aggiuntivi.<br/>Non appena il tuo ordine sarà disponibile per il ritiro, riceverai una notifica via email e un aggiornamento sarà visibile anche all’interno del tuo account personale.<br/>Di seguito gli orari per ritirare il tuo From Bikini: Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato.\"</p>"
+          }
+        },
         "category_iptVRT": {
           "type": "category",
           "settings": {
@@ -183,6 +190,7 @@
         "question_Qt99ry",
         "question_8DjXnq",
         "question_4Hb9dd",
+        "question_pND3LF",
         "category_iptVRT",
         "question_etwfWb",
         "category_LFbRcx",
