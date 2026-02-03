@@ -177,6 +177,14 @@
             "question": "Posso effettuare un pre ordine?",
             "answer": "<p>E' possibile effettuare il pre-ordine di un prodotto esaurito nella taglia desiderata. I nostri artigiani si metteranno subito al lavoro per te, come se il capo venisse realizzato tailor-made. Non ci saranno costi aggiuntivi, solo le tempistiche di consegna potrebbero subire delle variazioni. Contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> per pre-ordinare il tuo From Bikini.</p>"
           }
+        },
+        "category_JcXyNe": {
+          "type": "category",
+          "settings": {
+            "title": "E-Gift Card",
+            "icon": "none",
+            "icon_width": 16
+          }
         }
       },
       "block_order": [
@@ -202,7 +210,8 @@
         "category_BbRPpL",
         "question_aYJdm8",
         "question_6kzp8t",
-        "question_QVLy3P"
+        "question_QVLy3P",
+        "category_JcXyNe"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
