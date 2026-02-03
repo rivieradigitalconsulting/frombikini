@@ -249,6 +249,13 @@
             "question": "Dove si trova il vostro negozio a Milano?",
             "answer": "<p>Il nostro Temporary Store a <a href=\"https://share.google/sYyWzIjECJy8uI67V\" target=\"_blank\" title=\"https://share.google/sYyWzIjECJy8uI67V\"><strong>Milano in Via Palermo 21, ang. Corso Garibaldi</strong></a> è aperto dal 26 Maggio al 30 Giugno dalle 10:00 alle 20:00 tutti i giorni orario continuato.</p>"
           }
+        },
+        "question_crKMtg": {
+          "type": "question",
+          "settings": {
+            "question": "Dove posso trovare i vostri rivenditori?",
+            "answer": "<p>Collaboriamo con una selezione di boutique esclusive a livello internazionale.<br/>Puoi consultare qui la lista aggiornata dei nostri <a href=\"/pages/dove-trovarci\" target=\"_blank\" title=\"Dove trovarci\"><strong>punti vendita</strong></a> per scoprire dove vedere, toccare con mano e acquistare dal vivo i prodotti From Bikini.</p>"
+          }
         }
       },
       "block_order": [
@@ -284,7 +291,8 @@
         "question_knctkk",
         "category_bRzQMR",
         "question_3tdTkR",
-        "question_n9wXzk"
+        "question_n9wXzk",
+        "question_crKMtg"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
