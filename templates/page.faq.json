@@ -24,28 +24,28 @@
           "type": "question",
           "settings": {
             "question": "Come posso tracciare un ordine?",
-            "answer": "<p>Al momento della spedizione, riceverai un'e-mail con il numero di tracking per monitorare l'avanzamento della spedizione tramite il sito del corriere.<br/>In alternativa, puoi sempre monitorare lo stato della spedizione dalla tua <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\">area personale</a>. <br/>Non hai ricevuto il riepilogo entro un'ora? Ti consigliamo di controllare la cartella dello spam: a volte l'email può finire lì. Se l’email di conferma si trovava nello spam, ti invitiamo ad aggiungere l’indirizzo hello@frombikini.com alla tua rubrica.</p>"
+            "answer": "<p>Non appena il tuo ordine sarà evaso, riceverai un'e-mail con il numero di tracking per monitorare l'avanzamento della spedizione.<br/>In alternativa, puoi monitorare lo stato della spedizione dalla tua <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\"><strong>area personale</strong></a>. Non hai ricevuto il riepilogo entro un'ora? Ti consigliamo di controllare la cartella dello spam: a volte l'email può finire lì. Se l’email di conferma si trovava nello spam, ti invitiamo ad aggiungere l’indirizzo hello@frombikini.com alla tua rubrica.</p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
             "question": "Posso modificare o annullare un ordine?",
-            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione Contatti del sito o alla mail hello@frombikini.com.</p>"
+            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\"><strong>Contatti</strong></a><strong> </strong>del sito o alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.</p>"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
             "question": "Quali sono i metodi di pagamento accettati?",
-            "answer": "<p>Proponiamo diversi metodi di pagamento per gli ordini online. Troverai qui di seguito la lista dei metodi di pagamento disponibili: carta di credito, PayPal (anche in tre rate), e wallet digitali come Apple Pay e Google Pay.</p>"
+            "answer": "<p>Proponiamo diversi metodi di pagamento per gli ordini online. Troverai qui di seguito la lista dei metodi di pagamento disponibili:<br/>Visa<br/>Visa Electron<br/>Mastercard<br/>American Express<br/>Maestro<br/>Postpay<br/>Union Pay<br/>Apple Pay<br/>Google Pay<br/>Paypal<br/>Klarna<br/>Bonifico Bancario</p>"
           }
         },
         "question_WzraHU": {
           "type": "question",
           "settings": {
             "question": "Posso cambiare un prodotto acquistato con un’altra taglia o colore?",
-            "answer": "<p>Siamo lieti di effettuare cambi di taglia, a condizione che le condizioni del bikini siano le stesse. Per qualsiasi dubbio o necessità, il nostro Servizio Clienti è sempre a tua disposizione, puoi contattarci direttamente a hello@frombikini.com.</p>"
+            "answer": "<p>Siamo lieti di effettuare un cambio taglia o colore, a condizione che il bikini sia integro e non utilizzato. Per qualsiasi dubbio o necessità, il nostro <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">Servizio Clienti</a> è sempre a tua disposizione, puoi contattarci direttamente a hello@frombikini.com.</p>"
           }
         },
         "category_zdMbQJ": {
