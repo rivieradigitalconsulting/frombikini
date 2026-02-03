@@ -227,6 +227,14 @@
             "question": "Cosa succede se restituisco un articolo acquistato con la E-GIFT CARD?",
             "answer": "<p>Se restituisci un prodotto acquistato utilizzando la E-GIFT CARD, l’importo rimborsato verrà riaccreditato sul saldo della stessa E-GIFT CARD.</p>"
           }
+        },
+        "category_bRzQMR": {
+          "type": "category",
+          "settings": {
+            "title": "Showroom & Rivenditori",
+            "icon": "none",
+            "icon_width": 16
+          }
         }
       },
       "block_order": [
@@ -259,7 +267,8 @@
         "question_fpye3c",
         "question_MyKp7J",
         "question_iKbeNd",
-        "question_knctkk"
+        "question_knctkk",
+        "category_bRzQMR"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
