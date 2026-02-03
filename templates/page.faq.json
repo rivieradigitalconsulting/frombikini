@@ -213,6 +213,13 @@
             "question": "Per quanto tempo è valida la E-GIFT CARD?",
             "answer": "<p>La E-GIFT CARD è valida per 1 anno dalla data dell'acquisto. Eventuali saldi residui scadranno dopo questo periodo e non potranno essere rimborsati.</p>"
           }
+        },
+        "question_iKbeNd": {
+          "type": "question",
+          "settings": {
+            "question": "Il saldo della E-GIFT CARD può essere convertito in denaro?",
+            "answer": "<p>No, il saldo della E-GIFT CARD non può essere convertito in denaro, nemmeno per eventuali importi residui.</p>"
+          }
         }
       },
       "block_order": [
@@ -243,7 +250,8 @@
         "question_grDywW",
         "question_e4WmYD",
         "question_fpye3c",
-        "question_MyKp7J"
+        "question_MyKp7J",
+        "question_iKbeNd"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
