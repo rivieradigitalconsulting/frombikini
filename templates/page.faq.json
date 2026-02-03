@@ -235,6 +235,13 @@
             "icon": "none",
             "icon_width": 16
           }
+        },
+        "question_3tdTkR": {
+          "type": "question",
+          "settings": {
+            "question": "Dove si trova il vostro Showroom?",
+            "answer": "<p>Il nostro showroom si trova nel cuore di Milano: in <a href=\"https://share.google/R0B0XenzHUVzgXbwT\" target=\"_blank\" title=\"https://share.google/R0B0XenzHUVzgXbwT\"><strong>via Turati 3, 20121 MI</strong></a>. Riceviamo solo su appuntamento, per effettuare la prenotazione contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> o su whastapp al numero <a href=\"tel:+39 3338019796\" target=\"_blank\" title=\"tel:+39 3338019796\"><strong>+39 3338019796</strong></a>. Saremo felici di accoglierti nel nostro mondo From Bikini.</p>"
+          }
         }
       },
       "block_order": [
@@ -268,7 +275,8 @@
         "question_MyKp7J",
         "question_iKbeNd",
         "question_knctkk",
-        "category_bRzQMR"
+        "category_bRzQMR",
+        "question_3tdTkR"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
