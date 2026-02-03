@@ -38,14 +38,14 @@
           "type": "question",
           "settings": {
             "question": "Quali sono i metodi di pagamento accettati?",
-            "answer": "<p>Proponiamo diversi metodi di pagamento per gli ordini online. Troverai qui di seguito la lista dei metodi di pagamento disponibili:<br/>Visa<br/>Visa Electron<br/>Mastercard<br/>American Express<br/>Maestro<br/>Postpay<br/>Union Pay<br/>Apple Pay<br/>Google Pay<br/>Paypal<br/>Klarna<br/>Bonifico Bancario</p>"
+            "answer": "<p>Proponiamo diversi metodi di pagamento per gli ordini online. Troverai qui di seguito la lista dei metodi di pagamento disponibili:<br/></p><p>Visa<br/>Visa Electron<br/>Mastercard<br/>American Express<br/>Maestro<br/>Postpay<br/>Union Pay<br/>Apple Pay<br/>Google Pay<br/>Paypal<br/>Klarna<br/>Bonifico Bancario</p>"
           }
         },
         "question_WzraHU": {
           "type": "question",
           "settings": {
             "question": "Posso cambiare un prodotto acquistato con un’altra taglia o colore?",
-            "answer": "<p>Siamo lieti di effettuare un cambio taglia o colore, a condizione che il bikini sia integro e non utilizzato. Per qualsiasi dubbio o necessità, il nostro <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">Servizio Clienti</a> è sempre a tua disposizione, puoi contattarci direttamente a hello@frombikini.com.</p>"
+            "answer": "<p>Siamo lieti di effettuare un cambio taglia o colore, a condizione che il bikini sia integro e non utilizzato. Per qualsiasi dubbio o necessità, il nostro <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\"><strong>Servizio Clienti</strong></a> è sempre a tua disposizione, puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.</p>"
           }
         },
         "category_zdMbQJ": {
