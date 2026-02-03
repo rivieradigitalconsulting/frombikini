@@ -206,6 +206,13 @@
             "question": "Posso personalizzare l'importo della mia E-GIFT CARD?",
             "answer": "<p>Certamente, contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> e creeremo la tua E-GIFT CARD con l'importo da te desiderato.</p>"
           }
+        },
+        "question_MyKp7J": {
+          "type": "question",
+          "settings": {
+            "question": "Per quanto tempo è valida la E-GIFT CARD?",
+            "answer": "<p>La E-GIFT CARD è valida per 1 anno dalla data dell'acquisto. Eventuali saldi residui scadranno dopo questo periodo e non potranno essere rimborsati.</p>"
+          }
         }
       },
       "block_order": [
@@ -235,7 +242,8 @@
         "category_JcXyNe",
         "question_grDywW",
         "question_e4WmYD",
-        "question_fpye3c"
+        "question_fpye3c",
+        "question_MyKp7J"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
