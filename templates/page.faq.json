@@ -220,6 +220,13 @@
             "question": "Il saldo della E-GIFT CARD può essere convertito in denaro?",
             "answer": "<p>No, il saldo della E-GIFT CARD non può essere convertito in denaro, nemmeno per eventuali importi residui.</p>"
           }
+        },
+        "question_knctkk": {
+          "type": "question",
+          "settings": {
+            "question": "Cosa succede se restituisco un articolo acquistato con la E-GIFT CARD?",
+            "answer": "<p>Se restituisci un prodotto acquistato utilizzando la E-GIFT CARD, l’importo rimborsato verrà riaccreditato sul saldo della stessa E-GIFT CARD.</p>"
+          }
         }
       },
       "block_order": [
@@ -251,7 +258,8 @@
         "question_e4WmYD",
         "question_fpye3c",
         "question_MyKp7J",
-        "question_iKbeNd"
+        "question_iKbeNd",
+        "question_knctkk"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
