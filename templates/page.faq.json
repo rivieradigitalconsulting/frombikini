@@ -175,7 +175,7 @@
           "type": "question",
           "settings": {
             "question": "Posso effettuare un pre ordine?",
-            "answer": "<p>E' possibile effettuare il pre-ordine di un prodotto esaurito nella taglia desiderata. I nostri artigiani si metteranno subito al lavoro per te, come se il capo venisse realizzato tailor-made. Non ci saranno costi aggiuntivi, solo le tempistiche di consegna potrebbero subire delle variazioni. Contattaci a hello@frombikini.com per pre-ordinare il tuo From Bikini.</p>"
+            "answer": "<p>E' possibile effettuare il pre-ordine di un prodotto esaurito nella taglia desiderata. I nostri artigiani si metteranno subito al lavoro per te, come se il capo venisse realizzato tailor-made. Non ci saranno costi aggiuntivi, solo le tempistiche di consegna potrebbero subire delle variazioni. Contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> per pre-ordinare il tuo From Bikini.</p>"
           }
         }
       },
