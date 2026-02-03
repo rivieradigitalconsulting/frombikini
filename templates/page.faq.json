@@ -81,7 +81,7 @@
           "type": "question",
           "settings": {
             "question": "Cosa accade in caso di perdita del pacco?",
-            "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo hello@frombikini.com e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
+            "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
           }
         },
         "category_iptVRT": {
