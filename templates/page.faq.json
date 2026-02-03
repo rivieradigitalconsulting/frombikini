@@ -192,6 +192,13 @@
             "question": "Cosa è la E-Gift Card di From Bikini?",
             "answer": "<p>La From Bikini  E-GIFT CARD è una carta regalo digitale che può essere acquistata sul nostro sito, e utilizzata online, presso il nostro showroom e il nostro pop-up store.</p>"
           }
+        },
+        "question_e4WmYD": {
+          "type": "question",
+          "settings": {
+            "question": "Come riceverò la E-GIFT CARD?",
+            "answer": "<p>La E-GIFT CARD verrà inviata via email all’indirizzo di posta elettronica del destinatario, che fornirai durante il checkout. Sarà pronta per l’uso immediato non appena ricevuta l’email. Se desideri personalizzare la gift card con un messaggio di auguri o con la tua firma, contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>, saremo liete di aiutarti.</p>"
+          }
         }
       },
       "block_order": [
@@ -219,7 +226,8 @@
         "question_6kzp8t",
         "question_QVLy3P",
         "category_JcXyNe",
-        "question_grDywW"
+        "question_grDywW",
+        "question_e4WmYD"
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
