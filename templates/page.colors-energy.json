@@ -95,7 +95,7 @@
             "element_1_text": "{{ metaobjects.fb_color[\"joy-power\"].fb_color_title.value }}",
             "element_1_title": "",
             "element_1_subtitle": "{{ metaobjects.fb_color[\"joy-power\"].fb_color_description.value }}",
-            "element_1_link": "{{ metaobjects.fb_color[\"joy-power\"].fb_color_link.value }}",
+            "element_1_link": "/collections/joy-power",
             "element_2_position": 2,
             "element_2_image": "{{ metaobjects.fb_color[\"fire-power\"].fb_color_image.value }}",
             "element_2_text": "{{ metaobjects.fb_color[\"fire-power\"].fb_color_title.value }}",
