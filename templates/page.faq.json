@@ -67,7 +67,7 @@
           "type": "question",
           "settings": {
             "question": "Una volta effettuato l'ordine posso modificare l'indirizzo di consegna?",
-            "answer": "<p>Una volta confermato l'ordine per modificare l'indirizzo di consegna puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>.<br/>Se il suo ordine è stato spedito, ti invitiamo a contattare direttamente il corriere per confermare la possibilità di modificare l'indirizzo di consegna.</p>"
+            "answer": "<p>Una volta confermato l'ordine per modificare l'indirizzo di consegna puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.<br/>Se il suo ordine è stato spedito, ti invitiamo a contattare direttamente il corriere per confermare la possibilità di modificare l'indirizzo di consegna.</p>"
           }
         },
         "question_8DjXnq": {
