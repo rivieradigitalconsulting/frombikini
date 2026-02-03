@@ -15,7 +15,7 @@
         "category": {
           "type": "category",
           "settings": {
-            "title": "Ordini e Pagamenti",
+            "title": "Ordini & Pagamenti",
             "icon": "none",
             "icon_width": 16
           }
@@ -51,7 +51,7 @@
         "category_zdMbQJ": {
           "type": "category",
           "settings": {
-            "title": "Spedizioni e Consegna",
+            "title": "Spedizioni & Consegna",
             "icon": "none",
             "icon_width": 16
           }
@@ -109,7 +109,7 @@
         "category_LFbRcx": {
           "type": "category",
           "settings": {
-            "title": "Resi e Rimborsi",
+            "title": "Resi & Rimborsi",
             "icon": "none",
             "icon_width": 16
           }
