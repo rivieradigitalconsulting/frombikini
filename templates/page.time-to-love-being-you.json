@@ -135,7 +135,7 @@
         "image": "shopify://shop_images/Screenshot_2025-07-21_at_11.53.39.png",
         "reveal_on_scroll": false,
         "image_position": "start",
-        "content_width": "sm",
+        "content_width": "md",
         "remove_vertical_spacing": true
       }
     },
@@ -216,7 +216,7 @@
         "image": "shopify://shop_images/Screenshot_2025-06-23_at_18.03.22.png",
         "reveal_on_scroll": false,
         "image_position": "start",
-        "content_width": "sm",
+        "content_width": "md",
         "remove_vertical_spacing": true
       }
     },
