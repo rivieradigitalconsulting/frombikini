@@ -89,7 +89,7 @@
           "type": "heading",
           "settings": {
             "text": "Ci teniamo a te: per qualsiasi dubbio, contattaci!",
-            "heading_tag": "h3"
+            "heading_tag": "h4"
           }
         }
       },
