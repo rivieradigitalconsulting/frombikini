@@ -91,22 +91,23 @@
             "heading_tag": "h1"
           }
         },
-        "subheading_xVBTQA": {
-          "type": "subheading",
+        "heading_UKghDP": {
+          "type": "heading",
           "settings": {
-            "text": "<em>Crediamo in una moda consapevole</em>"
+            "text": "Crediamo in una moda consapevole",
+            "heading_tag": "h4"
           }
         },
         "richtext_hVqRHP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Crediamo in una moda consapevole, in cui ogni gesto ha un significato.</p><p>Il nostro impegno per la sostenibilità guida ogni fase della filiera: dalla selezione attenta dei fornitori, all’utilizzo di materiali di alta qualità, fino all’informazione dei nostri clienti sulla cura dei capi per prolungarne la vita nel tempo.</p><p>Desideriamo che i tuoi <strong>From Bikini</strong> siano amati, vissuti e custoditi a lungo, perché ciò che dura è, per sua natura, sostenibile.</p>"
+            "content": "<p><br/>Crediamo in una <strong>moda consapevole</strong>, in cui ogni gesto ha un significato.<br/>Il nostro impegno per la <strong>sostenibilità</strong> guida ogni fase della filiera: dalla selezione attenta dei fornitori, all’utilizzo di <strong>materiali di alta qualità</strong>, fino all’informazione dei nostri clienti sulla cura dei capi per prolungarne la vita nel tempo.<br/>Desideriamo che i tuoi From Bikini siano <strong>amati, vissuti e custoditi a lungo</strong>, perché ciò che dura è, per sua natura, sostenibile.</p>"
           }
         }
       },
       "block_order": [
         "heading_TFwdWd",
-        "subheading_xVBTQA",
+        "heading_UKghDP",
         "richtext_hVqRHP"
       ],
       "custom_css": [
@@ -237,7 +238,7 @@
         "richtext_tqaddF": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Produciamo interamente in Italia, a km 0<strong>,</strong> riducendo i trasporti e di conseguenza l’impatto ambientale e le emissioni di carbonio.  <br/>Al contempo, adottiamo un approccio Slow Fashion che ci porta a produrre quantità limitate di capi e ad utilizzare materiali di alta qualità, selezionati per la loro resistenza e durata nel tempo, riducendo cosi’ gli sprechi. <br/>Gli scarti di lavorazione vengono trasformati in dettagli artigianali, come trecce fatte a mano, affinché nessun materiale vada sprecato.</p>"
+            "content": "<p>Produciamo interamente <strong>in Italia, a km 0,</strong> riducendo i trasporti e di conseguenza l’impatto ambientale e le emissioni di carbonio.  <br/>Al contempo, adottiamo un approccio <strong>Slow Fashion</strong> che ci porta a produrre quantità limitate di capi e ad utilizzare materiali di alta qualità, selezionati per la loro resistenza e durata nel tempo, riducendo cosi’ gli sprechi. <br/>Gli scarti di lavorazione vengono trasformati in dettagli artigianali, come trecce fatte a mano, affinché nessun materiale vada sprecato.</p>"
           }
         }
       },
@@ -319,7 +320,7 @@
         "richtext_ktjbyw": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Ogni anno From Bikini compie nuovi passi per ridurre la propria impronta ambientale attraverso l’utilizzo di tessuti sostenibili e responsabili nelle collezioni.</p><p>Collaboriamo esclusivamente con fornitori italiani che condividono i nostri valori, privilegiando tessuti di alta qualità come lycre delicate e confortevoli studiate per adattarsi al corpo come una seconda pelle, accompagnando i movimenti con estrema leggerezza.</p><p>In ogni collezione introduciamo materiali naturali e certificati, come il cotone biologico o filati con certificazione OEKO-TEX®, per offrire capi che rispettino profondamente sia il corpo che l’ambiente.</p><p>I nostri tessuti in 100% cotone biologico sono coltivati senza pesticidi o fertilizzanti sintetici: più gentili sulla pelle, sono ideali anche per chi ha pelle sensibile o soffre di allergie.</p><p>Inoltre, selezionando tessuti certificati OEKO-TEX, che garantiscono l’assenza di sostanze nocive, assicuriamo una scelta d’’acquisto orientata al benessere della pelle rendendo ogni capo puro piacere da indossare.</p>"
+            "content": "<p>Ogni anno <strong>From Bikini</strong> compie nuovi passi per ridurre la propria impronta ambientale attraverso l’utilizzo di <strong>tessuti sostenibili e responsabili</strong> nelle collezioni.<br/>Collaboriamo esclusivamente con <strong>fornitori italiani</strong> che condividono i nostri valori, privilegiando tessuti di alta qualità come lycre delicate e confortevoli studiate per adattarsi al corpo come una seconda pelle, accompagnando i movimenti con estrema leggerezza.</p><p>In ogni collezione introduciamo <strong>materiali naturali e certificati</strong>, come il <strong>cotone biologico</strong> o filati con certificazione <strong>OEKO-TEX®</strong>, per offrire capi che rispettino profondamente sia il corpo che l’ambiente.<br/>I nostri tessuti in 100% cotone biologico sono coltivati senza pesticidi o fertilizzanti sintetici: più gentili sulla pelle, sono ideali anche per chi ha pelle sensibile o soffre di allergie.<br/>Inoltre, selezionando tessuti certificati OEKO-TEX, che garantiscono l’<strong>assenza di sostanze nocive</strong>, assicuriamo una scelta d’’acquisto orientata al benessere della pelle rendendo ogni capo puro piacere da indossare.</p>"
           }
         }
       },
