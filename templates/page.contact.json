@@ -20,6 +20,19 @@
     },
     "contact-form": {
       "type": "contact",
+      "blocks": {
+        "text_HhAwBj": {
+          "type": "text",
+          "settings": {
+            "title": "Custom field",
+            "use_long_text": false,
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "text_HhAwBj"
+      ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
