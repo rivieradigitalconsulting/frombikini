@@ -27,17 +27,10 @@
             "text": "Siamo qui per Te",
             "heading_tag": "h1"
           }
-        },
-        "richtext_pdJM6q": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
-          }
         }
       },
       "block_order": [
-        "heading_zmRVEG",
-        "richtext_pdJM6q"
+        "heading_zmRVEG"
       ],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
@@ -58,16 +51,64 @@
       "type": "contact",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "subheading": "",
-        "title": "Contact",
-        "content": ""
+        "title": "",
+        "content": "<p>Hai bisogno di supporto, desideri ricevere maggiori informazioni o sei interessato a collaborare con noi? Compila il modulo sottostante e ti ricontatteremo il prima possibile per offrirti la migliore assistenza:</p>"
+      }
+    },
+    "rich_text_axAHjL": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GE7RL9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Il nostro team è a tua completa disposizione dal lunedì al venerdì, dalle 09:00 alle 19:00 (esclusi i giorni festivi).</p><p>E-mail: <span style=\"text-decoration:underline\">hello@frombikini.com</span></p><p>Whatsapp: <span style=\"text-decoration:underline\">+ 39 3338019796</span></p><p>Ti invitiamo a visitare la nostra sezione <span style=\"text-decoration:underline\">FAQ</span> per trovare risposte rapide alle domande più frequenti. <br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GE7RL9"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "blocks_6mHkkz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_kcQhK8": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_kcQhK8"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
       }
     }
   },
   "order": [
     "main",
     "image_with_text_overlay_3feV4A",
-    "contact-form"
+    "contact-form",
+    "rich_text_axAHjL",
+    "blocks_6mHkkz"
   ]
 }
