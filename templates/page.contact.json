@@ -68,10 +68,18 @@
           "settings": {
             "content": "<p>Il nostro team è a tua completa disposizione dal lunedì al venerdì, dalle 09:00 alle 19:00 (esclusi i giorni festivi).</p><p>E-mail: <a href=\"mailto:hello@frombikini.com\" target=\"_blank\">hello@frombikini.com</a></p><p>Whatsapp: <a href=\"https://wa.link/jjvv0y\" target=\"_blank\">+ 39 3338019796</a></p><p>Ti invitiamo a visitare la nostra sezione <a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">FAQ</a> per trovare risposte rapide alle domande più frequenti. </p>"
           }
+        },
+        "heading_cFtAhX": {
+          "type": "heading",
+          "settings": {
+            "text": "Ci teniamo a te: per qualsiasi dubbio, contattaci!",
+            "heading_tag": "h3"
+          }
         }
       },
       "block_order": [
-        "richtext_GE7RL9"
+        "richtext_GE7RL9",
+        "heading_cFtAhX"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
