@@ -68,18 +68,10 @@
           "settings": {
             "content": "<p>Il nostro team è a tua completa disposizione dal lunedì al venerdì, dalle 09:00 alle 19:00 (esclusi i giorni festivi).</p><p>E-mail: <a href=\"mailto:hello@frombikini.com\" target=\"_blank\">hello@frombikini.com</a></p><p>Whatsapp: <a href=\"https://wa.link/jjvv0y\" target=\"_blank\">+ 39 3338019796</a></p><p>Ti invitiamo a visitare la nostra sezione <a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">FAQ</a> per trovare risposte rapide alle domande più frequenti. </p>"
           }
-        },
-        "heading_cFtAhX": {
-          "type": "heading",
-          "settings": {
-            "text": "Ci teniamo a te: per qualsiasi dubbio, contattaci!",
-            "heading_tag": "h3"
-          }
         }
       },
       "block_order": [
-        "richtext_GE7RL9",
-        "heading_cFtAhX"
+        "richtext_GE7RL9"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
@@ -90,6 +82,29 @@
         "remove_vertical_spacing": true
       }
     },
+    "rich_text_yyPnkb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nXVxMN": {
+          "type": "heading",
+          "settings": {
+            "text": "Ci teniamo a te: per qualsiasi dubbio, contattaci!",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nXVxMN"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "blocks_6mHkkz": {
       "type": "_blocks",
       "blocks": {
@@ -97,7 +112,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 0,
-            "height_mobile": 20,
+            "height_mobile": 0,
             "background_color": "#f9f4f0"
           },
           "blocks": {}
@@ -120,6 +135,7 @@
     "image_with_text_overlay_3feV4A",
     "contact-form",
     "rich_text_axAHjL",
+    "rich_text_yyPnkb",
     "blocks_6mHkkz"
   ]
 }
