@@ -20,21 +20,8 @@
     },
     "contact-form": {
       "type": "contact",
-      "blocks": {
-        "text_HhAwBj": {
-          "type": "text",
-          "settings": {
-            "title": "Custom field",
-            "use_long_text": false,
-            "required": false
-          }
-        }
-      },
-      "block_order": [
-        "text_HhAwBj"
-      ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "subheading": "",
         "title": "Contact",
