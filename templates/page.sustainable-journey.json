@@ -84,18 +84,17 @@
     "image_with_text_WVXE48": {
       "type": "image-with-text",
       "blocks": {
-        "subheading_xVBTQA": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "<em>Crediamo in una moda consapevole</em>"
-          }
-        },
         "heading_TFwdWd": {
           "type": "heading",
           "settings": {
             "text": "Un impegno verso la sostenibilità",
             "heading_tag": "h1"
+          }
+        },
+        "subheading_xVBTQA": {
+          "type": "subheading",
+          "settings": {
+            "text": "<em>Crediamo in una moda consapevole</em>"
           }
         },
         "richtext_hVqRHP": {
@@ -106,8 +105,8 @@
         }
       },
       "block_order": [
-        "subheading_xVBTQA",
         "heading_TFwdWd",
+        "subheading_xVBTQA",
         "richtext_hVqRHP"
       ],
       "custom_css": [
