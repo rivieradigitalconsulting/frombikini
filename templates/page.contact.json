@@ -49,6 +49,9 @@
     },
     "contact-form": {
       "type": "contact",
+      "custom_css": [
+        "h1,p {text-align: left !important;}"
+      ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
