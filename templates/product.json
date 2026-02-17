@@ -145,32 +145,6 @@
             "border_color": ""
           }
         },
-        "feature_with_icon_erhChN": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "Produzione a KM 0",
-            "link": "",
-            "icon": "picto-love",
-            "custom_icon": "shopify://shop_images/km0.png",
-            "icon_width": 32,
-            "background": "#f9f4f0",
-            "text_color": "#564747",
-            "border_color": ""
-          }
-        },
-        "feature_with_icon_6EhPet": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "Certificazione OEKO-TEX®",
-            "link": "",
-            "icon": "picto-love",
-            "custom_icon": "shopify://shop_images/8_ea8a5665-e527-410c-beee-66ee1fb66002.png",
-            "icon_width": 32,
-            "background": "#f9f4f0",
-            "text_color": "#564747",
-            "border_color": ""
-          }
-        },
         "separator_nr8Cnz": {
           "type": "separator",
           "settings": {}
@@ -188,7 +162,7 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Composizione & Cura",
-            "content": "<p>Il tuo From Bikini è realizzato con lycra italiana di altissima qualità:</p><ul><li>Esterno: 80% PA, 20% EA</li><li>Interno: 80% PA, 20% EA</li></ul><p>Ecco alcune indicazioni per mantenere il tuo From Bikini in perfette condizioni:</p><ul><li>Lavaggio delicato, max 30°</li><li>Non candeggiare e non asciugare in asciugatrice</li><li>Non stirare</li><li>Lavaggio a secco professionale</li></ul><p>Ogni From Bikini verrà consegnato in un packaging eco friendly per una migliore conservazione.</p>",
+            "content": "<p>Your From Bikini is made from the highest quality Italian lycra:</p><ul><li>External: 95% PA, 5% EA</li></ul><p>Some guidance on keeping your From Bikini in great shape over time:</p><ul><li>Fine wash, max 40°</li><li>Do not bleach or tumble dry</li><li>Iron at low temperature (max 110°C)</li><li>Professional dry cleaning</li></ul>",
             "liquid": "",
             "page": ""
           }
@@ -264,8 +238,6 @@
         "feature_with_icon_RP8kHb",
         "feature_with_icon_8gHBVy",
         "feature_with_icon_YYKLbL",
-        "feature_with_icon_erhChN",
-        "feature_with_icon_6EhPet",
         "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
