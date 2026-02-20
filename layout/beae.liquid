@@ -5,68 +5,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ shop.locale }}">
 <head>
- <!-- START THEME HEADER --> 
-
-<!-- BEAE-GLOBAL-FONT --> 
-{% capture the_snippet_global_font %}{% include 'beae-global-font' %}{% endcapture %} {% unless the_snippet_global_font contains 'Liquid error' %} {{ the_snippet_global_font }} {% endunless %} 
- <!-- END BEAE-GLOBAL-FONT -->
-<!-- BEAE-HEADER --> 
-{%- render 'beae_header' -%}
-<!-- END BEAE-HEADER -->
-    
-    
-
-    
-
-    {%- if page_description -%}
-      
-    {%- endif -%}
-
-    <link rel="canonical" href="{{ canonical_url }}">
-
-    {%- if settings.favicon -%}
-      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
-      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
-    {%- endif -%}
-
-    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
-    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-
-    {%- unless settings.heading_font.system? -%}
-      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
-    {%- endunless -%}
-
-    {%- unless settings.text_font.system? -%}
-      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
-    {%- endunless -%}
-
-    {%- render 'social-meta-tags' -%}
-    {%- render 'microdata-schema' -%}
-    {%- render 'css-variables' -%}
-    {%- render 'js-variables' -%}
-
-    {%- if request.page_type == 'gift_card' -%}
-      
-    {%- endif -%}
-
-    
-
-    
-    
-
-    {{ content_for_header }}
-
-    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
-    {{- 'riviera-customs.css' | asset_url | stylesheet_tag: preload: true -}}
-  <!--VEDA_HEADER_SCRIPTS_POSITION-->
-{%- render 'veda-header-scripts' -%}
-{% capture the_snippet_beae-global-theme-setting %}{% include 'beae-global-theme-setting' %}{% endcapture %}
-            {% unless the_snippet_beae-global-theme-setting contains 'Liquid error' %}
-                {{ the_snippet_beae-global-theme-setting }}
-            {% endunless %}
-<script src="{{ 'global.js' | asset_url }}" defer="defer"></script> 
- <!-- END THEME HEADER --> 
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">

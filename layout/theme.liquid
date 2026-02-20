@@ -4,9 +4,11 @@
 {% assign current_locale = localization.language.iso_code | append: ',' %}
 <html {% if locale_rtl contains current_locale %}dir="rtl"{% endif %}  lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
   <head>
+
 <!-- BEAE-GLOBAL-FONT --> 
 {% capture the_snippet_global_font %}{% include 'beae-global-font' %}{% endcapture %} {% unless the_snippet_global_font contains 'Liquid error' %} {{ the_snippet_global_font }} {% endunless %} 
  <!-- END BEAE-GLOBAL-FONT -->
+
 <!-- BEAE-HEADER --> 
 {%- render 'beae_header' -%}
 <!-- END BEAE-HEADER -->
@@ -139,11 +141,15 @@
     </main>
   <!--VEDA_FOOTER_SCRIPTS_POSITION-->
 {%- render 'veda-footer-scripts' -%}
+
 <!-- BEAE-FOOTER --> 
 {%- render 'beae_footer' -%}
 <!-- END BEAE-FOOTER -->
 <!-- BEAE-AB-SNIPPET --> 
+
+<!-- BEAE-AB-SNIPPET --> 
 {%- render 'beae_ab_snippet' -%}
+<!-- END BEAE-AB-SNIPPET -->
 <!-- BEAE-AB-SNIPPET --></body>
 
 </html>
