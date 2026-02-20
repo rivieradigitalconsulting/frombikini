@@ -162,7 +162,7 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Composizione & Cura",
-            "content": "<p>Your From Bikini is made from the highest quality Italian lycra:</p><ul><li>External: 95% PA, 5% EA</li></ul><p>Some guidance on keeping your From Bikini in great shape over time:</p><ul><li>Fine wash, max 40°</li><li>Do not bleach or tumble dry</li><li>Iron at low temperature (max 110°C)</li><li>Professional dry cleaning</li></ul>",
+            "content": "<p>{{ product.metafields.pdp.composizione_cura.value }}</p>",
             "liquid": "",
             "page": ""
           }
@@ -184,7 +184,7 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Spedizione & Resi",
-            "content": "<p><strong>SPEDIZIONE</strong><br/><br/>RITIRO<span style=\"text-decoration:underline\"><br/>From Bikini Reception</span> (Via Filippo Turati 3, Milano 20121) - GRATUITO<br/>Disponibilità in 24-48 ore<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/><span style=\"text-decoration:underline\">Punto di ritiro</span> in 2-4 giorni lavorativi - € 5,00<br/></p><p><br/>SPEDIZIONE A DOMICILIO <br/>Consegna Stardard in 2-4 giorni lavorativi per ordini superiori a € 200 - GRATUITA<br/>Consegna Standard in 2-4 giorni lavorativi € 7,00<br/>Consegna Express con DHL in 1-2 giorni lavorativi € 12,00<br/><br/><br/><br/><br/>RESI<br/><br/>From Bikini Reception (Via Filippo Turati 3, Milano 20121) - GRATUITO<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Online - € 8,00<br/><br/>Il reso va richiesto entro 14 giorni dalla ricezione e il prodotto deve essere integro, inutilizzato e con confezione originale.<br/><br/>Per maggiori dettagli visita le sezioni FAQ, Spedizioni & Ordini e Resi & Rimborsi.</p>",
+            "content": "<p><strong>SPEDIZIONE</strong><br/><br/>RITIRO<br/>From Bikini Reception (<a href=\"https://share.google/YR9HcRNGjDMihnlV5\" target=\"_blank\" title=\"https://share.google/YR9HcRNGjDMihnlV5\">Via Filippo Turati 3, Milano 20121</a>) - GRATUITO<br/>Disponibilità in 24-48 ore<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Punto di ritiro in 2-4 giorni lavorativi € 5,00<br/><br/>SPEDIZIONE A DOMICILIO <br/>Consegna Stardard in 2-4 giorni lavorativi per ordini superiori a € 200 - GRATUITA<br/>Consegna Standard in 2-4 giorni lavorativi € 7,00<br/>Consegna Express con DHL in 1-2 giorni lavorativi € 12,00<br/><br/><strong>RESI</strong><br/><br/>From Bikini Reception (<a href=\"https://share.google/YR9HcRNGjDMihnlV5\" target=\"_blank\" title=\"https://share.google/YR9HcRNGjDMihnlV5\">Via Filippo Turati 3, Milano 20121</a>) - GRATUITO<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Online - € 8,00<br/><br/>Il reso va richiesto entro 14 giorni dalla ricezione e il prodotto deve essere integro, inutilizzato e con confezione originale.<br/><br/>Per maggiori dettagli visita le sezioni FAQ, Spedizioni & Ordini e Resi & Rimborsi.\"</p>",
             "liquid": "",
             "page": ""
           }
