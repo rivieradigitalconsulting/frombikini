@@ -50,7 +50,7 @@
           "type": "newsletter",
           "settings": {
             "title": "Connettiti con l'energia From Bikini",
-            "content": "<p>Unisciti alla community <strong>Frombikinigirls</strong> e scopri in anteprima novità, arrivi speciali ed esclusive pensate per te.</p>",
+            "content": "<p>Unisciti alla community <strong>Frombikinigirls</strong> e scopri in anteprima novità, arrivi speciali ed esclusive pensate per te. <br/>Ottieni il <strong>10% di sconto </strong>sul tuo primo ordine iscrivendoti.</p>",
             "button_background": "#f7f4f0",
             "button_text_color": "#564747"
           }
