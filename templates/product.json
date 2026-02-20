@@ -349,7 +349,7 @@
             "title": "{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}",
             "heading_tag": "h4",
             "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura nate per definire il tuo stile e valorizzare le tue forme.<br/>In From Bikini, crediamo che ogni colore risvegli una vibrazione diversa in ognuno di noi e sprigioni un’energia unica e speciale. Non è mai un caso ciò da cui sei attratta: ascolta la tua anima e indossa il colore che ti fa sentire più te stessa.</p>",
-            "link_url": "shopify://products/bahia-onepiece-black",
+            "link_url": "shopify://pages/colour-new",
             "link_text": "Scopri di più"
           }
         },
