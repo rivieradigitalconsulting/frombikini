@@ -184,7 +184,7 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Spedizione & Resi",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "content": "<p><strong>SPEDIZIONE</strong><br/><br/>RITIRO<span style=\"text-decoration:underline\"><br/>From Bikini Reception</span> (Via Filippo Turati 3, Milano 20121) - GRATUITO<br/>Disponibilità in 24-48 ore<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/><span style=\"text-decoration:underline\">Punto di ritiro</span> in 2-4 giorni lavorativi - € 5,00<br/></p><p><br/>SPEDIZIONE A DOMICILIO <br/>Consegna Stardard in 2-4 giorni lavorativi per ordini superiori a € 200 - GRATUITA<br/>Consegna Standard in 2-4 giorni lavorativi € 7,00<br/>Consegna Express con DHL in 1-2 giorni lavorativi € 12,00<br/><br/><br/><br/><br/>RESI<br/><br/>From Bikini Reception (Via Filippo Turati 3, Milano 20121) - GRATUITO<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Online - € 8,00<br/><br/>Il reso va richiesto entro 14 giorni dalla ricezione e il prodotto deve essere integro, inutilizzato e con confezione originale.<br/><br/>Per maggiori dettagli visita le sezioni FAQ, Spedizioni & Ordini e Resi & Rimborsi.</p>",
             "liquid": "",
             "page": ""
           }
@@ -501,6 +501,7 @@
         "question_zgNTVJ",
         "question_UK4EEU"
       ],
+      "disabled": true,
       "name": "t:sections.faq.presets.faq.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
@@ -568,6 +569,7 @@
         "tab_Q66BX9",
         "tab_RU4Akz"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 24px;}",
         ".section-header {justify-self: left; margin-bottom: -20px;}",
