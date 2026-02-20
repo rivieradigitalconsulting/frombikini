@@ -616,7 +616,7 @@
           "settings": {
             "title": "Social Wall",
             "title_font": "cormorant_n4",
-            "subtitle": "Scopri i nostri contenuti. Lorem Ipsum Dolor Sit Amet.",
+            "subtitle": "Scopri i nostri contenuti.",
             "text_alignment": "left",
             "title_size_desktop": 24,
             "title_size_mobile": 24,
