@@ -56,6 +56,7 @@
       "blocks": {
         "heading_qmckax": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "{{ collection.title }}",
             "heading_tag": "h1"
@@ -63,7 +64,6 @@
         },
         "richtext_TCxALV": {
           "type": "richtext",
-          "disabled": true,
           "settings": {
             "content": "{{ collection.description }}"
           }
@@ -75,7 +75,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "content_width": "xs",
         "text_position": "center",
         "remove_vertical_spacing": false
