@@ -49,6 +49,19 @@
     },
     "contact-form": {
       "type": "contact",
+      "blocks": {
+        "text_xPEMGE": {
+          "type": "text",
+          "settings": {
+            "title": "N. Ordine (facoltativo)",
+            "use_long_text": false,
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "text_xPEMGE"
+      ],
       "custom_css": [
         "h1,p {text-align: left !important;}"
       ],
