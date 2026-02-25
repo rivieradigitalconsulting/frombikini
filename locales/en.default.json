@@ -597,7 +597,7 @@
   },
   "shopify": {
     "links": {
-      "powered_by_shopify": "Built by riviera"
+      "powered_by_shopify": "<a href=\"https://www.instagram.com/riviera.digitalconsulting/\" target=\"_blank\" rel=\"noopener noreferrer\">built by riviera</a>"
     }
   }
 }
