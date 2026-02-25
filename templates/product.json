@@ -437,8 +437,8 @@
           "settings": {
             "image": "shopify://shop_images/1C74D3B9-6354-4FB0-8118-4EBBA6E7E688_1_105_c.jpg",
             "subheading": "",
-            "title": "Titolo di sezione",
-            "content": "<p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. </p>",
+            "title": "Il nostro mondo",
+            "content": "<p>From Bikini nasce dal desiderio profondo di viaggiare e scoprire nuovi luoghi. La nostra passione è girare il mondo immergendoci in culture diverse, traendo ispirazione dai loro colori, sensazioni e tradizioni per creare collezioni uniche che esaltino l'energia femminile.<br/><br/>Ogni pezzo ha una storia da raccontare: è un tributo alle diverse energie delle donne che incontriamo lungo il cammino. Creiamo capi carichi di significato che permettono a ogni donna di abbracciare la propria vera essenza.<br/><br/>È proprio per questo che il nostro brand si chiama From: perché ogni nostra creazione è un racconto che inizia da un luogo, da una storia o da un’emozione vissuta in qualche parte del mondo, per arrivare finalmente a te.</p>",
             "link_text": "",
             "link_url": "",
             "link_style": "solid"
@@ -449,7 +449,7 @@
         "image_with_text_pgqQae"
       ],
       "custom_css": [
-        ".h3 {font-size: 21px;}"
+        ".h3 {font-size: 24px;}"
       ],
       "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
       "settings": {
@@ -459,7 +459,7 @@
         "text_alignment": "center",
         "heading_tag": "h3",
         "overlay_color": "#000000",
-        "overlay_opacity": 15
+        "overlay_opacity": 30
       }
     },
     "faq_e9gbMW": {
