@@ -120,7 +120,7 @@
         "image": "shopify://shop_images/nvkr-3396_1.webp",
         "reveal_on_scroll": false,
         "image_position": "start",
-        "content_width": "lg",
+        "content_width": "md",
         "remove_vertical_spacing": false
       }
     },
