@@ -323,7 +323,7 @@
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
-        "image_size": "fill",
+        "image_size": "lg",
         "image": "shopify://shop_images/Screenshot_2025-10-07_at_11.20.34_am.webp",
         "allow_transparent_header": false,
         "reveal_on_scroll": false,
