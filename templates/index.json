@@ -153,9 +153,9 @@
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "BIKINI",
+            "title": "Bikini",
             "button_text": "dive in",
-            "button_link": "",
+            "button_link": "shopify://collections/tutti-i-nostri-bikini",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 30
