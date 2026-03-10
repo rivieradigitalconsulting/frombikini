@@ -583,11 +583,11 @@
           "type": "image_with_text",
           "settings": {
             "image": "shopify://shop_images/Screen_Shot_2025-06-03_at_3.28.22_pm_fd0ef135-5d6f-47e3-8b1b-02ba41fb85e8.webp",
-            "title": "Time To Love Being You",
+            "title": "È tempo di amare te stessa",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_url": "",
-            "link_text": "Learn More"
+            "content": "<p>From Bikini è un viaggio alla scoperta di sé che incoraggia ogni donna a riconnettersi con la propria essenza e a mostrare con orgoglio la sua natura più autentica.</p>",
+            "link_url": "shopify://pages/time-to-love-being-you",
+            "link_text": "Scopri di più"
           }
         }
       },
