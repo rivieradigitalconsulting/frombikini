@@ -244,19 +244,19 @@
     "featured_collections_bwTKRC": {
       "type": "featured-collections",
       "blocks": {
-        "collection_BUVTQU": {
+        "collection_6CLnHH": {
           "type": "collection",
           "settings": {
-            "collection": "frontpage",
-            "products_count": 50,
-            "title": "Best Sellers",
+            "collection": "la-nostra-selezione",
+            "products_count": 8,
+            "title": "",
             "link_url": "",
-            "link_text": ""
+            "link_text": "View all"
           }
         }
       },
       "block_order": [
-        "collection_BUVTQU"
+        "collection_6CLnHH"
       ],
       "custom_css": [
         ".h2 {font-size: 24px;}",
