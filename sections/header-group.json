@@ -17,12 +17,26 @@
         "message_YGpWWa": {
           "type": "message",
           "settings": {
-            "text": "Spedizione Express Gratuita sopra € 100"
+            "text": "Spedizione gratuita in Italia per ordini superiori a €200"
+          }
+        },
+        "message_hwiTGA": {
+          "type": "message",
+          "settings": {
+            "text": "POP-UP STORE MILANO: Via Palermo 21 ang. Corso Garibaldi"
+          }
+        },
+        "message_pgGXti": {
+          "type": "message",
+          "settings": {
+            "text": "Spediamo in tutto il mondo - consegniamo ovunque tu sia"
           }
         }
       },
       "block_order": [
-        "message_YGpWWa"
+        "message_YGpWWa",
+        "message_hwiTGA",
+        "message_pgGXti"
       ],
       "custom_css": [
         ".prose {font-family: \"Montserrat\", sans-serif !important;}"
