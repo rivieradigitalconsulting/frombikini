@@ -170,9 +170,9 @@
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "ONEPIECES",
+            "title": "Onepieces",
             "button_text": "dive in",
-            "button_link": "",
+            "button_link": "shopify://collections/tutti-i-nostri-costumi-interi",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -187,9 +187,9 @@
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "OUT OF WATER",
+            "title": "Out of Water",
             "button_text": "dive in",
-            "button_link": "",
+            "button_link": "shopify://collections/tutti-i-nostri-fuori-acqua",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 30
