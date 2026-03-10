@@ -22,7 +22,6 @@
         },
         "message_hwiTGA": {
           "type": "message",
-          "disabled": true,
           "settings": {
             "text": "POP-UP STORE MILANO: Via Palermo 21 ang. Corso Garibaldi"
           }
