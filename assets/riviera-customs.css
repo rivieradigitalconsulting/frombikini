@@ -21,6 +21,32 @@
   outline-color: black;
 }
 
+.color-variants__remaining {
+  display: none;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+@media screen and (max-width: 699px) {
+  .color-variants__swatch.hide-mobile {
+    display: none;
+  }
+
+  .color-variants__swatch.hide-mobile ~ .color-variants__remaining {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .color-variants__swatch.hide-desktop {
+    display: none;
+  }
+
+  .color-variants__swatch.hide-desktop ~ .color-variants__remaining {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   scroll-carousel.product-list.product-list--carousel.scroll-area.md\:unbleed {
     padding-left: 2px;

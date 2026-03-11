@@ -47,6 +47,20 @@
         "label": "Color variant swatch bottom spacing",
         "info": "There is a default spacing of a few pixel that cannot be removed",
         "default": 0
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_swatch_mobile_limit",
+        "label": "Color variant swatch mobile limit",
+        "info": "If set to 0 the limit does not apply",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "cusotm_riviera_tile_swatch_desktop_limit",
+        "label": "Color variant swatch desktop limit",
+        "info": "If set to 0 the limit does not apply",
+        "default": 0
       }
     ]
   },

@@ -11,7 +11,8 @@
   "riviera": {
     "snippets": {
       "product-variants": {
-        "color_prefix": "Colore"
+        "color_prefix": "Colore",
+        "color_remaining": "+{{ remaining }} colori"
       }
     }
   },
