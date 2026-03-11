@@ -15,6 +15,8 @@
     "cusotm_riviera_tile_swatch_size": 13,
     "cusotm_riviera_tile_swatch_top": 3,
     "cusotm_riviera_tile_swatch_bottom": 8,
+    "cusotm_riviera_tile_swatch_mobile_limit": 8,
+    "cusotm_riviera_tile_swatch_desktop_limit": 14,
     "icon_stroke_width": 2,
     "section_vertical_spacing": "lg",
     "default_color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
