@@ -8,6 +8,28 @@
 
   assign current_color = current_product.metafields.pdp.filter_color
   assign swatch_size = swatch_size | default: 10
+
+  assign remaining = color_variants.size | minus: 1
+
+  assign limit_mobile = false
+  assign limit_desktop = false
+  if is_plp == true
+    if settings.cusotm_riviera_tile_swatch_mobile_limit > 0 and color_variants.size > settings.cusotm_riviera_tile_swatch_mobile_limit
+      assign limit_mobile = true
+    endif
+
+    if settings.cusotm_riviera_tile_swatch_desktop_limit > 0 and color_variants.size > settings.cusotm_riviera_tile_swatch_desktop_limit
+      assign limit_desktop = true
+    endif
+  endif
+
+  assign has_selected = false
+  for color_variant in color_variants
+    if color_variant.id == current_product.id
+      assign has_selected = true
+      break
+    endif
+  endfor
 %}
 
 {% style %}
@@ -62,7 +84,19 @@
             assign is_selected = true
           endif
           assign swatch_color = color_variant.metafields.pdp.filter_color
-          echo
+
+          assign swatch_classes = 'color-variants__swatch--' | append: forloop.index | append: ' color-variants__swatch'
+          if is_selected
+            assign swatch_classes = swatch_classes | append: ' selected'
+          elsif has_selected == true or forloop.first == false
+            if limit_mobile
+              assign swatch_classes = swatch_classes | append: ' hide-mobile'
+            endif
+
+            if limit_desktop
+              assign swatch_classes = swatch_classes | append: ' hide-desktop'
+            endif
+          endif
         %}
         {% style %}
           .color-variants--{{ block_id }} .color-variants__swatch--{{ forloop.index }} {
@@ -74,17 +108,14 @@
           }
         {% endstyle %}
         {% if is_selected %}
-          <span
-            class="color-variants__swatch--{{ forloop.index }} color-variants__swatch selected"
-          ></span>
+          <span class="{{ swatch_classes }}"></span>
         {% else %}
-          <a
-            href="{{ color_variant.url }}"
-            title="{{ color_variant.title }}"
-            class="color-variants__swatch--{{ forloop.index }} color-variants__swatch"
-          ></a>
+          <a href="{{ color_variant.url }}" title="{{ color_variant.title }}" class="{{ swatch_classes }}"></a>
         {% endif %}
       {% endfor %}
+      <span class="color-variants__remaining">
+        {{ 'riviera.snippets.product-variants.color_remaining' | t: remaining: remaining }}
+      </span>
     </div>
   </div>
 {% endif %}
