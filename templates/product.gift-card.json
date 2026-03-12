@@ -308,6 +308,7 @@
       "block_order": [
         "ai_gen_block_e09345d_pd743h"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
@@ -317,6 +318,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 24px;}",
         ".section-header {justify-self: left;}"
@@ -352,6 +354,7 @@
       "block_order": [
         "ai_gen_block_e09345d_UnRMWy"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
@@ -404,6 +407,7 @@
         "video_with_text_8Lewf9",
         "image_with_text_hTbQVA"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 24px; text-align: left !important;}",
         ".h4 {font-size: 21px;}",
@@ -442,6 +446,7 @@
       "block_order": [
         "ai_gen_block_e09345d_gBpaVi"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
@@ -468,6 +473,7 @@
       "block_order": [
         "image_with_text_pgqQae"
       ],
+      "disabled": true,
       "custom_css": [
         ".h3 {font-size: 24px;}"
       ],
@@ -700,6 +706,7 @@
       "block_order": [
         "ai_gen_block_89fb493_6McV7F"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.ai-social-wall-subtitle-acu1mvfp4n0xpbedplaigenblock89fb4936mcv7f {font-size: 13px; }}"
       ],
@@ -734,6 +741,7 @@
         "logo_JiE3d4",
         "logo_VPkzrc"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 24px;}",
         "@media (max-width: 767px) {.section-header {justify-self: left; }}"
