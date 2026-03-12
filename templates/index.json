@@ -474,7 +474,7 @@
             "title_align": "left",
             "title_size_mobile": 24,
             "title_size_desktop": 30,
-            "title_spacing": 30,
+            "title_spacing": 50,
             "margin_top": 40,
             "margin_bottom": 40,
             "margin_horizontal": 0,
@@ -563,7 +563,7 @@
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
-        "remove_vertical_spacing": true,
+        "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
       }
     },
