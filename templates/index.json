@@ -475,7 +475,7 @@
             "title_size_mobile": 24,
             "title_size_desktop": 30,
             "title_spacing": 50,
-            "margin_top": 40,
+            "margin_top": 0,
             "margin_bottom": 40,
             "margin_horizontal": 0,
             "shape": "circle",
