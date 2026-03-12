@@ -442,14 +442,24 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 40,
-            "height_mobile": 50,
+            "height_mobile": 80,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e09345d_67VhqB": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 40,
+            "height_mobile": 80,
             "background_color": "#f9f4f0"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_e09345d_qqFLCc"
+        "ai_gen_block_e09345d_qqFLCc",
+        "ai_gen_block_e09345d_67VhqB"
       ],
       "name": "Spazio bianco",
       "settings": {
