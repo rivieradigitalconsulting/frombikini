@@ -446,20 +446,10 @@
             "background_color": "#f9f4f0"
           },
           "blocks": {}
-        },
-        "ai_gen_block_e09345d_67VhqB": {
-          "type": "ai_gen_block_e09345d",
-          "settings": {
-            "height_desktop": 40,
-            "height_mobile": 80,
-            "background_color": "#f9f4f0"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_e09345d_qqFLCc",
-        "ai_gen_block_e09345d_67VhqB"
+        "ai_gen_block_e09345d_qqFLCc"
       ],
       "name": "Spazio bianco",
       "settings": {
@@ -584,6 +574,30 @@
       "block_order": [
         "ai_gen_block_36f008b_gE3eHH"
       ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "blocks_4hq4EU": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_jDCiyE": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 40,
+            "height_mobile": 40,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_jDCiyE"
+      ],
+      "name": "Spazio bianco",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
@@ -905,6 +919,7 @@
     "media_grid_3w9bEY",
     "blocks_jTyad8",
     "177330264309ee9ce2",
+    "blocks_4hq4EU",
     "multi_column_ndcXBR",
     "multi_column_7VKr3p",
     "blocks_cVN7EB",
