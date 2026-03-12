@@ -482,7 +482,7 @@
             "columns_mobile": 2,
             "columns_desktop": 4,
             "gap_mobile": 15,
-            "gap_desktop": 30,
+            "gap_desktop": 80,
             "row_gap_mobile": 20,
             "row_gap_desktop": 40,
             "overlay_text_color": "#ffffff",
