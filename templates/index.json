@@ -477,7 +477,7 @@
             "shape": "circle",
             "columns_mobile": 2,
             "columns_desktop": 4,
-            "item_spacing_mobile": 15,
+            "item_spacing_mobile": 30,
             "item_spacing_desktop": 100,
             "row_spacing_mobile": 20,
             "row_spacing_desktop": 40,
