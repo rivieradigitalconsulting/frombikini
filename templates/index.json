@@ -488,7 +488,7 @@
             "overlay_text_color": "#ffffff",
             "overlay_font": "cormorant_n4",
             "overlay_bold": false,
-            "overlay_size_mobile": 14,
+            "overlay_size_mobile": 18,
             "overlay_size_desktop": 24,
             "text_spacing": 15,
             "text_align": "center",
