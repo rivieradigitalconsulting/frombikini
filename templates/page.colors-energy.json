@@ -76,7 +76,7 @@
             "link_target": "same_window",
             "element_text_font": "cormorant_n4",
             "element_text_size_desktop": 24,
-            "element_text_size_mobile": 14,
+            "element_text_size_mobile": 18,
             "element_text_color": "#ffffff",
             "element_spacing": 10,
             "title_font": "sans_serif_n4",
