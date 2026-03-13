@@ -1,0 +1,859 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "text_3E8biP": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}</strong><strong>: </strong>{{ product.metafields.pdp.fb_color.value.fb_color_description.value }}</p>"
+          }
+        },
+        "color_variants_zF7YYB": {
+          "type": "color_variants",
+          "settings": {
+            "current_product": "{{ product }}",
+            "color_variants": "{{ product.metafields.pdp.varianti_colore.value }}",
+            "padding_top_mobile": 10,
+            "padding_bottom_mobile": 10,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "title_spacing": 8,
+            "title_size_mobile": 13,
+            "title_size_desktop": 13,
+            "swatch_size": 25,
+            "swatch_spacing": 6
+          }
+        },
+        "separator_NtFirz": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "kiwi_size_chart_recommender_kiwi_sizing_BUgjER": {
+          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "settings": {
+            "fallbackToBlockPosition": false,
+            "waitForElementSelector": "",
+            "waitForElementDelay": 5
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#564747",
+            "atc_button_text_color": "#f9f4f0",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "conversion_bear_trust_badges_widget_6K67cd": {
+          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
+        "feature_with_icon_M8tNYn": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "{{ product.metafields.pdp.fb_feature_1.value.fb_product_title.value }}",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.pdp.fb_feature_1.value.fb_product_features.value }}",
+            "icon_width": 32,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_RP8kHb": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "{{ product.metafields.pdp.fb_feature_2.value.fb_product_title.value }}",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.pdp.fb_feature_2.value.fb_product_features.value }}",
+            "icon_width": 32,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_8gHBVy": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "{{ product.metafields.pdp.fb_feature_3.value.fb_product_title.value }}",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.pdp.fb_feature_3.value.fb_product_features.value }}",
+            "icon_width": 32,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_YYKLbL": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "{{ product.metafields.pdp.fb_feature_4.value.fb_product_title.value }}",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.pdp.fb_feature_4.value.fb_product_features.value }}",
+            "icon_width": 32,
+            "background": "#f9f4f0",
+            "text_color": "#564747",
+            "border_color": ""
+          }
+        },
+        "separator_nr8Cnz": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
+        "accordion_L6ccQK": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Composizione & Cura",
+            "content": "<p>{{ product.metafields.pdp.composizione_cura.value }}</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_HYDbrd": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Vestibilità & Taglie",
+            "content": "<p>{{ product.metafields.pdp.vestibilita_taglie.value }}</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_qLfr34": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Spedizione & Resi",
+            "content": "<p><strong>SPEDIZIONE</strong><br/><br/>RITIRO<br/>From Bikini Reception (<a href=\"https://share.google/YR9HcRNGjDMihnlV5\" target=\"_blank\" title=\"https://share.google/YR9HcRNGjDMihnlV5\">Via Filippo Turati 3, Milano 20121</a>) - GRATUITO<br/>Disponibilità in 24-48 ore<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Punto di ritiro in 2-4 giorni lavorativi € 5,00<br/><br/>SPEDIZIONE A DOMICILIO <br/>Consegna Stardard in 2-4 giorni lavorativi per ordini superiori a € 200 - GRATUITA<br/>Consegna Standard in 2-4 giorni lavorativi € 7,00<br/>Consegna Express con DHL in 1-2 giorni lavorativi € 12,00<br/><br/><strong>RESI</strong><br/><br/>From Bikini Reception (<a href=\"https://share.google/YR9HcRNGjDMihnlV5\" target=\"_blank\" title=\"https://share.google/YR9HcRNGjDMihnlV5\">Via Filippo Turati 3, Milano 20121</a>) - GRATUITO<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Online - € 8,00<br/><br/>Il reso va richiesto entro 14 giorni dalla ricezione e il prodotto deve essere integro, inutilizzato e con confezione originale.<br/><br/>Per maggiori dettagli visita le sezioni <a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">FAQ</a>, <a href=\"/pages/spedizioni-consegna\" target=\"_blank\" title=\"Spedizioni & Consegna\">Spedizioni & Consegna</a> e <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\">Resi & Rimborsi</a>.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_DBkckN": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Metodi di pagamento",
+            "content": "<ul><li>Carta di credito</li><li>Paypal</li><li>Klarna</li><li>Wallet digitali (Apple Pay, Google Pay)</li><li>Bonifico bancario</li></ul><p>From Bikini garantisce la massima sicurezza per tutti i tuoi acquisti.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "modal_hHNrHh": {
+          "type": "modal",
+          "settings": {
+            "button_title": "<strong>Posso aiutarti?</strong>",
+            "button_style": "link",
+            "stretch_button": false,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "<strong>Posso aiutarti?</strong>",
+            "modal_content": "<p>From Bikini nasce per offrirti costumi da bagno e fuori acqua di qualità artigianale, pensati per accompagnarti una vita. Ci teniamo: per qualsiasi dubbio, contattaci. Siamo qui per te! <br/><br/>WHATSAPP: <a href=\"https://wa.link/jjvv0y\" target=\"_blank\" title=\"https://wa.link/jjvv0y\">(+39) 333 801976</a> - Dal lunedì al venerdì, dalle 09:00 alle 18:00<br/>EMAIL: <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a><br/><br/>Per maggiori dettagli visita le sezioni <a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">FAQ</a> e <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">Contatti</a>.</p>"
+          }
+        },
+        "share_buttons_Ly47wy": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "pickup_availability_DXaDq8": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "text_3E8biP",
+        "color_variants_zF7YYB",
+        "separator_NtFirz",
+        "kiwi_size_chart_recommender_kiwi_sizing_BUgjER",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "conversion_bear_trust_badges_widget_6K67cd",
+        "feature_with_icon_M8tNYn",
+        "feature_with_icon_RP8kHb",
+        "feature_with_icon_8gHBVy",
+        "feature_with_icon_YYKLbL",
+        "separator_nr8Cnz",
+        "description",
+        "accordion_L6ccQK",
+        "accordion_HYDbrd",
+        "accordion_qLfr34",
+        "accordion_DBkckN",
+        "modal_hHNrHh",
+        "share_buttons_Ly47wy",
+        "pickup_availability_DXaDq8"
+      ],
+      "custom_css": [
+        ".feature-badge p {font-size: 13px !important;}",
+        ".accordion__toggle span {font-size: 17px;}",
+        ".feature-badge-list {padding-bottom: 50px;}",
+        "sale-price,compare-at-price {font-family: \"Montserrat\", sans-serif !important; font-size: 16px; font-weight: 500; padding-top: 10px; color: #564747;}",
+        "compare-at-price {color: #a08989a6;}",
+        "button {font-weight: bold;}"
+      ],
+      "settings": {
+        "mobile_fixed_height": 46,
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "container_size": "lg",
+        "product_info_size": 40,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid_2x_highlighted",
+        "desktop_media_grid_gap": 2,
+        "mobile_controls": "free_scroll",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 4
+      }
+    },
+    "blocks_6wtT9b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_pd743h": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 20,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_pd743h"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        "h2 {font-size: 24px;}",
+        ".section-header {justify-self: left;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "",
+        "title": "Consigliati per te",
+        "content": ""
+      }
+    },
+    "blocks_fKXikN": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_UnRMWy": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 0,
+            "height_mobile": 0,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_UnRMWy"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "multi_column_hPeFAh": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_G8wMhM": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "{{ product.metafields.pdp.fb_color.value.fb_color_image.value }}",
+            "title": "{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}",
+            "heading_tag": "h4",
+            "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura nate per definire il tuo stile e valorizzare le tue forme.<br/>In From Bikini, crediamo che ogni colore risvegli una vibrazione diversa in ognuno di noi e sprigioni un’energia unica e speciale. Non è mai un caso ciò da cui sei attratta: ascolta la tua anima e indossa il colore che ti fa sentire più te stessa.</p>",
+            "link_url": "shopify://pages/colors-energy-1",
+            "link_text": "Scopri di più"
+          }
+        },
+        "image_with_text_hTbQVA": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/319_-_5mb_-_240dpi-4.jpg",
+            "title": "Fatto a mano in Italia",
+            "heading_tag": "h4",
+            "content": "<p>Per noi il Made in Italy è molto più di un processo produttivo: è una scelta di valori.<br/>Ogni capo nasce da lavorazioni artigianali che richiedono tempo e competenze specializzate, garantendo finiture superiori e un’esclusività autentica.<br/>Il fatto a mano in Italia rappresenta oggi il vero lusso: prodotti localmente, i nostri capi raccontano una tradizione fatta di qualità senza compromessi.<br/>Questa è la nostra ricetta per il successo: un design ricercato, l'impiego di tessuti pregiati e una profonda attenzione per i dettagli.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "video_with_text_8Lewf9": {
+          "type": "video_with_text",
+          "settings": {
+            "video": "shopify://files/videos/Sostenibilità.mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
+            "title": "Sostenibilità",
+            "heading_tag": "h4",
+            "content": "<p>In From Bikini, ogni capo nasce dal rispetto per la Terra e per chi lo indossa: ogni anno ci impegniamo a introdurre nuovi tessuti naturali o sostenibili, selezionando materiali come il cotone 100% biologico e fibre certificate OEKO-TEX.<br/>Le nostre sono creazioni pensate per durare nel tempo e minimizzare gli sprechi. <br/>Scegliere From Bikini significa unirsi a un viaggio consapevole dove moda e sostenibilità camminano insieme.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_G8wMhM",
+        "image_with_text_hTbQVA",
+        "video_with_text_8Lewf9"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24px; text-align: left !important;}",
+        ".h4 {font-size: 21px;}",
+        "p {font-size: 13px;}",
+        "a {font-size: 13px; font-weight: 700;}",
+        "img {aspect-ratio: 1 / 1; width: 100%; height: 100%; object-fit: cover;}"
+      ],
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "Focus sul prodotto",
+        "content": ""
+      }
+    },
+    "1767168929c607f5b6": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_gBpaVi": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_gBpaVi"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "image_with_text_overlay_BfhVaK": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_ifPYwV": {
+          "type": "heading",
+          "settings": {
+            "text": "Il nostro mondo",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_qV6BGX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>From Bikini nasce dal desiderio profondo di viaggiare e scoprire nuovi luoghi. La nostra passione è girare il mondo immergendoci in culture diverse, traendo ispirazione dai loro colori, sensazioni e tradizioni per creare collezioni uniche che esaltino l'energia femminile.<br/><br/>Ogni pezzo ha una storia da raccontare: è un tributo alle diverse energie delle donne che incontriamo lungo il cammino. Creiamo capi carichi di significato che permettono a ogni donna di abbracciare la propria vera essenza.<br/><br/>È proprio per questo che il nostro brand si chiama From: perché ogni nostra creazione è un racconto che inizia da un luogo, da una storia o da un’emozione vissuta in qualche parte del mondo, per arrivare finalmente a te.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ifPYwV",
+        "richtext_qV6BGX"
+      ],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/609_-_5mb_-_240dpi-2.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "images_with_text_scroll_VUFB86": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "image_with_text_pgqQae": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/1C74D3B9-6354-4FB0-8118-4EBBA6E7E688_1_105_c.jpg",
+            "subheading": "",
+            "title": "Il nostro mondo",
+            "content": "<p>From Bikini nasce dal desiderio profondo di viaggiare e scoprire nuovi luoghi. La nostra passione è girare il mondo immergendoci in culture diverse, traendo ispirazione dai loro colori, sensazioni e tradizioni per creare collezioni uniche che esaltino l'energia femminile.<br/><br/>Ogni pezzo ha una storia da raccontare: è un tributo alle diverse energie delle donne che incontriamo lungo il cammino. Creiamo capi carichi di significato che permettono a ogni donna di abbracciare la propria vera essenza.<br/><br/>È proprio per questo che il nostro brand si chiama From: perché ogni nostra creazione è un racconto che inizia da un luogo, da una storia o da un’emozione vissuta in qualche parte del mondo, per arrivare finalmente a te.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_pgqQae"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h3 {font-size: 24px;}"
+      ],
+      "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
+      "settings": {
+        "color_scheme": "scheme-89d87716-8848-44d3-84b1-195cc9cb55a1",
+        "background_image": "shopify://shop_images/612_-_5mb_-_240dpi-2.jpg",
+        "image_position": "start",
+        "text_alignment": "center",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "faq_e9gbMW": {
+      "type": "faq",
+      "blocks": {
+        "category_UPabNE": {
+          "type": "category",
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_TdVxYR": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question_zgNTVJ": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_UK4EEU": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_UPabNE",
+        "question_TdVxYR",
+        "question_zgNTVJ",
+        "question_UK4EEU"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "",
+        "title": "FAQ",
+        "content": ""
+      }
+    },
+    "tabs_FBR3be": {
+      "type": "tabs",
+      "blocks": {
+        "tab_QPCQyd": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Ho bisogno di un account per effettuare un acquisto?",
+            "content": "<p>Use this text to share information about your brand with your customers.</p>",
+            "page": "",
+            "open_on_mobile": true
+          }
+        },
+        "tab_ekQfjc": {
+          "type": "tab",
+          "settings": {
+            "title": "Come posso tracciare il mio ordine?",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_y7RxBJ": {
+          "type": "tab",
+          "settings": {
+            "title": "Come posso tracciare il mio ordine?",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_Q66BX9": {
+          "type": "tab",
+          "settings": {
+            "title": "Ho bisogno di un account per effettuare un acquisto?",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_RU4Akz": {
+          "type": "tab",
+          "settings": {
+            "title": "Come posso tracciare il mio ordine?",
+            "content": "<p>Esempio di testo.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_QPCQyd",
+        "tab_ekQfjc",
+        "tab_y7RxBJ",
+        "tab_Q66BX9",
+        "tab_RU4Akz"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 24px;}",
+        ".section-header {justify-self: left; margin-bottom: -20px;}",
+        "span,button {font-size: 17px;}"
+      ],
+      "name": "t:sections.tabs.presets.tab.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Faq",
+        "text_alignment": "start"
+      }
+    },
+    "blocks_4ykUhe": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_rkcbjq": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_rkcbjq"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "1767117147215cebba": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_89fb493_6McV7F": {
+          "type": "ai_gen_block_89fb493",
+          "settings": {
+            "title": "Social Wall",
+            "title_font": "cormorant_n4",
+            "subtitle": "Scopri i nostri contenuti",
+            "text_alignment": "left",
+            "title_size_desktop": 24,
+            "title_size_mobile": 24,
+            "subtitle_size_desktop": 14,
+            "subtitle_size_mobile": 14,
+            "title_subtitle_spacing": 4,
+            "header_spacing": 20,
+            "title_color": "#564747",
+            "subtitle_color": "#564747",
+            "background_color": "#f7f4f0",
+            "layout_desktop": "grid",
+            "layout_mobile": "carousel",
+            "columns_desktop": 4,
+            "columns_mobile": 2,
+            "grid_gap": 4,
+            "row_gap_desktop": 32,
+            "row_gap_mobile": 16,
+            "margin_top": 80,
+            "margin_bottom": 40,
+            "image_border_radius": 0,
+            "image_ratio_desktop": "1/1",
+            "image_ratio_mobile": "3/4",
+            "text_position": "outside",
+            "text_font_size": 13,
+            "text_spacing": 16,
+            "text_color": "#564747",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.3,
+            "image_1": "shopify://shop_images/SnapInsta.to_607250547_18557896645029498_1566483050812776286_n.jpg",
+            "text_1": "@influencer",
+            "link_1": "",
+            "image_2": "shopify://shop_images/SnapInsta.to_598240516_18437621956106140_6753183552065016133_n.jpg",
+            "text_2": "@influencer",
+            "link_2": "",
+            "image_3": "shopify://shop_images/SnapInsta.to_587290234_18549650281065374_4387418007218768395_n.jpg",
+            "text_3": "@influencer",
+            "link_3": "",
+            "image_4": "shopify://shop_images/SnapInsta.to_604546813_18439130344106140_7909380786788198998_n.jpg",
+            "text_4": "@influencer",
+            "link_4": "",
+            "image_5": "shopify://shop_images/SnapInsta.to_598240516_18437621956106140_6753183552065016133_n.jpg",
+            "text_5": "@influencer",
+            "link_5": "",
+            "image_6": "shopify://shop_images/SnapInsta.to_607250547_18557896645029498_1566483050812776286_n.jpg",
+            "text_6": "@influencer",
+            "link_6": "",
+            "image_7": "shopify://shop_images/SnapInsta.to_607250547_18557896645029498_1566483050812776286_n.jpg",
+            "text_7": "@influencer",
+            "link_7": "",
+            "image_8": "shopify://shop_images/SnapInsta.to_604546813_18439130344106140_7909380786788198998_n.jpg",
+            "text_8": "@influencer",
+            "link_8": "",
+            "text_9": "",
+            "link_9": "",
+            "text_10": "",
+            "link_10": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_89fb493_6McV7F"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 767px) {.ai-social-wall-subtitle-acu1mvfp4n0xpbedplaigenblock89fb4936mcv7f {font-size: 13px; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "logo_list_CXzcbr": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_JiE3d4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 250,
+            "link": ""
+          }
+        },
+        "logo_VPkzrc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 250,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_JiE3d4",
+        "logo_VPkzrc"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 24px;}",
+        "@media (max-width: 767px) {.section-header {justify-self: left; }}"
+      ],
+      "name": "t:sections.logo_list.presets.logo_list.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "Hanno parlato di noi",
+        "stack_on_mobile": false,
+        "items_per_row": 5,
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "blocks_HeE48i": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_D98kV4": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_D98kV4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "recently_viewed_products_LyB7KA": {
+      "type": "recently-viewed-products",
+      "custom_css": [
+        "h2 {font-size: 24px;}",
+        ".section-header {justify-self: left;}"
+      ],
+      "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
+      "settings": {
+        "separate_section_with_border": false,
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "",
+        "title": "Visualizzati di recente",
+        "content": ""
+      }
+    },
+    "blocks_YrVTEh": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_zQbcQf": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 70,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_zQbcQf"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blocks_6wtT9b",
+    "related-products",
+    "blocks_fKXikN",
+    "multi_column_hPeFAh",
+    "1767168929c607f5b6",
+    "image_with_text_overlay_BfhVaK",
+    "images_with_text_scroll_VUFB86",
+    "faq_e9gbMW",
+    "tabs_FBR3be",
+    "blocks_4ykUhe",
+    "1767117147215cebba",
+    "logo_list_CXzcbr",
+    "blocks_HeE48i",
+    "recently_viewed_products_LyB7KA",
+    "blocks_YrVTEh"
+  ]
+}
