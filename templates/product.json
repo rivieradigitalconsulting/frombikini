@@ -353,13 +353,10 @@
             "link_text": "Scopri di più"
           }
         },
-        "video_with_text_8Lewf9": {
-          "type": "video_with_text",
+        "image_with_text_hTbQVA": {
+          "type": "image_with_text",
           "settings": {
-            "video": "shopify://files/videos/Progetto senza titolo (1).mp4",
-            "autoplay": true,
-            "loop": true,
-            "play_button_background": "#ffffff",
+            "image": "shopify://shop_images/2_686d2fbb-da34-499a-bda1-b450c94fe135.jpg",
             "title": "Fatto a mano in Italia",
             "heading_tag": "h4",
             "content": "<p>Per noi il Made in Italy è molto più di un processo produttivo: è una scelta di valori.<br/>Ogni capo nasce da lavorazioni artigianali che richiedono tempo e competenze specializzate, garantendo finiture superiori e un’esclusività autentica.<br/>Il fatto a mano in Italia rappresenta oggi il vero lusso: prodotti localmente, i nostri capi raccontano una tradizione fatta di qualità senza compromessi.<br/>Questa è la nostra ricetta per il successo: un design ricercato, l'impiego di tessuti pregiati e una profonda attenzione per i dettagli.</p>",
@@ -367,10 +364,13 @@
             "link_text": ""
           }
         },
-        "image_with_text_hTbQVA": {
-          "type": "image_with_text",
+        "video_with_text_8Lewf9": {
+          "type": "video_with_text",
           "settings": {
-            "image": "shopify://shop_images/2_686d2fbb-da34-499a-bda1-b450c94fe135.jpg",
+            "video": "shopify://files/videos/Progetto senza titolo (1).mp4",
+            "autoplay": true,
+            "loop": true,
+            "play_button_background": "#ffffff",
             "title": "Sostenibilità",
             "heading_tag": "h4",
             "content": "<p>In From Bikini, ogni capo nasce dal rispetto per la Terra e per chi lo indossa: ogni anno ci impegniamo a introdurre nuovi tessuti naturali o sostenibili, selezionando materiali come il cotone 100% biologico e fibre certificate OEKO-TEX.<br/>Le nostre sono creazioni pensate per durare nel tempo e minimizzare gli sprechi. <br/>Scegliere From Bikini significa unirsi a un viaggio consapevole dove moda e sostenibilità camminano insieme.</p>",
@@ -381,8 +381,8 @@
       },
       "block_order": [
         "image_with_text_G8wMhM",
-        "video_with_text_8Lewf9",
-        "image_with_text_hTbQVA"
+        "image_with_text_hTbQVA",
+        "video_with_text_8Lewf9"
       ],
       "custom_css": [
         "h2 {font-size: 24px; text-align: left !important;}",
