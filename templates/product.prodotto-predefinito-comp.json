@@ -31,6 +31,7 @@
         },
         "text_3E8biP": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><strong>{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}</strong><strong>: </strong>{{ product.metafields.pdp.fb_color.value.fb_color_description.value }}</p>"
           }
@@ -345,12 +346,12 @@
         "image_with_text_G8wMhM": {
           "type": "image_with_text",
           "settings": {
-            "image": "{{ product.metafields.pdp.fb_color.value.fb_color_image.value }}",
-            "title": "{{ product.metafields.pdp.fb_color.value.fb_color_title.value }}",
+            "image": "{{ product.metafields.custom.fb_fabric.value.fb_fabric_image.value }}",
+            "title": "{{ product.metafields.custom.fb_fabric.value.fb_fabric_title.value }}",
             "heading_tag": "h4",
             "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura nate per definire il tuo stile e valorizzare le tue forme.<br/>In From Bikini, crediamo che ogni colore risvegli una vibrazione diversa in ognuno di noi e sprigioni un’energia unica e speciale. Non è mai un caso ciò da cui sei attratta: ascolta la tua anima e indossa il colore che ti fa sentire più te stessa.</p>",
-            "link_url": "shopify://pages/colors-energy-1",
-            "link_text": "Scopri di più"
+            "link_url": "",
+            "link_text": ""
           }
         },
         "image_with_text_hTbQVA": {
