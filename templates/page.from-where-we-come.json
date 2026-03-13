@@ -99,6 +99,7 @@
       "blocks": {
         "play_bRCxrP": {
           "type": "play",
+          "disabled": true,
           "settings": {
             "icon_color": "#ffffff"
           }
@@ -106,7 +107,7 @@
         "heading_37BzUi": {
           "type": "heading",
           "settings": {
-            "text": "Video",
+            "text": "",
             "heading_tag": "h2"
           }
         }
