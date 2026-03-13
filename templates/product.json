@@ -429,6 +429,41 @@
         "remove_horizontal_spacing": true
       }
     },
+    "image_with_text_overlay_BfhVaK": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_ifPYwV": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h4"
+          }
+        },
+        "richtext_qV6BGX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ifPYwV",
+        "richtext_qV6BGX"
+      ],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "images_with_text_scroll_VUFB86": {
       "type": "images-with-text-scroll",
       "blocks": {
@@ -806,6 +841,7 @@
     "blocks_fKXikN",
     "multi_column_hPeFAh",
     "1767168929c607f5b6",
+    "image_with_text_overlay_BfhVaK",
     "images_with_text_scroll_VUFB86",
     "faq_e9gbMW",
     "tabs_FBR3be",
