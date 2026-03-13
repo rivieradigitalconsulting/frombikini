@@ -97,6 +97,30 @@
         "controls_color": "#ffffff"
       }
     },
+    "blocks_LeKfP4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_4DznUQ": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 100,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_4DznUQ"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
     "rich_text_78XG34": {
       "type": "rich-text",
       "blocks": {
@@ -127,19 +151,10 @@
         "remove_vertical_spacing": true
       }
     },
-    "blocks_LeKfP4": {
+    "blocks_xeNdnD": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_e09345d_4DznUQ": {
-          "type": "ai_gen_block_e09345d",
-          "settings": {
-            "height_desktop": 100,
-            "height_mobile": 50,
-            "background_color": "#f9f4f0"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_e09345d_3k3XwH": {
+        "ai_gen_block_e09345d_4FFjtw": {
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 100,
@@ -150,8 +165,7 @@
         }
       },
       "block_order": [
-        "ai_gen_block_e09345d_4DznUQ",
-        "ai_gen_block_e09345d_3k3XwH"
+        "ai_gen_block_e09345d_4FFjtw"
       ],
       "name": "Spazio bianco",
       "settings": {
@@ -202,6 +216,7 @@
     "slideshow_YmqHxz",
     "blocks_LeKfP4",
     "rich_text_78XG34",
+    "blocks_xeNdnD",
     "image_with_text_zxKkcz"
   ]
 }
