@@ -453,7 +453,7 @@
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
-        "image_size": "md",
+        "image_size": "lg",
         "image": "shopify://shop_images/609_-_5mb_-_240dpi-2.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
@@ -776,7 +776,7 @@
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 100,
-            "height_mobile": 0,
+            "height_mobile": 50,
             "background_color": "#f9f4f0"
           },
           "blocks": {}
