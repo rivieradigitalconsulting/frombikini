@@ -349,7 +349,7 @@
             "image": "{{ product.metafields.custom.fb_fabric.value.fb_fabric_image.value }}",
             "title": "{{ product.metafields.custom.fb_fabric.value.fb_fabric_title.value }}",
             "heading_tag": "h4",
-            "content": "<p>I colori sono il punto di partenza della nostra identità: tonalità ispirate alla natura nate per definire il tuo stile e valorizzare le tue forme.<br/>In From Bikini, crediamo che ogni colore risvegli una vibrazione diversa in ognuno di noi e sprigioni un’energia unica e speciale. Non è mai un caso ciò da cui sei attratta: ascolta la tua anima e indossa il colore che ti fa sentire più te stessa.</p>",
+            "content": "{{ product.metafields.custom.fb_fabric.value.fb_fabric_description | metafield_tag }}",
             "link_url": "",
             "link_text": ""
           }
