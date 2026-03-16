@@ -56,7 +56,7 @@
           "disabled": true,
           "settings": {}
         },
-        "kiwi_size_chart_recommender_kiwi_sizing_BUgjER": {
+        "kiwi_size_chart_recommender_kiwi_sizing_qRhUVB": {
           "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
             "fallbackToBlockPosition": false,
@@ -229,7 +229,7 @@
         "text_3E8biP",
         "color_variants_zF7YYB",
         "separator_NtFirz",
-        "kiwi_size_chart_recommender_kiwi_sizing_BUgjER",
+        "kiwi_size_chart_recommender_kiwi_sizing_qRhUVB",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
