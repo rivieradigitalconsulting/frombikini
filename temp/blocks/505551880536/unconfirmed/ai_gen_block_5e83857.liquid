@@ -1,6 +1,142 @@
+{% doc %}
+  @prompt
+    generami un blocco immagine a tutta larghezza, di cui per ogni dispositivo mobile e desktop posso scegliere altezza, con uno slider percentuale. L'immagine sarà collegata dinamicamente all'immagine di collezione. Se non è presente nessuna immagine, il banner non è visibile., benissimo, dammi solo la possibilità di inserire un overlay di un colore che decido io e scegliere opacità percentuale
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-collection-banner-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .ai-collection-banner__link-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-collection-banner__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.mobile_height }}px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-collection-banner__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ block.settings.overlay_color }};
+    opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-collection-banner__image-{{ ai_gen_id }} {
+      height: {{ block.settings.desktop_height }}px;
+    }
+  }
+{% endstyle %}
+
+{% if collection.image %}
+  <div class="ai-collection-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+    {% if block.settings.link_enabled %}
+      <a href="{{ collection.url }}" class="ai-collection-banner__link-{{ ai_gen_id }}">
+        <img
+          src="{{ collection.image | image_url: width: 2000 }}"
+          alt="{{ collection.image.alt | default: collection.title | escape }}"
+          loading="lazy"
+          width="{{ collection.image.width }}"
+          height="{{ collection.image.height }}"
+          class="ai-collection-banner__image-{{ ai_gen_id }}"
+        >
+        <div class="ai-collection-banner__overlay-{{ ai_gen_id }}"></div>
+      </a>
+    {% else %}
+      <div class="ai-collection-banner__link-{{ ai_gen_id }}">
+        <img
+          src="{{ collection.image | image_url: width: 2000 }}"
+          alt="{{ collection.image.alt | default: collection.title | escape }}"
+          loading="lazy"
+          width="{{ collection.image.width }}"
+          height="{{ collection.image.height }}"
+          class="ai-collection-banner__image-{{ ai_gen_id }}"
+        >
+        <div class="ai-collection-banner__overlay-{{ ai_gen_id }}"></div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Banner collezione",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Altezza"
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "label": "Altezza mobile",
+      "min": 100,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "label": "Altezza desktop",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Colore overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Opacità overlay",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "link_enabled",
+      "label": "Collega alla collezione",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner collezione"
+    }
+  ]
+}
 {% endschema %}
