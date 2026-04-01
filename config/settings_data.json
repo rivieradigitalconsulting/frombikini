@@ -60,23 +60,8 @@
     "favicon": "shopify://shop_images/B-removebg-preview.png",
     "content_for_index": [],
     "blocks": {
-      "4015264832934714879": {
-        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": false,
-        "settings": {}
-      },
-      "7914987560903345225": {
-        "type": "shopify://apps/beae-page-builder/blocks/app-embed/f4353b90-19bd-4f19-8138-af38b7a6de94",
-        "disabled": false,
-        "settings": {}
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "1074493345574519553": {
-        "type": "shopify://apps/one-ai-email-sms-marketing/blocks/embed-pixel/e2660a3c-4398-468f-b8cb-e4e470225df5",
         "disabled": false,
         "settings": {}
       },
@@ -139,6 +124,21 @@
           "distance_right": 30,
           "distance_bottom": 30
         }
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/sendwill-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": true,
+        "settings": {}
+      },
+      "7914987560903345225": {
+        "type": "shopify://apps/beae-page-builder/blocks/app-embed/f4353b90-19bd-4f19-8138-af38b7a6de94",
+        "disabled": true,
+        "settings": {}
+      },
+      "1074493345574519553": {
+        "type": "shopify://apps/one-ai-email-sms-marketing/blocks/embed-pixel/e2660a3c-4398-468f-b8cb-e4e470225df5",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
