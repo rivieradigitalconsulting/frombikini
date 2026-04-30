@@ -147,6 +147,7 @@
         },
         "liquid_MzVTY8": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"klaviyo-form-X2JTEw\"></div>"
           }
