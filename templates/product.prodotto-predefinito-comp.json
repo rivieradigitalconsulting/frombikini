@@ -146,6 +146,12 @@
             "border_color": ""
           }
         },
+        "liquid_H47XWp": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-X2JTEw\"></div>"
+          }
+        },
         "separator_nr8Cnz": {
           "type": "separator",
           "settings": {}
@@ -239,6 +245,7 @@
         "feature_with_icon_RP8kHb",
         "feature_with_icon_8gHBVy",
         "feature_with_icon_YYKLbL",
+        "liquid_H47XWp",
         "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
