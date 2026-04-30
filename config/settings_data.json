@@ -139,6 +139,11 @@
         "type": "shopify://apps/one-ai-email-sms-marketing/blocks/embed-pixel/e2660a3c-4398-468f-b8cb-e4e470225df5",
         "disabled": true,
         "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
