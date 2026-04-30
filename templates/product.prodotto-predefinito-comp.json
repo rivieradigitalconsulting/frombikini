@@ -778,6 +778,23 @@
         "logo_item_border": ""
       }
     },
+    "newsletter_x4RLhL": {
+      "type": "newsletter",
+      "name": "t:sections.newsletter.presets.newsletter.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "lg",
+        "image": "shopify://shop_images/NDR2601_-_5mb_-_240dpi_99f1b256-4469-4350-86b9-8e3627d6e1d0.jpg",
+        "mobile_image": "shopify://shop_images/NDR3173_-_5mb_-_240dpi.jpg",
+        "subheading": "",
+        "title": "Entra nella Community di FromBikinigirls",
+        "content": "<p>Scopri in anteprima le nostre promozioni speciali, le nuove collezioni e i prodotti esclusivi!</p>",
+        "button_text": "Iscriviti",
+        "overlay_color": "#000000",
+        "overlay_opacity": 35
+      }
+    },
     "blocks_HeE48i": {
       "type": "_blocks",
       "blocks": {
@@ -861,6 +878,7 @@
     "blocks_4ykUhe",
     "1767117147215cebba",
     "logo_list_CXzcbr",
+    "newsletter_x4RLhL",
     "blocks_HeE48i",
     "recently_viewed_products_LyB7KA",
     "blocks_YrVTEh"
