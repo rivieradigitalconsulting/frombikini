@@ -148,6 +148,7 @@
         },
         "liquid_H47XWp": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"klaviyo-form-X2JTEw\"></div>"
           }
