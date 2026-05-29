@@ -61,7 +61,7 @@
           "settings": {
             "fallbackToBlockPosition": false,
             "waitForElementSelector": "",
-            "waitForElementDelay": 5
+            "waitForElementDelay": 1
           }
         },
         "variant_picker": {
