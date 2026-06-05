@@ -729,6 +729,7 @@
       "custom_css": [
         "@media (max-width: 767px) {.ai-social-wall-subtitle-acu1mvfp4n0xpbedplaigenblock89fb4936mcv7f {font-size: 13px; }}"
       ],
+      "name": "SOCIAL WALL",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
