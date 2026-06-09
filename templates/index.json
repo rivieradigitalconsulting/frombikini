@@ -59,61 +59,6 @@
         "controls_color": "#ffffff"
       }
     },
-    "shop_the_look_N3nJ9p": {
-      "type": "shop-the-look",
-      "blocks": {
-        "look_y87hi3": {
-          "type": "look",
-          "settings": {
-            "hot_spots_background": "#ffffff",
-            "product_1": "",
-            "product_1_horizontal_position": 35,
-            "product_1_vertical_position": 35,
-            "product_2": "",
-            "product_2_horizontal_position": 34,
-            "product_2_vertical_position": 65,
-            "product_3": "",
-            "product_3_horizontal_position": 66,
-            "product_3_vertical_position": 42,
-            "product_4": "",
-            "product_4_horizontal_position": 85,
-            "product_4_vertical_position": 85
-          }
-        },
-        "look_jXfVAK": {
-          "type": "look",
-          "settings": {
-            "hot_spots_background": "#ffffff",
-            "product_1": "from-bikini-abito-lungo-animalier-mdr-lsl-un-re-sa78",
-            "product_1_horizontal_position": 30,
-            "product_1_vertical_position": 35,
-            "product_2": "from-bikini-abito-lungo-sfoderato-crochet-maniche-lunghe-dre-lsl-un-cr-av65",
-            "product_2_horizontal_position": 70,
-            "product_2_vertical_position": 30,
-            "product_3": "",
-            "product_3_horizontal_position": 60,
-            "product_3_vertical_position": 65,
-            "product_4": "",
-            "product_4_horizontal_position": 85,
-            "product_4_vertical_position": 85
-          }
-        }
-      },
-      "block_order": [
-        "look_y87hi3",
-        "look_jXfVAK"
-      ],
-      "disabled": true,
-      "name": "t:sections.shop_the_look.presets.shop_the_look.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "subheading": "",
-        "title": "Shop the look",
-        "content": "",
-        "popover_title": "Shop the look"
-      }
-    },
     "blocks_VYfa9w": {
       "type": "_blocks",
       "blocks": {
@@ -170,6 +115,61 @@
         "horizontal_spacing_factor": 0.2,
         "vertical_spacing_factor": 0.2,
         "subheading": ""
+      }
+    },
+    "shop_the_look_N3nJ9p": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_y87hi3": {
+          "type": "look",
+          "settings": {
+            "hot_spots_background": "#ffffff",
+            "product_1": "",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_jXfVAK": {
+          "type": "look",
+          "settings": {
+            "hot_spots_background": "#ffffff",
+            "product_1": "from-bikini-abito-lungo-animalier-mdr-lsl-un-re-sa78",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "from-bikini-abito-lungo-sfoderato-crochet-maniche-lunghe-dre-lsl-un-cr-av65",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_y87hi3",
+        "look_jXfVAK"
+      ],
+      "disabled": true,
+      "name": "t:sections.shop_the_look.presets.shop_the_look.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Shop the look",
+        "content": "",
+        "popover_title": "Shop the look"
       }
     },
     "blocks_xid3AL": {
@@ -963,9 +963,9 @@
   },
   "order": [
     "slideshow",
-    "shop_the_look_N3nJ9p",
     "blocks_VYfa9w",
     "featured_collections_Q4Kq3y",
+    "shop_the_look_N3nJ9p",
     "blocks_xid3AL",
     "collection_list_T7RbXQ",
     "blocks_JMyngj",
