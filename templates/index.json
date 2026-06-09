@@ -161,10 +161,13 @@
         "look_y87hi3",
         "look_jXfVAK"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".h2 {font-size: 24px;}",
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}"
+      ],
       "name": "t:sections.shop_the_look.presets.shop_the_look.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "subheading": "",
         "title": "Shop the look",
