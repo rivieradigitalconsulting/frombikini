@@ -120,6 +120,25 @@
     "shop_the_look_N3nJ9p": {
       "type": "shop-the-look",
       "blocks": {
+        "look_y87hi3": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/NDR2605_-_5mb_-_240dpi_1.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "from-bikini-top-smanicato-crochet-top-nsl-un-cr-av65",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "from-bikini-pantalone-crochet-tro-lon-li-cr-av65",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "from-bikini-bahia-intero-crochet-bah-one-cl-cr-av65",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "from-bikini-boracay-brazilian-crochet-bor-bra-cl-cr-av65",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
         "look_VnEQDp": {
           "type": "look",
           "settings": {
@@ -139,25 +158,6 @@
             "product_4_vertical_position": 85
           }
         },
-        "look_y87hi3": {
-          "type": "look",
-          "settings": {
-            "image": "shopify://shop_images/NDR2605_-_5mb_-_240dpi_1_2.jpg",
-            "hot_spots_background": "#ffffff",
-            "product_1": "from-bikini-top-smanicato-crochet-top-nsl-un-cr-av65",
-            "product_1_horizontal_position": 35,
-            "product_1_vertical_position": 35,
-            "product_2": "from-bikini-pantalone-crochet-tro-lon-li-cr-av65",
-            "product_2_horizontal_position": 34,
-            "product_2_vertical_position": 65,
-            "product_3": "from-bikini-bahia-intero-crochet-bah-one-cl-cr-av65",
-            "product_3_horizontal_position": 66,
-            "product_3_vertical_position": 42,
-            "product_4": "from-bikini-boracay-brazilian-crochet-bor-bra-cl-cr-av65",
-            "product_4_horizontal_position": 85,
-            "product_4_vertical_position": 85
-          }
-        },
         "look_jGemmz": {
           "type": "look",
           "settings": {
@@ -169,18 +169,18 @@
             "product_2": "from-bikini-boracay-brazilian-crochet-bor-bra-cl-cr-ma68",
             "product_2_horizontal_position": 25,
             "product_2_vertical_position": 40,
-            "product_3": "from-bikini-pantalone-crochet-tro-lon-li-cr-ma68",
+            "product_3": "from-bikini-boracay-regular-crochet-bor-reg-cl-cr-ma68",
             "product_3_horizontal_position": 65,
             "product_3_vertical_position": 60,
-            "product_4": "from-bikini-top-smanicato-crochet-top-nsl-un-cr-ma68",
+            "product_4": "from-bikini-pantalone-crochet-tro-lon-li-cr-ma68",
             "product_4_horizontal_position": 85,
             "product_4_vertical_position": 85
           }
         }
       },
       "block_order": [
-        "look_VnEQDp",
         "look_y87hi3",
+        "look_VnEQDp",
         "look_jGemmz"
       ],
       "custom_css": [
@@ -191,7 +191,7 @@
       "name": "t:sections.shop_the_look.presets.shop_the_look.name",
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
+        "separate_section_with_border": true,
         "subheading": "",
         "title": "Shop the look",
         "content": "",
