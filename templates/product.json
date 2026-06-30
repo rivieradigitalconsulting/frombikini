@@ -725,6 +725,7 @@
       "block_order": [
         "ai_gen_block_89fb493_6McV7F"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.ai-social-wall-subtitle-acu1mvfp4n0xpbedplaigenblock89fb4936mcv7f {font-size: 13px; }}"
       ],
