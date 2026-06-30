@@ -690,15 +690,15 @@
             "text_color": "#564747",
             "overlay_color": "#000000",
             "overlay_opacity": 0.3,
-            "image_1": "shopify://shop_images/SnapInsta.to_607250547_18557896645029498_1566483050812776286_n.jpg",
-            "text_1": "@influencer",
-            "link_1": "",
-            "image_2": "shopify://shop_images/SnapInsta.to_598240516_18437621956106140_6753183552065016133_n.jpg",
-            "text_2": "@influencer",
-            "link_2": "",
-            "image_3": "shopify://shop_images/SnapInsta.to_587290234_18549650281065374_4387418007218768395_n.jpg",
-            "text_3": "@influencer",
-            "link_3": "",
+            "image_1": "shopify://shop_images/NDR1799-5mb-240dpi.jpg",
+            "text_1": "Animalier",
+            "link_1": "shopify://products/from-bikini-bali-bikini-brazilian-new-moon-vibes-bal-bra-cl-ly-ne62",
+            "image_2": "shopify://shop_images/from_bikini_girls_8.jpg",
+            "text_2": "Bali Bikini Brazilian - New Moon Vibes",
+            "link_2": "shopify://products/from-bikini-bali-bikini-brazilian-new-moon-vibes-bal-bra-cl-ly-ne62",
+            "image_3": "shopify://shop_images/from_bikini_girls_7_b.jpg",
+            "text_3": "Abito Lungo Sfoderato Crochet",
+            "link_3": "shopify://products/from-bikini-abito-lungo-sfoderato-crochet-dre-nsl-un-cr-ne64",
             "image_4": "shopify://shop_images/SnapInsta.to_604546813_18439130344106140_7909380786788198998_n.jpg",
             "text_4": "@influencer",
             "link_4": "",
@@ -725,7 +725,6 @@
       "block_order": [
         "ai_gen_block_89fb493_6McV7F"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.ai-social-wall-subtitle-acu1mvfp4n0xpbedplaigenblock89fb4936mcv7f {font-size: 13px; }}"
       ],
@@ -778,6 +777,29 @@
         "logo_item_border": ""
       }
     },
+    "blocks_HeE48i": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_wwVLWF": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 50,
+            "height_mobile": 50,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_wwVLWF"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
     "newsletter_UDYGqk": {
       "type": "newsletter",
       "name": "t:sections.newsletter.presets.newsletter.name",
@@ -795,22 +817,8 @@
         "overlay_opacity": 35
       }
     },
-    "blocks_HeE48i": {
+    "blocks_WMeRzc": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_e09345d_D98kV4": {
-          "type": "ai_gen_block_e09345d",
-          "settings": {
-            "height_desktop": 100,
-            "height_mobile": 50,
-            "background_color": "#f9f4f0"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_e09345d_D98kV4"
-      ],
       "settings": {
         "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": false,
@@ -878,8 +886,9 @@
     "blocks_4ykUhe",
     "1767117147215cebba",
     "logo_list_CXzcbr",
-    "newsletter_UDYGqk",
     "blocks_HeE48i",
+    "newsletter_UDYGqk",
+    "blocks_WMeRzc",
     "recently_viewed_products_LyB7KA",
     "blocks_YrVTEh"
   ]
