@@ -148,7 +148,7 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "all",
+            "collection": "tutti-i-nostri-bikini",
             "image": "shopify://shop_images/NDR2370_-_5mb_-_240dpi.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
@@ -182,7 +182,7 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "all-out-of-water",
+            "collection": "tutti-i-nostri-fuori-acqua",
             "image": "shopify://shop_images/NDR1836_-_5mb_-_240dpi.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
