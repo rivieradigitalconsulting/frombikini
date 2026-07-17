@@ -283,6 +283,7 @@
         "look_VnEQDp",
         "look_jGemmz"
       ],
+      "disabled": true,
       "custom_css": [
         ".h2 {font-size: 24px;}",
         "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
