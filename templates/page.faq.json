@@ -24,14 +24,14 @@
           "type": "question",
           "settings": {
             "question": "Come posso tracciare il mio ordine?",
-            "answer": "<p>Non appena il tuo ordine sarà evaso, riceverai un'e-mail con il numero di tracking per monitorare l'avanzamento della spedizione.<br/>In alternativa, puoi monitorare lo stato della spedizione dalla tua <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\"><strong>area personale</strong></a>. Non hai ricevuto il riepilogo entro un'ora? Ti consigliamo di controllare la cartella dello spam: a volte l'email può finire lì. Se l’email di conferma si trovava nello spam, ti invitiamo ad aggiungere l’indirizzo hello@frombikini.com alla tua rubrica.</p>"
+            "answer": "<p>Non appena il tuo ordine sarà evaso, riceverai un'e-mail con il numero di tracking per monitorare l'avanzamento della spedizione.<br/>In alternativa, puoi monitorare lo stato della spedizione dalla tua <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\">area personale</a>. Non hai ricevuto il riepilogo entro un'ora? Ti consigliamo di controllare la cartella dello spam: a volte l'email può finire lì. Se l’email di conferma si trovava nello spam, ti invitiamo ad aggiungere l’indirizzo hello@frombikini.com alla tua rubrica.</p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
             "question": "Posso modificare o annullare un ordine?",
-            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\"><strong>Contatti</strong></a><strong> </strong>del sito o alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.</p>"
+            "answer": "<p>Una volta confermato, l’ordine passa immediatamente alla fase di preparazione logistica. Per questo motivo, non abbiamo la possibilità di apportare annullamenti. Se ti sei accorto di aver selezionato la taglia errata affrettati a contattarci attraverso la sezione <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">Contatti</a> del sito o alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>.</p>"
           }
         },
         "question-3": {
@@ -45,7 +45,7 @@
           "type": "question",
           "settings": {
             "question": "Posso cambiare un prodotto acquistato con un’altra taglia o colore?",
-            "answer": "<p>Siamo lieti di effettuare un cambio taglia o colore, a condizione che il bikini sia integro e non utilizzato. Per qualsiasi dubbio o necessità, il nostro <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\"><strong>Servizio Clienti</strong></a> è sempre a tua disposizione, puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.</p>"
+            "answer": "<p>Siamo lieti di effettuare un cambio taglia o colore, a condizione che il bikini sia integro e non utilizzato. Per qualsiasi dubbio o necessità, il nostro <a href=\"/pages/contatti\" target=\"_blank\" title=\"Contatti\">Servizio Clienti</a> è sempre a tua disposizione, puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>.</p>"
           }
         },
         "category_zdMbQJ": {
@@ -60,14 +60,14 @@
           "type": "question",
           "settings": {
             "question": "Quali sono i costi e i tempi di spedizione?",
-            "answer": "<p>Spediamo in Italia in 24-48 ore con consegna espressa e fuori dall'Italia in 3-7 giorni lavorativi.<br/>Di seguito sono riportati i termini di consegna per l'Italia:<br/><br/><strong>Ritiro</strong><br/>From Bikini Reception (<a href=\"https://share.google/NIX2HVC5KP4iXmuW0\" target=\"_blank\" title=\"https://share.google/NIX2HVC5KP4iXmuW0\">Via Filippo Turati 3, Milano 20121</a>) - GRATUITO<br/>Disponibilità in 24-48 ore<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Punto di ritiro in 2-4 giorni lavorativi € 5,00<br/><br/><strong>Spedizione a domicilio</strong><br/>Consegna Stardard in 2-4 giorni lavorativi per ordini superiori a € 200 - GRATUITA<br/><br/>Consegna Standard in 2-4 giorni lavorativi € 7,00<br/>Consegna Express con DHL in 1-2 giorni lavorativi € 12,00<br/><br/>Per le spedizioni Internazionali i costi partono da € 12. Per consultare l'elenco completo dei paesi in cui spediamo e i relativi costi, ti invitiamo a visitare le pagine <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\"><strong>Spedizioni & Consegna</strong></a>.</p>"
+            "answer": "<p>Spediamo in Italia in 24-48 ore con consegna espressa e fuori dall'Italia in 3-7 giorni lavorativi.<br/>Di seguito sono riportati i termini di consegna per l'Italia:<br/><br/><strong>Ritiro</strong><br/>From Bikini Reception (<a href=\"https://maps.app.goo.gl/5JCqKZyP6SUbD9ey9\" target=\"_blank\">Via San Barnaba 39, 20122, Milano</a>) - GRATUITO<br/>Disponibilità in 24-48 ore<br/>Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato<br/><br/>Punto di ritiro in 2-4 giorni lavorativi € 5,00<br/><br/><strong>Spedizione a domicilio</strong><br/>Consegna Stardard in 2-4 giorni lavorativi per ordini superiori a € 200 - GRATUITA<br/><br/>Consegna Standard in 2-4 giorni lavorativi € 7,00<br/>Consegna Express con DHL in 1-2 giorni lavorativi € 12,00<br/><br/>Per le spedizioni Internazionali i costi partono da € 12. Per consultare l'elenco completo dei paesi in cui spediamo e i relativi costi, ti invitiamo a visitare le pagine <a href=\"/pages/ordini-spedizioni\" target=\"_blank\" title=\"Ordini & Spedizioni\">Spedizioni & Consegna</a>.</p>"
           }
         },
         "question_Qt99ry": {
           "type": "question",
           "settings": {
             "question": "Una volta effettuato l'ordine posso modificare l'indirizzo di consegna?",
-            "answer": "<p>Una volta confermato l'ordine per modificare l'indirizzo di consegna puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.<br/>Se il suo ordine è stato spedito, ti invitiamo a contattare direttamente il corriere per confermare la possibilità di modificare l'indirizzo di consegna.</p>"
+            "answer": "<p>Una volta confermato l'ordine per modificare l'indirizzo di consegna puoi contattarci direttamente a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>.<br/>Se il suo ordine è stato spedito, ti invitiamo a contattare direttamente il corriere per confermare la possibilità di modificare l'indirizzo di consegna.</p>"
           }
         },
         "question_8DjXnq": {
@@ -81,14 +81,14 @@
           "type": "question",
           "settings": {
             "question": "Cosa accade in caso di perdita del pacco?",
-            "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
+            "answer": "<p>Una volta ricevuta l'e-mail con il tracking, ti invitiamo a monitorarlo per consultare eventuali aggiornamenti sulla consegna. Se il tuo pacco non dovesse arrivare entro 15 giorni dalla data di consegna prevista, contattaci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a> e saremo felici di aiutarti con il tuo ordine.<br/>Si prega di notare che le spedizioni sono gestite da aziende esterne, come SDA, FedEx o DHL.<br/>Per questo motivo, non possiamo essere ritenuti responsabili per eventuali smarrimenti.</p>"
           }
         },
         "question_pND3LF": {
           "type": "question",
           "settings": {
             "question": "Posso effettuare un ordine e ritirarlo nel vostro Showroom?",
-            "answer": "<p>Certamente, è disponibile il ritiro presso il nostro Showroom in <a href=\"https://share.google/R0B0XenzHUVzgXbwT\" target=\"_blank\" title=\"https://share.google/R0B0XenzHUVzgXbwT\">Via Turati 3, 20121 a Milano</a>. <br/>Il servizio è GRATUITO e non prevede costi di spedizione aggiuntivi.<br/>Non appena il tuo ordine sarà disponibile per il ritiro, riceverai una notifica via email e un aggiornamento sarà visibile anche all’interno del tuo account personale.<br/>Di seguito gli orari per ritirare il tuo From Bikini: Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato.</p>"
+            "answer": "<p>Certamente, è disponibile il ritiro presso il nostro Showroom in <a href=\"https://maps.app.goo.gl/5JCqKZyP6SUbD9ey9\" target=\"_blank\">Via San Barnaba 39, 20122, Milano</a>. <br/>Il servizio è GRATUITO e non prevede costi di spedizione aggiuntivi.<br/>Non appena il tuo ordine sarà disponibile per il ritiro, riceverai una notifica via email e un aggiornamento sarà visibile anche all’interno del tuo account personale.<br/>Di seguito gli orari per ritirare il tuo From Bikini: Dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato.</p>"
           }
         },
         "category_iptVRT": {
@@ -103,7 +103,7 @@
           "type": "question",
           "settings": {
             "question": "Ho bisogno di un account per acquistare sul sito?",
-            "answer": "<p>No, non è necessario creare un account manualmente. Al momento dell'acquisto, un account viene generato automaticamente e associato alla tua email. Qui vengono memorizzati i tuoi ordini, dati anagrafici e indirizzi di spedizione. Per accedere, visita la sezione <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\"><strong>Accedi</strong></a> e inserisci la tua email. Riceverai un codice temporaneo via email da inserire per accedere alla tua area personale.</p>"
+            "answer": "<p>No, non è necessario creare un account manualmente. Al momento dell'acquisto, un account viene generato automaticamente e associato alla tua email. Qui vengono memorizzati i tuoi ordini, dati anagrafici e indirizzi di spedizione. Per accedere, visita la sezione <a href=\"/account/login\" target=\"_blank\" title=\"/account/login\">Accedi</a> e inserisci la tua email. Riceverai un codice temporaneo via email da inserire per accedere alla tua area personale.</p>"
           }
         },
         "category_LFbRcx": {
@@ -118,28 +118,28 @@
           "type": "question",
           "settings": {
             "question": "Come posso effettuare un reso online?",
-            "answer": "<p>Se per qualsiasi motivo non sei soddisfatto del tuo acquisto, accetteremo il reso degli articoli entro 14 giorni dalla data di consegna, previa comunicazione via mail a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>. <br/><br/>Ecco come funziona la procedura:<br/></p><ul><li><a href=\"/account/login\" target=\"_blank\" title=\"/account/login\"><strong>Accedi</strong></a> al tuo account personale.</li><li>Trova il tuo ordine: nella sezione Ordini, individua l’ordine per il quale desideri richiedere un reso. È possibile effettuare anche un reso parziale, selezionando solo alcuni dei prodotti contenuti nell’ordine.</li><li>Richiedi un reso: seleziona l’opzione per avviare la procedura e segui le istruzioni guidate.</li><li>Ricevi l’etichetta di spedizione per il reso via e-mail.</li><li>Prepara il pacco e applica l’etichetta all’esterno.</li><li>Restituisci il pacco: puoi portarlo in un Punto di ritiro, oppure prenotare il ritiro a domicilio tramite la piattaforma ufficiale del corriere.<br/><br/>Gli articoli devono essere restituiti nelle stesse condizioni originali. Per maggiori informazioni, consulta la pagina <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimboris\"><strong>Resi & Rimborsi</strong></a>.<br/><br/>Nota bene: tutti gli acquisti effettuati nella nostra pagina Black Friday e Last Chance sono definitivi e non possono essere cambiati né rimborsati.</li></ul>"
+            "answer": "<p>Se per qualsiasi motivo non sei soddisfatto del tuo acquisto, accetteremo il reso degli articoli entro 14 giorni dalla data di consegna, previa comunicazione via mail a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>. <br/><br/>Ecco come funziona la procedura:<br/></p><ul><li><a href=\"/account/login\" target=\"_blank\" title=\"/account/login\">Accedi</a> al tuo account personale.</li><li>Trova il tuo ordine: nella sezione Ordini, individua l’ordine per il quale desideri richiedere un reso. È possibile effettuare anche un reso parziale, selezionando solo alcuni dei prodotti contenuti nell’ordine.</li><li>Richiedi un reso: seleziona l’opzione per avviare la procedura e segui le istruzioni guidate.</li><li>Ricevi l’etichetta di spedizione per il reso via e-mail.</li><li>Prepara il pacco e applica l’etichetta all’esterno.</li><li>Restituisci il pacco: puoi portarlo in un Punto di ritiro, oppure prenotare il ritiro a domicilio tramite la piattaforma ufficiale del corriere.<br/><br/>Gli articoli devono essere restituiti nelle stesse condizioni originali. Per maggiori informazioni, consulta la pagina <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimboris\">Resi & Rimborsi</a>.<br/><br/>Nota bene: tutti gli acquisti effettuati nella nostra pagina Black Friday e Last Chance sono definitivi e non possono essere cambiati né rimborsati.</li></ul>"
           }
         },
         "question_xT6rnK": {
           "type": "question",
           "settings": {
             "question": "Posso effettuare un reso nel vostro Showroom?",
-            "answer": "<p>Per effettuare la restituzione ti basterà riconsegnare i capi entro 14 giorni dalla ricezione dell’ordine, previa comunicazione via mail a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>. <br/>Puoi restituire gli articoli senza alcun costo aggiuntivo presso la reception del nostro Showroom in <a href=\"https://share.google/R0B0XenzHUVzgXbwT\" target=\"_blank\" title=\"https://share.google/R0B0XenzHUVzgXbwT\">Via Turati 3, 20121, Milano</a>. <br/>Di seguito gli orari: dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato.<br/>Una volta riconsegnati, verificheremo le condizioni generali dei prodotti affinchè siano conformi alle politiche di reso. Il rimborso sarà accreditato sullo stesso metodo di pagamento utilizzato in fase di acquisto, entro 5-7 giorni lavorativi.<br/><br/>Per maggiori informazioni, consulta la pagina <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\"><strong>Resi & Rimborsi</strong></a>.</p>"
+            "answer": "<p>Per effettuare la restituzione ti basterà riconsegnare i capi entro 14 giorni dalla ricezione dell’ordine, previa comunicazione via mail a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>. <br/>Puoi restituire gli articoli senza alcun costo aggiuntivo presso la reception del nostro Showroom in <a href=\"https://maps.app.goo.gl/5JCqKZyP6SUbD9ey9\" target=\"_blank\">Via San Barnaba 39, 20122, Milano</a>. <br/>Di seguito gli orari: dal Lun - Ven 8:00/22:00 orario continuato; Weekend e Festivi 10:00/22:00 orario continuato.<br/>Una volta riconsegnati, verificheremo le condizioni generali dei prodotti affinchè siano conformi alle politiche di reso. Il rimborso sarà accreditato sullo stesso metodo di pagamento utilizzato in fase di acquisto, entro 5-7 giorni lavorativi.<br/><br/>Per maggiori informazioni, consulta la pagina <a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\">Resi & Rimborsi</a>.</p>"
           }
         },
         "question_bBqPBg": {
           "type": "question",
           "settings": {
             "question": "Quali sono le condizioni per effettuare un reso?",
-            "answer": "<p>Accetteremo il reso degli articoli entro 14 giorni dalla data di consegna, previa comunicazione via mail a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.<br/>Gli articoli devono essere restituiti integri, inutilizzati e nella confezione originale. </p>"
+            "answer": "<p>Accetteremo il reso degli articoli entro 14 giorni dalla data di consegna, previa comunicazione via mail a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>.<br/>Gli articoli devono essere restituiti integri, inutilizzati e nella confezione originale. </p>"
           }
         },
         "question_AX6yUT": {
           "type": "question",
           "settings": {
             "question": "Quali sono i costi relativi al reso?",
-            "answer": "<p>RESO SHOWROOM<br/>La procedura di reso presso la reception del nostro showroom in <a href=\"https://share.google/R0B0XenzHUVzgXbwT\" target=\"_blank\" title=\"https://share.google/R0B0XenzHUVzgXbwT\">Via Turati 3, 20121 Milano</a>, è gratuita. L'importo dell'ordine verrà rimborsato al netto delle eventuali spese di spedizione sostenute al momento dell'acquisto.  <br/></p><p>RESO ONLINE<br/>Per i resi in Italia la procedura ha un costo fisso di € 8, che verrà dedotto dall’importo rimborsato.<br/>Per i resi al di fuori dell'Italia il costo della spedizione di reso è a carico del cliente e varia in base al paese, (<a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\"><strong>clicca qui</strong></a> per maggiori informazioni) e verrà dedotto dall'importo rimborsato. In alternativa, il cliente può contattarci e organizzare autonomamente la spedizione di ritorno.<br/><br/>Nota bene: una volta riconsegnati, verificheremo le condizioni generali dei prodotti affinchè siano conformi alle politiche di reso. Il rimborso sarà accreditato sullo stesso metodo di pagamento utilizzato in fase di acquisto, entro 5-7 giorni lavorativi.</p>"
+            "answer": "<p>RESO SHOWROOM<br/>La procedura di reso presso la reception del nostro showroom in <a href=\"https://maps.app.goo.gl/5JCqKZyP6SUbD9ey9\" target=\"_blank\">Via San Barnaba 39, 20122, Milano</a>, è gratuita. L'importo dell'ordine verrà rimborsato al netto delle eventuali spese di spedizione sostenute al momento dell'acquisto.  <br/></p><p>RESO ONLINE<br/>Per i resi in Italia la procedura ha un costo fisso di € 8, che verrà dedotto dall’importo rimborsato.<br/>Per i resi al di fuori dell'Italia il costo della spedizione di reso è a carico del cliente e varia in base al paese, (<a href=\"/pages/resi-rimborsi\" target=\"_blank\" title=\"Resi & Rimborsi\">clicca qui</a> per maggiori informazioni) e verrà dedotto dall'importo rimborsato. In alternativa, il cliente può contattarci e organizzare autonomamente la spedizione di ritorno.<br/><br/>Nota bene: una volta riconsegnati, verificheremo le condizioni generali dei prodotti affinchè siano conformi alle politiche di reso. Il rimborso sarà accreditato sullo stesso metodo di pagamento utilizzato in fase di acquisto, entro 5-7 giorni lavorativi.</p>"
           }
         },
         "question_JzbGej": {
@@ -161,21 +161,21 @@
           "type": "question",
           "settings": {
             "question": "Come faccio a sapere quale taglia dovrei ordinare?",
-            "answer": "<p>Puoi utilizzare la nostra <a href=\"/pages/guida-alle-taglie\" target=\"_blank\" title=\"Guida alle Taglie\"><strong>guida alle taglie</strong></a> per avere un'idea migliore sul fit dei nostri capi. Le nostre taglie seguono gli standard di vestibilità italiani, ma se hai dubbi, non esitare a contattarci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> per ricevere consigli personalizzati prima di effettuare l’ordine. </p>"
+            "answer": "<p>Puoi utilizzare la nostra <a href=\"/pages/guida-alle-taglie\" target=\"_blank\" title=\"Guida alle Taglie\">guida alle taglie</a> per avere un'idea migliore sul fit dei nostri capi. Le nostre taglie seguono gli standard di vestibilità italiani, ma se hai dubbi, non esitare a contattarci all’indirizzo <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a> per ricevere consigli personalizzati prima di effettuare l’ordine. </p>"
           }
         },
         "question_6kzp8t": {
           "type": "question",
           "settings": {
             "question": "Posso far modificare un articolo?",
-            "answer": "<p>Sì, offriamo un servizio di sartoria dedicato per la modifica degli articoli acquistati. È possibile consegnare il capo di persona o farlo recapitare presso la reception del nostro showroom in <a href=\"https://share.google/R0B0XenzHUVzgXbwT\" target=\"_blank\" title=\"https://share.google/R0B0XenzHUVzgXbwT\">Via Turati 3, 20121 Milano</a>. Grazie al savoir-faire dei nostri artigiani e alla nostra produzione a KM0, le modifiche verranno effettuate entro 5–7 giorni lavorativi dalla ricezione dell’articolo. <br/><br/>I prezzi delle modifiche, elencati qui sotto, variano in base alla complessità dell’intervento (semplice / complesso).<br/></p><p>Orlo pantaloni, gonne, abiti: 10€ / 15€<br/>Modifica bikini (top o bottom): 10€ / 15€<br/>Spalline: 5€ / 10€ <br/>Allungamento trecce: 10€<br/>Aggiunta bottone: 5€</p>"
+            "answer": "<p>Sì, offriamo un servizio di sartoria dedicato per la modifica degli articoli acquistati. È possibile consegnare il capo di persona o farlo recapitare presso la reception del nostro showroom in <a href=\"https://maps.app.goo.gl/5JCqKZyP6SUbD9ey9\" target=\"_blank\">Via San Barnaba 39, 20122, Milano</a>. Grazie al savoir-faire dei nostri artigiani e alla nostra produzione a KM0, le modifiche verranno effettuate entro 5–7 giorni lavorativi dalla ricezione dell’articolo. <br/><br/>I prezzi delle modifiche, elencati qui sotto, variano in base alla complessità dell’intervento (semplice / complesso).<br/></p><p>Orlo pantaloni, gonne, abiti: 10€ / 15€<br/>Modifica bikini (top o bottom): 10€ / 15€<br/>Spalline: 5€ / 10€ <br/>Allungamento trecce: 10€<br/>Aggiunta bottone: 5€</p>"
           }
         },
         "question_QVLy3P": {
           "type": "question",
           "settings": {
             "question": "Posso effettuare un pre ordine?",
-            "answer": "<p>E' possibile effettuare il pre-ordine di un prodotto esaurito nella taglia desiderata. I nostri artigiani si metteranno subito al lavoro per te, come se il capo venisse realizzato tailor-made. Non ci saranno costi aggiuntivi, solo le tempistiche di consegna potrebbero subire delle variazioni. Contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> per pre-ordinare il tuo From Bikini.</p>"
+            "answer": "<p>E' possibile effettuare il pre-ordine di un prodotto esaurito nella taglia desiderata. I nostri artigiani si metteranno subito al lavoro per te, come se il capo venisse realizzato tailor-made. Non ci saranno costi aggiuntivi, solo le tempistiche di consegna potrebbero subire delle variazioni. Contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a> per pre-ordinare il tuo From Bikini.</p>"
           }
         },
         "category_JcXyNe": {
@@ -197,14 +197,14 @@
           "type": "question",
           "settings": {
             "question": "Come riceverò la E-GIFT CARD?",
-            "answer": "<p>La E-GIFT CARD verrà inviata via email all’indirizzo di posta elettronica del destinatario, che fornirai durante il checkout. Sarà pronta per l’uso immediato non appena ricevuta l’email. Se desideri personalizzare la gift card con un messaggio di auguri o con la tua firma, contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>, saremo liete di aiutarti.</p>"
+            "answer": "<p>La E-GIFT CARD verrà inviata via email all’indirizzo di posta elettronica del destinatario, che fornirai durante il checkout. Sarà pronta per l’uso immediato non appena ricevuta l’email. Se desideri personalizzare la gift card con un messaggio di auguri o con la tua firma, contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>, saremo liete di aiutarti.</p>"
           }
         },
         "question_fpye3c": {
           "type": "question",
           "settings": {
             "question": "Posso personalizzare l'importo della mia E-GIFT CARD?",
-            "answer": "<p>Certamente, contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> e creeremo la tua E-GIFT CARD con l'importo da te desiderato.</p>"
+            "answer": "<p>Certamente, contattaci a <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a> e creeremo la tua E-GIFT CARD con l'importo da te desiderato.</p>"
           }
         },
         "question_MyKp7J": {
@@ -240,21 +240,21 @@
           "type": "question",
           "settings": {
             "question": "Dove si trova il vostro Showroom?",
-            "answer": "<p>Il nostro showroom si trova nel cuore di Milano: in <a href=\"https://share.google/R0B0XenzHUVzgXbwT\" target=\"_blank\" title=\"https://share.google/R0B0XenzHUVzgXbwT\"><strong>via Turati 3, 20121 MI</strong></a>. Riceviamo solo su appuntamento, per effettuare la prenotazione contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a> o su whastapp al numero <a href=\"https://wa.link/jjvv0y\" target=\"_blank\"><strong>+ 39 3338019796</strong></a>. Saremo felici di accoglierti nel nostro mondo From Bikini.</p>"
+            "answer": "<p>Il nostro showroom si trova nel cuore di Milano: in <a href=\"https://maps.app.goo.gl/5JCqKZyP6SUbD9ey9\" target=\"_blank\">Via San Barnaba 39, 20122, Milano</a>. Riceviamo solo su appuntamento, per effettuare la prenotazione contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a> o su whastapp al numero <a href=\"https://wa.link/jjvv0y\" target=\"_blank\">+ 39 3338019796</a>. Saremo felici di accoglierti nel nostro mondo From Bikini.</p>"
           }
         },
         "question_n9wXzk": {
           "type": "question",
           "settings": {
             "question": "Dove si trova il vostro negozio a Milano?",
-            "answer": "<p>Il nostro Temporary Store a <a href=\"https://share.google/sYyWzIjECJy8uI67V\" target=\"_blank\" title=\"https://share.google/sYyWzIjECJy8uI67V\"><strong>Milano in Via Palermo 21, ang. Corso Garibaldi</strong></a> è aperto dal 26 Maggio al 30 Giugno dalle 10:00 alle 20:00 tutti i giorni orario continuato.</p>"
+            "answer": "<p>Il nostro Temporary Store a <a href=\"https://share.google/sYyWzIjECJy8uI67V\" target=\"_blank\" title=\"https://share.google/sYyWzIjECJy8uI67V\">Milano in Via Palermo 21, ang. Corso Garibaldi</a> è aperto dal 26 Maggio al 30 Giugno dalle 10:00 alle 20:00 tutti i giorni orario continuato.</p>"
           }
         },
         "question_crKMtg": {
           "type": "question",
           "settings": {
             "question": "Dove posso trovare i vostri rivenditori?",
-            "answer": "<p>Collaboriamo con una selezione di boutique esclusive a livello internazionale.<br/>Puoi consultare qui la lista aggiornata dei nostri <a href=\"/pages/dove-trovarci\" target=\"_blank\" title=\"Dove trovarci\"><strong>punti vendita</strong></a> per scoprire dove vedere, toccare con mano e acquistare dal vivo i prodotti From Bikini.</p>"
+            "answer": "<p>Collaboriamo con una selezione di boutique esclusive a livello internazionale.<br/>Puoi consultare qui la lista aggiornata dei nostri <a href=\"/pages/dove-trovarci\" target=\"_blank\" title=\"Dove trovarci\">punti vendita</a> per scoprire dove vedere, toccare con mano e acquistare dal vivo i prodotti From Bikini.</p>"
           }
         },
         "category_WEVGnG": {
@@ -269,7 +269,7 @@
           "type": "question",
           "settings": {
             "question": "Come riceverò il mio From Bikini?",
-            "answer": "<p>Ogni ordine viene spedito in un sacchetto riutilizzabile in lino e cotone, pensato per un mondo a zero sprechi e perfetto per conservare al meglio il tuo From Bikini. Se desideri ricevere anche una shopper di carta, contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\"><strong>hello@frombikini.com</strong></a>.</p>"
+            "answer": "<p>Ogni ordine viene spedito in un sacchetto riutilizzabile in lino e cotone, pensato per un mondo a zero sprechi e perfetto per conservare al meglio il tuo From Bikini. Se desideri ricevere anche una shopper di carta, contattaci alla mail <a href=\"mailto:hello@frombikini.com\" target=\"_blank\" title=\"mailto:hello@frombikini.com\">hello@frombikini.com</a>.</p>"
           }
         }
       },
