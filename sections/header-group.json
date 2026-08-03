@@ -14,6 +14,12 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_jbatyp": {
+          "type": "message",
+          "settings": {
+            "text": "Gli ordini effettuati dopo venerdì 7 agosto verranno preparati con cura e spediti a partire dal 24 agosto."
+          }
+        },
         "message_YGpWWa": {
           "type": "message",
           "settings": {
@@ -35,6 +41,7 @@
         }
       },
       "block_order": [
+        "message_jbatyp",
         "message_YGpWWa",
         "message_hwiTGA",
         "message_pgGXti"
