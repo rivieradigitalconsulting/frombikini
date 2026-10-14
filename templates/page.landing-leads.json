@@ -73,12 +73,12 @@
       "type": "custom-liquid",
       "name": "t:sections.custom_liquid.presets.custom_liquid.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div class=\"klaviyo-form-WTQBE6\"></div>",
-        "text_alignment": "center"
+        "text_alignment": "start"
       }
     },
     "featured_collections_DTb4Rr": {
