@@ -69,6 +69,18 @@
         "remove_vertical_spacing": false
       }
     },
+    "custom_liquid_PPMyhk": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"klaviyo-form-WTQBE6\"></div>",
+        "text_alignment": "center"
+      }
+    },
     "featured_collections_DTb4Rr": {
       "type": "featured-collections",
       "blocks": {
@@ -395,6 +407,7 @@
     "main",
     "image_with_text_overlay_3feV4A",
     "rich_text_axAHjL",
+    "custom_liquid_PPMyhk",
     "featured_collections_DTb4Rr",
     "image_with_text_overlay_BzfqeK",
     "featured_collections_ByQaKE",
