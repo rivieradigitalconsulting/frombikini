@@ -24,7 +24,7 @@
         "heading_zmRVEG": {
           "type": "heading",
           "settings": {
-            "text": "Siamo qui per Te",
+            "text": "Il tuo benvenuto su From Bikini",
             "heading_tag": "h1"
           }
         }
@@ -36,8 +36,231 @@
       "settings": {
         "color_scheme": "",
         "image_size": "lg",
-        "image": "shopify://shop_images/PHOTO-2026-03-16-16-42-46_d2bc6aec-82f1-460b-beae-831b457b587f.jpg",
-        "mobile_image": "shopify://shop_images/PHOTO-2026-03-16-16-42-38.jpg",
+        "image": "shopify://shop_images/instagram-image_bb209c15-cd1f-4942-a120-2c5f9f9d76ec.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
+      }
+    },
+    "rich_text_axAHjL": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GE7RL9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>From Bikini nasce dalla passione per il viaggio e da un'idea precisa: un costume non si sceglie, ti riconosce. Ogni pezzo è realizzato a mano in Italia, pensato per durare oltre una sola estate.<br/><br/>Scopri le collezioni: un universo di colori, trame e forme che racconta chi sei, ovunque tu sia.<br/><br/>Inizia il tuo viaggio.<br/><br/>------------------[FORM]-------------------</p><p>Il tuo primo From Bikini ha un benvenuto speciale.<br/><br/>Nato a Bali. Cucito a mano in Italia.<br/><br/>Entra nel mondo From Bikini: ricevi il 10% sul tuo primo ordine e l'accesso in anteprima alla nuova collezione.<br/><br/>[Nome]<br/>[Email]<br/>[SBLOCCA IL MIO 10%]<br/><br/>Nuove collezioni, edizioni limitate e inviti riservati. Niente di superfluo.<br/><br/>------------------[FORM]-------------------</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GE7RL9"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_DTb4Rr": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_XmGiVR": {
+          "type": "collection",
+          "settings": {
+            "collection": "la-nostra-selezione",
+            "products_count": 16,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_XmGiVR"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 24px;}",
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
+        ".v-stack {justify-self: left;}"
+      ],
+      "name": "t:sections.featured_collections.presets.featured_collections.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "collection_list_fR7XQe": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_qJnc6k": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "",
+            "image": "shopify://shop_images/instagram-image-d341ab95-182a-452e-8de6-1e4f2e6c9a65.png",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Triangle Bikini",
+            "button_text": "DIVE IN",
+            "button_link": "https://www.frombikini.com/collections/tutti-i-nostri-bikini",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "collection_HTDdbL": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "",
+            "image": "shopify://shop_images/instagram-image_f08b1d50-5e9e-4532-8e0f-1874581c07fc.png",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Sporty Bikini",
+            "button_text": "DIVE IN",
+            "button_link": "https://www.frombikini.com/collections/bikini-sportivo",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "collection_tmmCpJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/instagram-image_53cae123-6ca1-45a3-9560-aead1b8f4ec4.png",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Out of Water",
+            "button_text": "DIVE IN",
+            "button_link": "https://www.frombikini.com/collections/tutti-i-nostri-fuori-acqua",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "collection_qJnc6k",
+        "collection_HTDdbL",
+        "collection_tmmCpJ"
+      ],
+      "name": "t:sections.collection_list.presets.collection_list.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "1",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "rich_text_4yq77E": {
+      "type": "rich-text",
+      "blocks": {
+        "liquid_ciPDpe": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_ciPDpe"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_BzfqeK": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/instagram-image-1d6b8d88-a626-4007-a554-ddbf36ebd207.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
+      }
+    },
+    "featured_collections_ByQaKE": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_3bYqTR": {
+          "type": "collection",
+          "settings": {
+            "collection": "bali-bikini-brazilian",
+            "products_count": 16,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_3bYqTR"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 24px;}",
+        "@media (min-width: 768px) {.h2 {font-size: 30px; }}",
+        ".v-stack {justify-self: left;}"
+      ],
+      "name": "t:sections.featured_collections.presets.featured_collections.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "image_with_text_overlay_iCUHkm": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/instagram-image-1d6b8d88-a626-4007-a554-ddbf36ebd207.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": false,
         "remove_vertical_spacing": true,
@@ -74,28 +297,6 @@
         "content": "<p>Hai bisogno di supporto, desideri ricevere maggiori informazioni o sei interessato a collaborare con noi? Compila il modulo sottostante e ti ricontatteremo il prima possibile per offrirti la migliore assistenza:</p>"
       }
     },
-    "rich_text_axAHjL": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_GE7RL9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Il nostro team è a tua completa disposizione dal lunedì al venerdì, dalle 09:00 alle 19:00 (esclusi i giorni festivi).</p><p>E-mail: <a href=\"mailto:hello@frombikini.com\" target=\"_blank\">hello@frombikini.com</a></p><p>Whatsapp: <a href=\"https://wa.link/k544zd\" target=\"_blank\" title=\"https://wa.link/k544zd\">+39 379 399 2895</a></p><p>Ti invitiamo a visitare la nostra sezione <a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">FAQ</a> per trovare risposte rapide alle domande più frequenti. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_GE7RL9"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
-        "content_width": "xs",
-        "text_position": "start",
-        "remove_vertical_spacing": true
-      }
-    },
     "rich_text_yyPnkb": {
       "type": "rich-text",
       "blocks": {
@@ -119,10 +320,10 @@
         "remove_vertical_spacing": false
       }
     },
-    "blocks_6mHkkz": {
+    "blocks_EXVMqt": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_e09345d_kcQhK8": {
+        "ai_gen_block_e09345d_MPmRgN": {
           "type": "ai_gen_block_e09345d",
           "settings": {
             "height_desktop": 0,
@@ -133,7 +334,7 @@
         }
       },
       "block_order": [
-        "ai_gen_block_e09345d_kcQhK8"
+        "ai_gen_block_e09345d_MPmRgN"
       ],
       "name": "Spazio bianco",
       "settings": {
@@ -147,9 +348,15 @@
   "order": [
     "main",
     "image_with_text_overlay_3feV4A",
-    "contact-form",
     "rich_text_axAHjL",
+    "featured_collections_DTb4Rr",
+    "collection_list_fR7XQe",
+    "rich_text_4yq77E",
+    "image_with_text_overlay_BzfqeK",
+    "featured_collections_ByQaKE",
+    "image_with_text_overlay_iCUHkm",
+    "contact-form",
     "rich_text_yyPnkb",
-    "blocks_6mHkkz"
+    "blocks_EXVMqt"
   ]
 }

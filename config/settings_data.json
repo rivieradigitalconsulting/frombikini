@@ -46,10 +46,12 @@
     "stagger_blog_posts_apparition": false,
     "stagger_menu_apparition": false,
     "product_image_aspect_ratio": "tall_crop",
+    "show_secondary_image": false,
     "product_card_text_font": "heading",
     "product_color_display": "hide",
     "show_product_rating": false,
     "show_quick_buy": false,
+    "show_sold_out_badge": false,
     "show_discount": false,
     "cart_type": "drawer",
     "cart_icon": "shopping_bag_sharp",
@@ -79,14 +81,12 @@
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
         "settings": {
+          "greeting_message": "👋 We are here for you: message us with any questions.\nWe are always happy to help you!",
           "button_color": "#564747",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": "👋 We are here for you: message us with any questions.\nWe are always happy to help you!"
+          "button_vertical_position": "lowest"
         }
       },
       "11136173269683339241": {
