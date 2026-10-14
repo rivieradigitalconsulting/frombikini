@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_3feV4A": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_zmRVEG": {
+          "type": "heading",
+          "settings": {
+            "text": "Siamo qui per Te",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zmRVEG"
+      ],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/PHOTO-2026-03-16-16-42-46_d2bc6aec-82f1-460b-beae-831b457b587f.jpg",
+        "mobile_image": "shopify://shop_images/PHOTO-2026-03-16-16-42-38.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
+      }
+    },
+    "contact-form": {
+      "type": "contact",
+      "blocks": {
+        "text_xPEMGE": {
+          "type": "text",
+          "settings": {
+            "title": "N. Ordine (facoltativo)",
+            "use_long_text": false,
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "text_xPEMGE"
+      ],
+      "custom_css": [
+        "h1,p {text-align: left !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "",
+        "content": "<p>Hai bisogno di supporto, desideri ricevere maggiori informazioni o sei interessato a collaborare con noi? Compila il modulo sottostante e ti ricontatteremo il prima possibile per offrirti la migliore assistenza:</p>"
+      }
+    },
+    "rich_text_axAHjL": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GE7RL9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Il nostro team è a tua completa disposizione dal lunedì al venerdì, dalle 09:00 alle 19:00 (esclusi i giorni festivi).</p><p>E-mail: <a href=\"mailto:hello@frombikini.com\" target=\"_blank\">hello@frombikini.com</a></p><p>Whatsapp: <a href=\"https://wa.link/k544zd\" target=\"_blank\" title=\"https://wa.link/k544zd\">+39 379 399 2895</a></p><p>Ti invitiamo a visitare la nostra sezione <a href=\"/pages/faq\" target=\"_blank\" title=\"FAQ\">FAQ</a> per trovare risposte rapide alle domande più frequenti. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GE7RL9"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "start",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_yyPnkb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nXVxMN": {
+          "type": "heading",
+          "settings": {
+            "text": "Ci teniamo a te: per qualsiasi dubbio, contattaci!",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nXVxMN"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "blocks_6mHkkz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e09345d_kcQhK8": {
+          "type": "ai_gen_block_e09345d",
+          "settings": {
+            "height_desktop": 0,
+            "height_mobile": 0,
+            "background_color": "#f9f4f0"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e09345d_kcQhK8"
+      ],
+      "name": "Spazio bianco",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_3feV4A",
+    "contact-form",
+    "rich_text_axAHjL",
+    "rich_text_yyPnkb",
+    "blocks_6mHkkz"
+  ]
+}
