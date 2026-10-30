@@ -51,13 +51,8 @@
             "swatch_spacing": 6
           }
         },
-        "separator_NtFirz": {
-          "type": "separator",
-          "disabled": true,
-          "settings": {}
-        },
         "kiwi_size_chart_recommender_kiwi_sizing_qRhUVB": {
-          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "type": "shopify://apps/kiwi-size-chart/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
             "fallbackToBlockPosition": false,
             "waitForElementSelector": "",
@@ -235,7 +230,6 @@
         "price",
         "text_3E8biP",
         "color_variants_zF7YYB",
-        "separator_NtFirz",
         "kiwi_size_chart_recommender_kiwi_sizing_qRhUVB",
         "variant_picker",
         "quantity_selector",
