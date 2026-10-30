@@ -147,19 +147,19 @@
             "liquid": "<div class=\"klaviyo-form-X2JTEw\"></div>"
           }
         },
-        "separator_nr8Cnz": {
-          "type": "separator",
-          "settings": {}
-        },
         "complementary_products_HJV7kX": {
           "type": "complementary_products",
           "settings": {
             "title": "Pairs well with",
             "products_count": 2,
-            "show_below_gallery": true,
+            "show_below_gallery": false,
             "stack_products": false,
             "show_quick_buy": true
           }
+        },
+        "separator_nr8Cnz": {
+          "type": "separator",
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -250,8 +250,8 @@
         "feature_with_icon_8gHBVy",
         "feature_with_icon_YYKLbL",
         "liquid_MzVTY8",
-        "separator_nr8Cnz",
         "complementary_products_HJV7kX",
+        "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
         "accordion_HYDbrd",
