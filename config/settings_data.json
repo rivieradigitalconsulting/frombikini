@@ -459,7 +459,10 @@
       "@media screen and (min-width: 768px) {product-sticky-bar {background-color: #f9f4f0 !important; }}",
       "product-sticky-bar .h6 {text-transform: capitalize; font-size: 21px;}",
       ".h6 {font-size: 17px;}",
-      ".localization-toggle {font-size: 15px;}"
+      ".localization-toggle {font-size: 15px;}",
+      "/* ===== Prodotti complementari (PDP) ===== *//* Testi: desktop + mobile */.complementary-products__header .h5 {font-size: 17px;}",
+      ".complementary-products sale-price,.complementary-products compare-at-price {font-size: 14px !important;}",
+      "/* Layout: solo desktop, card impilata in verticale e centrata */@media (min-width: 700px) {.complementary-products .horizontal-product-card {flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 16px; } .complementary-products .horizontal-product-card__figure {width: 100px; margin-inline: auto; } .complementary-products .horizontal-product-card__info {display: flex; flex-direction: column; align-items: center; flex: none; width: 100%; text-align: center; gap: 14px; } .complementary-products .horizontal-product-card__info .v-stack {justify-items: center; justify-content: center; text-align: center; } .complementary-products .horizontal-product-card .product-title {text-align: center; } .complementary-products .horizontal-product-card sale-price, .complementary-products .horizontal-product-card compare-at-price {padding-top: 0 !important; }}"
     ]
   }
 }
