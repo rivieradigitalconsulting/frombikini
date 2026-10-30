@@ -141,13 +141,29 @@
   padding-bottom: 0 !important;
 }
 
-/* Popup "Aggiungi al carrello" (quick buy) */
+/* ===== Popup "Aggiungi al carrello" (quick buy) ===== */
 .quick-buy-modal sale-price,
 .quick-buy-modal compare-at-price {
   font-family: Montserrat, sans-serif !important;
   font-size: 16px !important;
   letter-spacing: normal;
 }
+.quick-buy-modal sale-price {
+  color: #564747;
+}
 .quick-buy-modal button.button[type="submit"] {
   font-weight: 700;
+}
+
+/* Popup mobile: via "Scegli le opzioni" e divisore, meno spazio sopra la foto */
+@media (max-width: 699px) {
+  .quick-buy-modal > [slot="header"] {
+    display: none;
+  }
+  .quick-buy-modal::part(header) {
+    border-block-end: 0;
+  }
+  .quick-buy-modal::part(body) {
+    padding-block-start: 30px;
+  }
 }
