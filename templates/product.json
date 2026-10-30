@@ -151,6 +151,16 @@
           "type": "separator",
           "settings": {}
         },
+        "complementary_products_HJV7kX": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Pairs well with",
+            "products_count": 2,
+            "show_below_gallery": true,
+            "stack_products": false,
+            "show_quick_buy": true
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -241,6 +251,7 @@
         "feature_with_icon_YYKLbL",
         "liquid_MzVTY8",
         "separator_nr8Cnz",
+        "complementary_products_HJV7kX",
         "description",
         "accordion_L6ccQK",
         "accordion_HYDbrd",
