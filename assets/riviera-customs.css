@@ -168,12 +168,12 @@
   }
 }
 
-/* Spazio tra banner spedizione e icone */
-.product-info__block-group.feature-badge-list > .product-info__block-item:first-child {
-  margin-bottom: 20px; /* totale ~28px (prima 8px) */
+/* Spazio tra banner spedizione e icone (solo se il banner è il primo elemento del gruppo) */
+.product-info__block-group.feature-badge-list > .product-info__block-item:first-child:not(:has(.feature-badge)) {
+  margin-bottom: 20px;
 }
 
 /* Spazio tra icone e divisore */
 .product-info__block-group.feature-badge-list {
-  padding-bottom: 8px !important; /* totale ~32px (prima ~74px) */
+  padding-bottom: 8px !important;
 }
