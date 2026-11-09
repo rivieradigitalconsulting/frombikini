@@ -167,3 +167,13 @@
     padding-block-start: 30px;
   }
 }
+
+/* Più aria tra banner spedizione e icone */
+.product-info__block-group.feature-badge-list > .product-info__block-item:first-child {
+  margin-bottom: 12px; /* spazio totale ~20px (prima 8px) */
+}
+
+/* Meno spazio tra icone e divisore */
+.product-info__block-group.feature-badge-list {
+  padding-bottom: 24px !important; /* prima 50px */
+}
