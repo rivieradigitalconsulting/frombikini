@@ -95,8 +95,8 @@
             "link": "",
             "icon": "picto-delivery-truck",
             "icon_width": 16,
-            "background": "#ffffff",
-            "text_color": "#6b6b6b",
+            "background": "#564747",
+            "text_color": "#FFFFFF",
             "border_color": ""
           }
         },
