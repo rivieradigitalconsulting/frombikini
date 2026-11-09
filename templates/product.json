@@ -102,6 +102,7 @@
         },
         "complementary_products_HJV7kX": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "title": "Si abbina bene con",
             "products_count": 2,
