@@ -88,6 +88,28 @@
           "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
           "settings": {}
         },
+        "feature_with_icon_9JYi3j": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<strong>Spedizione gratuita sopra a € 200 e resi semplificati</strong>",
+            "link": "",
+            "icon": "picto-delivery-truck",
+            "icon_width": 16,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "complementary_products_HJV7kX": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Si abbina bene con",
+            "products_count": 2,
+            "show_below_gallery": false,
+            "stack_products": false,
+            "show_quick_buy": true
+          }
+        },
         "feature_with_icon_M8tNYn": {
           "type": "feature_with_icon",
           "settings": {
@@ -140,33 +162,11 @@
             "border_color": ""
           }
         },
-        "feature_with_icon_9JYi3j": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "<strong>Spedizione gratuita sopra a € 200 e resi semplificati</strong>",
-            "link": "",
-            "icon": "picto-delivery-truck",
-            "icon_width": 16,
-            "background": "#ffffff",
-            "text_color": "#6b6b6b",
-            "border_color": ""
-          }
-        },
         "liquid_MzVTY8": {
           "type": "liquid",
           "disabled": true,
           "settings": {
             "liquid": "<div class=\"klaviyo-form-X2JTEw\"></div>"
-          }
-        },
-        "complementary_products_HJV7kX": {
-          "type": "complementary_products",
-          "settings": {
-            "title": "Si abbina bene con",
-            "products_count": 2,
-            "show_below_gallery": false,
-            "stack_products": false,
-            "show_quick_buy": true
           }
         },
         "separator_nr8Cnz": {
@@ -257,13 +257,13 @@
         "quantity_selector",
         "buy_buttons",
         "conversion_bear_trust_badges_widget_6K67cd",
+        "feature_with_icon_9JYi3j",
+        "complementary_products_HJV7kX",
         "feature_with_icon_M8tNYn",
         "feature_with_icon_RP8kHb",
         "feature_with_icon_8gHBVy",
         "feature_with_icon_YYKLbL",
-        "feature_with_icon_9JYi3j",
         "liquid_MzVTY8",
-        "complementary_products_HJV7kX",
         "separator_nr8Cnz",
         "description",
         "accordion_L6ccQK",
