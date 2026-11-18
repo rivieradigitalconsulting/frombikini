@@ -16,6 +16,7 @@
       "blocks": {
         "message_BRwFzC": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "A LITTLE GIFT FROM US TO YOU — DISCOVER OUR SPECIAL OFFERS ONLINE & IN OUR SHOWROOM"
           }
@@ -29,7 +30,6 @@
         },
         "message_YGpWWa": {
           "type": "message",
-          "disabled": true,
           "settings": {
             "text": "Spedizione gratuita in Italia per ordini sopra €200"
           }
@@ -43,7 +43,6 @@
         },
         "message_pgGXti": {
           "type": "message",
-          "disabled": true,
           "settings": {
             "text": "Spediamo in tutto il mondo, ovunque tu sia"
           }
