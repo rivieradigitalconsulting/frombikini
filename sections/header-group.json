@@ -14,6 +14,12 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_BRwFzC": {
+          "type": "message",
+          "settings": {
+            "text": "A LITTLE GIFT FROM US TO YOU — DISCOVER OUR SPECIAL OFFERS ONLINE & IN OUR SHOWROOM"
+          }
+        },
         "message_jbatyp": {
           "type": "message",
           "disabled": true,
@@ -23,6 +29,7 @@
         },
         "message_YGpWWa": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Spedizione gratuita in Italia per ordini sopra €200"
           }
@@ -36,12 +43,14 @@
         },
         "message_pgGXti": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Spediamo in tutto il mondo, ovunque tu sia"
           }
         }
       },
       "block_order": [
+        "message_BRwFzC",
         "message_jbatyp",
         "message_YGpWWa",
         "message_hwiTGA",
