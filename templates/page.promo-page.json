@@ -47,28 +47,6 @@
         "overlay_opacity": 20
       }
     },
-    "rich_text_axAHjL": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_GE7RL9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Leave your name and email and you’ll get instant Early Access to our Black Friday offer.</p><p>You’ll receive an exclusive 25% OFF code directly in your inbox, valid on a selection of products on our website for a limited time only. Once the email arrives, just enter the code at checkout and enjoy your special price.<br/></p><p>It’s reserved for subscribers only, so sign up now and don’t miss it.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_GE7RL9"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "start",
-        "remove_vertical_spacing": false
-      }
-    },
     "custom_liquid_PPMyhk": {
       "type": "custom-liquid",
       "name": "t:sections.custom_liquid.presets.custom_liquid.name",
@@ -103,6 +81,28 @@
         "separate_section_with_border": false,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
+      }
+    },
+    "rich_text_axAHjL": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GE7RL9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Leave your name and email and you’ll get instant Early Access to our Black Friday offer.</p><p>You’ll receive an exclusive 25% OFF code directly in your inbox, valid on a selection of products on our website for a limited time only. Once the email arrives, just enter the code at checkout and enjoy your special price.<br/></p><p>It’s reserved for subscribers only, so sign up now and don’t miss it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GE7RL9"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "start",
+        "remove_vertical_spacing": false
       }
     }
   },
