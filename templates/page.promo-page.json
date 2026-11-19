@@ -24,7 +24,7 @@
         "heading_zmRVEG": {
           "type": "heading",
           "settings": {
-            "text": "Your exclusive early access",
+            "text": "",
             "heading_tag": "h1"
           }
         }
@@ -36,7 +36,7 @@
       "settings": {
         "color_scheme": "",
         "image_size": "lg",
-        "image": "shopify://shop_images/instagram-image_bb209c15-cd1f-4942-a120-2c5f9f9d76ec.jpg",
+        "mobile_image": "shopify://shop_images/from_bikini_promo.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": false,
         "remove_vertical_spacing": true,
@@ -45,6 +45,29 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "overlay_color": "#000000",
         "overlay_opacity": 20
+      }
+    },
+    "rich_text_axAHjL": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GE7RL9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Lascia nome ed email e otterrai subito l'accesso anticipato alla nostra offerta Black Friday.<br/><br/>Riceverai direttamente nella tua casella di posta un codice esclusivo del 25% di sconto, valido per un periodo limitato su tutti i prodotti del nostro sito.&nbsp;<br/><br/>Quando arriva l'email, ti basta inserire il codice al checkout e godere del tuo prezzo speciale.<br/>È riservato agli iscritti, quindi iscriviti ora e non perdere l'occasione.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GE7RL9"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "start",
+        "remove_vertical_spacing": false
       }
     },
     "custom_liquid_PPMyhk": {
@@ -81,28 +104,6 @@
         "separate_section_with_border": false,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
-      }
-    },
-    "rich_text_axAHjL": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_GE7RL9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Leave your name and email and you’ll get instant Early Access to our Black Friday offer.</p><p>You’ll receive an exclusive 25% OFF code directly in your inbox, valid on a selection of products on our website for a limited time only. Once the email arrives, just enter the code at checkout and enjoy your special price.<br/></p><p>It’s reserved for subscribers only, so sign up now and don’t miss it.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_GE7RL9"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "scheme-d1f01026-959c-4a18-9e31-ac09d2e8c886",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "start",
-        "remove_vertical_spacing": false
       }
     }
   },
