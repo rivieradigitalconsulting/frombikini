@@ -32,7 +32,9 @@
       "block_order": [
         "heading_zmRVEG"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (min-width: 1000px) {image-with-text-overlay, image-with-text-overlay picture, image-with-text-overlay img {display: none !important; }}"
+      ],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "",
