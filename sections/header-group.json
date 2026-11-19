@@ -17,29 +17,33 @@
         "message_BRwFzC": {
           "type": "message",
           "settings": {
-            "text": "A LITTLE GIFT FROM US TO YOU — DISCOVER OUR SPECIAL OFFERS ONLINE & IN OUR SHOWROOM"
+            "text": "<a href=\"/pages/early-access-black-friday\" title=\"Early Access Black Friday\">A LITTLE GIFT FROM US TO YOU — DISCOVER OUR SPECIAL OFFERS ONLINE & IN OUR SHOWROOM</a>"
           }
         },
         "message_jbatyp": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Summer Break: gli ordini effettuati dopo venerdì 7 agosto verranno preparati con cura e spediti a partire dal 24 agosto."
           }
         },
         "message_YGpWWa": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Spedizione gratuita in Italia per ordini sopra €200"
           }
         },
         "message_hwiTGA": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "POP-UP STORE MILANO: Via Palermo 21"
           }
         },
         "message_pgGXti": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Spediamo in tutto il mondo, ovunque tu sia"
           }
